@@ -1,0 +1,6 @@
+version: v1
+lessons:
+  - id: internet_intro
+    level: easy
+    topic: internet
+    subtopic: internet_general

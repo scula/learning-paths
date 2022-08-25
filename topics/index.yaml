@@ -1,0 +1,14 @@
+version: v1
+topics:
+  - id: networking
+    name: Networking
+    subtopics:
+      - id: networking_protocols
+        name: Protocols
+      - id: networking_dns
+        name: DNS
+  - id: internet
+    name: Internet
+    subtopics:
+      - id: internet_general
+        name: General
