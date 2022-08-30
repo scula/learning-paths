@@ -1,0 +1,92 @@
+version: v1
+domains:
+  - id: networking
+    name: Networking
+    subdomains:
+      - id: networking_architecture
+        name: Architecture
+        topics:
+          - id: networking_osi_model
+            name: "OSI model"
+            level: easy
+          - id: networking_client_server_architecture
+            name: "Client-Server Architecture"
+            level: easy
+      - id: networking_protocols
+        name: Protocols
+        topics:
+          - id: networking_protocol_http
+            name: "HTTP protocol"
+            level: easy
+          - id: networking_data_interchange_formats
+            name: "Data interchange formats"
+            tags: ["JSON", "XML"]
+            level: easy
+      - id: networking_dns
+        name: DNS
+  - id: internet
+    name: Internet
+    subdomains:
+      - id: internet_overview
+        name: Internet Overview
+        topics:
+          - id: internet_intro
+            name: "Introduction to the Internet"
+            description: "General overview on how internet works"
+            level: easy
+  - id: os
+    name: Operating Systems
+    subdomains:
+      - id: os_overview
+        name: Operating Systems Overview
+        topics:
+          - id: os_intro
+            name: "Introduction to OS"
+            description: "General overview on OS and program execution"
+            level: easy
+          - id: os_cmd_intro
+            name: "Command line and Shell"
+            description: "How to work with shell and command line?"
+            tags: ["shell", "cmd"]
+            level: easy
+  - id: algorithms
+    name: Algorithms
+    subdomains:
+      - id: algorithms_overview
+        name: Algorithms Overview
+        topics:
+          - id: algo_intro
+            name: "Introduction to algorithms"
+            level: easy
+  - id: software_architecture_styles
+    name: Software Architecture Styles
+    subdomains:
+      - id: sas_network
+        name: "Internet Architecture Styles"
+        topics:
+          - id: sas_rest
+            name: "REST Architecture Style"
+            tags: ["REST"]
+            level: easy
+            dependencies:
+              - networking_data_interchange_formats
+              - networking_client_server_architecture
+              - networking_osi_model
+  - id: programming_languages
+    name: Programming Languages
+    subdomains:
+      - id: pl_python
+        name: "Python Programming Language"
+        topics:
+          - id: py_hello_world
+            name: "Python Hello World"
+            tags: ["python", "hello-world"]
+            level: easy
+          - id: py_program_exec
+            name: "Python and interpreter programming languages"
+            tags: ["python"]
+            level: easy
+          - id: py_setting_up_env
+            name: "Setting up Python development environment"
+            tags: ["python", "dev-env"]
+            level: easy

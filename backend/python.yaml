@@ -1,4 +1,41 @@
 version: v1
-steps:
-  - id: internet_intro
-    lesson_id: internet_intro
+name: "Python Developer Path"
+id: python_developer_path_easy
+description: |
+  An ordered collection of steps that cover
+  all of the necessary areas of knowledge
+  required for working as a Python developer.
+level: easy
+chapters:
+  - id: python_getting_started
+    name: "Computer Science Intro"
+    steps:
+      - id: python_internet_intro
+        topic_id: internet_intro
+      - id: python_os_intro
+        topic_id: os_intro
+      - id: python_algo_intro
+        topic_id: algo_intro
+  - id: python_connectivity
+    name: "Connectivity around us"
+    steps:
+      - id: python_client_server_arch
+        topic_id: networking_client_server_architecture
+      - id: python_osi_model
+        topic_id: networking_osi_model
+      - id: python_http
+        topic_id: networking_protocol_http
+      - id: python_data_interchange_formats
+        topic_id: networking_data_interchange_formats
+      - id: python_rest
+        topic_id: sas_rest
+  - id: first_python_interaction
+    name: "First Python Program and Development Environment"
+    description: "Launch your first python program and learn about development environment and how to set it up"
+    steps:
+      - id: python_environment_intro
+        topic_id: py_setting_up_env
+      - id: python_cmd_intro
+        topic_id: os_cmd_intro
+      - id: python_first_launch
+        topic_id: py_hello_world
