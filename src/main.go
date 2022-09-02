@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"amazemind.io/learning-paths/validator"
+	"github.com/amazemind-io/learning-paths/validator"
 )
 
 func main() {
