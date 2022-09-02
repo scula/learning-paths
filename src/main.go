@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/amazemind-io/learning-paths/learning_paths"
+	"amazemind.io/learning-paths/validator"
 )
 
 func main() {
@@ -11,6 +11,6 @@ func main() {
 	cmd := argsWithoutProg[0]
 	path_file := argsWithoutProg[1]
 
-	learning_paths.ValidateCmd(cmd, path_file, argsWithoutProg)
+	validator.ValidateCmd(cmd, path_file, argsWithoutProg)
 
 }
