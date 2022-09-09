@@ -34,6 +34,19 @@ domains:
             name: "Introduction to the Internet"
             description: "General overview on how internet works"
             level: easy
+            resources:
+              - name: "What is the internet?"
+                link: "https://www.youtube.com/watch?v=Dxcc6ycZ73M"
+                type: "video"
+              - name: "What is the internet?"
+                link: "https://www.techtarget.com/whatis/definition/Internet#:~:text=The%20Internet%2C%20sometimes%20called%20simply,to%20users%20at%20other%20computers)."
+                type: "blogpost"
+              - name: "What is the Server?"
+                link: "https://www.youtube.com/watch?v=Dxcc6ycZ73M"
+                type: "video"
+              - name: "Chapters 1 & 2 of book: How internet works?"
+                link: "https://www.amazon.de/-/en/Preston-Gralla/dp/0789736268"
+                type: "bookchapter"
   - id: os
     name: Operating Systems
     subdomains:
@@ -48,7 +61,7 @@ domains:
             name: "Command line and Shell"
             description: "How to work with shell and command line?"
             tags: ["shell", "cmd"]
-            level: easy
+            level: hard
   - id: algorithms
     name: Algorithms
     subdomains:
@@ -85,8 +98,8 @@ domains:
           - id: py_program_exec
             name: "Python and interpreter programming languages"
             tags: ["python"]
-            level: easy
+            level: medium
           - id: py_setting_up_env
             name: "Setting up Python development environment"
             tags: ["python", "dev-env"]
-            level: easy
+            level: medium
