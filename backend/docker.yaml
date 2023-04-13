@@ -1,0 +1,48 @@
+version: v1
+name: "Docker Expert"
+id: docker_expert_easy
+description: |
+  An ordered collection of steps that cover
+  everything you need to know about Docker.
+level: easy
+chapters:
+  - id: docker_intro
+    name: "What is Docker and containers?"
+    steps:
+      - id: docker_step_intro
+        topic_id: docker_intro
+  - id: 
+    name: ""
+    steps:
+      - id:
+        topic_id:
+  - id:
+    name: ""
+    steps:
+      - id:
+        topic_id:
+  - id:
+    name: ""
+    steps:
+      - id:
+        topic_id:
+  - id:
+    name: ""
+    steps:
+      - id:
+        topic_id:
+  - id:
+    name: ""
+    steps:
+      - id:
+        topic_id:
+  - id:
+    name: ""
+    steps:
+      - id:
+        topic_id:
+  - id:
+    name: ""
+    steps:
+      - id:
+        topic_id:

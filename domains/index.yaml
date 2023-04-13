@@ -1,105 +1,568 @@
 version: v1
-domains:
+id: global_domain
+name: "Global Domain Containing All nodes"
+tags: ["global"]
+description: "Global Node containing all nodes"
+software_dependence_map:
+  software:
+    - name: python
+      versions:
+        - version: 3.11.x
+          dependencies:
+    - name: click
+      versions:
+        - version: 8.1.x
+          dependencies:
+            - name: python
+              versions:
+                - 3.11.x
+    - name: vscode
+      versions:
+        - version: 1.77.x
+          dependencies:
+nodes:
+  - id: algorithms
+    name: Algorithms
+    tags: ["algorithms"]
+    nodes:
+      - id: algorithms_overview
+        name: Algorithms Overview
+        nodes:
+          - id: algo_intro
+            name: "Introduction to algorithms"
+            level: 2
+      - id: algorithms_data_structures
+        name: Data Structures
+        tags: ["data-structures"]
+        nodes:
+          - id: algo_heap
+            name: "Heap"
+            level: 2
+            tags: ["heap"]
+          - id: algo_stack
+            name: "Stack"
+            level: 2
+            tags: ["stack"]
+          - id: algo_queue
+            name: "Queue"
+            level: 2
+            tags: ["queue"]
+          - id: algo_linked_list
+            name: "Linked List"
+            level: 2
+            tags: ["linked-list"]
+          - id: algo_tree
+            name: "Tree"
+            level: 2
+            tags: ["tree"]
+          - id: algo_graph
+            name: "Graph"
+            level: 2
+            tags: ["graph"]
+          - id: algo_hash_table
+            name: "Hash Table"
+            level: 2
+            tags: ["hash-table"]
+      - id: algo_sorting
+        name: Sorting algorithms
+        tags: ["sorting"]
+        nodes:
+          - id: algo_sorting_bubble
+            name: "Bubble Sort"
+            level: 2
+            tags: ["bubble-sort"]
+          - id: algo_sorting_selection
+            name: "Selection Sort"
+            level: 3
+            tags: ["selection-sort"]
+          - id: algo_sorting_insertion
+            name: "Insertion Sort"
+            level: 4
+            tags: ["insertion-sort"]
+          - id: algo_sorting_merge
+            name: "Merge Sort"
+            level: 6
+            tags: ["merge-sort"]
+          - id: algo_sorting_quick
+            name: "Quick Sort"
+            level: 7
+            tags: ["quick-sort"]
+          - id: algo_sorting_heap
+            name: "Heap Sort"
+            level: 4
+            tags: ["heap-sort"]
+          - id: algo_sorting_counting
+            name: "Counting Sort"
+            level: 2
+            tags: ["counting-sort"]
+      - id: algo_searching
+        name: Searching algorithms
+        tags: ["searching"]
+        nodes:
+          - id: algo_searching_linear
+            name: "Linear Search"
+            level: 2
+            tags: ["linear-search"]
+          - id: algo_searching_binary
+            name: "Binary Search"
+            level: 4
+            tags: ["binary-search"]
+      - id: algo_recursion
+        name: Recursion
+        tags: ["recursion"]
+        level: 2
   - id: networking
     name: Networking
-    subdomains:
+    nodes:
       - id: networking_architecture
         name: Architecture
-        topics:
+        tags: ["networking", "architecture"]
+        nodes:
           - id: networking_osi_model
             name: "OSI model"
-            level: easy
+            level: 2
           - id: networking_client_server_architecture
             name: "Client-Server Architecture"
-            level: easy
+            level: 2
       - id: networking_protocols
         name: Protocols
-        topics:
+        nodes:
           - id: networking_protocol_http
             name: "HTTP protocol"
-            level: easy
+            level: 2
           - id: networking_data_interchange_formats
             name: "Data interchange formats"
-            tags: ["JSON", "XML"]
-            level: easy
+            tags: ["json", "xml"]
+            level: 2
       - id: networking_dns
         name: DNS
   - id: internet
     name: Internet
-    subdomains:
+    nodes:
       - id: internet_overview
         name: Internet Overview
-        topics:
+        nodes:
           - id: internet_intro
             name: "Introduction to the Internet"
             description: "General overview on how internet works"
-            level: easy
-            resources:
-              - name: "What is the internet?"
-                link: "https://www.youtube.com/watch?v=Dxcc6ycZ73M"
-                type: "video"
-              - name: "What is the internet?"
-                link: "https://www.techtarget.com/whatis/definition/Internet#:~:text=The%20Internet%2C%20sometimes%20called%20simply,to%20users%20at%20other%20computers)."
-                type: "blogpost"
-              - name: "What is the Server?"
-                link: "https://www.youtube.com/watch?v=Dxcc6ycZ73M"
-                type: "video"
-              - name: "Chapters 1 & 2 of book: How internet works?"
-                link: "https://www.amazon.de/-/en/Preston-Gralla/dp/0789736268"
-                type: "bookchapter"
+            level: 2
   - id: os
     name: Operating Systems
-    subdomains:
+    nodes:
       - id: os_overview
         name: Operating Systems Overview
-        topics:
+        nodes:
           - id: os_intro
             name: "Introduction to OS"
             description: "General overview on OS and program execution"
-            level: easy
+            level: 2
           - id: os_cmd_intro
             name: "Command line and Shell"
             description: "How to work with shell and command line?"
             tags: ["shell", "cmd"]
-            level: hard
-  - id: algorithms
-    name: Algorithms
-    subdomains:
-      - id: algorithms_overview
-        name: Algorithms Overview
-        topics:
-          - id: algo_intro
-            name: "Introduction to algorithms"
-            level: easy
+            level: 5
+          - id: os_directories_and_files
+            name: "Directories and Files"
+            description: "How to work with directories and files?"
+            tags: ["directories", "files"]
+            level: 5
   - id: software_architecture_styles
     name: Software Architecture Styles
-    subdomains:
+    nodes:
       - id: sas_network
         name: "Internet Architecture Styles"
-        topics:
+        nodes:
           - id: sas_rest
             name: "REST Architecture Style"
             tags: ["REST"]
-            level: easy
+            level: 2
             dependencies:
               - networking_data_interchange_formats
               - networking_client_server_architecture
               - networking_osi_model
   - id: programming_languages
     name: Programming Languages
-    subdomains:
-      - id: pl_python
-        name: "Python Programming Language"
-        topics:
-          - id: py_hello_world
-            name: "Python Hello World"
-            tags: ["python", "hello-world"]
-            level: easy
-          - id: py_program_exec
-            name: "Python and interpreter programming languages"
-            tags: ["python"]
-            level: medium
-          - id: py_setting_up_env
-            name: "Setting up Python development environment"
-            tags: ["python", "dev-env"]
-            level: medium
+    tags: ["programming-languages"]
+    nodes:
+      - id: programming_language_python
+        name: Python
+        tags: ["python"]
+        software_dependencies:
+          - python
+        nodes:
+          - id: py_guidelines
+            name: "Rules and agreements for writing clean Python code"
+            tags: ["guidelines"]
+            level: 1
+            nodes:
+              - id: py_guideline_pep8
+                name: "PEP8"
+                tags: ["pep8"]
+                level: 2
+              - id: py_variable_names
+                name: "Variable names"
+                tags: ["variable-names"]
+                level: 2
+              - id: py_string_formatting
+                name: "String formatting"
+                tags: ["string-formatting"]
+                level: 2
+          - id: py_overview
+            name: "Python Overview"
+            tags: ["overview"]
+            level: 1
+            nodes:
+              - id: py_philosophy
+                name: "Python Philosophy"
+                tags: ["philosophy"]
+                level: 1
+              - id: py_first_steps
+                name: "First Steps"
+                tags: ["first-steps"]
+                level: 1
+          - id: data_types_and_variables
+            name: "Data Types and Variables"
+            tags: ["data-types", "variables", "types"]
+            nodes:
+              - id: py_numbers
+                name: "Numbers"
+                tags: ["numbers", "int", "float"]
+                level: 2
+              - id: py_strings
+                name: "Strings"
+                tags: ["strings"]
+                level: 2
+              - id: py_boolean
+                name: "boolean"
+                tags: ["boolean"]
+                level: 2
+              - id: py_none
+                name: "None"
+                tags: ["none"]
+                level: 2
+              - id: py_conversion
+                name: "Type conversion"
+                tags: ["conversion"]
+                level: 2
+          - id: py_data_structures
+            name: "Data Structures"
+            tags: ["data-structures"]
+            nodes:
+              - id: py_lists
+                name: "Lists"
+                tags: ["lists"]
+                level: 2
+              - id: py_tuples
+                name: "Tuples"
+                tags: ["tuples"]
+                level: 2
+              - id: py_sets
+                name: "Sets"
+                tags: ["sets", "union", "intersection", "difference"]
+                level: 2
+              - id: py_dictionaries
+                name: "Dictionaries"
+                tags: ["dictionaries", "hash-tables"]
+                level: 2
+          - id: python_entry
+            name: "Python Entry"
+            nodes:
+              - id: py_program_exec
+                name: "Python and interpreter programming languages"
+                tags: ["python"]
+                level: 4
+              - id: py_setting_up_env
+                name: "Setting up Python development environment"
+                tags: ["dev-env"]
+                level: 4
+              - id: python_syntax
+                name: "How Python is structured and written"
+                nodes:
+                  - id: py_syntax
+                    name: "Syntax in Python"
+                    tags: ["syntax", "indentation"]
+                    level: 1
+                  - id: py_comments
+                    name: "Comments in Python"
+                    tags: ["comments"]
+                    level: 1
+          - id: python_control_flow
+            name: "Control Flow"
+            tags: ["control-flow"]
+            nodes:
+              - id: py_conditional_statements
+                name: "Conditional Statements"
+                tags: ["if", "else", "elif", "switch"]
+                level: 1
+              - id: py_loops
+                name: "Loops"
+                tags: ["for", "while"]
+                level: 2
+              - id: py_break_continue
+                name: "break and continue"
+                tags: ["break", "continue"]
+                level: 2
+              - id: py_exceptions
+                name: "Exceptions"
+                tags: ["exceptions"]
+                level: 2
+          - id: python_functions
+            name: "Functions"
+            tags: ["functions"]
+            nodes:
+              - id: py_functions
+                name: "Functions"
+                tags: ["functions"]
+                level: 2
+              - id: py_returned_values
+                name: "Returned Values"
+                tags: ["returned-values"]
+                level: 2
+              - id: py_variable_scope
+                name: "Variable Scope"
+                tags: ["variable-scope"]
+                level: 2
+              - id: py_lambda
+                name: "Lambda"
+                tags: ["lambda"]
+                level: 4
+              - id: py_map_filter
+                name: "map and filter"
+                tags: ["map", "filter"]
+                level: 6
+              - id: py_decorators
+                name: "Decorators"
+                tags: ["decorators"]
+                level: 6
+              - id: py_builtin_functions
+                name: "Built-in Functions"
+                tags: ["built-in-functions"]
+                level: 4
+          - id: python_algorithms_implementations
+            name: "Algorithms Implementations in Python"
+            tags: ["algorithms", "py-implementation"]
+            nodes:
+              - id: py_binary_search
+                name: "Binary Search"
+                tags: ["binary-search"]
+                level: 4
+                dependencies:
+                  - algo_tree
+                  - algo_searching_binary
+              - id: py_bubble_sort
+                name: "Bubble Sort"
+                tags: ["bubble-sort"]
+                level: 4
+                dependencies:
+                  - algo_sorting_bubble
+          - id: python_oop
+            name: "Object Oriented Programming"
+            tags: ["oop"]
+            nodes:
+              - id: py_oop_intro
+                name: "Introduction to OOP"
+                tags: ["oop"]
+                level: 1
+              - id: py_oop_classes
+                name: "Classes"
+                tags: ["classes"]
+                level: 2
+              - id: py_oop_inheritance
+                name: "Inheritance"
+                tags: ["inheritance"]
+                level: 2
+              - id: py_oop_polymorphism
+                name: "Polymorphism"
+                tags: ["polymorphism"]
+                level: 2
+              - id: py_oop_encapsulation
+                name: "Encapsulation"
+                tags: ["encapsulation"]
+                level: 2
+              - id: py_oop_abstraction
+                name: "Abstraction"
+                tags: ["abstraction"]
+                level: 2
+              - id: py_oop_magic_methods
+                name: "Magic Methods"
+                tags: ["magic-methods"]
+                level: 2
+              - id: py_oop_objects
+                name: "Objects"
+                tags: ["objects"]
+                level: 2
+              - id: py_oop_class_attributes
+                name: "Class Attributes"
+                tags: ["class-attributes"]
+                level: 2
+              - id: py_oop_class_methods
+                name: "Class Methods"
+                tags: ["class-methods"]
+                level: 2
+              - id: py_oop_static_methods
+                name: "Static Methods"
+                tags: ["static-methods"]
+                level: 2
+          - id: python_packages
+            name: "Packages"
+            tags: ["packages"]
+            nodes:
+              - id: py_packages
+                name: "Packages"
+                tags: ["packages"]
+                level: 2
+              - id: py_modules
+                name: "Modules"
+                tags: ["modules"]
+                level: 2
+              - id: py_imports
+                name: "Imports"
+                tags: ["imports"]
+                level: 2
+              - id: py_virtualenv
+                name: "Virtualenv"
+                tags: ["virtualenv"]
+                level: 2
+              - id: py_pip
+                name: "Pip"
+                tags: ["pip"]
+                level: 2
+          - id: python_debugging
+            name: "Debugging"
+            tags: ["debugging"]
+            nodes:
+              - id: py_debugging_with_pdb
+                name: "Debugging with PDB"
+                tags: ["debugging", "pdb"]
+                level: 2
+              - id: py_debugging_with_vscode
+                name: "Debugging with VSCode"
+                tags: ["debugging", "vscode"]
+                level: 2
+                dependencies:
+                  - pt_vscode_debugging
+          - id: python_input_output
+            name: "Input and Output"
+            tags: ["input-output"]
+            nodes:
+              - id: py_print
+                name: "Output to the Console"
+                tags: ["output", "print"]
+                level: 2
+                dependencies:
+                  - os_cmd_intro
+              - id: py_input
+                name: "Input from the Console"
+                tags: ["input"]
+                level: 2
+                dependencies:
+                  - os_cmd_intro
+              - id: py_file_io
+                name: "File I/O"
+                tags: ["file-io"]
+                level: 2
+              - id: py_command_line_args
+                name: "Command Line Arguments"
+                tags: ["command-line-arguments"]
+                level: 2
+              - id: py_command_line_input
+                name: "Command Line Input"
+                tags: ["command-line-input"]
+                level: 2
+              - id: py_command_line_output
+                name: "Command Line Output"
+                tags: ["command-line-output"]
+                level: 2
+          - id: python_cli
+            name: "Command Line Interface"
+            tags: ["cli"]
+            software_dependencies:
+              - click
+            nodes:
+              - id: py_click
+                name: "Click"
+                tags: ["click"]
+                level: 2
+                nodes:
+                  - id: py_click_intro
+                    name: "Introduction to Click"
+                    tags: ["click"]
+                    level: 2
+                  - id: py_click_deep_dive
+                    name: "Deep dive into Click"
+                    tags: ["click"]
+                    level: 2
+          # python web
+          # python db
+  - id: git
+    name: "Working with Git"
+    tags: ["git"]
+    nodes:
+      - id: git_intro
+        name: "Introduction"
+        tags: ["intro"]
+        level: 1
+      - id: git_installation
+        name: "Installation"
+        tags: ["installation"]
+        level: 1
+      - id: git_workflow
+        name: "Workflow"
+        tags: ["workflow"]
+        level: 3
+  - id: productivity_tools
+    name: "Productivity Tools"
+    tags: ["productivity-tools"]
+    nodes:
+      - id: pt_slack
+        name: "Slack"
+        tags: ["slack"]
+        level: 1
+        nodes:
+          - id: pt_slack_usage
+            name: "Working with Slack"
+            tags: ["slack"]
+            level: 2
+      - id: pt_github
+        name: "GitHub"
+        tags: ["github"]
+        level: 1
+        nodes:
+          - id: pt_github_usage
+            name: "Working with GitHub"
+            tags: ["github"]
+            level: 2
+          - id: pt_github_ssh_keys
+            name: "SSH Keys"
+            tags: ["ssh-keys"]
+            level: 2
+      - id: pt_vscode
+        name: "Visual Studio Code"
+        tags: ["vscode"]
+        software_dependencies:
+          - vscode
+        nodes:
+          - id: pt_vscode_intro
+            name: "Introduction to Visual Studio Code"
+            tags: ["vscode"]
+            level: 1
+          - id: pt_vscode_extensions
+            name: "Extensions"
+            tags: ["vscode"]
+            level: 2
+          - id: pt_vscode_settings
+            name: "Settings"
+            tags: ["vscode"]
+            level: 2
+          - id: pt_vscode_editor
+            name: "Editor"
+            tags: ["vscode"]
+            level: 2
+          - id: pt_vscode_terminal
+            name: "Terminal"
+            tags: ["vscode"]
+            level: 2
+          - id: pt_vscode_debugging
+            name: "Debugging"
+            tags: ["vscode"]
+            level: 2

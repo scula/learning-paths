@@ -1,41 +1,135 @@
 version: v1
-name: "Python Developer Path"
-id: python_developer_path_easy
+name: "Introduction to Python for everyone"
+id: introduction_python_for_all
 description: |
-  An ordered collection of steps that cover
-  all of the necessary areas of knowledge
-  required for working as a Python developer.
+  An overview and quick start into the programming with Python
 level: easy
-chapters:
-  - id: python_getting_started
-    name: "Computer Science Intro"
-    steps:
-      - id: python_internet_intro
-        topic_id: internet_intro
-      - id: python_os_intro
-        topic_id: os_intro
-      - id: python_algo_intro
-        topic_id: algo_intro
-  - id: python_connectivity
-    name: "Connectivity around us"
-    steps:
-      - id: python_client_server_arch
-        topic_id: networking_client_server_architecture
-      - id: python_osi_model
-        topic_id: networking_osi_model
-      - id: python_http
-        topic_id: networking_protocol_http
-      - id: python_data_interchange_formats
-        topic_id: networking_data_interchange_formats
-      - id: python_rest
-        topic_id: sas_rest
-  - id: first_python_interaction
-    name: "First Python Program and Development Environment"
-    description: "Launch your first python program and learn about development environment and how to set it up"
-    steps:
-      - id: python_environment_intro
-        topic_id: py_setting_up_env
-      - id: python_cmd_intro
-        topic_id: os_cmd_intro
-      - id: python_first_launch
-        topic_id: py_hello_world
+sprints:
+  - id: 0
+    name: "How it works?"
+    lessons:
+      - id: 1
+        name: "Welcome to the course!"
+        node_id: "custom"
+      - id: 2
+        name: "Where Python is used and what can you do with it?"
+        node_id: "custom"
+      - id: 3
+        name: "Education process at Amazemind"
+        node_id: "custom"
+      - id: 4
+        name: "What you will learn in this course?"
+        node_id: "custom"
+      - id: 5
+        name: "Good luck!"
+        node_id: "custom"
+  - id: 1
+    name: "Python basics"
+    lessons:
+      - name: "Goal of the sprint"
+        node_id: "custom"
+      - name: "Python Philosophy"
+        node_id: "py_philosophy"
+      - name: "Introduction to Slack"
+        node_id: "pt_slack_usage"
+      - name: "First steps in Python"
+        node_id: "py_first_steps"
+      - name: "Python Syntax"
+        node_id: "py_syntax"
+      - name: "Python variables and types"
+        node_id: "data_types_and_variables"
+      - name: "Working with Numbers in Python"
+        node_id: "py_numbers"
+      - name: "Working with Strings in Python"
+        node_id: "py_strings"
+      - name: "Command line and console"
+        node_id: "os_cmd_intro"
+      - name: "Output to screen"
+        node_id: "py_print"
+      - name: "Writing clean code: Variable naming"
+        node_id: "py_variable_names"
+      - name: "Data structures in Python"
+        node_id: "py_data_structures"
+      - name: "Python Lists"
+        node_id: "py_lists"
+      - name: "Python Tuples"
+        node_id: "py_tuples"
+      - name: "Controlling flow of the program"
+        node_id: "python_control_flow"
+      - name: "Conditional Statements"
+        node_id: "py_conditional_statements"
+      - name: "Loops"
+        node_id: "py_loops"
+      - name: "Boolean Expressions"
+        node_id: "py_boolean"
+      - name: "Functions"
+        node_id: python_functions
+      - name: "What do functions return?"
+        node_id: "py_returned_values"
+      - name: "Variable scope and functions"
+        node_id: "py_variable_scope"
+      - name: "Python Dictionaries"
+        node_id: "py_dictionaries"
+      - name: "Python Sets"
+        node_id: "py_sets"
+      - name: "String Formatting"
+        node_id: "py_string_formatting"
+      - name: "Reading from the Console"
+        node_id: "py_input"
+      - name: "Project: Hangman Game"
+        node_id: "custom"
+      - name: "Project: Finance Tracker"
+        node_id: "custom"
+  - id: 2
+    name: "Going further"
+    lessons:
+      - name: "Goal of this sprint"
+        node_id: "custom"
+      - name: "Python Modules"
+        node_id: "py_modules"
+      - name: "Importing modules"
+        node_id: "py_imports"
+      - name: "Python Packages"
+        node_id: "py_packages"
+      - name: "Virtual Environments"
+        node_id: "py_virtualenv"
+      - name: "Package manager"
+        node_id: "py_pip"
+      - name: "Errors and Exceptions"
+        node_id: "py_exceptions"
+      - name: "Advanced flow control"
+        node_id: "py_break_continue"
+      - name: "Python Classes"
+        node_id: "py_oop_classes"
+      - name: "Python Objects"
+        node_id: "py_oop_objects"
+      - name: "Python Inheritance"
+        node_id: "py_oop_inheritance"
+      - name: "Class Methods"
+        node_id: "py_oop_class_methods"
+      - name: "File Handling"
+        node_id: "py_file_io"
+      - name: "Commad Line Applications"
+        node_id: "python_cli"
+      - name: "Learning about Click package"
+        node_id: "py_click_intro"
+      - name: "Deep dive into Click"
+        node_id: "py_click_deep_dive"
+      - name: "Working in VSCode"
+        node_id: "pt_vscode_intro"
+      - name: "Working in terminal with VSCode"
+        node_id: "pt_vscode_terminal"
+      - name: "Learning about GitHub"
+        node_id: "pt_github_usage"
+      - name: "Adding SSH key"
+        node_id: "pt_github_ssh_keys"
+      - name: "Learning about Git"
+        node_id: "git_intro"
+      - name: "Git installation"
+        node_id: "git_installation"
+      - name: "Git workflow"
+        node_id: "git_workflow"
+      - name: "Project: Task Manager"
+        node_id: "custom"
+      - name: "Project: File Organiser"
+        node_id: "custom"
