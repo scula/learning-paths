@@ -4,29 +4,23 @@ id: introduction_python_for_all
 description: |
   An overview and quick start into the programming with Python
 level: easy
+software_dependencies:
+  - name: python
+    version: 3.11.x
+  - name: click
+    version: 8.1.x
 sprints:
   - id: 0
     name: "How it works?"
     lessons:
-      - id: 1
-        name: "Welcome to the course!"
-        node_id: "custom"
-      - id: 2
-        name: "Where Python is used and what can you do with it?"
-        node_id: "custom"
-      - id: 3
-        name: "Education process at Amazemind"
-        node_id: "custom"
-      - id: 4
-        name: "What you will learn in this course?"
-        node_id: "custom"
-      - id: 5
-        name: "Good luck!"
-        node_id: "custom"
+      - name: "Welcome to the course in Python!"
+        node_id: "helper_py_intro_welcome"
+      - name: "Education process at Amazemind"
+        node_id: "helper_py_intro_education_process"
   - id: 1
     name: "Python basics"
     lessons:
-      - name: "Goal of the sprint"
+      - name: "Intro to the sprint"
         node_id: "custom"
       - name: "Python Philosophy"
         node_id: "py_philosophy"

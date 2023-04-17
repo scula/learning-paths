@@ -14,13 +14,26 @@ software_dependence_map:
         - version: 8.1.x
           dependencies:
             - name: python
-              versions:
-                - 3.11.x
+              version: 3.11.x
     - name: vscode
       versions:
         - version: 1.77.x
           dependencies:
 nodes:
+  - id: python_introduction_helper_nodes
+    name: "Python Introduction Helper Nodes"
+    tags: ["python", "helper-nodes"]
+    software_dependencies:
+      - python
+    nodes:
+      - id: helper_py_intro_welcome
+        name: "Welcome to the course in Python!"
+        level: 1
+        tags: ["welcome"]
+      - id: helper_py_intro_education_process
+        name: "Education process at Amazemind"
+        level: 1
+        tags: ["education-process"]
   - id: algorithms
     name: Algorithms
     tags: ["algorithms"]
@@ -220,6 +233,14 @@ nodes:
                 name: "First Steps"
                 tags: ["first-steps"]
                 level: 1
+              - id: py_syntax
+                name: "Syntax in Python"
+                tags: ["syntax", "indentation"]
+                level: 1
+              - id: py_comments
+                name: "Comments in Python"
+                tags: ["comments"]
+                level: 1
           - id: data_types_and_variables
             name: "Data Types and Variables"
             tags: ["data-types", "variables", "types"]
@@ -264,28 +285,7 @@ nodes:
                 name: "Dictionaries"
                 tags: ["dictionaries", "hash-tables"]
                 level: 2
-          - id: python_entry
-            name: "Python Entry"
-            nodes:
-              - id: py_program_exec
-                name: "Python and interpreter programming languages"
-                tags: ["python"]
-                level: 4
-              - id: py_setting_up_env
-                name: "Setting up Python development environment"
-                tags: ["dev-env"]
-                level: 4
-              - id: python_syntax
-                name: "How Python is structured and written"
-                nodes:
-                  - id: py_syntax
-                    name: "Syntax in Python"
-                    tags: ["syntax", "indentation"]
-                    level: 1
-                  - id: py_comments
-                    name: "Comments in Python"
-                    tags: ["comments"]
-                    level: 1
+
           - id: python_control_flow
             name: "Control Flow"
             tags: ["control-flow"]
