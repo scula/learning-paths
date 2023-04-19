@@ -1,0 +1,23 @@
+- type: "header"
+  value: "Introduction to the Learning Process"
+- type: "paragraph"
+  value: |
+    # Introduction to the Learning Process
+
+    Welcome to our innovative learning platform! In this course, we've designed a unique and engaging learning process to help you become a proficient Python programmer. Let's go over the key features of this process:
+
+    ## The Roadmap
+
+    As you progress through the course, you'll be following a visually engaging roadmap that resembles a city. Each district in the city represents a topic you'll be studying. Grouping similar topics together in this way not only helps you memorize and relate concepts more easily but also makes the learning journey more enjoyable.
+
+    ## Sprints and Projects
+
+    At the end of each sprint, you'll have the opportunity to choose a project that interests you. During the project, you'll work closely with our professional developers through several rounds of code review. They'll provide you with valuable feedback and guidance, ensuring that you're on the right track and learning effectively.
+
+    ## AI-Assisted Learning
+
+    Our platform integrates AI assistance to make your learning experience more interactive and personalized. If you come across an unfamiliar word or concept in a lesson, simply select it, and the AI will provide a helpful explanation. This allows you to quickly clarify any doubts and continue learning without disruptions.
+
+    In addition to contextual help within lessons, you can also rely on the AI for assistance when working on your project. If you encounter any difficulties or need guidance, the AI will be there to help you overcome obstacles and continue making progress.
+
+    With this powerful combination of a visually engaging roadmap, hands-on projects with expert feedback, and AI-assisted learning, you're well-equipped to master Python programming. Get ready for an exciting and fulfilling learning journey!
