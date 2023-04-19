@@ -1,0 +1,11 @@
+version: v1
+lessons:
+  - node_name: py_philosophy
+    versions:
+      - repo_owner: amazemind-io
+        repo_name: learning-paths
+        path: lessons/programming_languages/python/py_overview/py_philosophy.yaml
+        sha: to_be_done
+        status: draft
+        software_dependencies:
+          - id: py_3_11_x
