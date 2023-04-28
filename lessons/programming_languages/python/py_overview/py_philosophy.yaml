@@ -1,58 +1,63 @@
-- type: "header"
-  value: "Python Philosophy"
-- type: "paragraph"
-  values: |
-    # Python Philosophy: The Zen of Python
+name: "Python Philosophy"
+node_ref: "py_philosophy"
+software_dependencies:
+  - id: py_3_11_x
+content:
+  - type: "header"
+    value: "Python Philosophy"
+  - type: "paragraph"
+    values: |
+      # Python Philosophy: The Zen of Python
 
-    ## Introduction
+      ## Introduction
 
-    In this lesson, we will introduce the guiding principles behind the design and development of the Python programming language, known as the Zen of Python. Understanding these principles will help you write clean, efficient, and Pythonic code.
+      In this lesson, we will introduce the guiding principles behind the design and development of the Python programming language, known as the Zen of Python. Understanding these principles will help you write clean, efficient, and Pythonic code.
 
-    ## The Zen of Python
+      ## The Zen of Python
 
-    The Zen of Python is a collection of 19 software design principles written by Tim Peters. These aphorisms emphasize simplicity, readability, and elegance in Python code. They can be accessed by typing `import this` in a Python interpreter.
+      The Zen of Python is a collection of 19 software design principles written by Tim Peters. These aphorisms emphasize simplicity, readability, and elegance in Python code. They can be accessed by typing `import this` in a Python interpreter.
 
-    Here are the 19 principles of the Zen of Python:
+      Here are the 19 principles of the Zen of Python:
 
-    1. Beautiful is better than ugly.
-    2. Explicit is better than implicit.
-    3. Simple is better than complex.
-    4. Complex is better than complicated.
-    5. Flat is better than nested.
-    6. Sparse is better than dense.
-    7. Readability counts.
-    8. Special cases aren't special enough to break the rules.
-    9. Although practicality beats purity.
-    10. Errors should never pass silently.
-    11. Unless explicitly silenced.
-    12. In the face of ambiguity, refuse the temptation to guess.
-    13. There should be one-- and preferably only one --obvious way to do it.
-    14. Although that way may not be obvious at first unless you're Dutch.
-    15. Now is better than never.
-    16. Although never is often better than *right* now.
-    17. If the implementation is hard to explain, it's a bad idea.
-    18. If the implementation is easy to explain, it may be a good idea.
-    19. Namespaces are one honking great idea -- let's do more of those!
+      1. Beautiful is better than ugly.
+      2. Explicit is better than implicit.
+      3. Simple is better than complex.
+      4. Complex is better than complicated.
+      5. Flat is better than nested.
+      6. Sparse is better than dense.
+      7. Readability counts.
+      8. Special cases aren't special enough to break the rules.
+      9. Although practicality beats purity.
+      10. Errors should never pass silently.
+      11. Unless explicitly silenced.
+      12. In the face of ambiguity, refuse the temptation to guess.
+      13. There should be one-- and preferably only one --obvious way to do it.
+      14. Although that way may not be obvious at first unless you're Dutch.
+      15. Now is better than never.
+      16. Although never is often better than *right* now.
+      17. If the implementation is hard to explain, it's a bad idea.
+      18. If the implementation is easy to explain, it may be a good idea.
+      19. Namespaces are one honking great idea -- let's do more of those!
 
-    Now try it yourself:
-- type: "codeblock-exec"
-  language: "python"
-  value: |
-    import this
-- type: "paragraph"
-  value: |
-    ## Evaluating the Zen of Python
+      Now try it yourself:
+  - type: "codeblock-exec"
+    language: "python"
+    value: |
+      import this
+  - type: "paragraph"
+    value: |
+      ## Evaluating the Zen of Python
 
-    The principles outlined in the Zen of Python are designed to encourage developers to write code that is clean, efficient, and easy to understand. Let's take a closer look at a few of these principles:
+      The principles outlined in the Zen of Python are designed to encourage developers to write code that is clean, efficient, and easy to understand. Let's take a closer look at a few of these principles:
 
-    - **"Beautiful is better than ugly"**: This principle emphasizes the importance of aesthetics in code. Beautiful code is not only pleasing to read but also easier to maintain and understand.
+      - **"Beautiful is better than ugly"**: This principle emphasizes the importance of aesthetics in code. Beautiful code is not only pleasing to read but also easier to maintain and understand.
 
-    - **"Explicit is better than implicit"**: When writing code, it's better to be explicit about your intentions rather than relying on implicit behavior. This makes the code easier to understand and reduces the likelihood of unexpected behavior.
+      - **"Explicit is better than implicit"**: When writing code, it's better to be explicit about your intentions rather than relying on implicit behavior. This makes the code easier to understand and reduces the likelihood of unexpected behavior.
 
-    - **"Simple is better than complex"**: It's important to strive for simplicity in your code. Complex solutions can be harder to understand and maintain, so it's often better to choose the simplest approach that solves the problem effectively.
+      - **"Simple is better than complex"**: It's important to strive for simplicity in your code. Complex solutions can be harder to understand and maintain, so it's often better to choose the simplest approach that solves the problem effectively.
 
-    - **"Readability counts"**: The readability of your code is crucial, as it impacts how easily other developers can understand, maintain, and contribute to your project. Ensuring that your code is well-organized and well-documented is key to making it more readable.
+      - **"Readability counts"**: The readability of your code is crucial, as it impacts how easily other developers can understand, maintain, and contribute to your project. Ensuring that your code is well-organized and well-documented is key to making it more readable.
 
-    - **"Errors should never pass silently"**: This principle stresses the importance of handling errors properly. If an error occurs, it's better to alert the user or developer, rather than allowing the program to continue running with incorrect results.
+      - **"Errors should never pass silently"**: This principle stresses the importance of handling errors properly. If an error occurs, it's better to alert the user or developer, rather than allowing the program to continue running with incorrect results.
 
-    By applying these principles to your Python projects, you can create code that is more efficient, maintainable, and easier for other developers to understand. Remember, the Zen of Python is a set of guidelines, not strict rules, so use your best judgment to determine which principles are most applicable in your specific situation.
+      By applying these principles to your Python projects, you can create code that is more efficient, maintainable, and easier for other developers to understand. Remember, the Zen of Python is a set of guidelines, not strict rules, so use your best judgment to determine which principles are most applicable in your specific situation.

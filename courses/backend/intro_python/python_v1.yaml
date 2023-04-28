@@ -1,0 +1,73 @@
+version: v1
+course_name: introduction_to_python
+name: "Introduction to Python for everyone"
+description: |
+  An overview and quick start into the programming with Python
+level: easy
+software_dependencies:
+  - id: py_3_11_x
+  - id: click_8_1_x
+sprints:
+  - name: "How it works?"
+    lessons:
+      - node_name: "helper_py_intro_welcome"
+        lesson_sha: 7d230abcb2afef875dfb264ca1cfd8d03f6a02f7
+      - node_name: "helper_py_intro_education_process"
+        lesson_sha: dbcf79b
+  - name: "Python basics"
+    lessons:
+      - node_name: "helper_py_sprint_one"
+      - node_name: "py_philosophy"
+        lesson_version_id: 1
+      - node_name: "pt_slack_usage"
+      - node_name: "py_first_steps"
+      - node_name: "py_syntax"
+      - node_name: "data_types_and_variables"
+      - node_name: "py_numbers"
+      - node_name: "py_strings"
+      - node_name: "os_cmd_intro"
+      - node_name: "py_print"
+      - node_name: "py_variable_names"
+      - node_name: "py_data_structures"
+      - node_name: "py_lists"
+      - node_name: "py_tuples"
+      - node_name: "python_control_flow"
+      - node_name: "py_conditional_statements"
+      - node_name: "py_loops"
+      - node_name: "py_boolean"
+      - node_name: python_functions
+      - node_name: "py_returned_values"
+      - node_name: "py_variable_scope"
+      - node_name: "py_dictionaries"
+      - node_name: "py_sets"
+      - node_name: "py_string_formatting"
+      - node_name: "py_input"
+      - node_name: "custom"
+      - node_name: "custom"
+  - name: "Going further"
+    lessons:
+      - node_name: "custom"
+      - node_name: "py_modules"
+      - node_name: "py_imports"
+      - node_name: "py_packages"
+      - node_name: "py_virtualenv"
+      - node_name: "py_pip"
+      - node_name: "py_exceptions"
+      - node_name: "py_break_continue"
+      - node_name: "py_oop_classes"
+      - node_name: "py_oop_objects"
+      - node_name: "py_oop_inheritance"
+      - node_name: "py_oop_class_methods"
+      - node_name: "py_file_io"
+      - node_name: "python_cli"
+      - node_name: "py_click_intro"
+      - node_name: "py_click_deep_dive"
+      - node_name: "pt_vscode_intro"
+      - node_name: "pt_vscode_terminal"
+      - node_name: "pt_github_usage"
+      - node_name: "pt_github_ssh_keys"
+      - node_name: "git_intro"
+      - node_name: "git_installation"
+      - node_name: "git_workflow"
+      - node_name: "custom"
+      - node_name: "custom"

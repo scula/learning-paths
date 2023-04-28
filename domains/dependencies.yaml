@@ -1,0 +1,7 @@
+software_dependencies:
+  - id: py_3_11_x
+    name: python
+    version: 3.11.x
+  - id: click_8_1_x
+    name: click
+    version: 8.1.x

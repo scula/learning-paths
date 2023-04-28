@@ -1,0 +1,12 @@
+version: v1
+courses:
+  - course_name: introduction_to_python
+    versions:
+      - repo_owner: amazemind-io
+        repo_name: learning-paths
+        path: courses/backend/intro_python/python_v1.yaml
+        sha: 3d5ae0a87d6658d455b18b596b1b1f7aafbd265d
+        status: draft
+        software_dependencies:
+          - id: py_3_11_x
+          - id: click_8_1_x

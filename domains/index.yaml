@@ -20,20 +20,27 @@ software_dependence_map:
         - version: 1.77.x
           dependencies:
 nodes:
-  - id: python_introduction_helper_nodes
-    name: "Python Introduction Helper Nodes"
-    tags: ["python", "helper-nodes"]
-    software_dependencies:
-      - python
+  - id: helper
+    name: "Course Specific Nodes"
     nodes:
-      - id: helper_py_intro_welcome
-        name: "Welcome to the course in Python!"
-        level: 1
-        tags: ["welcome"]
-      - id: helper_py_intro_education_process
-        name: "Education process at Amazemind"
-        level: 1
-        tags: ["education-process"]
+      - id: helper_py
+        name: "Python Introduction Helper Nodes"
+        tags: ["python", "helper-nodes"]
+        software_dependencies:
+          - python
+        nodes:
+          - id: helper_py_intro_welcome
+            name: "Welcome to the course in Python!"
+            level: 1
+            tags: ["welcome"]
+          - id: helper_py_intro_education_process
+            name: "Education process at Amazemind"
+            level: 1
+            tags: ["education-process"]
+          - id: helper_py_sprint_one
+            name: "Sprint goal and overview"
+            level: 1
+            tags: ["sprint-one"]
   - id: algorithms
     name: Algorithms
     tags: ["algorithms"]
@@ -241,7 +248,7 @@ nodes:
                 name: "Comments in Python"
                 tags: ["comments"]
                 level: 1
-          - id: data_types_and_variables
+          - id: py_data_types_and_variables
             name: "Data Types and Variables"
             tags: ["data-types", "variables", "types"]
             nodes:
@@ -285,8 +292,7 @@ nodes:
                 name: "Dictionaries"
                 tags: ["dictionaries", "hash-tables"]
                 level: 2
-
-          - id: python_control_flow
+          - id: py_control_flow
             name: "Control Flow"
             tags: ["control-flow"]
             nodes:
@@ -306,7 +312,7 @@ nodes:
                 name: "Exceptions"
                 tags: ["exceptions"]
                 level: 2
-          - id: python_functions
+          - id: py_functions
             name: "Functions"
             tags: ["functions"]
             nodes:
@@ -338,7 +344,7 @@ nodes:
                 name: "Built-in Functions"
                 tags: ["built-in-functions"]
                 level: 4
-          - id: python_algorithms_implementations
+          - id: py_algorithms_implementations
             name: "Algorithms Implementations in Python"
             tags: ["algorithms", "py-implementation"]
             nodes:
@@ -355,7 +361,7 @@ nodes:
                 level: 4
                 dependencies:
                   - algo_sorting_bubble
-          - id: python_oop
+          - id: py_oop
             name: "Object Oriented Programming"
             tags: ["oop"]
             nodes:
@@ -403,7 +409,7 @@ nodes:
                 name: "Static Methods"
                 tags: ["static-methods"]
                 level: 2
-          - id: python_packages
+          - id: py_packages
             name: "Packages"
             tags: ["packages"]
             nodes:
@@ -427,7 +433,7 @@ nodes:
                 name: "Pip"
                 tags: ["pip"]
                 level: 2
-          - id: python_debugging
+          - id: py_debugging
             name: "Debugging"
             tags: ["debugging"]
             nodes:
@@ -441,7 +447,7 @@ nodes:
                 level: 2
                 dependencies:
                   - pt_vscode_debugging
-          - id: python_input_output
+          - id: py_input_output
             name: "Input and Output"
             tags: ["input-output"]
             nodes:
@@ -473,7 +479,7 @@ nodes:
                 name: "Command Line Output"
                 tags: ["command-line-output"]
                 level: 2
-          - id: python_cli
+          - id: py_cli
             name: "Command Line Interface"
             tags: ["cli"]
             software_dependencies:

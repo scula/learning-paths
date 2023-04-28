@@ -29,3 +29,7 @@ Software dependencies defined for one node are applied to all children nodes and
 - ID exists in knowledge domain tree
 - The software versions defined match the node restrictions on software version
   After new lesson version was created and all checks passed, the lesson version goes to "ready" status and could "published" laster
+
+## How it works?
+
+- If SHA for course, sprint, lesson or block version gets changed, new ID is generated

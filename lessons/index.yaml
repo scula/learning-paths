@@ -1,11 +1,29 @@
 version: v1
 lessons:
-  - node_name: py_philosophy
+  - lesson_name: py_philosophy
     versions:
-      - repo_owner: amazemind-io
+      - node_name: py_philosophy
+        repo_owner: amazemind-io
         repo_name: learning-paths
+        sha: 7d230abcb2afef875dfb264ca1cfd8d03f6a02f7
         path: lessons/programming_languages/python/py_overview/py_philosophy.yaml
-        sha: to_be_done
-        status: draft
+        software_dependencies:
+          - id: py_3_11_x
+  - lesson_name: helper_py_intro_welcome
+    versions:
+      - node_name: helper_py_intro_welcome
+        repo_owner: amazemind-io
+        repo_name: learning-paths
+        sha: f85ad01
+        path: lessons/helper/helper_py/helper_py_intro_welcome.yaml
+        software_dependencies:
+          - id: py_3_11_x
+  - lesson_name: helper_py_intro_education_process
+    versions:
+      - node_name: helper_py_intro_education_process
+        repo_owner: amazemind-io
+        repo_name: learning-paths
+        sha: dbcf79b
+        path: lessons/helper/helper_py/helper_py_intro_education_process.yaml
         software_dependencies:
           - id: py_3_11_x
