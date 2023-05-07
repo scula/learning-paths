@@ -4,7 +4,7 @@ software_dependencies:
   - id: py_3_11_x
 content:
   - type: "header"
-    value: "Python Philosophy"
+    value: "Python Philosophy 🎃"
   - type: "paragraph"
     values: |
       # Python Philosophy: The Zen of Python
