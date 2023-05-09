@@ -1,0 +1,78 @@
+name: "Working with Python Numbers"
+node_ref: "working_with_python_numbers"
+software_dependencies:
+  - id: py_3_11_x
+content:
+  - type: "paragraph"
+    value: |
+      # Working with Python Numbers
+      In this lesson, you will learn how to work with Python numbers, including integers and floats.
+      * Integers
+      * Floats
+      * Mathematical operations
+      * Numeric functions
+  - type: "image"
+    description: "An illustration showing different number types in Python"
+    value: ""
+  - type: "codeblock-exec"
+    description: "Using integers and floats in Python"
+    language: "python"
+    value: |
+      a = 5
+      b = 2.5
+      print(a, b)
+  - type: "kata"
+    task: |
+      # Kata task
+      Implement a function `multiply` that takes two numbers and returns their product.
+    boilerplate: |
+      # Kata start code
+      def multiply(a, b):
+        pass
+    solution: |
+      # Kata solution
+      def multiply(a, b):
+        return a * b
+  - type: "quiz"
+    items:
+      - question: "What is the result of `3 / 2` in Python?"
+        answers:
+          - value: "1"
+          - value: "1.5"
+            is_correct: true
+          - value: "2"
+      - question: "What is the result of `5 // 2` in Python?"
+        answers:
+          - value: "2"
+            is_correct: true
+          - value: "2.5"
+          - value: "3"
+  - type: "paragraph"
+    value: |
+      # Rounding and Modulus Operations
+      In this section, you will learn how to round numbers and perform modulus operations in Python.
+      * Rounding numbers
+      * Modulus operations
+  - type: "codeblock-exec"
+    description: "Rounding numbers and performing modulus operations in Python"
+    language: "python"
+    value: |
+      rounded = round(3.14159, 2)
+      remainder = 7 % 3
+      print(rounded, remainder)
+  - type: "quiz"
+    items:
+      - question: "What is the result of `round(2.5)` in Python?"
+        answers:
+          - value: "2"
+          - value: "3"
+            is_correct: true
+      - question: "What is the result of `13 % 5` in Python?"
+        answers:
+          - value: "2"
+            is_correct: true
+          - value: "3"
+          - value: "8"
+  - type: "video"
+    description: "A video tutorial explaining the basics of working with Python numbers"
+    value: ""
