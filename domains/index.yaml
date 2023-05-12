@@ -1,24 +1,7 @@
 version: v1
 id: global_domain
 name: "Global Domain Containing All nodes"
-tags: ["global"]
 description: "Global Node containing all nodes"
-software_dependence_map:
-  software:
-    - name: python
-      versions:
-        - version: 3.11.x
-          dependencies:
-    - name: click
-      versions:
-        - version: 8.1.x
-          dependencies:
-            - name: python
-              version: 3.11.x
-    - name: vscode
-      versions:
-        - version: 1.77.x
-          dependencies:
 nodes:
   - id: helper
     name: "Course Specific Nodes"
@@ -26,8 +9,6 @@ nodes:
       - id: helper_py
         name: "Python Introduction Helper Nodes"
         tags: ["python", "helper-nodes"]
-        software_dependencies:
-          - python
         nodes:
           - id: helper_py_intro_welcome
             name: "Welcome to the course in Python!"
@@ -207,8 +188,6 @@ nodes:
       - id: programming_language_python
         name: Python
         tags: ["python"]
-        software_dependencies:
-          - python
         nodes:
           - id: py_guidelines
             name: "Rules and agreements for writing clean Python code"
@@ -254,8 +233,41 @@ nodes:
             nodes:
               - id: py_numbers
                 name: "Numbers"
+                dependencies:
+                  - py_syntax
+                learn_goals:
+                  - "How numbers are represented in Python and Computer?"
+                  - "Different type of numbers in Python"
+                  - "Basic operations on numbers"
+                  - "Variables and variable types"
                 tags: ["numbers", "int", "float"]
                 level: 2
+                nodes:
+                  - id: py_numbers_precision_error
+                    name: "Precision error in Python"
+                    tags: ["numbers", "precision-error"]
+                    level: 4
+                    learn_goals:
+                      - "What is precision error?"
+                      - "How to avoid precision error?"
+                      - "Example 0.1 + 0.2 == 0.3"
+                  - id: py_numbers_math_module
+                    name: "Math module in Python"
+                    tags: ["numbers", "math", "module"]
+                    level: 4
+                    learn_goals:
+                      - "How to use math module in Python?"
+                      - "Useful functions"
+                  - id: py_numbers_internal_repr_and_bits
+                    name: "Internal representation and bitwise operations in Python"
+                    tags: ["numbers", "internal-representation", "bits"]
+                    level: 5
+                    learn_goals:
+                      - "Different notation systems"
+                      - "Binary system"
+                      - "How numbers are stored in binary format"
+                      - "How to convert numbers from one notation system to another?"
+                      - "Bitwise operations and how can they be used?"
               - id: py_strings
                 name: "Strings"
                 tags: ["strings"]
@@ -316,10 +328,6 @@ nodes:
             name: "Functions"
             tags: ["functions"]
             nodes:
-              - id: py_functions
-                name: "Functions"
-                tags: ["functions"]
-                level: 2
               - id: py_returned_values
                 name: "Returned Values"
                 tags: ["returned-values"]
@@ -413,10 +421,6 @@ nodes:
             name: "Packages"
             tags: ["packages"]
             nodes:
-              - id: py_packages
-                name: "Packages"
-                tags: ["packages"]
-                level: 2
               - id: py_modules
                 name: "Modules"
                 tags: ["modules"]
@@ -482,8 +486,6 @@ nodes:
           - id: py_cli
             name: "Command Line Interface"
             tags: ["cli"]
-            software_dependencies:
-              - click
             nodes:
               - id: py_click
                 name: "Click"
@@ -545,8 +547,6 @@ nodes:
       - id: pt_vscode
         name: "Visual Studio Code"
         tags: ["vscode"]
-        software_dependencies:
-          - vscode
         nodes:
           - id: pt_vscode_intro
             name: "Introduction to Visual Studio Code"

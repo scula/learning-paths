@@ -24,6 +24,8 @@ sprints:
       - node_name: "py_syntax"
       - node_name: "data_types_and_variables"
       - node_name: "py_numbers"
+        complementary:
+          - node_name: "py_numbers_precision_error"
       - node_name: "py_strings"
       - node_name: "os_cmd_intro"
       - node_name: "py_print"
