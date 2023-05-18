@@ -192,7 +192,7 @@ content:
       Pi = 3.141592653589793
       radius = 5
       area = Pi * radius ** 2
-    testcode: |
+    test_code: |
       from main import area, Pi, radius
       import unittest
       class TestSquareSpace(unittest.TestCase):
