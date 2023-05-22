@@ -250,7 +250,7 @@ nodes:
                     learn_goals:
                       - "What is precision error?"
                       - "How to avoid precision error?"
-                      - "Example 0.1 + 0.2 == 0.3"
+                      - "Case of 0.1 + 0.2 == 0.3"
                   - id: py_numbers_math_module
                     name: "Math module in Python"
                     tags: ["numbers", "math", "module"]

@@ -7,17 +7,3 @@ content:
     value: "Welcome to Python Introduction Course"
   - type: "paragraph"
     value: |
-      lesson: |
-      # Welcome to the Python Course, people!
-
-      Hello and welcome to our Python course! We're excited to have you on board as we embark on this journey together. We promise to keep things fun and engaging, with just the right amount of humor to keep you entertained (but not too much, we promise!).
-
-      Over the course of this program, we'll be covering the basics of Python programming. Whether you're aiming to become a backend developer, a data analyst, or just want to learn a new skill, this course will provide you with a solid foundation to achieve your goals.
-
-      To keep things interesting and challenging, we've planned two sprints, with a project at the end of each sprint. These projects will give you a chance to apply the skills you've learned and demonstrate your progress. But don't worry, you won't be alone! Each project will be reviewed by a professional developer, who will provide you with valuable feedback and guidance.
-
-      In this course, you'll be using our state-of-the-art learning platform that incorporates AI assistance to provide contextual help whenever you need it. This way, you'll never feel lost or overwhelmed, and you'll have all the support you need to succeed.
-
-      So, let's get started, shall we? Remember, Rome wasn't built in a day, and neither are Python masters. Take your time, practice, and most importantly, have fun while learning. We wish you the best of luck on your Python journey!
-
-      And hey, why did the snake refuse to play cards? Because it couldn't hold them! 😉 (Don't worry, the Python content is way better than our snake jokes!)

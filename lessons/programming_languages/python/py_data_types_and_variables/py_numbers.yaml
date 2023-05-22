@@ -159,13 +159,23 @@ content:
     language: python
   - type: quiz
     quiz_items:
-      - question: "In the previous code we changed variable `a`` and then used it to calculate `d`. \nWhat value does `d` hold? Try to calculate it yourself or add `print(d)` to the end of the code and run it.\"\n"
+      - question: "In the previous code we changed variable `a` and then used it to calculate `d`. \nWhat value does `d` hold? Try to calculate it yourself or add `print(d)` to the end of the code and run it.\"\n"
         answers:
           - value: "6"
+            explanation: "a is 6 but d is 8"
           - value: "8"
             correct: true
+            explanation: "a = 4 + 2.0 = 6\n d = 6 + 2.0 = 8"
           - value: "10"
           - value: "12"
+      - question: "What is true about working with numbers in Python?"
+        answers:
+          - value: "We must declare a type for each variable before using it"
+          - value: "We can assign a new value to a variable of a different type"
+            correct: true
+          - value: "We can use variables of the same type in operations"
+            correct: true
+          - value: "We can use variables of different types in operations"
   - type: paragraph
     value: |-
       Now that you've learned about numbers, variables, and dynamic typing in Python, it's time to put your knowledge to the test with a practice task. Your task is to calculate the area of a circle with a radius of 5. We've already defined the variables `pi`, `area`, and `radius` for you. All you need to do is assign the result of the calculation to the variable `area`.
