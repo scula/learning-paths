@@ -57,7 +57,6 @@ content:
   - type: paragraph
     value: |-
       In real-world scenarios, data is often used in multiple places, and formulas can become quite complex. To make our code more efficient and easier to read, we use variables. Variables allow us to store and manipulate data, making it simpler to work with large formulas or reuse data throughout our code. Let's take a look at a code block demonstrating basic math operations using variables, accompanied by comments to help you understand each step:
-
       ```python
       # Defining variables
       a = 5
