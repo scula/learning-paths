@@ -5,7 +5,11 @@ software_dependencies_ids:
 content:
   - type: paragraph
     value: |-
-      In this lesson, we will explore the fascinating world of numbers in Python. We'll dive into the topics of variables and number data types, helping you understand how to work with them effectively. It's important to note that humans and computers process numbers differently, and we'll shed some light on these differences. To reinforce your understanding, we'll also provide a practice task involving numbers, allowing you to apply your newfound knowledge and skills. Get ready to embark on a numerical adventure with Python!
+      # Working with numbers in Python
+      In this lesson, we will explore the fascinating world of numbers in Python. 
+      We'll dive into the topics of variables and number data types, helping you understand how to work with them effectively. 
+      It's important to note that humans and computers process numbers differently, and we'll shed some light on these differences. 
+      To reinforce your understanding, we'll also provide a practice task involving numbers, allowing you to apply your newfound knowledge and skills. Get ready to embark on a numerical adventure with Python!
     description: |
       Introduction to lesson about numbers in Python.
       Topics of variables and number data types are covered.
