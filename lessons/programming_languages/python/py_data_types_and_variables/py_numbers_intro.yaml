@@ -1,0 +1,214 @@
+name: Working with numbers in Python
+node_ref: working_with_python_numbers
+software_dependencies_ids:
+  - py_3_11_x
+content:
+  - type: paragraph
+    value: |-
+      # Working with numbers in Python
+      In this lesson, we will explore the fascinating world of numbers in Python. 
+      We'll dive into the topics of variables and number data types, helping you understand how to work with them effectively. 
+      It's important to note that humans and computers process numbers differently, and we'll shed some light on these differences. 
+      To reinforce your understanding, we'll also provide a practice task involving numbers, allowing you to apply your newfound knowledge and skills. Get ready to embark on a numerical adventure with Python!
+    description: |
+      Introduction to lesson about numbers in Python.
+      Topics of variables and number data types are covered.
+      Difference between how humans process numbers and computers.
+      Practice task with numbers.
+  - type: paragraph
+    value: |-
+      ## How and why we use numbers in Python?
+
+      Numbers play a crucial role in our daily lives, and programming languages like Python are no exception. Python has built-in support for numbers and mathematical operations, allowing us to manipulate data and perform calculations with ease. Let's take a look at a code block demonstrating basic math operations without using variables, accompanied by comments to help you understand each step:
+
+      ```python
+      # Addition
+      print(5 + 3)  # Output: 8
+
+      # Subtraction
+      print(10 - 4)  # Output: 6
+
+      # Multiplication
+      print(3 * 7)  # Output: 21
+
+      # Division
+      print(20 / 4)  # Output: 5.0
+      ```
+
+      As you can see, Python makes it simple to perform various mathematical operations, which will come in handy as you progress in your programming journey.
+    description: |
+      Second level title "How and why we use numbers in Python?"
+      Programming languages help manipulate data and numbers as well.
+      Python has built-in support for numbers and mathematical operations.
+      Codeblock with comments on basic math operations without variables
+  - type: paragraph
+    value: |-
+      Now that you've seen some examples of basic math operations in Python, we invite you to launch the following code and see the results for yourself. Before you do that, let's quickly touch upon the `print` function used in the code. The `print` function is a built-in Python function that takes one or more arguments and displays them as output. In our examples, we've used the `print` function to display the results of the mathematical operations. Go ahead, give it a try, and witness the power of Python in action!
+
+    description: |
+      Invitation to launch the following code.
+      Small reference on print function and its arguments.
+  - type: codeblock-exec
+    value: |
+      print("Addition of 1 + 1 is ", 1 + 1)
+      print("Subtraction of 341 - 159 is ", 341 - 159)
+      print("Multiplication of 39 * 83 is ", 39 * 83)
+      print("Division of 100 / 5 is ", 100 / 5)
+      print("Exponentiation of 2 ** 3 is ", 2 ** 3)
+    description: |
+      Basic math operations without variables
+    language: python
+  - type: paragraph
+    value: |-
+      In real-world scenarios, data is often used in multiple places, and formulas can become quite complex. To make our code more efficient and easier to read, we use variables. Variables allow us to store and manipulate data, making it simpler to work with large formulas or reuse data throughout our code. Let's take a look at a code block demonstrating basic math operations using variables, accompanied by comments to help you understand each step:
+      ```python
+      # Defining variables
+      a = 5
+      b = 3
+
+      # Addition
+      addition_result = a + b
+      print(addition_result)  # Output: 8
+
+      # Subtraction
+      subtraction_result = a - b
+      print(subtraction_result)  # Output: 2
+
+      # Multiplication
+      multiplication_result = a * b
+      print(multiplication_result)  # Output: 15
+
+      # Division
+      division_result = a / b
+      print(division_result)  # Output: 1.6666666666666667
+      ```
+
+      As you can see, using variables makes our code more organized and easier to understand, especially when dealing with complex calculations or data that needs to be reused.
+
+    description: |
+      Data used in different places and big formulas are not perfect that's why we use variables.
+      Codeblock with comments on basic math operations with variables
+  - type: paragraph
+    value: |-
+      While humans and computers both process numbers, there are some key differences in how they handle them. One such difference lies in the limitations of natural and floating-point numbers in Python, particularly in terms of range and precision. In Python, numbers are categorized into different types, such as integers (whole numbers) and floating-point numbers (numbers with decimal points).
+
+      Let's take a look at a code block demonstrating that numbers have different types, accompanied by comments to help you understand each step:
+
+      ```python
+      # Integer (whole number)
+      integer_number = 42
+      print(type(integer_number))  # Output: <class 'int'>
+
+      # Floating-point number (number with decimal points)
+      floating_point_number = 3.14
+      print(type(floating_point_number))  # Output: <class 'float'>
+
+      # Limitations in range and precision
+      large_integer = 10 ** 100
+      print(large_integer)  # Output: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+      imprecise_float = 0.1 + 0.2
+      print(imprecise_float)  # Output: 0.30000000000000004
+      ```
+
+      As demonstrated, Python can handle different types of numbers, but it's essential to be aware of the limitations in range and precision when working with them.
+
+    description: |
+      Difference between how humans process numbers and computers.
+      Limitations of natural and floating point numbers in Python (range, precision).
+      Different numbers have different types.
+      codeblock that numbers have different types with comments
+  - type: paragraph
+    value: |-
+      In Python, when we assign a value to a variable, we are performing an operation called "assignment." During this process, Python automatically sets a type for the variable based on the value assigned to it. This is one of the reasons why Python is considered a dynamically typed language, as the type of a variable can change during runtime.
+
+      For example, if you assign an integer value to a variable, Python will recognize it as an integer type. Similarly, if you assign a floating-point value, Python will recognize it as a float type. This dynamic typing feature makes Python flexible and easy to work with.
+
+      We encourage you to launch the following code and observe how Python automatically sets the type for variables based on the assigned values:
+
+      ```python
+      # Assigning an integer value
+      x = 10
+      print(type(x))  # Output: <class 'int'>
+
+      # Assigning a floating-point value
+      x = 3.14
+      print(type(x))  # Output: <class 'float'>
+      ```
+
+      As you can see, Python's dynamic typing allows you to work with variables effortlessly, adapting to the assigned values as needed.
+    description: |
+      Explain what assignment is.
+      Assigning a variable sets a type for it.
+      That's why Python is a dynamically typed language.
+      Invitation to launch the following code.
+  - type: codeblock-exec
+    value: |
+      a = 4
+      b = 2.0
+      c = 1.0 + 0.0j
+      # Now variables a, b and c hold different types of numbers
+      print("a is ", a)
+      print("b is ", b)
+      print("c is ", c)
+      # And we can use variables as part of operations
+      print("a + b is ", a + b)
+      # Moreover we can assign result of operation to a previously defined variable
+      a = a + b
+      # Or we can assign the result of an operation to a new variable
+      d = a + b
+    description: |
+      Setting variables, checking their types
+    language: python
+  - type: quiz
+    quiz_items:
+      - question: "In the previous code we changed variable `a` and then used it to calculate `d`. \nWhat value does `d` hold? Try to calculate it yourself or add `print(d)` to the end of the code and run it.\"\n"
+        answers:
+          - value: "6"
+            explanation: "a is 6 but d is 8"
+          - value: "8"
+            correct: true
+            explanation: "a = 4 + 2.0 = 6\n d = 6 + 2.0 = 8"
+          - value: "10"
+          - value: "12"
+      - question: "What is true about working with numbers in Python?"
+        answers:
+          - value: "We must declare a type for each variable before using it"
+          - value: "We can assign a new value to a variable of a different type"
+            correct: true
+          - value: "We can use variables of the same type in operations"
+            correct: true
+          - value: "We can use variables of different types in operations"
+  - type: paragraph
+    value: |-
+      Now that you've learned about numbers, variables, and dynamic typing in Python, it's time to put your knowledge to the test with a practice task. Your task is to calculate the area of a circle with a radius of 5. We've already defined the variables `pi`, `area`, and `radius` for you. All you need to do is assign the result of the calculation to the variable `area`.
+
+      Here's a brief description of the task:
+
+      1. Calculate the area of a circle with a radius of 5.
+      2. Use the provided variables `pi`, `area`, and `radius`.
+      3. Assign the result of the calculation to the variable `area`.
+
+      Give it a try, and see if you can successfully calculate the area of the circle using your newfound Python skills!
+    description: |
+      Task description and invitation to solve it.
+      Task is to calculate the area of a circle with radius 5.
+      The variable Pi, area and radius are already defined.
+      Assign the result of the calculation to the variable `area`.
+  - type: kata
+    boilerplate: |
+      Pi = 3.141592653589793
+      radius = 5
+      area = # your code here
+    task: "Calculate the area of a circle with a given radius. \nAssign the result of the calculation to the variable `area`.\n"
+    solution: |
+      Pi = 3.141592653589793
+      radius = 5
+      area = Pi * radius ** 2
+    test_code: |
+      from main import area, Pi, radius
+      import unittest
+      class TestSquareSpace(unittest.TestCase):
+          def test_square_space(self):
+              self.assertEqual(area, Pi * radius ** 2,
+                              "Make sure that you calculate the square space correctly.")
