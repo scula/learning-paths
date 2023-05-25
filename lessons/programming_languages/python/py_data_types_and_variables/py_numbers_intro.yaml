@@ -6,10 +6,14 @@ content:
   - type: paragraph
     value: |-
       # Working with numbers in Python
-      In this lesson, we will explore the fascinating world of numbers in Python. 
+      Any programming language designed to solve problems. Sometimes these problems require mathemiatical operations.
+      For example, banking applications, scientific research, farming and many more.
+
+      Python is no exception as it's used widely in different areas: from web development to data science.
+      In this lesson, we'll get you started with how to work with numbers in Python.
       We'll dive into the topics of variables and number data types, helping you understand how to work with them effectively. 
-      It's important to note that humans and computers process numbers differently, and we'll shed some light on these differences. 
-      To reinforce your understanding, we'll also provide a practice task involving numbers, allowing you to apply your newfound knowledge and skills. Get ready to embark on a numerical adventure with Python!
+      We'll also discuss the difference between how humans process numbers and computers, as well as the limitations of natural and floating-point numbers in Python.
+      There will also be a couple of practice tasks where you will have a chance to play around and solve your first mini projects in Python.
     description: |
       Introduction to lesson about numbers in Python.
       Topics of variables and number data types are covered.
