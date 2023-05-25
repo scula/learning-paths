@@ -1,0 +1,60 @@
+# Lesson reqs:
+# Motivation
+# Lesson goals
+# Technical depth
+# Documentation topics related
+# Structure
+# Tone of voice
+# Rules:
+# each content item value shouldn't exceed 500 characters
+# each line shouldn't exceed 100 characters
+# Possible content types are listed below
+# When generating the image and video leave url empties but add detailed description
+name: "Lesson Name"
+node_ref: "lesson_name_id"
+software_dependencies:
+  - id: programm_lang_dep_ids
+content:
+  - type: "paragraph" # contains markdown text (headers, lists, links, etc.)
+    value: |
+      # Lesson Name
+      Some content
+      * Some list
+  - type: "image" # description contains detailed description of image and value holds the link
+    description: "Detailed description of image (graph or image)"
+    value: "https://some_link_to_image"
+  - type: "codeblock-exec" # description contains detailed description of codeblock and value holds the code
+    description: "Detailed description of codeblock"
+    language: "python"
+    value: |
+      import this
+  - type: "kata" # Kata has task, start code and solution
+    task: |
+      # Kata task
+      Some task
+      For example, implement function `sum` that takes two numbers and returns their sum
+    boilerplate: |
+      # Kata start code
+      def sum(a, b):
+        pass
+    solution: |
+      # Kata solution
+      def sum(a, b):
+        return a + b
+  - type: "quiz" # Quiz has question and answers
+    items:
+      - question: "Question 1"
+        answers:
+          - value: "Answer 1"
+            is_correct: true
+          - value: "Answer 2"
+          - value: "Answer 3"
+      - question: "Question 2"
+        answers:
+          - value: "Answer 1"
+          - value: "Answer 2"
+            is_correct: true
+          - value: "Answer 3"
+  - type: "video" # Video has description and value holds the link
+    description: "Detailed description of video"
+    value: "https://some_link_to_video"
