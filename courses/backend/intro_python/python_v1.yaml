@@ -1,55 +1,90 @@
 version: v1
-course_name: introduction_to_python
+course_name: intro_python
 name: "Introduction to Python for everyone"
 description: |
-  An overview and quick start into the programming with Python
-level: easy
-software_dependencies:
-  - id: py_3_11_x
-  - id: click_8_1_x
+  The course is designed for absolute beginners and should provide a solid foundation for any future learning path (data science, backend, system or desktop engineering)
+learning_goals: |
+  Student should understand what is a programming language (Python),
+  why it is needed and how it works.
+  Student should understand the environment and tools needed to start learning Python.
+  Student should be able to write simple programs in Python.
+difficulty: |
+  Compulsory lessons should be level 1-2, complementary 2 or max 3.
+groups: # can differ from nodes because of the logical issues
+  - "Types and Data Structures"
+  - "Story"
+  - "General"
+  - "Input and Output"
+  - "Operating System"
+  - "Functions"
 sprints:
-  - name: "How it works?"
-    lessons:
-      - node_name: "helper_py_intro_welcome"
-        lesson_sha: 7d230abcb2afef875dfb264ca1cfd8d03f6a02f7
-      - node_name: "helper_py_intro_education_process"
-        lesson_sha: dbcf79b
-  - name: "Python basics"
+  - name: "Sprint 1. Getting started"
     lessons:
       - node_name: "helper_py_sprint_one"
-      - node_name: "py_philosophy"
-        lesson_version_id: 1
-      - node_name: "pt_slack_usage"
-      - node_name: "py_first_steps"
-      - node_name: "py_syntax"
-      - node_name: "data_types_and_variables"
-      - node_name: "py_numbers"
-        complementary:
-          - node_name: "py_numbers_precision_error"
-      - node_name: "py_strings"
-      - node_name: "os_cmd_intro"
-      - node_name: "py_print"
-      - node_name: "py_variable_names"
-      - node_name: "py_data_structures"
-      - node_name: "py_lists"
-      - node_name: "py_tuples"
-      - node_name: "python_control_flow"
-      - node_name: "py_conditional_statements"
-      - node_name: "py_loops"
-      - node_name: "py_boolean"
-      - node_name: python_functions
-      - node_name: "py_returned_values"
-      - node_name: "py_variable_scope"
-      - node_name: "py_dictionaries"
-      - node_name: "py_sets"
-      - node_name: "py_string_formatting"
-      - node_name: "py_input"
-      - node_name: "custom"
-      - node_name: "custom"
-  - name: "Going further"
+      - node_name: "story.zombie_survival.intro"
+        group: "Story"
+      - parallel:
+          - node_name: "prog_langs.python_3_11_4.philosophy"
+            group: "General"
+          - node_name: "prog_langs.python_3_11_4.syntax"
+            group: "General"
+          - node_name: "os_command_line_shell"
+            group: "Operating System"
+      - node_name: story.zombie_survival.day_one
+        group: "Story"
+      - parallel:
+          - node_name: "prog_langs.python_3_11_4.types_and_data_structures"
+            group: "Types and Data Structures"
+          - node_name: "prog_langs.python_3_11_4.input_output.print"
+            group: "Input and Output"
+      - node_name: story.zombie_survival.day_two
+        group: "Story"
+      - parallel:
+          - node_name: "prog_langs.python_3_11_4.types_and_data_structures.built_in.numbers"
+            group: "Types and Data Structures"
+            complementary:
+              - node_name: "prog_langs.python_3_11_4.types_and_data_structures.built_in.numbers_precision_error"
+          - node_name: "prog_langs.python_3_11_4.types_and_data_structures.built_in.strings"
+            group: "Types and Data Structures"
+            complementary:
+              - node_name: "prog_langs.python_3_11_4.guidelines.string_formatting"
+          - node_name: "prog_langs.python_3_11_4.types_and_data_structures.built_in.boolean"
+            group: "Types and Data Structures"
+            complementary:
+              - node_name: "prog_langs.python_3_11_4.types_and_data_structures.built_in.none"
+      - node_name: story.zombie_survival.day_three
+        group: "Story"
+      - parallel:
+          - node_name: "prog_langs.python_3_11_4.types_and_data_structures.built_in.sequence_types"
+            group: "Types and Data Structures"
+          - node_name: "prog_langs.python_3_11_4.control_flow.conditional_statements"
+            group: "Control Flow"
+          - node_name: "prog_langs.python_3_11_4.control_flow.loops"
+            group: "Control Flow"
+      - node_name: story.zombie_survival.day_four
+        group: "Story"
+      - parallel:
+          - node_name: "prog_langs.python_3_11_4.types_and_data_structures.built_in.mapping_types_dict"
+            group: "Types and Data Structures"
+          - node_name: "prog_langs.python_3_11_4.types_and_data_structures.built_in.set_types"
+            group: "Types and Data Structures"
+          - node_name: "prog_langs.python_3_11_4.functions"
+            group: "Functions"
+            complementary:
+              - node_name: "prog_langs.python_3_11_4.functions.lambda"
+                group: "Functions"
+      - node_name: story.zombie_survival.day_five
+        group: "Story"
+      - node_name: "prog_langs.python_3_11_4.input_output.input"
+        group: "Input and Output"
+      - selection:
+          - node_name: "prog_langs.python_3_11_4.projects.hangman_game"
+          - node_name: "prog_langs.python_3_11_4.projects.resource_management_system"
+          - node_name: "prog_langs.python_3_11_4.projects.weather_prediction"
+  - name: "Sprint 2. Going further"
     lessons:
       - node_name: "custom"
-      - node_name: "py_modules"
+      - node_name: "prog_langs.python_3_11_4.control_flow.loops.additional_control"
       - node_name: "py_imports"
       - node_name: "py_packages"
       - node_name: "py_virtualenv"
@@ -62,8 +97,6 @@ sprints:
       - node_name: "py_oop_class_methods"
       - node_name: "py_file_io"
       - node_name: "python_cli"
-      - node_name: "py_click_intro"
-      - node_name: "py_click_deep_dive"
       - node_name: "pt_vscode_intro"
       - node_name: "pt_vscode_terminal"
       - node_name: "pt_github_usage"
