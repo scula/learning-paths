@@ -1,27 +1,24 @@
-name: Working with numbers in Python
 node_ref: working_with_python_numbers
-software_dependencies_ids:
-  - py_3_11_x
 content:
   - type: paragraph
     value: |-
       # Working with numbers in Python
-      Any programming language designed to solve problems. Sometimes these problems require mathemiatical operations.
-      For example, banking applications, scientific research, farming and many more.
+      Any programming language designed to solve problems. Sometimes these problems require mathematical operations.
+      For example, banking applications, scientific research, farming, and many more.
 
       Python is no exception as it's used widely in different areas: from web development to data science.
       In this lesson, we'll get you started with how to work with numbers in Python.
       We'll dive into the topics of variables and number data types, helping you understand how to work with them effectively. 
       We'll also discuss the difference between how humans process numbers and computers, as well as the limitations of natural and floating-point numbers in Python.
-      There will also be a couple of practice tasks where you will have a chance to play around and solve your first mini projects in Python.
+      There will also be a couple of practice tasks where you will have a chance to play around and solve your first mini-projects in Python.
     description: |
-      Introduction to lesson about numbers in Python.
-      Topics of variables and number data types are covered.
+      Introduction to a lesson about numbers in Python.
+      Topics of variables and the number of data types are covered.
       Difference between how humans process numbers and computers.
-      Practice task with numbers.
+      Practice tasks with numbers.
   - type: paragraph
     value: |-
-      ## How and why we use numbers in Python?
+      ## How and why do we use numbers in Python?
 
       Numbers play a crucial role in our daily lives, and programming languages like Python are no exception. Python has built-in support for numbers and mathematical operations, allowing us to manipulate data and perform calculations with ease. Let's take a look at a code block demonstrating basic math operations without using variables, accompanied by comments to help you understand each step:
 
@@ -41,10 +38,10 @@ content:
 
       As you can see, Python makes it simple to perform various mathematical operations, which will come in handy as you progress in your programming journey.
     description: |
-      Second level title "How and why we use numbers in Python?"
+      The second level title "How and why we use numbers in Python?"
       Programming languages help manipulate data and numbers as well.
       Python has built-in support for numbers and mathematical operations.
-      Codeblock with comments on basic math operations without variables
+      Code block with comments on basic math operations without variables
   - type: paragraph
     value: |-
       Now that you've seen some examples of basic math operations in Python, we invite you to launch the following code and see the results for yourself. Before you do that, let's quickly touch upon the `print` function used in the code. The `print` function is a built-in Python function that takes one or more arguments and displays them as output. In our examples, we've used the `print` function to display the results of the mathematical operations. Go ahead, give it a try, and witness the power of Python in action!

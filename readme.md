@@ -33,3 +33,7 @@ Software dependencies defined for one node are applied to all children nodes and
 ## How it works?
 
 - If SHA for course, sprint, lesson or block version gets changed, new ID is generated
+
+## Source of truth
+
+Name and learning goals for each lesson (when working on a lesson or sprint) are taken from main knowledge tree.
