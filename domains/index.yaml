@@ -34,23 +34,27 @@ nodes:
             name: "Day 5: First attack"
             learn_goals:
               - "Learned how to use dictionaries,sets and functions"
+          - id: day_six
+            name: "Day 6: First victory"
+            learn_goals:
+              - "After first project was done"
+          - id: day_seven
+            name: "Day 7: Working with other survivors"
+            learn_goals:
+              - "Learning about github and git, vscode. Getting deeper knowledge in Python"
 
   - id: helper
     name: "Course Specific Nodes"
     nodes:
-      - id: helper_py
+      - id: py
         name: "Python Introduction Helper Nodes"
         tags: ["python", "helper-nodes"]
         nodes:
-          - id: helper_intro_welcome
-            name: "Welcome to the course in Python!"
+          - id: sprint_one
+            name: "Sprint goal and overview"
             level: 1
-            tags: ["welcome"]
-          - id: helper_intro_education_process
-            name: "Education process at Amazemind"
-            level: 1
-            tags: ["education-process"]
-          - id: helper_sprint_one
+            tags: ["sprint-one"]
+          - id: sprint_two
             name: "Sprint goal and overview"
             level: 1
             tags: ["sprint-one"]
@@ -147,38 +151,29 @@ nodes:
   - id: networking
     name: Networking
     nodes:
-      - id: networking_architecture
+      - id: architecture
         name: Architecture
         tags: ["networking", "architecture"]
         nodes:
-          - id: networking_osi_model
+          - id: osi_model
             name: "OSI model"
             level: 2
-          - id: networking_client_server_architecture
+          - id: client_server_architecture
             name: "Client-Server Architecture"
             level: 2
-      - id: networking_protocols
+      - id: protocols
         name: Protocols
         nodes:
-          - id: networking_protocol_http
+          - id: http
             name: "HTTP protocol"
             level: 2
-          - id: networking_data_interchange_formats
+          - id: data_interchange_formats
             name: "Data interchange formats"
             tags: ["json", "xml"]
             level: 2
       - id: networking_dns
         name: DNS
-  - id: internet
-    name: Internet
-    nodes:
-      - id: internet_overview
-        name: Internet Overview
-        nodes:
-          - id: internet_intro
-            name: "Introduction to the Internet"
-            description: "General overview on how the internet works"
-            level: 2
+      - id:
   - id: os
     name: Operating Systems
     nodes:
@@ -446,69 +441,25 @@ nodes:
             name: "Object Oriented Programming"
             tags: ["oop"]
             nodes:
-              - id: oop_intro
-                name: "Introduction to OOP"
-                tags: ["oop"]
-                level: 1
-              - id: oop_classes
-                name: "Classes"
+              - id: classes_objects
+                name: "Classes and 3 Principles of OOP: Encapsulation, Inheritance, Polymorphism"
                 tags: ["classes"]
                 level: 2
-              - id: oop_inheritance
-                name: "Inheritance"
-                tags: ["inheritance"]
-                level: 2
-              - id: oop_polymorphism
-                name: "Polymorphism"
-                tags: ["polymorphism"]
-                level: 2
-              - id: oop_encapsulation
-                name: "Encapsulation"
-                tags: ["encapsulation"]
-                level: 2
-              - id: oop_abstraction
-                name: "Abstraction"
-                tags: ["abstraction"]
-                level: 2
-              - id: oop_magic_methods
-                name: "Magic Methods"
-                tags: ["magic-methods"]
-                level: 2
-              - id: oop_objects
-                name: "Objects"
-                tags: ["objects"]
-                level: 2
-              - id: oop_class_attributes
-                name: "Class Attributes"
-                tags: ["class-attributes"]
-                level: 2
-              - id: oop_class_methods
-                name: "Class Methods"
-                tags: ["class-methods"]
-                level: 2
-              - id: oop_static_methods
-                name: "Static Methods"
-                tags: ["static-methods"]
+              - id: methods_properties
+                name: "Methods, Properties and Attributes"
+                tags: ["methods"]
                 level: 2
           - id: packages
             name: "Packages"
             tags: ["packages"]
             nodes:
-              - id: modules
-                name: "Modules"
+              - id: general
+                name: "Modules, Packages and Imports"
                 tags: ["modules"]
                 level: 2
-              - id: imports
-                name: "Imports"
-                tags: ["imports"]
-                level: 2
-              - id: virtualenv
-                name: "Virtualenv"
+              - id: venv_pip
+                name: "Virtualenv and Pip"
                 tags: ["virtualenv"]
-                level: 2
-              - id: pip
-                name: "Pip"
-                tags: ["pip"]
                 level: 2
           - id: debugging
             name: "Debugging"
@@ -540,10 +491,10 @@ nodes:
                 level: 2
                 dependencies:
                   - os_cmd_intro
-              - id: file_io
-                name: "File I/O"
-                tags: ["file-io"]
-                level: 2
+          - id: cli
+            name: "Command Line Interface"
+            tags: ["cli"]
+            nodes:
               - id: command_line_args
                 name: "Command Line Arguments"
                 tags: ["command-line-arguments"]
@@ -556,10 +507,6 @@ nodes:
                 name: "Command Line Output"
                 tags: ["command-line-output"]
                 level: 2
-          - id: cli
-            name: "Command Line Interface"
-            tags: ["cli"]
-            nodes:
               - id: click_8_1_x
                 name: "Click"
                 tags: ["click", "click-8.1.x"]
@@ -605,6 +552,12 @@ nodes:
             name: "File and Directory Access"
             tags: ["file-and-directory-access"]
             nodes:
+              - id: files_directories
+                name: "Files and Directories: Reading and Writing"
+                tags: ["files", "directories"]
+                level: 2
+                dependencies:
+                  - os.directories_and_files
               - id: pathlib
                 name: "Object-oriented filesystem paths"
                 tags: ["pathlib"]
@@ -665,6 +618,18 @@ nodes:
                 name: "Test interactive Python examples"
                 tags: ["doctest"]
                 level: 2
+          - id: transport
+            name: "Communication and transport protocols"
+            tags: ["transport"]
+            nodes:
+              - id: requests
+                name: "Requests package"
+                tags: ["requests"]
+                level: 2
+                dependencies:
+                  - networking.architecture.osi_model
+                  - networking.architecture.client_server_model
+                  - networking.protocols.http
           - id: projects
             name: "Collection of projects"
             nodes:
@@ -719,30 +684,46 @@ nodes:
                   - "prog_langs.python_3_11_4.types_and_data_structures.built_in.boolean"
                   - "prog_langs.python_3_11_4.control_flow.conditional_statements"
                   - "prog_langs.python_3_11_4.control_flow.loops"
+              - id: file_manager
+                name: "File Manager"
+                tags: ["projects", "file", "manager"]
+                learn_goals:
+                  - "Learn how to work with Github and OS, files in Python"
+                dependencies:
+                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.numbers"
+                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.strings"
+                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.sequence_types"
+                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.mapping_types_dict"
+                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.set_types"
+                  - "prog_langs.python_3_11_4.functions"
+                  - "prog_langs.python_3_11_4.input_output.input"
+                  - "prog_langs.python_3_11_4.input_output.print"
+                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.boolean"
+                  - "prog_langs.python_3_11_4.control_flow.conditional_statements"
+                  - "prog_langs.python_3_11_4.control_flow.loops"
+                  - "prog_langs.python_3_11_4.oop.classes_objects"
+                  - "productivity_tools.github.usage"
+              - id: smart_home_manager
+                name: "Smart Home Manager"
+                tags: ["projects", "smart", "home", "manager"]
+                learn_goals:
+                  - "Learn how to work with Github and OS, files in Python"
 
           # python web
           # python db
-  - id: git
+  - id: git_2_41_0
     name: "Working with Git"
     tags: ["git"]
     nodes:
-      - id: git_intro
+      - id: usage
         name: "Introduction"
         tags: ["intro"]
         level: 1
-      - id: git_installation
-        name: "Installation"
-        tags: ["installation"]
-        level: 1
-      - id: git_workflow
-        name: "Workflow"
-        tags: ["workflow"]
-        level: 3
   - id: productivity_tools
     name: "Productivity Tools"
     tags: ["productivity-tools"]
     nodes:
-      - id: pt_slack
+      - id: slack
         name: "Slack"
         tags: ["slack"]
         level: 1
@@ -751,44 +732,28 @@ nodes:
             name: "Working with Slack"
             tags: ["slack"]
             level: 2
-      - id: pt_github
+      - id: github
         name: "GitHub"
         tags: ["github"]
         level: 1
         nodes:
-          - id: pt_github_usage
+          - id: usage
             name: "Working with GitHub"
             tags: ["github"]
             level: 2
-          - id: pt_github_ssh_keys
-            name: "SSH Keys"
+          - id: ssh_keys
+            name: "SSH Keys in Github"
             tags: ["ssh-keys"]
             level: 2
-      - id: pt_vscode
+      - id: vscode_1_79
         name: "Visual Studio Code"
         tags: ["vscode"]
         nodes:
-          - id: pt_vscode_intro
-            name: "Introduction to Visual Studio Code"
-            tags: ["vscode"]
-            level: 1
-          - id: pt_vscode_extensions
-            name: "Extensions"
-            tags: ["vscode"]
+          - id: usage
+            name: "Using VSCode: editor, terminal and extensions"
+            tags: ["vscode", "terminal", "extensions"]
             level: 2
-          - id: pt_vscode_settings
-            name: "Settings"
-            tags: ["vscode"]
-            level: 2
-          - id: pt_vscode_editor
-            name: "Editor"
-            tags: ["vscode"]
-            level: 2
-          - id: pt_vscode_terminal
-            name: "Terminal"
-            tags: ["vscode"]
-            level: 2
-          - id: pt_vscode_debugging
+          - id: debugging
             name: "Debugging"
             tags: ["vscode"]
-            level: 2
+            level: 3
