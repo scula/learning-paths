@@ -17,9 +17,11 @@ content:
       learn about essential developer tools and platforms like Vscode, GitHub and Git.
 
       The goal is to give you a good starting ground for learning new skills and challenges. It could be Data Science,
-       Backend Development, System Administration, DevOps or even Desktop App development. 
-       The beauty of Python is its simplicity and versatility because it's used in many areas of the Computer Science industry.
+      Backend Development, System Administration, DevOps or even Desktop App development. 
+      The beauty of Python is its simplicity and versatility because it's used in many areas of the Computer Science industry.
 
+  - type: "paragraph"
+    value: |
       ## How will we learn?
       Our learning journey will last for 1 month and have 2 Sprints. 
       Each Sprint will be 2 weeks long and have a Project at the end of it. 
@@ -33,10 +35,12 @@ content:
 
       We will also have our cosy Slack-based community where you can ask questions and communicate with your peers in 
       the course. We will have a dedicated space for asking technical questions where other students or reviewers will
-       help you. You can also chat with your dedicated Coordinator, who will guide your group through this month and 
-       help you remember all the important dates. If you have any questions about payments or exceptional cases, 
-       Coordinator takes care of this.
+      help you. You can also chat with your dedicated Coordinator, who will guide your group through this month and 
+      help you remember all the important dates. If you have any questions about payments or exceptional cases, 
+      Coordinator takes care of this.
 
+  - type: "paragraph"
+    value: |
       ## First steps: First Sprint
 
       In the first Sprint, we will focus on learning the core of Python: syntax and basic operations. Nevertheless, 
