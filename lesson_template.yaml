@@ -10,10 +10,7 @@
 # each line shouldn't exceed 100 characters
 # Possible content types are listed below
 # When generating the image and video leave url empties but add detailed description
-name: "Lesson Name"
 node_ref: "lesson_name_id"
-software_dependencies:
-  - id: programm_lang_dep_ids
 content:
   - type: "paragraph" # contains markdown text (headers, lists, links, etc.)
     value: |
