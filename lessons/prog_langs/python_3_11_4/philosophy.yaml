@@ -44,15 +44,13 @@ content:
 
       The main idea driving the development process with Python is "Simple is better than complex". This explains why Python became one the most popular languages for many areas, from backend to data science. It's easy to get started and get results. 
 
-      You can also access the easter egg hidden in Python by running the command:
+      You can also access the easter egg hidden in Python by running the command (which would print the mentioned 19 principles of Python):
   - type: "codeblock-exec"
     language: "python"
     value: |
       import this
   - type: "paragraph"
     value: |
-      Which would print the mentioned 19 principles of Python.
-
       ## TL;DR
       * Mental toughness is important during education, and daily learning helps build it. 
       * Most of the time spent in development won't be around coding but designing systems, making decisions, and communicating. 
