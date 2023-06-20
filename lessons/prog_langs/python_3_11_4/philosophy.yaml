@@ -1,0 +1,63 @@
+node_ref: "prog_langs.python_3_11_4.philosophy"
+content:
+  - type: "paragraph"
+    value: |
+      # Mindset and philosophy of devs
+
+      Education and development can seem challenging if you go alone and without a plan and guiding lights. In this lesson, we discuss how important your mental health is during education, what Python's philosophy is, and how it will help us.
+
+      ## Mental toughness
+      There are countless numbers of ways people can learn. Pacing yourself through the course as if preparing for a full marathon is one of the least stressful and harmful strategies. Slowly building a habit of learning every day and incorporating the study process into your routine leads to several benefits:
+      You have time to digest the information and rest well between learning sessions. It's very easy to get stressed out when you spend countless hours fighting with something to find out the problem was your reduced attentiveness. The next day your brain, after a good night of sleep, will solve any problem. But you need to give it some rest before!
+      When learning becomes a habit, it's much harder to drop it when you don't feel like going on. We will build this mental toughness throughout the course. Start small, for example, with a dedicated blocked time for learning sessions.
+      You retain the information for life because you have time to process it, practice and create neural links in your subconscious. It's just like reading a large piece of text. If you don't discuss or analyse it afterwards, you will likely forget most details the next day.
+
+      ## Time eaters in development 
+      Most of the time you will spend in your development, data science, or product role won't be around coding. It will be around designing systems, taking decisions and communicating. There are many technologies, programming languages and software architecture patterns out there. And you must be careful when making any decision because it can affect further work and strategy. 
+      That is why having some guiding lights is essential when designing and writing programs in any language. The following is not a mandate but rather a set of principles developed by Tim Peters, who contributed to the creation of Python language.
+
+  - type: "paragraph"
+    value: |
+      ## Zen of Python
+      Nineteen of those principles are the following:
+      ```
+      Beautiful is better than ugly.
+      Explicit is better than implicit.
+      Simple is better than complex.
+      Complex is better than complicated.
+      Flat is better than nested.
+      Sparse is better than dense.
+      Readability counts.
+      Special cases aren't special enough to break the rules.
+      Although practicality beats purity.
+      Errors should never pass silently.
+      Unless explicitly silenced.
+      In the face of ambiguity, refuse the temptation to guess.
+      There should be one-- and preferably only one --obvious way to do it.
+      Although that way may not be obvious at first unless you're Dutch.
+      Now is better than never.
+      Although never is often better than *right* now.
+      If the implementation is hard to explain, it's a bad idea.
+      If the implementation is easy to explain, it may be a good idea.
+      Namespaces are one honking great idea -- let's do more of those!
+      ```
+
+      The main idea driving the development process with Python is "Simple is better than complex". This explains why Python became one the most popular languages for many areas, from backend to data science. It's easy to get started and get results. 
+
+      You can also access the easter egg hidden in Python by running the command:
+  - type: "codeblock-exec"
+    language: "python"
+    value: |
+      ```
+      import this
+      ```
+  - type: "paragraph"
+    value: |
+      Which would print the mentioned 19 principles of Python.
+
+      ## TL;DR
+      * Mental toughness is important during education, and daily learning helps build it. 
+      * Most of the time spent in development won't be around coding but designing systems, making decisions, and communicating. 
+      * The Zen of Python, a set of principles developed by Tim Peters, emphasises simplicity and readability in code. 
+      * Python became popular because of its "Simple is better than complex" philosophy. 
+      * Running the command "import this" in Python reveals the 19 principles of Python.
