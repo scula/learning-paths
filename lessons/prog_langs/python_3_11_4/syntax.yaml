@@ -223,7 +223,7 @@ content:
         # area = area / 2
         print(area)
     test_code: |
-      from main import area, pi, r
+      from main import area, pi, radius
       import unittest
       class TestSquareSpace(unittest.TestCase):
           def test_square_space(self):
