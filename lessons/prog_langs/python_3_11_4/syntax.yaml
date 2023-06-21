@@ -127,7 +127,7 @@ content:
       help you remember them easily.
   
   - type: "quiz"
-    items:
+    quiz_items:
       - question: "Which of the following are valid identifiers?"
         answers:
           - value: "x"
