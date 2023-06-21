@@ -242,6 +242,9 @@ nodes:
             name: "Python Philosophy"
             tags: ["philosophy"]
             level: 1
+          - id: interpreter
+            name: "Python Interpreter"
+            level: 1
           - id: syntax
             name: "Syntax in Python"
             tags: ["syntax", "indentation"]

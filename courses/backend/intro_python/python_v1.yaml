@@ -36,6 +36,10 @@ sprints:
             group: "General"
           - node_name: "prog_langs.python_3_11_4.syntax"
             group: "General"
+            complementary:
+            - node_name: "prog_langs.python_3_11_4.syntax.comments"
+              group: "General"
+          - node_name: "prog_langs.python_3_11_4.interpreter"
           - node_name: "os.command_line_shell"
             group: "Operating System"
       - node_name: story.zombie_survival.day_one
