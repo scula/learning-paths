@@ -213,13 +213,13 @@ content:
     boilerplate: |
         pi = 3.14
         radius = 5
-        area = pi * r * r
+        area = pi * radius * radius
         area = area / 2
         print(area)
     solution: |
         pi = 3.14
         radius = 5
-        area = pi * r * r
+        area = pi * radius * radius
         # area = area / 2
         print(area)
     test_code: |
