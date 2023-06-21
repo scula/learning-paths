@@ -78,7 +78,7 @@ content:
       that each line of code is a statement and statements are executed one by one, from top to bottom.
   
   - type: "quiz"
-    items:
+    quiz_items:
       - question: "Which of the following are true?"
         answers:
           - value: "Python executes statements one by one, from top to bottom."
