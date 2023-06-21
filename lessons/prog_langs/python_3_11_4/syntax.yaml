@@ -1,0 +1,238 @@
+node_ref: "prog_langs.python_3_11_4.syntax"
+content:
+  - type: "paragraph" 
+    value: |
+      # Python Syntax and Rules 
+      The programming language syntax is the rule defining how programmers can write and 
+      structure their code. Essentially, syntax is the grammar of a programming language, 
+      and it is necessary to ensure that both computers and humans can understand programs.
+
+
+      Python is a popular programming language with a relatively simple and easy-to-understand 
+      syntax. We will go through the main syntax rules you should remember when working with Python.
+
+  - type: "paragraph"
+    value: |
+      ## Mini Glossary
+      Before we dive in, there are a couple of terms you should know:
+      * **Syntax** - the set of rules that defines the combinations of symbols that are considered
+      to be correctly structured programs in that language.
+      * **Statement** - an instruction that the Python interpreter can execute. For example,
+      `print("Hello, World!")` is a statement that prints the text `Hello, World!` to the screen.
+      * **Expression** - a combination of values, variables, operators, and calls to functions.
+      Expressions need to be evaluated. Evaluation of the expression simply means that the
+      expression is replaced with its result. For example, `2 + 2` is an expression that Python
+      can evaluate that results in a value of `4`.
+      * **Variable** - a name that refers to a value. For example, in the expression `x = 2 + 2`,
+      the variable `x` refers to the value `4`.
+      * **Identifier** - a name used to identify a variable, function, class, module, or other object.
+      For example, in the expression `x = 2 + 2`, the identifier is `x`.
+      * **Value** - a basic unit of data. For example, in the expression `x = 2 + 2`, the value is `4`.
+      * **Operator** - a symbol that performs an operation on one or more operands. For example,
+      the `+` symbol is an operator that performs addition.
+      * **Operand** - a value that an operator acts on. For example, in the expression `2 + 2`,
+      the values `2` and `2` are operands and the `+` symbol is an operator.
+      * **Function** - a named sequence of statements that performs a computation. We will talk 
+      more about them in the next lessons but for now think of them as a set of instructions that
+      you can use in your code.
+      * **Print()** - a function that prints the specified message to the screen. 
+
+      
+      Wow, that was a lot of new terms! Don't worry, you don't have to remember them all right now.
+      We will be using them throughout the course, so you will get used to them in no time.
+      And now let's get back to the syntax rules.
+
+  - type: "paragraph"
+    value: |
+      ## Lines, statements and expressions
+      In Python, each line of code is a **statement**. A **statement** is a complete line of code that
+      performs some action. For example, `print("Hello, World!")` is a statement that prints 
+      the text `Hello, World!` to the screen. Python statement ends with the token NEWLINE character.
+      It means each line in a Python script is a statement.
+
+      **Expressions** are a combination of values, variables, operators, and calls to functions.
+      Expression statements are used to compute and write a value. An expression statement 
+      evaluates the expression list and calculates the value.
+      They are the basic building blocks of statements. For example, `2 + 2` is an expression
+      that Python can evaluate that results in a value of `4`. And the full statement could be
+      `x = 2 + 2`, where `x` is a variable that refers to the value `4`.
+
+      The Python program is a sequence of statements. Each statement is executed one by one,
+      from top to bottom. For example, the following program consists of three statements:
+      ```
+      strVar = "Hello, World!"
+      print(strVar)
+      print("Hello, World!")
+      ```
+      The first statement assigns the string `"Hello, World!"` to the variable `strVar`.
+      The second statement prints the value of the variable `strVar` to the screen.
+      And the third statement prints the string `"Hello, World!"` to the screen.
+
+      And expressions can be used in statements. For example, the following statement
+      prints the result of the expression `2 + 2` to the screen:
+      ```
+      print(2 + 2)
+      ```
+
+      We will talk more about variables and functions in the next lessons. For now, just remember
+      that each line of code is a statement and statements are executed one by one, from top to bottom.
+  
+  - type: "quiz"
+    items:
+      - question: "Which of the following are true?"
+        answers:
+          - value: "Python executes statements one by one, from top to bottom."
+            is_correct: true
+          - value: "Python executes statements in a random order."
+          - value: "Python executes statements from bottom to top."
+          - value: "Statement is a instruction that the Python interpreter can execute."
+            is_correct: true
+      - question: "Which of the following are true?"
+        answers:
+          - value: "Expression statements are used to compute and write a value."
+            is_correct: true
+          - value: "Expression is a complete line of code that performs some action."
+          - value: "Expression is a sequence of statements."
+          - value: "Expression is a sequence of values."
+            is_correct: true
+
+  - type: "paragraph"
+    value: |
+      ## Variables and identifiers
+      A **variable** is a name that refers to a value. For example, in the expression `x = 2 + 2`,
+      the variable `x` refers to the value `4`. Variables are used to store data that can be
+      used in your program. For example, you can store the string `"Hello, World!"` in a variable
+      called `strVar` and then print it to the screen:
+      ```
+      strVar = "Hello, World!"
+      print(strVar)
+      ```
+      In the example above, the variable `strVar` refers to the string `"Hello, World!"`.
+      And the second statement prints the value of the variable `strVar` to the screen.
+
+
+      **Identifiers** are used to identify a variable, function, class, module, or other object. 
+      For example, in the expression `x = 2 + 2`, the identifier is `x`. Identifiers can be
+      short or long. They can contain letters, digits, and the underscore character `_`.
+      But they can't start with a digit. For example, `x`, `x2`, `x_2`, `_x2` are valid identifiers,
+      but `2x`, `2_x`, `x-2` are not valid identifiers.
+
+
+      Identifiers are case-sensitive. For example, `x` and `X` are two different identifiers.
+      And identifiers can't contain spaces. For example, `my var` is not a valid identifier.
+      But you can use the underscore character `_` to separate words in an identifier.
+      For example, `my_var` is a valid identifier.
+
+      Don't worry about too much about those rules, developer tools and practice will
+      help you remember them easily.
+  
+  - type: "quiz"
+    items:
+      - question: "Which of the following are valid identifiers?"
+        answers:
+          - value: "x"
+            is_correct: true
+          - value: "2x"
+          - value: "my var"
+          - value: "my_var"
+            is_correct: true
+      - question: "Which of the following are valid identifiers?"
+        answers:
+          - value: "price"
+            is_correct: true
+          - value: "Price"
+            is_correct: true
+          - value: "ebitda margin"
+          - value: "EbitdaMargin"
+            is_correct: true
+
+  - type: "paragraph"
+    value: |
+      ## Indentation is important. 
+      Unlike many other programming languages, Python uses indentation to indicate where code 
+      blocks begin and end. If your code isn't indented properly, it won't work correctly.
+      The number of spaces is up to you as a programmer, but it has to be at least one.
+
+      For example, the following code will not work because the second line is not indented:
+      ```
+      if 5 > 2:
+      print("Five is greater than two!")
+      ```
+      Try it yourself! In the next card, try to run the code above and see what happens.
+  
+  - type: "codeblock-exec"
+    value: |
+      if 5 > 2:
+      print("Five is greater than two!")
+  
+  - type: "kata"
+    task: |
+        ### Mini Challenge
+        Fix the code below so that it works correctly. As you know the number of spaces is defined by you.
+        But the common practice is to use 4 spaces for indentation. So, add 4 spaces before the second line.
+    boilerplate: |
+        if 5 > 2:
+        print("Five is greater than two!")
+    solution: |
+      if 5 > 2:
+          print("Five is greater than two!")
+    test_code: |
+      import main
+      print("Success!")
+
+  - type: "paragraph" 
+    value: |
+      ## Comments
+      Comments are used to explain Python code. They are ignored by the Python interpreter.
+      Comments start with the hash character `#` and extend to the end of the physical line.
+      For example, the following code contains a comment:
+      ```
+      # This is a comment
+      print("Hello, World!")
+      ```
+      Comments can appear at the beginning or end of any line in your program.
+      For example, the following code contains two comments:
+      ```
+      print("Hello, World!") # This is a comment
+      # This is another comment
+      ```
+      Comments are useful for making notes to yourself and to other programmers.
+      For example, you can use comments to explain why you wrote the code, what the code does,
+      or how the code works. Comments can also be used to disable code. For example, you can
+      comment out a line of code that you don't want to run.
+
+      Comments are also useful for debugging. For example, if you have a problem with your code,
+      you can comment out parts of your code to find the problem. And you can use comments to 
+      temporarily remove parts of your code without deleting them.
+
+  - type: "kata"
+    task: |
+        ### Mini Challenge
+        Imagine you are calculating formula for the area of a circle. And you think there is
+        a problem with your code. So, you want to comment out the fourth line of code so that it doesn't run.
+    boilerplate: |
+        pi = 3.14
+        r = 5
+        area = pi * r * r
+        area = area / 2
+        print(area)
+    solution: |
+        pi = 3.14
+        r = 5
+        area = pi * r * r
+        # area = area / 2
+        print(area)
+    test_code: |
+      from main import area, pi, radius
+      import unittest
+      class TestSquareSpace(unittest.TestCase):
+          def test_square_space(self):
+              self.assertEqual(area, pi * radius ** 2,
+                              "Make sure that you removed the comment from the fourth line of code.")
+
+  - type: "paragraph"
+    value: |
+      ## Summary
+      In this lesson, you learned about the basic concepts of Python programming language.
+      You learned about the Python interpreter, statements, expressions, variables, identifiers,
+      indentation, and comments. See you in the next lesson!
