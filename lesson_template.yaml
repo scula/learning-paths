@@ -26,31 +26,35 @@ content:
     value: |
       import this
   - type: "kata" # Kata has task, start code and solution
-    task: |
-      # Kata task
-      Some task
-      For example, implement function `sum` that takes two numbers and returns their sum
     boilerplate: |
-      # Kata start code
-      def sum(a, b):
-        pass
+      Pi = 3.141592653589793
+      radius = 5
+      area = # your code here
+    task: "Calculate the area of a circle with a given radius. \nAssign the result of the calculation to the variable `area`.\n"
     solution: |
-      # Kata solution
-      def sum(a, b):
-        return a + b
+      Pi = 3.141592653589793
+      radius = 5
+      area = Pi * radius ** 2
+    test_code: |
+      from main import area, Pi, radius
+      import unittest
+      class TestSquareSpace(unittest.TestCase):
+          def test_square_space(self):
+            self.assertEqual(area, Pi * radius ** 2, "Make sure that you calculate the square space correctly.")
   - type: "quiz" # Quiz has question and answers
-    items:
+    quiz_items:
       - question: "Question 1"
         answers:
           - value: "Answer 1"
-            is_correct: true
+            explanation: "Why it is correct or incorrect"
+            correct: true
           - value: "Answer 2"
           - value: "Answer 3"
       - question: "Question 2"
         answers:
           - value: "Answer 1"
           - value: "Answer 2"
-            is_correct: true
+            correct: true
           - value: "Answer 3"
   - type: "video" # Video has description and value holds the link
     description: "Detailed description of video"
