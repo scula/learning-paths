@@ -1,0 +1,135 @@
+node_ref: "prog_langs.python_3_11_4.syntax"
+content:
+  - type: "paragraph" 
+    value: |
+      * Intro to OS and how we interact with it
+      * How we interacted before GUIs with the command line
+      * What is commands, command line and shell?
+      * Basic commands
+      * Practice in Lab
+
+      # Shell and Command line
+
+      Before jumping into the command lines and shells, let's talk about operating systems 
+      and how to interact with them. The operating system is software that manages a computer's hardware
+      and software resources. It is the most critical software that runs on a computer.
+      
+      ## Operating System
+
+      You can think of it as an orchestra conductor responsible for unison between all the different
+      parts of the computer. Let's take a single program as an example, like your web browser. It has to
+      perform multiple tasks:
+      * It has to output and render web pages that you are visiting on your screen;
+      * It has to respond to your input, like clicking on a link or typing in a search query;
+      * It has to communicate with the internet to download web pages, images and other files;
+      * It has to communicate with the computer's hardware to save downloaded files and your search history.
+      All of that requires a lot of coordination between different parts. 
+      
+      And what's interesting is that web browsers, like any program, rely heavily on abstraction. It doesn't
+      have to know how to communicate with the hardware or render the web pages. It just has to know
+      how to communicate with the operating system. And the operating system will take care of the rest.
+
+      ## Terminal and Operating System
+
+      Now we've established why we need the operating system. But how do we interact with it? Well,
+      there are two ways. The first one is through the graphical user interface or GUI. That's what you
+      are doing right now. You are using your mouse to click on the buttons and links, your
+      keyboard to type in the search queries, and your screen to see the output. But there is
+      another way to interact with the operating system, and that's through the **command line**. It's a text-based interface allows us to type commands and execute them. And the program that we use to interact
+      with the operating system is called the **shell**.
+
+      What can we do with the shell? We can do pretty much everything we can with the graphical
+      user interface. We can open programs; we can create files; we can delete files; we can move files around; we can install programs; we can uninstall programs. And the shell is a potent tool. It allows us
+      to do things we can't do with the graphical user interface. For example, we can write scripts that
+      automate some tasks. We can write programs that interact with the operating system. And we can do all of
+      that without ever touching the mouse. And that's why the shell is so popular among programmers and system
+      administrators.
+
+      Now let's dive into some popular terms: how did they appear, and what do they mean?
+
+      * The **terminal** is a device that gives you access to your computer's console. In the past 
+      it was a physical device (before terminals were monitors with keyboards, they were teletypes) 
+      and then its concept was transferred into software, like GNOME Terminal.
+
+      * A **terminal emulator** is a program that we use these days to access the console, like GNOME Terminal
+      for Linux, Terminal.app for Mac OS, Command Prompt, or PowerShell for Windows.
+
+      * The **shell** is a program that runs on your computer and allows you to interact with the operating
+      system. It's a command line interpreter that translates commands entered by the user and converts them
+      into a language that is understood by the kernel (kernel is the core of the operating system). There are
+      many different shells, like Bash, Zsh, Fish, Ksh. We will use Bash in this course because 
+      it's one of the most popular shells and the default shell on most Linux distributions and Mac OS.
+      We will also use Bash for Windows, but it's not the default shell. We will be using a program called
+      Cygwin that allows us to run Bash on Windows.
+
+
+      To sum up, the Operating System manages everything, and we need a way to interact with it. And we can
+      do that through the graphical user interface or the shell. And the program that we use to
+      interact with the Operating System is called the **shell**. We do it through the **command line** or
+      **terminal**. And the **terminal** is a program that runs on your computer and allows you to interact
+      with the **shell**.
+
+      ## Basic Commands
+      
+      Now let's talk about some basic commands we can use in the shell. As we said, we can navigate,
+      manipulate files and directories, we can install programs, and can do all of that without ever touching
+      the mouse. 
+
+
+      Let's start with navigation. We can navigate the file system using the `cd` command. `cd` stands
+      for change directory. And it allows us to change the current working directory. The current working
+      directory is the one we are currently in. (Think of it as an open folder on your computer, 
+      for example, you've opened the Downloads folder, and now you can see and click on all the files in that
+      folder. That's the current working directory).
+      So let's see how it works. 
+      ```
+      $ cd /home
+      ```
+      This command will change the current working directory to the `/home` directory. And the `/home` directory
+      is a directory that contains all the user directories. So if we run the `ls` command, which stands for the list, 
+      we will see all the user directories. And if we want to change the current working directory to the user 
+      directory, we can run the `cd` command again. For example, let's change the current working directory to 
+      the `student` directory.
+      ```
+      $ cd student
+      ```
+      And now, if we run the `ls` command, we will see all the files and directories in the `student` directory.
+      And if we want to go back to the previous directory, we can use the `cd` command with the `..` argument.
+      ```
+      $ cd.
+      ```
+      The `.` and `..` are special directories. The `.` directory is the current directory, and the `..` directory
+      is the parent directory. So if we run the `cd` command with the `..` argument, we will go back to the parent
+      directory. And if we run the `cd` command with the `.` argument, we will stay in the current directory.
+      
+      To check the current working directory, we can use the `pwd` command. `pwd` stands for print working directory.
+      ```
+      $ pwd
+      ```
+
+      Now let's talk about manipulating files and directories. We can create files and directories using the `touch`
+      and `mkdir` commands. `touch` command creates an empty file and `mkdir` command creates an empty directory.
+      ```
+      $ touch file.txt
+      $ mkdir directory
+      ```
+      We can copy files and directories using the `cp` command. `cp` command copies files and directories from
+      one location to another.
+      ```
+      $ cp file.txt directory/filecopy.txt
+      ```
+      Also, we can move files and directories using the `mv` command. `mv` command moves files and directories from
+      one location to another.
+      ```
+      $ mv file.txt directory
+      ```
+      And we can delete files and directories using the `rm` and `rmdir` commands. `rm` command removes files and
+      The `rmdir` command removes empty directories.
+      ```
+      $ rm file.txt
+      $ rmdir directory
+      ```
+      
+      ## Practice in the Lab
+      Now let's practice in the lab. Click on the button below to create a new lab session. 
+      When it's done, come back here and finish the lesson.
