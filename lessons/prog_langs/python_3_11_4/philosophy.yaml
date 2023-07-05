@@ -4,8 +4,8 @@ content:
     value: |
       # Mindset and Philosophy of Software Developers
       Education and development can seem challenging if you go alone and without a plan. In this lesson, we discuss how important your mental health is during education, what Python's philosophy is, and how it will help us.
-      
-      
+
+
       After completing this unit, you’ll be able to:
       * Put your metal health first even while learning online
       * Use Python Philosophy to your benefit
@@ -23,7 +23,7 @@ content:
       ### Minimize Distractions
       Create a conducive learning environment by minimizing distractions. Find a quiet space, eliminate unnecessary notifications, and use tools or browser extensions that block distracting websites or apps during study sessions.
       Remember, learning online comes with its own set of challenges, and it's essential to prioritize self-care and mental well-being throughout the process. By implementing these strategies, you can create a healthier and more balanced approach to online learning.
-      
+
       ## Time eaters in development
       You probably think that everyone who works in software development spends most of their time coding. However, development is not only about coding. The majority of your time will be dedicated to system design, decision-making, and effective communication. While these time eaters are common in software development, effective planning, prioritization, collaboration, and adopting efficient development practices can help mitigate their impact and optimize the overall development process. 
 
@@ -42,12 +42,11 @@ content:
 
 
       The guiding principle behind Python's development process is "Simple is better than complex." This philosophy has propelled Python to become one of the most widely adopted programming languages across various domains, including backend development and data science. Python's ease of use allows beginners to quickly get started and achieve tangible results. 
-      
-      
+
+
       Python developers often refer to the Zen of Python as a reminder of the core values that underpin Python programming and as a guide for writing clean, maintainable, and expressive code. The principles outlined in the Zen of Python help foster a community-driven culture focused on code quality and developer productivity.
       You can also access the easter egg hidden in Python by running the command (which would print the mentioned 19 principles of Python):
-
-- type: "codeblock-exec"
+  - type: "codeblock-exec"
     language: "python"
     value: |
       import this
