@@ -3,7 +3,7 @@ content:
   - type: "paragraph" 
     value: |
       * Intro to OS and how we interact with it
-      * How we interacted before GUIs with the command line
+      * How we interacted before GUIs with the Command Line
       * What is commands, command line and shell?
       * Basic commands
       * Practice in Lab
