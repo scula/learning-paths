@@ -2,7 +2,7 @@ node_ref: "prog_langs.python_3_11_4.syntax"
 content:
   - type: "paragraph" 
     value: |
-      * Intro to OS and how we interact with it
+      * Intro to the OS and how we interact with it
       * How we interacted before GUIs with the Command Line
       * What is commands, command line and shell?
       * Basic commands
