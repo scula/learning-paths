@@ -1,8 +1,8 @@
 node_ref: "prog_langs.python_3_11_4.syntax"
 content:
-  - type: "paragraph" 
+  - type: "paragraph"
     value: |
-      * Intro to the OS and how we interact with it
+      * Intro to theOS and how we interact with it
       * How we interacted before GUIs with the Command Line
       * What is commands, command line and shell?
       * Basic commands
@@ -13,7 +13,7 @@ content:
       Before jumping into the command lines and shells, let's talk about operating systems 
       and how to interact with them. The operating system is software that manages a computer's hardware
       and software resources. It is the most critical software that runs on a computer.
-      
+
       ## Operating System
 
       You can think of it as an orchestra conductor responsible for unison between all the different
@@ -24,7 +24,7 @@ content:
       * It has to communicate with the internet to download web pages, images and other files;
       * It has to communicate with the computer's hardware to save downloaded files and your search history.
       All of that requires a lot of coordination between different parts. 
-      
+
       And what's interesting is that web browsers, like any program, rely heavily on abstraction. It doesn't
       have to know how to communicate with the hardware or render the web pages. It just has to know
       how to communicate with the operating system. And the operating system will take care of the rest.
@@ -70,7 +70,7 @@ content:
       with the **shell**.
 
       ## Basic Commands
-      
+
       Now let's talk about some basic commands we can use in the shell. As we said, we can navigate,
       manipulate files and directories, we can install programs, and can do all of that without ever touching
       the mouse. 
@@ -101,7 +101,7 @@ content:
       The `.` and `..` are special directories. The `.` directory is the current directory, and the `..` directory
       is the parent directory. So if we run the `cd` command with the `..` argument, we will go back to the parent
       directory. And if we run the `cd` command with the `.` argument, we will stay in the current directory.
-      
+
       To check the current working directory, we can use the `pwd` command. `pwd` stands for print working directory.
       ```
       $ pwd
@@ -129,7 +129,7 @@ content:
       $ rm file.txt
       $ rmdir directory
       ```
-      
+
       ## Practice in the Lab
       Now let's practice in the lab. Click on the button below to create a new lab session. 
       When it's done, come back here and finish the lesson.
