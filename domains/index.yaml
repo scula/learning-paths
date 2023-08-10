@@ -1,60 +1,60 @@
 version: v1
 name: "Global Domain Containing All nodes"
 description: "Global Node containing all nodes"
+id: global
 nodes:
-  - id: story
+  - id: stories
     name: "Stories collection for courses"
     nodes:
-      - id: zombie_survival
+      - id: stories_zombie_survival
         name: "Surviving Zombie Apocalypse"
         nodes:
-          - id: intro
+          - id: stories_zombie_survival_intro
             name: "Beginning: How it all started and how I got here"
             learn_goals:
               - "Setup of the story"
               - "Found a good shelter with a lot of old computers, electricity and Python book"
-          - id: day_one
+          - id: stories_zombie_survival_day_one
             name: "Day 1: Reanimating electronics"
             learn_goals:
               - "Got access to command line"
-          - id: day_two
+          - id: stories_zombie_survival_day_two
             name: "Day 2: First contact"
             learn_goals:
               - "Learned how to print"
               - "Learned how to use variables"
-          - id: day_three
+          - id: stories_zombie_survival_day_three
             name: "Day 3: Calculating the odds"
             learn_goals:
               - "Learned how to use numbers, strings and boolean"
-          - id: day_four
+          - id: stories_zombie_survival_day_four
             name: "Day 4: Planning defenses"
             learn_goals:
               - "Learned how to use lists, conditions and loops"
-          - id: day_five
+          - id: stories_zombie_survival_day_five
             name: "Day 5: First attack"
             learn_goals:
               - "Learned how to use dictionaries,sets and functions"
-          - id: day_six
+          - id: stories_zombie_survival_day_six
             name: "Day 6: First victory"
             learn_goals:
               - "After first project was done"
-          - id: day_seven
+          - id: stories_zombie_survival_day_seven
             name: "Day 7: Working with other survivors"
             learn_goals:
               - "Learning about github and git, vscode. Getting deeper knowledge in Python"
-
   - id: helper
     name: "Course Specific Nodes"
     nodes:
-      - id: py
+      - id: helper_py
         name: "Python Introduction Helper Nodes"
         tags: ["python", "helper-nodes"]
         nodes:
-          - id: sprint_one
+          - id: helper_py_sprint_one
             name: "Sprint goal and overview"
             level: 1
             tags: ["sprint-one"]
-          - id: sprint_two
+          - id: helper_py_sprint_two
             name: "Sprint goal and overview"
             level: 1
             tags: ["sprint-one"]
@@ -65,109 +65,109 @@ nodes:
       - id: algorithms_overview
         name: Algorithms Overview
         nodes:
-          - id: algo_intro
+          - id: algorithms_overview_intro
             name: "Introduction to algorithms"
             level: 2
       - id: algorithms_data_structures
         name: Data Structures
         tags: ["data-structures"]
         nodes:
-          - id: algo_heap
+          - id: algorithms_data_structures_heap
             name: "Heap"
             level: 2
             tags: ["heap"]
-          - id: algo_stack
+          - id: algorithms_data_structures_stack
             name: "Stack"
             level: 2
             tags: ["stack"]
-          - id: algo_queue
+          - id: algorithms_data_structures_queue
             name: "Queue"
             level: 2
             tags: ["queue"]
-          - id: algo_linked_list
+          - id: algorithms_data_structures_linked_list
             name: "Linked List"
             level: 2
             tags: ["linked-list"]
-          - id: algo_tree
+          - id: algorithms_data_structures_tree
             name: "Tree"
             level: 2
             tags: ["tree"]
-          - id: algo_graph
+          - id: algorithms_graph
             name: "Graph"
             level: 2
             tags: ["graph"]
-          - id: algo_hash_table
+          - id: algorithms_data_structures_hash_table
             name: "Hash Table"
             level: 2
             tags: ["hash-table"]
-      - id: algo_sorting
+      - id: algorithms_sorting
         name: Sorting algorithms
         tags: ["sorting"]
         nodes:
-          - id: algo_sorting_bubble
+          - id: algorithms_sorting_bubble
             name: "Bubble Sort"
             level: 2
             tags: ["bubble-sort"]
-          - id: algo_sorting_selection
+          - id: algorithms_sorting_selection
             name: "Selection Sort"
             level: 3
             tags: ["selection-sort"]
-          - id: algo_sorting_insertion
+          - id: algorithms_sorting_insertion
             name: "Insertion Sort"
             level: 4
             tags: ["insertion-sort"]
-          - id: algo_sorting_merge
+          - id: algorithms_sorting_merge
             name: "Merge Sort"
             level: 3
             tags: ["merge-sort"]
-          - id: algo_sorting_quick
+          - id: algorithms_sorting_quick
             name: "Quick Sort"
             level: 3
             tags: ["quick-sort"]
-          - id: algo_sorting_heap
+          - id: algorithms_sorting_heap
             name: "Heap Sort"
             level: 4
             tags: ["heap-sort"]
-          - id: algo_sorting_counting
+          - id: algorithms_sorting_counting
             name: "Counting Sort"
             level: 2
             tags: ["counting-sort"]
-      - id: algo_searching
+      - id: algorithms_searching
         name: Searching algorithms
         tags: ["searching"]
         nodes:
-          - id: algo_searching_linear
+          - id: algorithms_searching_linear
             name: "Linear Search"
             level: 2
             tags: ["linear-search"]
-          - id: algo_searching_binary
+          - id: algorithms_searching_binary
             name: "Binary Search"
             level: 4
             tags: ["binary-search"]
-      - id: algo_recursion
+      - id: algorithms_recursion
         name: Recursion
         tags: ["recursion"]
         level: 2
   - id: networking
     name: Networking
     nodes:
-      - id: architecture
+      - id: networking_architecture
         name: Architecture
         tags: ["networking", "architecture"]
         nodes:
-          - id: osi_model
+          - id: networking_architecture_osi_model
             name: "OSI model"
             level: 2
-          - id: client_server_architecture
+          - id: networking_architecture_client_server_architecture
             name: "Client-Server Architecture"
             level: 2
-      - id: protocols
+      - id: networking_protocols
         name: Protocols
         nodes:
-          - id: http
+          - id: networking_protocols_http
             name: "HTTP protocol"
             level: 2
-          - id: data_interchange_formats
+          - id: networking_protocols_data_interchange_formats
             name: "Data interchange formats"
             tags: ["json", "xml"]
             level: 2
@@ -177,16 +177,16 @@ nodes:
   - id: os
     name: Operating Systems
     nodes:
-      - id: intro
+      - id: os_intro
         name: "Introduction to OS"
         description: "General overview on OS and program execution"
         level: 2
-      - id: command_line_shell
+      - id: os_command_line_shell
         name: "Command line and Shell"
         description: "How to work with shell and command line?"
         tags: ["shell", "cmd"]
         level: 1
-      - id: directories_and_files
+      - id: os_directories_and_files
         name: "Directories and Files"
         description: "How to work with directories and files?"
         tags: ["directories", "files"]
@@ -194,80 +194,79 @@ nodes:
   - id: software_architecture
     name: Software Architectures
     nodes:
-      - id: clean_code_concepts
+      - id: software_architecture_clean_code_concepts
         name: "Clean Code Concepts"
         tags: ["clean-code"]
         nodes:
-          - id: saccc_refactoring
+          - id: software_architecture_clean_code_concepts_refactoring
             name: "Refactoring"
             tags: ["refactoring"]
             level: 2
-      - id: sas_network
+      - id: software_architecture_network
         name: "Internet Architectures"
         nodes:
-          - id: sas_rest
+          - id: software_architecture_network_rest
             name: "REST Architecture Style"
             tags: ["REST"]
             level: 2
             dependencies:
-              - networking_data_interchange_formats
-              - networking_client_server_architecture
-              - networking_osi_model
+              - networking_architecture_client_server_architecture
+              - networking_architecture_osi_model
   - id: prog_langs
     name: Programming Languages
     tags: ["programming-languages"]
     nodes:
-      - id: python_3_11_4
+      - id: prog_langs_python
         name: Python
-        tags: ["python", "python-3.11.4"]
+        tags: ["python"]
         nodes:
-          - id: guidelines
+          - id: prog_langs_python_guidelines
             name: "Rules and agreements for writing clean Python code"
             tags: ["guidelines"]
             level: 1
             nodes:
-              - id: pep8
+              - id: prog_langs_python_guidelines_pep8
                 name: "PEP8"
                 tags: ["pep8"]
                 level: 2
-              - id: variable_names
+              - id: prog_langs_python_guidelines)variable_names
                 name: "Variable names"
                 tags: ["variable-names"]
                 level: 2
-              - id: string_formatting
+              - id: prog_langs_python_guidelines_string_formatting
                 name: "String formatting"
                 tags: ["string-formatting"]
                 level: 2
-          - id: philosophy
+          - id: prog_langs_python_philosophy
             name: "Python Philosophy"
             tags: ["philosophy"]
             level: 1
-          - id: interpreter
+          - id: prog_langs_python_interpreter
             name: "Python Interpreter"
             level: 1
-          - id: syntax
+          - id: prog_langs_python_syntax
             name: "Syntax in Python"
             tags: ["syntax", "indentation"]
             level: 1
             nodes:
-              - id: comments
+              - id: prog_langs_python_syntax_comments
                 name: "Comments in Python"
                 tags: ["comments"]
                 level: 1
-          - id: types_and_data_structures
+          - id: prog_langs_python_types_and_data_structures
             name: "Types and Data Structures in Python"
             tags: ["data-types", "variables", "types"]
             level: 1
             nodes:
-              - id: built_in
+              - id: prog_langs_python_types_and_data_structures_built_in
                 name: "Built-in Types"
                 tags: ["built-in-types"]
                 level: 2
                 nodes:
-                  - id: numbers
+                  - id: prog_langs_python_types_and_data_structures_built_in_numbers
                     name: "Numbers"
                     dependencies:
-                      - syntax
+                      - prog_langs_python_syntax
                     learn_goals:
                       - "How numbers are represented in Python and Computer?"
                       - "Different type of numbers in Python"
@@ -276,7 +275,7 @@ nodes:
                     tags: ["numbers", "int", "float"]
                     level: 1
                     nodes:
-                      - id: precision_error
+                      - id: prog_langs_python_types_and_data_structures_built_in_numbers_precision_error
                         name: "Precision error in Python"
                         tags: ["numbers", "precision-error"]
                         level: 2
@@ -284,14 +283,14 @@ nodes:
                           - "What is precision error?"
                           - "How to avoid precision error?"
                           - "Case of 0.1 + 0.2 == 0.3"
-                      - id: math_module
+                      - id: prog_langs_python_types_and_data_structures_built_in_numbers_math_module
                         name: "Math module in Python"
                         tags: ["numbers", "math", "module"]
                         level: 3
                         learn_goals:
                           - "How to use math module in Python?"
                           - "Useful functions"
-                      - id: internal_repr_and_bits
+                      - id: prog_langs_python_types_and_data_structures_built_in_numbers_internal_repr_and_bits
                         name: "Internal representation and bitwise operations in Python"
                         tags: ["numbers", "internal-representation", "bits"]
                         level: 3
@@ -301,412 +300,358 @@ nodes:
                           - "How numbers are stored in binary format"
                           - "How to convert numbers from one notation system to another?"
                           - "Bitwise operations and how can they be used?"
-                      - id: abstract_base_classes
+                      - id: prog_langs_python_types_and_data_structures_built_in_numbers_abstract_base_classes
                         name: "Abstract Base Classes for numbers in Python"
                         tags: ["numbers", "abstract-base-classes"]
                         level: 3
-                      - id: fractions
+                      - id: prog_langs_python_types_and_data_structures_built_in_numbers_fractions
                         name: "Fractions in Python"
                         tags: ["numbers", "fractions"]
                         level: 3
-                      - id: decimal
+                      - id: prog_langs_python_types_and_data_structures_built_in_numbers_decimal
                         name: "Decimal in Python"
                         tags: ["numbers", "decimal"]
                         level: 3
-                      - id: random
+                      - id: prog_langs_python_types_and_data_structures_built_in_numbers_random
                         name: "Random in Python"
                         tags: ["numbers", "random"]
                         level: 2
-                  - id: strings
+                  - id: prog_langs_python_types_and_data_structures_built_in_strings
                     name: "Strings"
                     tags: ["strings"]
                     level: 1
-                  - id: boolean
+                  - id: prog_langs_python_types_and_data_structures_built_in_boolean
                     name: "boolean"
                     tags: ["boolean"]
                     level: 1
-                  - id: none
+                  - id: prog_langs_python_types_and_data_structures_built_in_none
                     name: "None"
                     tags: ["none"]
                     level: 1
-                  - id: comparisons
+                  - id: prog_langs_python_types_and_data_structures_built_in_comparisons
                     name: "Comparisons"
                     tags: ["comparisons"]
                     level: 2
-                  - id: iterators
+                  - id: prog_langs_python_types_and_data_structures_built_in_iterators
                     name: "Iterators"
                     tags: ["iterators"]
                     level: 3
-                  - id: binary_sequences
+                  - id: prog_langs_python_types_and_data_structures_built_in_binary_sequences
                     name: "Binary Sequences"
                     tags: ["binary-sequences"]
                     level: 3
-                  - id: set_types
+                  - id: prog_langs_python_types_and_data_structures_built_in_set_types
                     name: "Set Types"
                     tags: ["set-types"]
                     level: 2
-                  - id: mapping_types_dict
+                  - id: prog_langs_python_types_and_data_structures_built_in_mapping_types_dict
                     name: "Mapping Types - dict"
                     tags: ["mapping-types", "dict"]
                     level: 2
-                  - id: type_annotation_types
+                  - id: prog_langs_python_types_and_data_structures_built_in_type_annotation_types
                     name: "Type Annotation Types"
                     tags: ["type-annotation-types"]
                     level: 3
-                  - id: sequence_types
+                  - id: prog_langs_python_types_and_data_structures_built_in_sequence_types
                     name: "Sequence Types: list, tuple, range"
                     tags: ["sequence-types"]
                     level: 1
-                  - id: conversion
+                  - id: prog_langs_python_types_and_data_structures_built_in_conversion
                     name: "Type conversion"
                     tags: ["conversion"]
                     level: 1
-              - id: data_types
+              - id: prog_langs_python_types_and_data_structures_data_types
                 name: "Data Types"
                 tags: ["data-types"]
                 nodes:
-                  - id: datetime
+                  - id: prog_langs_python_types_and_data_structures_data_types_datetime
                     name: "Datetime"
                     tags: ["datetime"]
                     level: 2
-                  - id: collections
+                  - id: prog_langs_python_types_and_data_structures_data_types_collections
                     name: "Collections"
                     tags: ["collections"]
                     level: 3
-                  - id: array
+                  - id: prog_langs_python_types_and_data_structures_data_types_array
                     name: "Efficient arrays"
                     tags: ["array"]
                     level: 3
-                  - id: copy
+                  - id: prog_langs_python_types_and_data_structures_data_types_copy
                     name: "Copy"
                     tags: ["copy"]
                     level: 3
-          - id: control_flow
+          - id: prog_langs_python_control_flow
             name: "Control Flow"
             tags: ["control-flow"]
             nodes:
-              - id: conditional_statements
+              - id: prog_langs_python_control_flow_conditional_statements
                 name: "Conditional Statements"
                 tags: ["if", "else", "elif", "switch"]
                 level: 1
-              - id: loops
+              - id: prog_langs_python_control_flow_loops
                 name: "Loops"
                 tags: ["for", "while"]
                 level: 2
                 nodes:
-                  - id: additional_control
+                  - id: prog_langs_python_control_flow_loops_additional_control
                     name: "Additional Control over loops"
                     tags: ["continue", "break", "pass"]
                     level: 2
-              - id: exceptions
+              - id: prog_langs_python_control_flow_exceptions
                 name: "Exceptions"
                 tags: ["exceptions"]
                 level: 2
-          - id: functions
+          - id: prog_langs_python_functions
             name: "Functions"
             level: 1
             tags: ["functions"]
             nodes:
-              - id: lambda
+              - id: prog_langs_python_functions_lambda
                 name: "Lambda"
                 tags: ["lambda"]
                 level: 3
-              - id: map_filter
+              - id: prog_langs_python_functions_map_filter
                 name: "map and filter"
                 tags: ["map", "filter"]
                 level: 3
-              - id: decorators
+              - id: prog_langs_python_functions_decorators
                 name: "Decorators"
                 tags: ["decorators"]
                 level: 3
-              - id: builtin_functions
+              - id: prog_langs_python_functions_builtin_functions
                 name: "Built-in Functions"
                 tags: ["built-in-functions"]
                 level: 4
-          - id: algorithms_implementations
+          - id: prog_langs_python_algorithms_implementations
             name: "Algorithms Implementations in Python"
             tags: ["algorithms", "py-implementation"]
             nodes:
-              - id: binary_search
+              - id: prog_langs_python_algorithms_implementations_binary_search
                 name: "Binary Search"
                 tags: ["binary-search"]
                 level: 4
                 dependencies:
-                  - algo_tree
-                  - algo_searching_binary
-              - id: bubble_sort
+                  - algorithms_data_structures_tree
+                  - algorithms_searching_binary
+              - id: prog_langs_python_algorithms_implementations_bubble_sort
                 name: "Bubble Sort"
                 tags: ["bubble-sort"]
                 level: 4
                 dependencies:
-                  - algo_sorting_bubble
-          - id: oop
+                  - algorithms_sorting_bubble
+          - id: prog_langs_python_oop
             name: "Object Oriented Programming"
             tags: ["oop"]
             nodes:
-              - id: classes_objects
+              - id: prog_langs_python_oop_classes_objects
                 name: "Classes and 3 Principles of OOP: Encapsulation, Inheritance, Polymorphism"
                 tags: ["classes"]
                 level: 2
-              - id: methods_properties
+              - id: prog_langs_python_oop_methods_properties
                 name: "Methods, Properties and Attributes"
                 tags: ["methods"]
                 level: 2
-          - id: packages
+          - id: prog_langs_python_packages
             name: "Packages"
             tags: ["packages"]
             nodes:
-              - id: general
+              - id: prog_langs_python_packages_general
                 name: "Modules, Packages and Imports"
                 tags: ["modules"]
                 level: 2
-              - id: venv_pip
+              - id: prog_langs_python_packages_venv_pip
                 name: "Virtualenv and Pip"
                 tags: ["virtualenv"]
                 level: 2
-          - id: debugging
+          - id: prog_langs_python_debugging
             name: "Debugging"
             tags: ["debugging"]
             nodes:
-              - id: debugging_with_pdb
+              - id: prog_langs_python_debugging_with_pdb
                 name: "Debugging with PDB"
                 tags: ["debugging", "pdb"]
                 level: 3
-              - id: debugging_with_vscode
+              - id: prog_langs_python_debugging_with_vscode
                 name: "Debugging with VSCode"
                 tags: ["debugging", "vscode"]
                 level: 3
                 dependencies:
-                  - pt_vscode_debugging
-          - id: input_output
+                  - productivity_tools_vscode_debugging
+          - id: prog_langs_python_input_output
             name: "Input and Output"
             tags: ["input-output"]
             nodes:
-              - id: print
+              - id: prog_langs_python_input_output_print
                 name: "Output to the console and print function"
                 tags: ["output", "print"]
                 level: 2
                 dependencies:
-                  - os_cmd_intro
-              - id: input
+                  - os_command_line_shell
+              - id: prog_langs_python_input_output_input
                 name: "Input from the Console"
                 tags: ["input"]
                 level: 2
                 dependencies:
-                  - os_cmd_intro
-          - id: cli
+                  - os_command_line_shell
+          - id: prog_langs_python_cli
             name: "Command Line Interface"
             tags: ["cli"]
             nodes:
-              - id: command_line_args
+              - id: prog_langs_python_cli_command_line_args
                 name: "Command Line Arguments"
                 tags: ["command-line-arguments"]
                 level: 2
-              - id: command_line_input
+              - id: prog_langs_python_cli_command_line_input
                 name: "Command Line Input"
                 tags: ["command-line-input"]
                 level: 2
-              - id: command_line_output
+              - id: prog_langs_python_cli_command_line_output
                 name: "Command Line Output"
                 tags: ["command-line-output"]
                 level: 2
-              - id: click_8_1_x
+              - id: prog_langs_python_cli_click
                 name: "Click"
-                tags: ["click", "click-8.1.x"]
+                tags: ["click"]
                 level: 2
                 nodes:
-                  - id: click_intro
+                  - id: prog_langs_python_cli_click_intro
                     name: "Introduction to Click"
                     tags: ["click"]
                     level: 2
-                  - id: click_deep_dive
+                  - id: prog_langs_python_cli_click_deep_dive
                     name: "Deep dive into Click"
                     tags: ["click"]
                     level: 2
-          - id: text_processing
+          - id: prog_langs_python_text_processing
             name: "Text Processing Services"
             tags: ["text-processing"]
             nodes:
-              - id: string
+              - id: prog_langs_python_text_processing_string
                 name: "Common String Operations"
                 tags: ["string"]
                 level: 3
-              - id: re
+              - id: prog_langs_python_text_processing_re
                 name: "Regular Expressions"
                 tags: ["re"]
                 level: 4
-          - id: functional_programming
+          - id: prog_langs_python_functional_programming
             name: "Functional Programming"
             tags: ["functional-programming"]
             nodes:
-              - id: itertools
+              - id: prog_langs_python_functional_programming_itertools
                 name: "Itertools"
                 tags: ["itertools"]
                 level: 3
-              - id: functools
+              - id: prog_langs_python_functional_programming_functools
                 name: "Functools"
                 tags: ["functools"]
                 level: 3
-              - id: operator
+              - id: prog_langs_python_functional_programming_operator
                 name: "Operator"
                 tags: ["operator"]
                 level: 3
-          - id: file_and_directory_access
+          - id: prog_langs_python_file_and_directory_access
             name: "File and Directory Access"
             tags: ["file-and-directory-access"]
             nodes:
-              - id: files_directories
+              - id: prog_langs_python_file_and_directory_access_files_directories
                 name: "Files and Directories: Reading and Writing"
                 tags: ["files", "directories"]
                 level: 2
                 dependencies:
-                  - os.directories_and_files
-              - id: pathlib
+                  - os_directories_and_files
+              - id: prog_langs_python_file_and_directory_access_pathlib
                 name: "Object-oriented filesystem paths"
                 tags: ["pathlib"]
                 level: 2
-              - id: os_path
+              - id: prog_langs_python_file_and_directory_access_os_path
                 name: "Path Manipulation"
                 tags: ["os-path"]
                 level: 2
-          - id: data_persistence
+          - id: prog_langs_python_data_persistence
             name: "Data Persistence"
             tags: ["data-persistence"]
             nodes:
-              - id: pickle
+              - id: prog_langs_python_data_persistence_pickle
                 name: "Python Object Serialization"
                 tags: ["pickle"]
                 level: 2
-              - id: sqlite
+              - id: prog_langs_python_data_persistence_sqlite
                 name: "SQLite"
                 tags: ["sqlite"]
                 level: 2
-              - id: marshal
+              - id: prog_langs_python_data_persistence_marshal
                 name: "Internal Python object serialization"
                 tags: ["marshal"]
                 level: 2
-          - id: file_formats
+          - id: prog_langs_python_file_formats
             name: "File Formats"
             tags: ["file-formats"]
             nodes:
-              - id: csv
+              - id: prog_langs_python_file_formats_csv
                 name: "CSV"
                 tags: ["csv"]
                 level: 2
-          - id: generic_os_services
+          - id: prog_langs_python_generic_os_services
             name: "Generic Operating System Services"
             tags: ["generic-os-services"]
             nodes:
-              - id: os
+              - id: prog_langs_python_generic_os_services_os
                 name: "Miscellaneous operating system interfaces"
                 tags: ["os"]
                 level: 3
-              - id: io
+              - id: prog_langs_python_generic_os_services_io
                 name: "Core tools for working with streams"
                 tags: ["io"]
                 level: 4
-              - id: time
+              - id: prog_langs_python_generic_os_services_time
                 name: "Time access and conversions"
                 tags: ["time"]
                 level: 2
-          - id: development_tools
+          - id: prog_langs_python_development_tools
             name: "Development Tools"
             tags: ["development-tools"]
             nodes:
-              - id: unittest
+              - id: prog_langs_python_development_tools_unittest
                 name: "Unit Testing Framework"
                 tags: ["unittest"]
                 level: 2
-              - id: doctest
+              - id: prog_langs_python_development_tools_doctest
                 name: "Test interactive Python examples"
                 tags: ["doctest"]
                 level: 2
-          - id: transport
+          - id: prog_langs_python_transport
             name: "Communication and transport protocols"
             tags: ["transport"]
             nodes:
-              - id: requests
+              - id: prog_langs_python_transport_requests
                 name: "Requests package"
                 tags: ["requests"]
                 level: 2
-                dependencies:
-                  - networking.architecture.osi_model
-                  - networking.architecture.client_server_model
-                  - networking.protocols.http
-          - id: projects
+          - id: prog_langs_python_projects
             name: "Collection of projects"
             nodes:
-              - id: hangman_game
+              - id: prog_langs_python_projects_hangman_game
                 name: "Hangman Game"
                 tags: ["projects", "game"]
                 learn_goals:
                   - "Learn how to work with data types and structures, loops and functions, input and output"
-                dependencies:
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.numbers"
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.strings"
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.sequence_types"
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.mapping_types_dict"
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.set_types"
-                  - "prog_langs.python_3_11_4.functions"
-                  - "prog_langs.python_3_11_4.input_output.input"
-                  - "prog_langs.python_3_11_4.input_output.print"
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.boolean"
-                  - "prog_langs.python_3_11_4.control_flow.conditional_statements"
-                  - "prog_langs.python_3_11_4.control_flow.loops"
-              - id: resource_management_system
+              - id: prog_langs_python_projects_resource_management_system
                 name: "Resource Management System"
                 tags: ["projects", "system", "management"]
                 learn_goals:
                   - "Learn how to work with data types and structures, loops and functions, input and output"
-                dependencies:
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.numbers"
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.strings"
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.sequence_types"
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.mapping_types_dict"
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.set_types"
-                  - "prog_langs.python_3_11_4.functions"
-                  - "prog_langs.python_3_11_4.input_output.input"
-                  - "prog_langs.python_3_11_4.input_output.print"
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.boolean"
-                  - "prog_langs.python_3_11_4.control_flow.conditional_statements"
-                  - "prog_langs.python_3_11_4.control_flow.loops"
-              - id: weather_prediction
+              - id: prog_langs_python_projects_weather_prediction
                 name: "Weather Prediction"
                 tags: ["projects", "prediction", "weather", "analysis"]
                 learn_goals:
                   - "Learn how to work with data types and structures, loops and functions, input and output"
-                dependencies:
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.numbers"
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.strings"
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.sequence_types"
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.mapping_types_dict"
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.set_types"
-                  - "prog_langs.python_3_11_4.functions"
-                  - "prog_langs.python_3_11_4.input_output.input"
-                  - "prog_langs.python_3_11_4.input_output.print"
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.boolean"
-                  - "prog_langs.python_3_11_4.control_flow.conditional_statements"
-                  - "prog_langs.python_3_11_4.control_flow.loops"
-              - id: file_manager
+              - id: prog_langs_python_projects_file_manager
                 name: "File Manager"
                 tags: ["projects", "file", "manager"]
                 learn_goals:
                   - "Learn how to work with Github and OS, files in Python"
-                dependencies:
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.numbers"
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.strings"
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.sequence_types"
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.mapping_types_dict"
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.set_types"
-                  - "prog_langs.python_3_11_4.functions"
-                  - "prog_langs.python_3_11_4.input_output.input"
-                  - "prog_langs.python_3_11_4.input_output.print"
-                  - "prog_langs.python_3_11_4.types_and_data_structures.built_in.boolean"
-                  - "prog_langs.python_3_11_4.control_flow.conditional_statements"
-                  - "prog_langs.python_3_11_4.control_flow.loops"
-                  - "prog_langs.python_3_11_4.oop.classes_objects"
-                  - "productivity_tools.github.usage"
-              - id: smart_home_manager
+              - id: prog_langs_python_projects_smart_home_manager
                 name: "Smart Home Manager"
                 tags: ["projects", "smart", "home", "manager"]
                 learn_goals:
@@ -714,11 +659,11 @@ nodes:
 
           # python web
           # python db
-  - id: git_2_41_0
+  - id: git
     name: "Working with Git"
     tags: ["git"]
     nodes:
-      - id: usage
+      - id: git_usage
         name: "Introduction"
         tags: ["intro"]
         level: 1
@@ -726,37 +671,32 @@ nodes:
     name: "Productivity Tools"
     tags: ["productivity-tools"]
     nodes:
-      - id: slack
+      - id: productivity_tools_slack
         name: "Slack"
         tags: ["slack"]
         level: 1
-        nodes:
-          - id: pt_slack_usage
-            name: "Working with Slack"
-            tags: ["slack"]
-            level: 2
-      - id: github
+      - id: productivity_tools_github
         name: "GitHub"
         tags: ["github"]
         level: 1
         nodes:
-          - id: usage
+          - id: productivity_tools_github_usage
             name: "Working with GitHub"
             tags: ["github"]
             level: 2
-          - id: ssh_keys
+          - id: productivity_tools_github_ssh_keys
             name: "SSH Keys in Github"
             tags: ["ssh-keys"]
             level: 2
-      - id: vscode_1_79
+      - id: productivity_tools_vscode
         name: "Visual Studio Code"
         tags: ["vscode"]
         nodes:
-          - id: usage
+          - id: productivity_tools_vscode_usage
             name: "Using VSCode: editor, terminal and extensions"
             tags: ["vscode", "terminal", "extensions"]
             level: 2
-          - id: debugging
+          - id: productivity_tools_vscode_debugging
             name: "Debugging"
             tags: ["vscode"]
             level: 3
