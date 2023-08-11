@@ -1,0 +1,42 @@
+node_ref: "helper.py.sprint_one"
+content:
+  - type: "paragraph"
+    value: |
+      # Welcome to Your Python for Beginners Course 
+      Education and development can seem challenging if you don't have guidance and a clear plan. But we believe that with the right tools and resources, anyone can overcome those challenges and achieve success. In this lesson, we explore the significance of prioritizing mental health throughout the educational journey, dive into Python's philosophy, and understand how it can positively impact our learning experience.
+
+
+      After completing this unit, you’ll be able to:
+      * Have a clear understanding of goals and essence of the course
+      * Know all important tools and teams that will guide you through
+
+      ## What awaits us in the course?
+      This course is intended for absolute beginners in programming or computer science, but is not limited to them. The main goal is to give you a good starting ground for learning new skills and challenges. Python finds its applications in various domains of the Computer Science industry, including Data Science, Backend Development, System Administration, DevOps, and even Desktop App development. One of Python's greatest strengths lies in its simplicity and versatility, making it a favored choice across multiple fields within the industry.
+
+
+      Our course will prioritize the mastery of Python syntax, fundamental operations, functions, and various data types. Additionally, we will dive into the interaction between the programming language and operating systems, particularly through file manipulation, including reading and writing files. We will also venture into the realm of Object-Oriented Programming, a key concept in software development. Furthermore, we will familiarize ourselves with essential developer tools and platforms such as Vscode, GitHub, and Git, equipping you with the necessary skills to excel in the programming world.
+
+
+      If seeing all the programming concepts mentioned above already makes you feel a bit confused and worried, we completely understand your emotions! Learning programming can initially seem overwhelming, but fear not. With our comprehensive curriculum and supportive learning environment, you'll soon find yourself gaining confidence and embracing the fascinating world of programming with ease.
+
+      ## How will we learn?
+      ### Sprint
+      Our learning journey will last for a month and include two Sprints. **Sprint is a fixed length event** that lasts for two weeks and its main goal is to achieve a tangible outcome in the end. During each Sprint you learn the Python theory, practice your skills and do the final Project that will be reviewed by the industry expert. 
+      ### Project
+      **The Project is a simulation of the real work task** that aims to strengthen your practical skills. The learning process we follow mirrors the practices employed by top-tier tech companies, where software engineers continually refine and enhance their skills. By adopting this approach, we ensure that you will embark on a journey of learning and improvement that aligns with industry best practices.
+      ### Roadmap
+      **Our roadmap is an interactive and fun way** to visualize all lessons and interconnections between the programming concepts. You'll discover that certain topics have multiple lessons available to you, providing the freedom to choose what you want to learn and when. While there may be a certain order to follow based on the dependencies of previous knowledge, within those parallel lessons, you have the flexibility to proceed in any order that suits you best.
+      ### Support team
+      If you have any questions or want to communicate with your peers, our cozy **Slack-based community** is the right place. Within this community, we have a dedicated space specifically designed for asking technical questions, where fellow students and reviewers are available to provide assistance. Additionally, you can directly communicate with your **dedicated Coordinator**, who will lead your group throughout the month and ensure you stay informed about crucial dates. Whether you have queries regarding payments or require assistance with exceptional cases, your Coordinator will handle these matters efficiently.
+
+      ## Your next steps
+      In the first Sprint, we will focus on learning the core of Python: syntax and basic operations. Nevertheless, we will still do our first Project, where you will practice the theory you learnt during the Sprint.
+
+
+      Before you start, get familiar with the platform and our Slack community. The Coordinator will kickstart the process, but there is a first task for you: Open the Slack app and introduce yourself in the channel #community
+
+
+      Once again, kudos to you for embarking on this learning journey! We know firsthand how challenging education can be, but we come prepared. Roadmap will help you visualize and track your progress. The roadmap will serve as a visual guide to track your progress. Our lessons are thoughtfully designed to deepen your understanding through ample practice opportunities. Feedback from experienced software engineers will provide you with valuable real-world insights. Finally, our vibrant Slack community is always ready to lend a helping hand whenever you need it.
+
+
+      Good luck, and see you in the next lesson! 🤩
