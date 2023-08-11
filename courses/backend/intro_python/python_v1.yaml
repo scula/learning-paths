@@ -28,13 +28,18 @@ kntree:
   sha_version: "sha version for knowledge tree"
 sprints:
   - name: "Sprint 1. Python Basics"
-    lessons:
-      - node_id: "helper.py.sprint_one" # node_id with specified kntree sha must be in db
-        group: "Sprints"
-        lession_sha: "sha for lession" # combo for node_id and lession_sha should be in db
-      - node_id: "story.zombie_survival.intro"
-        group: "Story"
-      - parallel:
+    sprint_items:
+      - type: "single"
+        lessons:
+          - node_id: "helper_py_sprint_one" # node_id with specified kntree sha must be in db
+            group: "Sprints"
+            lession_sha: "dbd5f39" # combo for node_id and lession_sha should be in db
+      - type: "single"
+        lessons:
+          - node_id: "story.zombie_survival.intro"
+            group: "Story"
+      - type: parallel
+        lessons:
           - node_id: "prog_langs.python_3_11_4.philosophy"
             group: "General"
           - node_id: "prog_langs.python_3_11_4.syntax"
