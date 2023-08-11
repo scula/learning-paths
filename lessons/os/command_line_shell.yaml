@@ -1,4 +1,7 @@
 node_ref: "prog_langs.python_3_11_4.syntax"
+software_dependencies:
+  - name: python
+    version: 3.11.4
 content:
   - type: "paragraph"
     value: |
