@@ -1,4 +1,7 @@
-node_ref: "helper.py.sprint_one"
+node_string_id: "helper_py_sprint_one"
+software_dependencies:
+  - name: python
+    version: 3.11.4
 content:
   - type: "paragraph"
     value: |
