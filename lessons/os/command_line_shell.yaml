@@ -1,4 +1,4 @@
-node_ref: "prog_langs.python_3_11_4.syntax"
+node_string_id: "prog_langs_python_syntax"
 software_dependencies:
   - name: python
     version: 3.11.4
