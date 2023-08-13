@@ -30,16 +30,16 @@ sprints:
   - name: "Sprint 1. Python Basics"
     sprint_items:
       - type: "single"
-        lessons:
+        collections:
           - node_string_id: "helper_py_sprint_one" # node_string_id with specified kntree sha must be in db
             group: "Sprints"
             lession_sha: "dbd5f39" # combo for node_string_id and lession_sha should be in db
       - type: "single"
-        lessons:
+        collections:
           - node_string_id: "story.zombie_survival.intro"
             group: "Story"
       - type: parallel
-        lessons:
+        collections:
           - node_string_id: "prog_langs.python_3_11_4.philosophy"
             group: "General"
           - node_string_id: "prog_langs.python_3_11_4.syntax"
@@ -105,7 +105,7 @@ sprints:
       - node_string_id: story.zombie_survival.day_six
         group: "Story"
   - name: "Sprint 2. Python: Data and Operating System Interaction"
-    lessons:
+    collections:
       - node_string_id: "helper.py.sprint_two"
         group: "Sprints"
       - node_string_id: "story.zombie_survival.day_seven"
