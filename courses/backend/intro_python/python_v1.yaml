@@ -51,8 +51,10 @@ sprints:
             group: "General"
           - node_string_id: "os.command_line_shell"
             group: "Operating System"
-      - node_string_id: story.zombie_survival.day_one
-        group: "Story"
+      - type: "single"
+        collections:
+          - node_string_id: stories_zombie_survival_day_one
+            group: "Story"
       - type: parallel
         collections:
           - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures"
