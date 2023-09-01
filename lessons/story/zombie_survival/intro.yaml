@@ -1,0 +1,19 @@
+node_ref: "story.zombie_survival.intro"
+content:
+  - type: "paragraph"
+    value: |
+      # So the story begins
+      Seven days have passed since life, as I know it was over. What started as a new epidemic outbreak quickly turned into a real zombie apocalypse. The pop culture ideas of such an event turned out to be wrong. The reality was brutal and unforgiving.
+      My name is Ada, and I'm left alone in my temporary Airbnb in the stranded New York. I came here two weeks to apply for the Art School. Luckily, I was in my apartment when it all started. All the government services and media were too slow to react, and quickly, the streets became rivers of hungry monsters. 
+      On the bright side, the zombies were afraid of the sun and active only underground or at night. But the amount of food I had left (none) pushed me to work on a plan to leave the city and find a proper shelter.
+  - type: "paragraph"
+    value: |
+      ## New home
+      I left the house at dawn. The idea was to bicycle to my aunt's place in the suburbs. I knew she was living on the outskirts of her small countryside city, which would be perfect for hiding there. 
+      It took eight hours of non-stop pedalling, and I could barely breathe. Even before I could see the house, I knew something was wrong. The smoke was coming from the earth as if it just finished burning, and pieces of scrap metal were everywhere. 
+      Auntie's house was nowhere to be seen, and I realised that the military decided to shell the suburbs last week in a feeble attempt to stop the spreading. At this point, I had around 2 hours before darkness would invite monsters to take a bite of me, and my options were slim.
+  - type: "paragraph"
+    value: |
+      I took a road to the next tiny village through the abandoned warehouses. By the end, I noticed one that was not damaged and had an intriguing fade sign "Tech..y". As every phone was no more useful as a brick at this point without electricity, I decided to look inside for batteries or accumulators.
+      Without huge expectations, I peeked inside and was astonished. Thick dust covered several isles of canned food, some old computers and many boxes with different tech stuff. No human or zombie has visited that place for years.
+      Without better options right now, I guess this could work as a temporary base for my future operations.
