@@ -53,7 +53,8 @@ sprints:
             group: "Operating System"
       - node_string_id: story.zombie_survival.day_one
         group: "Story"
-      - parallel:
+      - type: parallel
+        collections:
           - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures"
             group: "Types and Data Structures"
           - node_string_id: "prog_langs.python_3_11_4.input_output.print"
