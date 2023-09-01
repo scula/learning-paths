@@ -39,6 +39,8 @@ sprints:
         collections:
           - node_string_id: "story.zombie_survival.intro"
             group: "Story"
+            lesson_sha: "2b4ab84"
+            file_path: "lessons/story/zombie_survival/intro.yaml"
       - type: parallel
         collections:
           - node_string_id: "prog_langs.python_3_11_4.philosophy"

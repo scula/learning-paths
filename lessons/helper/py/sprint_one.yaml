@@ -1,4 +1,6 @@
 node_string_id: "helper_py_sprint_one"
+name: "First Sprint"
+description: "How will we learn and how does it work?"
 software_dependencies:
   - name: python
     version: 3.11.4

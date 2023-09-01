@@ -1,4 +1,6 @@
-node_ref: "story.zombie_survival.intro"
+node_string_id: "stories_zombie_survival_intro"
+name: "The story begins"
+description: "What do zombies and Python have in common?"
 content:
   - type: "paragraph"
     value: |
