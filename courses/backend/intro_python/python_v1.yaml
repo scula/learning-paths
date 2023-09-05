@@ -61,9 +61,12 @@ sprints:
             group: "Types and Data Structures"
           - node_string_id: "prog_langs.python_3_11_4.input_output.print"
             group: "Input and Output"
-      - node_string_id: story.zombie_survival.day_two
-        group: "Story"
-      - parallel:
+      - type: "single"
+        collections:
+          - node_string_id: story.zombie_survival.day_two
+            group: "Story"
+      - type: "parallel"
+        collections:
           - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.numbers"
             group: "Types and Data Structures"
             complementary:
@@ -76,18 +79,24 @@ sprints:
             group: "Types and Data Structures"
             complementary:
               - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.none"
-      - node_string_id: story.zombie_survival.day_three
-        group: "Story"
-      - parallel:
+      - type: "single"
+        collections:
+          - node_string_id: story.zombie_survival.day_three
+            group: "Story"
+      - type: "parallel"
+        collections:
           - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.sequence_types"
             group: "Types and Data Structures"
           - node_string_id: "prog_langs.python_3_11_4.control_flow.conditional_statements"
             group: "Control Flow"
           - node_string_id: "prog_langs.python_3_11_4.control_flow.loops"
             group: "Control Flow"
-      - node_string_id: story.zombie_survival.day_four
-        group: "Story"
-      - parallel:
+      - type: "single"
+        collections:
+          - node_string_id: story.zombie_survival.day_four
+            group: "Story"
+      - type: "parallel"
+        collections:
           - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.mapping_types_dict"
             group: "Types and Data Structures"
           - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.set_types"
@@ -97,26 +106,38 @@ sprints:
             complementary:
               - node_string_id: "prog_langs.python_3_11_4.functions.lambda"
                 group: "Functions"
-      - node_string_id: story.zombie_survival.day_five
-        group: "Story"
-      - node_string_id: "prog_langs.python_3_11_4.input_output.input"
-        group: "Input and Output"
-      - selection:
+      - type: "single"
+        collections:
+          - node_string_id: story.zombie_survival.day_five
+            group: "Story"
+      - type: "single"
+        collections:
+          - node_string_id: "prog_langs.python_3_11_4.input_output.input"
+            group: "Input and Output"
+      - type: "selection"
+        collections:
           - node_string_id: "prog_langs.python_3_11_4.projects.hangman_game"
             group: "Projects"
           - node_string_id: "prog_langs.python_3_11_4.projects.resource_management_system"
             group: "Projects"
           - node_string_id: "prog_langs.python_3_11_4.projects.weather_prediction"
             group: "Projects"
-      - node_string_id: story.zombie_survival.day_six
-        group: "Story"
+      - type: "single"
+        collections:
+          - node_string_id: story.zombie_survival.day_six
+            group: "Story"
   - name: "Sprint 2. Python: Data and Operating System Interaction"
-    collections:
-      - node_string_id: "helper.py.sprint_two"
-        group: "Sprints"
-      - node_string_id: "story.zombie_survival.day_seven"
-        group: "Story"
-      - parallel:
+    sprint_items:
+      - type: "single"
+        collections:
+          - node_string_id: "helper.py.sprint_two"
+            group: "Sprints"
+      - type: "single"
+        collections:
+          - node_string_id: "story.zombie_survival.day_seven"
+            group: "Story"
+      - type: "parallel"
+        collections:
           - node_string_id: "productivity_tools.github.usage"
             group: "Github"
           - node_string_id: "productivity_tools.github.ssh_keys"
@@ -125,7 +146,8 @@ sprints:
             group: "Productivity tools"
           - node_string_id: "git_2_41_0.usage"
             group: "Productivity tools"
-      - parallel:
+      - type: "parallel"
+        collections:
           - node_string_id: "prog_langs.python_3_11_4.control_flow.loops.additional_control"
             group: "Control Flow"
           - node_string_id: "prog_langs.python_3_11_4.control_flow.exceptions"
@@ -135,19 +157,23 @@ sprints:
             complementary:
               - node_string_id: "prog_langs.python_3_11_4.packages.venv_pip"
                 group: "General"
-      - node_string_id: "prog_langs.python_3_11_4.oop.classes_objects"
-        group: "Object Oriented Programming"
-        complementary:
-          - node_string_id: "prog_langs.python_3_11_4.oop.methods_properties"
+      - type: "single"
+        collections:
+          - node_string_id: "prog_langs.python_3_11_4.oop.classes_objects"
             group: "Object Oriented Programming"
-      - parallel:
+            complementary:
+              - node_string_id: "prog_langs.python_3_11_4.oop.methods_properties"
+                group: "Object Oriented Programming"
+      - type: "parallel"
+        collections:
           - node_string_id: "os.directories_and_files"
             group: "Operating System"
           - node_string_id: "prog_langs.python_3_11_4.files_directories.files_directories"
             group: "Operating System"
           - node_string_id: "prog_langs.python_3_11_4.file_formats.csv"
             group: "Operating System"
-      - selection:
+      - type: "selection"
+        collections:
           - node_string_id: "prog_langs.python_3_11_4.projects.file_manager"
             group: "Projects"
           - node_string_id: "prog_langs.python_3_11_4.projects.smart_home_manager"
