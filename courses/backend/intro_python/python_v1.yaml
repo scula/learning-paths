@@ -33,13 +33,13 @@ sprints:
         collections:
           - node_string_id: "helper_py_sprint_one" # node_string_id with specified kntree sha must be in db
             group: "Sprints"
-            lesson_sha: "249a3cd" # combo for node_string_id and lession_sha should be in db
+            lesson_sha: "101b0c2" # combo for node_string_id and lession_sha should be in db
             file_path: "lessons/helper/py/sprint_one.yaml" # provided when lesson was not created before, ignored otherwise
       - type: "single"
         collections:
           - node_string_id: "stories_zombie_survival_intro"
             group: "Story"
-            lesson_sha: "249a3cd"
+            lesson_sha: "101b0c2"
             file_path: "lessons/story/zombie_survival/intro.yaml"
       - type: parallel
         collections:
