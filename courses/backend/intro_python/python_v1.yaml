@@ -43,8 +43,6 @@ sprints:
             file_path: "lessons/story/zombie_survival/intro.yaml"
       - type: parallel
         collections:
-          - node_string_id: "prog_langs.python_3_11_4.philosophy"
-            group: "General"
           - node_string_id: "prog_langs.python_3_11_4.syntax"
             group: "General"
           - node_string_id: "prog_langs.python_3_11_4.interpreter"
@@ -142,6 +140,8 @@ sprints:
             group: "Github"
           - node_string_id: "productivity_tools.github.ssh_keys"
             group: "Github"
+      - type: "parallel"
+        collections:
           - node_string_id: "productivity_tools.vscode_1_79.usage"
             group: "Productivity tools"
           - node_string_id: "git_2_41_0.usage"
