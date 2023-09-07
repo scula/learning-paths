@@ -11,7 +11,7 @@ learning_goals: |
 difficulty: |
   Compulsory lessons should be level 1-2, complementary 2 or max 3.
 groups: # can differ from nodes because of the logical issues
-  - "Types & Structures"
+  - "Structures"
   - "Story"
   - "General"
   - "Input and Output"
@@ -56,7 +56,7 @@ sprints:
       - type: parallel
         collections:
           - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures"
-            group: "Types & Structures"
+            group: "Structures"
           - node_string_id: "prog_langs.python_3_11_4.input_output.print"
             group: "Input and Output"
       - type: "single"
@@ -66,15 +66,15 @@ sprints:
       - type: "parallel"
         collections:
           - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.numbers"
-            group: "Types & Structures"
+            group: "Structures"
             complementary:
               - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.numbers_precision_error"
           - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.strings"
-            group: "Types & Structures"
+            group: "Structures"
             complementary:
               - node_string_id: "prog_langs.python_3_11_4.guidelines.string_formatting"
           - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.boolean"
-            group: "Types & Structures"
+            group: "Structures"
             complementary:
               - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.none"
       - type: "single"
@@ -84,7 +84,7 @@ sprints:
       - type: "parallel"
         collections:
           - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.sequence_types"
-            group: "Types & Structures"
+            group: "Structures"
           - node_string_id: "prog_langs.python_3_11_4.control_flow.conditional_statements"
             group: "Control Flow"
           - node_string_id: "prog_langs.python_3_11_4.control_flow.loops"
@@ -96,9 +96,9 @@ sprints:
       - type: "parallel"
         collections:
           - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.mapping_types_dict"
-            group: "Types & Structures"
+            group: "Structures"
           - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.set_types"
-            group: "Types & Structures"
+            group: "Structures"
           - node_string_id: "prog_langs.python_3_11_4.functions"
             group: "Functions"
             complementary:
