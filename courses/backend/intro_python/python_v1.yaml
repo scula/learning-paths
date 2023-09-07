@@ -11,11 +11,11 @@ learning_goals: |
 difficulty: |
   Compulsory lessons should be level 1-2, complementary 2 or max 3.
 groups: # can differ from nodes because of the logical issues
-  - "Types and Data Structures"
+  - "Types & Structures"
   - "Story"
   - "General"
   - "Input and Output"
-  - "Operating System"
+  - "OS"
   - "Functions"
   - "Github"
   - "Productivity tools"
@@ -23,7 +23,7 @@ groups: # can differ from nodes because of the logical issues
   - "Control Flow"
   - "Sprints"
   - "Projects"
-  - "Operating System"
+  - "OS"
 kntree:
   sha_version: "sha version for knowledge tree"
 sprints:
@@ -48,7 +48,7 @@ sprints:
           - node_string_id: "prog_langs.python_3_11_4.interpreter"
             group: "General"
           - node_string_id: "os.command_line_shell"
-            group: "Operating System"
+            group: "OS"
       - type: "single"
         collections:
           - node_string_id: stories_zombie_survival_day_one
@@ -56,7 +56,7 @@ sprints:
       - type: parallel
         collections:
           - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures"
-            group: "Types and Data Structures"
+            group: "Types & Structures"
           - node_string_id: "prog_langs.python_3_11_4.input_output.print"
             group: "Input and Output"
       - type: "single"
@@ -66,15 +66,15 @@ sprints:
       - type: "parallel"
         collections:
           - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.numbers"
-            group: "Types and Data Structures"
+            group: "Types & Structures"
             complementary:
               - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.numbers_precision_error"
           - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.strings"
-            group: "Types and Data Structures"
+            group: "Types & Structures"
             complementary:
               - node_string_id: "prog_langs.python_3_11_4.guidelines.string_formatting"
           - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.boolean"
-            group: "Types and Data Structures"
+            group: "Types & Structures"
             complementary:
               - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.none"
       - type: "single"
@@ -84,7 +84,7 @@ sprints:
       - type: "parallel"
         collections:
           - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.sequence_types"
-            group: "Types and Data Structures"
+            group: "Types & Structures"
           - node_string_id: "prog_langs.python_3_11_4.control_flow.conditional_statements"
             group: "Control Flow"
           - node_string_id: "prog_langs.python_3_11_4.control_flow.loops"
@@ -96,9 +96,9 @@ sprints:
       - type: "parallel"
         collections:
           - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.mapping_types_dict"
-            group: "Types and Data Structures"
+            group: "Types & Structures"
           - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.set_types"
-            group: "Types and Data Structures"
+            group: "Types & Structures"
           - node_string_id: "prog_langs.python_3_11_4.functions"
             group: "Functions"
             complementary:
@@ -124,7 +124,7 @@ sprints:
         collections:
           - node_string_id: story.zombie_survival.day_six
             group: "Story"
-  - name: "Sprint 2. Python: Data and Operating System Interaction"
+  - name: "Sprint 2. Python: Data and OS Interaction"
     sprint_items:
       - type: "single"
         collections:
@@ -167,11 +167,11 @@ sprints:
       - type: "parallel"
         collections:
           - node_string_id: "os.directories_and_files"
-            group: "Operating System"
+            group: "OS"
           - node_string_id: "prog_langs.python_3_11_4.files_directories.files_directories"
-            group: "Operating System"
+            group: "OS"
           - node_string_id: "prog_langs.python_3_11_4.file_formats.csv"
-            group: "Operating System"
+            group: "OS"
       - type: "selection"
         collections:
           - node_string_id: "prog_langs.python_3_11_4.projects.file_manager"
