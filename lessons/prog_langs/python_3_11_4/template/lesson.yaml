@@ -1,0 +1,74 @@
+node_ref: "prog_langs.python_3_11_4.syntax"
+content:
+  - type: "paragraph"
+    value: |
+      # Header one
+      ## Lines, statements and expressions
+      In Python, each line of code is a **statement**. A **statement** is a complete line of code that
+      performs some action. For example, `print("Hello, World!")` is a statement that prints 
+      the text `Hello, World!` to the screen. Python statement ends with the token NEWLINE character.
+      It means each line in a Python script is a statement.
+      **Expressions** are a combination of values, variables, operators, and calls to functions.
+      Expression statements are used to compute and write a value. An expression statement 
+      evaluates the expression list and calculates the value.
+      They are the basic building blocks of statements. For example, `2 + 2` is an expression
+      that Python can evaluate that results in a value of `4`. And the full statement could be
+      `x = 2 + 2`, where `x` is a variable that refers to the value `4`.
+      The Python program is a sequence of statements. Each statement is executed one by one,
+      from top to bottom. For example, the following program consists of three statements:
+      ```
+      strVar = "Hello, World!"
+      print(strVar)
+      print("Hello, World!")
+      ```
+      The first statement assigns the string `"Hello, World!"` to the variable `strVar`.
+      The second statement prints the value of the variable `strVar` to the screen.
+      And the third statement prints the string `"Hello, World!"` to the screen.
+      And expressions can be used in statements. For example, the following statement
+      prints the result of the expression `2 + 2` to the screen:
+      ```
+      print(2 + 2)
+      ```
+      We will talk more about variables and functions in the next lessons. For now, just remember
+      that each line of code is a statement and statements are executed one by one, from top to bottom.
+  - type: "quiz"
+    quiz_items:
+      - question: "Which of the following are true?"
+        answers:
+          - value: "Python executes statements one by one, from top to bottom."
+            explanation: "That is the usual workflow of algorithms"
+            correct: true
+          - value: "Python executes statements in a random order."
+            explanation: "That would be pretty messy."
+          - value: "Python executes statements from bottom to top."
+            explanation: "From top to bottom is easier to understand."
+          - value: "Statement is a instruction that the Python interpreter can execute."
+            correct: true
+            explanation: "That is the definition of statement."
+      # - question: "Which of the following are true?"
+      #   answers:
+      #     - value: "Expression statements are used to compute and write a value."
+      #       correct: true
+      #     - value: "Expression is a complete line of code that performs some action."
+      #     - value: "Expression is a sequence of statements."
+      #     - value: "Expression is a sequence of values."
+      #       correct: true
+
+  - type: "codeblock-exec"
+    value: |
+      if 5 > 2:
+      print("Five is greater than two!")
+  - type: "kata"
+    task: |
+      ### Mini Challenge
+      Fix the code below so that it works correctly. As you know the number of spaces is defined by you.
+      But the common practice is to use 4 spaces for indentation. So, add 4 spaces before the second line.
+    boilerplate: |
+      if 5 > 2:
+      print("Five is greater than two!")
+    solution: |
+      if 5 > 2:
+          print("Five is greater than two!")
+    test_code: |
+      import main
+      print("Success!")
