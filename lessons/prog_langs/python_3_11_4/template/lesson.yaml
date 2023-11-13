@@ -60,7 +60,7 @@ content:
       print("Five is greater than two!")
   - type: "kata"
     task: |
-      ### Mini Challenge
+      # Mini Challenge
       Fix the code below so that it works correctly. As you know the number of spaces is defined by you.
       But the common practice is to use 4 spaces for indentation. So, add 4 spaces before the second line.
     boilerplate: |
