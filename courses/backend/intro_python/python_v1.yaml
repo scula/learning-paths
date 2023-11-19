@@ -1,6 +1,6 @@
 version: v1
 course_name: intro_python
-name: "Introduction to Python for everyone"
+name: "Python for Beginners"
 description: |
   The course is designed for absolute beginners and should provide a solid foundation for any future learning path (data science, backend, system or desktop engineering)
 learning_goals: |
