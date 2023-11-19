@@ -37,6 +37,17 @@ content:
       ##  Start your journey now
       This trial lesson can be completed at your own pace at any time before the start date. By the end of it, we are confident you will see why Python is not just a programming language, but a gateway to turning your ideas into reality.
 
+  - type: "quiz"
+    quiz_items:
+      - question: "Are you ready 🎸?"
+        answers:
+          - value: "Yes"
+            correct: true
+            explanation: "We are ready too!"
+          - value: "No"
+            explanation: "It's OK to feel that way, we are here to support you!"
+            correct: true
+
   - type: "paragraph"
     value: |
       # Why do we use Python?
@@ -62,16 +73,22 @@ content:
     value: |
       # What can we do with Python?
       Python is a general-purpose language and it means we can use it for virtually everything. Whether it's a small startup or a large corporation, Python can be used to accomplish many tasks. In the next section we will highlight some of the largest usage areas but it's far from a complete list.
+
       **Building websites**
       Python can be used to create complex and robust web applications that can handle millions of users simultaneously.
+
       **Analyzing data**
       Python helps in sorting and understanding large amounts of data, making   sense of patterns or trends (for example, seeing how sales have changed over the year).
-      Machine learning
+
+      **Machine learning**
       Python is a dominant tool in working Artificial Intelligence and Machine Learning. It enables developers and researchers to quickly create their own models which are used for analyzing raw data and make sense of it (like voice recognition or self-driving cars).
+
       **Automating Tasks**
       If you have boring, repetitive tasks, Python can help automate them. It's like teaching your computer to be your personal assistant.   
+
       **Rapid Prototyping **
       Python is great for quickly creating early versions of software to test new ideas.
+
       **Space travel**
       Python is also used by NASA and other space companies for various tasks.
   - type: "paragraph"
@@ -83,7 +100,9 @@ content:
       We can find and execute Python programs almost everywhere. It's being widely adopted by many hardware and software producers: from internet of things to supercomputers.
       ## It is easy to get started and gets very powerful
       Python conquered the hearts of many developers not only because of its simplicity but also versatility. With a few words and a couple of simple constructions you can achieve your goal much faster than in other languages.
-      #How does a computer run programs and how does Python do it?
+  - type: "paragraph"
+    value: |
+      # How does a computer run programs and how does Python do it?
       ## Fundamentals of Program Execution
       Think of a computer program like a recipe. Just as a chef translates a recipe into a delicious dish, a computer needs to translate the program (the recipe) into a language it understands to make it work. Now, there are different ways to write and translate these recipes. Some are written in a way that the computer understands immediately – these are like your fast-food recipes. Python, however, works a bit differently. It's more like a live cooking show where the chef (Python) is explaining the steps (the code) as they cook (run the program). This might be a bit slower, but it's easier to follow along.
       ## Python's Path from Code to Action
@@ -186,7 +205,7 @@ content:
             correct: false
   - type: "paragraph"
     value: |
-      We already encountered objects when we were passing text like `“Hey from the first instruction”` to the `print` earlier.  Python creates an object of type string and passes it to the function `print`. Now let’s try to work with a new type and print a number.
+      We already encountered objects when we were passing text like `"Hey from the first instruction"` to the `print` earlier.  Python creates an object of type string and passes it to the function `print`. Now let’s try to work with a new type and print a number.
   - type: "codeblock-exec"
     value: |
       print(13)
@@ -212,18 +231,18 @@ content:
   - type: "codeblock-exec"
     value: |
       age=19
-      name=”John Doe”
-      print(“Student name:”)
+      name="John Doe"
+      print("Student name:")
       print(name)
-      print(“Student’s age:”)
+      print("Student’s age:")
       print(age)
   - type: "paragraph"
     value: |
-      Here we define 2 variables `age` and `name` where we store 2 objects of different types number and string. In the next statements we use the function `print` to output the data on the screen. You can see here that we `print` direct values like `”Student name:”` and variable `name`. Print function knows how to handle both values and variables.
+      Here we define 2 variables `age` and `name` where we store 2 objects of different types number and string. In the next statements we use the function `print` to output the data on the screen. You can see here that we `print` direct values like `"Student name:"` and variable `name`. Print function knows how to handle both values and variables.
       So, a variable in Python is essentially a way to store, retrieve, and update information as your program runs, acting as a flexible, reusable container for your data.
       ## First task
       Wow, you’ve come a long way, we’ve covered a lot of ground and will go in detail in future lessons but let’s combine what you learned here and work on your first task. 
-      Tasks will not only run your program but they will also check if you wrote the code correctly. When you are done with the task, click the “Validate” button to see your solution is correct.
+      Tasks will not only run your program but they will also check if you wrote the code correctly. When you are done with the task, click the "Validate" button to see your solution is correct.
   - type: "kata"
     task: |
       # What is your name?
@@ -243,3 +262,5 @@ content:
           def test_empty_name(self):
               self.assertNotEqual(name, "",
                               "Make sure that you added your name value to variable name.")
+  - type: "submission-form"
+    value: "python-course-beginner"
