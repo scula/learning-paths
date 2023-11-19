@@ -11,7 +11,7 @@ content:
       Welcome to the trial part of our upcoming program "Python for Beginners". Before you make a choice to proceed with the full version of this program, we want you to get acquainted with our platform and content first.
   - type: "paragraph"
     value: |
-      ##  What's in it for you?
+      ##  What is in it for you?
       During the course you will learn not only Python fundamentals but the context of where it is used:
       * You will be able to create complex programs for real-world scenarios, from automating mundane tasks to analyzing vast data sets or building your first small web application.
       * You will learn how Python programs are executed and interact with the operating system.
