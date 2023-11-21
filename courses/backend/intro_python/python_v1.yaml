@@ -43,12 +43,15 @@ sprints:
             file_path: "lessons/story/zombie_survival/intro.yaml"
       - type: parallel
         collections:
-          - node_string_id: "prog_langs.python_3_11_4.syntax"
+          - node_string_id: "prog_langs_python_syntax"
             group: "General"
-          - node_string_id: "prog_langs.python_3_11_4.interpreter"
+            file_path: "lessons/prog_langs/python/general/syntax.yaml"
+          - node_string_id: "prog_langs_python_interpreter"
             group: "General"
-          - node_string_id: "os.command_line_shell"
+            file_path: "lessons/prog_langs/python/general/interpreter.yaml"
+          - node_string_id: "os_command_line_shell"
             group: "OS"
+            file_path: "lessons/os/command_line_shell.yaml"
       - type: "single"
         collections:
           - node_string_id: stories_zombie_survival_day_one

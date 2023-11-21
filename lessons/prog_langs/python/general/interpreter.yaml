@@ -1,0 +1,9 @@
+node_string_id: "prog_langs_python_interpreter"
+name: "Python Interpreter"
+description: "How Python actually works?"
+software_dependencies:
+  - name: python
+    version: 3.11.4
+content:
+  - type: "paragraph"
+    value: "Hey again!"

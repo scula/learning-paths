@@ -1,0 +1,9 @@
+node_string_id: "prog_langs_python_syntax"
+name: "Syntax"
+description: "A whole new language"
+software_dependencies:
+  - name: python
+    version: 3.11.4
+content:
+  - type: "paragraph"
+    value: "Hey there stranger"

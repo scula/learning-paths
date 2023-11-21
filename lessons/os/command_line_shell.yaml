@@ -1,4 +1,6 @@
-node_string_id: "prog_langs_python_syntax"
+node_string_id: "os_command_line_shell"
+name: "Command line"
+description: "How to talk to computer?"
 software_dependencies:
   - name: python
     version: 3.11.4
