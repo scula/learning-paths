@@ -71,15 +71,15 @@ content:
       # What can we do with Python?
       Python is a general-purpose language and it means we can use it for virtually everything. Whether it's a small startup or a large corporation, Python can be used to accomplish many tasks. In the next section we will highlight some of the largest usage areas but it's far from a complete list.
 
-      **💻 Building websites**
+      ** 💻 Building websites**
 
       Python can be used to create complex and robust web applications that can handle millions of users simultaneously.
 
-      **📀 Analyzing data**
+      ** 📀 Analyzing data**
 
       Python helps in sorting and understanding large amounts of data, making   sense of patterns or trends (for example, seeing how sales have changed over the year).
 
-      **🤖 Machine learning**
+      **:robot: Machine learning**
 
       Python is a dominant tool in working Artificial Intelligence and Machine Learning. It enables developers and researchers to quickly create their own models which are used for analyzing raw data and make sense of it (like voice recognition or self-driving cars).
 
@@ -91,7 +91,7 @@ content:
 
       Python is great for quickly creating early versions of software to test new ideas.
 
-      **🛸 Space travel**
+      ** 🛸 Space travel**
 
       Python is also used by NASA and other space companies for various tasks.
   - type: "paragraph"
