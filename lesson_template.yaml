@@ -13,6 +13,7 @@
 node_ref: "lesson_name_id"
 content:
   - type: "paragraph" # contains markdown text (headers, lists, links, etc.)
+    hero_image: "url" #display before text if present
     value: |
       # Lesson Name
       Some content
