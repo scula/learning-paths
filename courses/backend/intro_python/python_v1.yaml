@@ -27,7 +27,7 @@ groups: # can differ from nodes because of the logical issues
 kntree:
   sha_version: "sha version for knowledge tree"
 sprints:
-  - name: "Sprint 1. Python Basics"
+  - name: "Python Basics"
     sprint_items:
       - type: "single"
         collections:
@@ -124,7 +124,7 @@ sprints:
         collections:
           - node_string_id: story.zombie_survival.day_six
             group: "Story"
-  - name: "Sprint 2. Python: Data and OS Interaction"
+  - name: "Python: Data and OS Interaction"
     sprint_items:
       - type: "single"
         collections:

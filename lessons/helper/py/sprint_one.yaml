@@ -25,9 +25,9 @@ content:
   - type: "paragraph"
     value: |
       ##  How will it work?
-      This is a trial lesson available for everyone. Here you can learn the basics of Python and try some of the interactive features we offer. At the end of the lesson you can apply for a full course version by submitting a short form, which will be the only criteria to join it. The full version will include several additional features:
+      This is a trial lesson available for everyone. Here you can learn the basics of Python and try some of the interactive features we offer. At the end of the lesson you can apply for a complete course package by submitting a short form, which will be the only criteria to join it. The full version will include several additional features:
       * Integrated development environment directly in your browser - our **Codelab**.
-      * Learning together with a group of students with private access channels in Slack.
+      * Learning together with a group of students with private access to channels in Slack.
       * Access to projects and code reviews from our mentors.
       Full course version is divided into sprints - time bound frames where you will have 2 weeks to complete the theory and the project.
 
@@ -43,9 +43,6 @@ content:
           - value: "Yes"
             correct: true
             explanation: "We are ready too!"
-          - value: "No"
-            explanation: "It's OK to feel that way, we are here to support you!"
-            correct: true
 
   - type: "paragraph"
     value: |
@@ -59,12 +56,12 @@ content:
       - question: "What will happen when this program will run?"
         answers:
           - value: "It will try to connect to your printer and print 'Kind of lonely around here'"
-            explanation: "This option is incorrect. The program does not connect to a printer."
+            explanation: "The program does not connect to a printer."
           - value: "It will show the phrase 'Kind of lonely around here' on the screen"
-            explanation: "This option is correct. The program displays the phrase on the screen."
+            explanation: "The program displays the phrase on the screen."
             correct: true
           - value: "Nothing, it's too little for an actual program to be working"
-            explanation: "This option is incorrect. The program does perform an action."
+            explanation: "The program does perform an action."
   - type: "paragraph"
     value: |
       So Python is simple and easy to read because it doesn't require additional constructions or glue code to make things work. It's kind of like a Swiss Army knife — you can use it in many areas: creating websites, analyzing numbers and trends, or making smart computer programs (e.g. recommend movies on streaming services).
@@ -74,34 +71,45 @@ content:
       Python is a general-purpose language and it means we can use it for virtually everything. Whether it's a small startup or a large corporation, Python can be used to accomplish many tasks. In the next section we will highlight some of the largest usage areas but it's far from a complete list.
 
       **Building websites**
+
       Python can be used to create complex and robust web applications that can handle millions of users simultaneously.
 
       **Analyzing data**
+
       Python helps in sorting and understanding large amounts of data, making   sense of patterns or trends (for example, seeing how sales have changed over the year).
 
       **Machine learning**
+
       Python is a dominant tool in working Artificial Intelligence and Machine Learning. It enables developers and researchers to quickly create their own models which are used for analyzing raw data and make sense of it (like voice recognition or self-driving cars).
 
       **Automating Tasks**
+
       If you have boring, repetitive tasks, Python can help automate them. It's like teaching your computer to be your personal assistant.   
 
-      **Rapid Prototyping **
+      **Rapid Prototyping**
+
       Python is great for quickly creating early versions of software to test new ideas.
 
       **Space travel**
+
       Python is also used by NASA and other space companies for various tasks.
   - type: "paragraph"
     value: |
       # Why is Python cool?
-      ## Python is free and open source
+      **Python is free and open source**
+
       It means you can view its source code, use it anywhere, create anything you want with it and even sell it. It also has a vibrant and large community that takes care of Python as a technology and develops additional tools in multiple areas (like web development, data science and others).
-      ## It runs everywhere 
+
+      **It runs everywhere**
+
       We can find and execute Python programs almost everywhere. It's being widely adopted by many hardware and software producers: from internet of things to supercomputers.
-      ## It is easy to get started and gets very powerful
+
+      **It is easy to get started and gets very powerful**
+
       Python conquered the hearts of many developers not only because of its simplicity but also versatility. With a few words and a couple of simple constructions you can achieve your goal much faster than in other languages.
   - type: "paragraph"
     value: |
-      # How does a computer run programs and how does Python do it?
+      # How does everything work?
       ## Fundamentals of Program Execution
       Think of a computer program like a recipe. Just as a chef translates a recipe into a delicious dish, a computer needs to translate the program (the recipe) into a language it understands to make it work. Now, there are different ways to write and translate these recipes. Some are written in a way that the computer understands immediately – these are like your fast-food recipes. Python, however, works a bit differently. It's more like a live cooking show where the chef (Python) is explaining the steps (the code) as they cook (run the program). This might be a bit slower, but it's easier to follow along.
       ## Python's Path from Code to Action
@@ -113,23 +121,25 @@ content:
       - question: "What is a computer program in the context of Python?"
         answers:
           - value: "A set of instructions for the computer"
-            explanation: "This option is correct. In Python, a program is a set of instructions that the computer can execute."
+            explanation: "In Python, a program is a set of instructions that the computer can execute."
             correct: true
           - value: "A tool used by Python"
-            explanation: "This option is incorrect. A computer program is not a tool used by Python; it's a set of instructions created using Python."
+            explanation: "A computer program is not a tool used by Python; it's a set of instructions created using Python."
             correct: false
           - value: "A type of Python data"
-            explanation: "This option is incorrect. A computer program is not a type of data in Python."
+            explanation: "A computer program is not a type of data in Python."
             correct: false
           - value: "A website created using Python"
-            explanation: "This option is incorrect. While Python can be used to create websites, a computer program is a broader concept that encompasses various types of applications."
+            explanation: "While Python can be used to create websites, a computer program is a broader concept that encompasses various types of applications."
             correct: false
   - type: "paragraph"
     value: |
       ## How to run programs with Scula?
       Dive right into Python programming without leaving your lesson – it's as easy as typing on your computer. The interactive card below is your gateway to hands-on Python coding. It's a blend of an editor, where you can write and tweak your code, and a convenient button to bring your code to life.
-      This setup mirrors the real-world Python programming experience. Imagine you're working on your own computer: you'd write a Python script and then run it to see what happens. That's exactly what you can do here. After pressing the run button, watch as the output of your program appears right below the editor, just like it would on your own machine.
-      Go ahead, experiment with the editor, run your code, and observe the results in real-time!
+
+      This setup mirrors the real-world Python programming experience. Imagine you're working on your own computer: you'd write a Python script (usually inside a special program but it could be just a Notes app) and then run it to see what happens. That's exactly what you can do here. After pressing the run button, watch as the output of your program appears right below the editor, just like it would on your own machine.
+
+      Go ahead, experiment with the editor, run your code, and observe the results in real-time! After running it, try to change something inside quotes and run it again.
   - type: "codeblock-exec"
     value: |
       print("Great to have you here 🎉")
@@ -172,35 +182,40 @@ content:
   - type: "paragraph"
     value: |
       First of all, there are two lines and two instructions in our program. Both of them invoke a function `print`  which takes some arguments (not only text like "Hey from the first instruction"` but also numbers and more) and sends them to a standard output device (in our case it's the area on the screen below the editor). 
+
       Function is a small, reusable piece of code that performs a specific task. You can think of it as a tool in your coding toolbox – whenever you need to perform the task that the tool (function) is designed for, you just use it instead of writing the code from scratch each time.
+
       Now try to print out your name to the screen! Change the text inside the quotes to include your name and see the result after running a program:
   - type: "codeblock-exec"
     value: |
-      print("")
+      print("Bibbity Bob Change Me Quick!")
   - type: "paragraph"
     value: |
       ## Objects and types
       In Python, an object is essentially a piece of data with certain characteristics and abilities. It's like an individual item or entity that Python can work with. Everything in Python is an object, whether it's a number, a string or something else.
+
       Each object in Python has a type, which you can think of as a category or a label that tells Python what kind of object it is. The type determines what kind of data the object represents and what actions (methods) you can perform with it. 
+
       The text that we were passing to our function `print` in previous examples is not just a text for Python. That is what types are used for, they help map data from our world to the format that Python will understand.
+
       We will start with two simple types:
       * Numbers. This is a type of object. When you have a number in Python, like 3 or 4.5, it's an object of type int (for integers) or float (for decimal numbers). As a number, it can be involved in mathematical operations like addition, subtraction, etc.
-      * Strings. This is another type of object. A string in Python, like "hello" or "123", is a sequence of characters and is of type str. Strings have their own set of actions, like being able to be concatenated (joined together), sliced (cut into pieces), and more.
+      * Strings. This is another type of object. A string in Python, like "hello" or "123", is a sequence of characters and when we talk about string object it means it has a type of `str`. Strings have their own set of actions, like being able to be concatenated (joined together), sliced (cut into pieces), and more.
   - type: "quiz"
     quiz_items:
       - question: "What is an object in Python?"
         answers:
           - value: "A type of error"
-            explanation: "This option is incorrect. An object in Python is not a type of error; it is a fundamental concept in the language."
+            explanation: "An object in Python is not a type of error; it is a fundamental concept in the language."
             correct: false
           - value: "A piece of data with certain characteristics"
-            explanation: "This option is correct. In Python, an object is a piece of data that has both data (attributes) and methods (functions) associated with it."
+            explanation: "In Python, an object is a piece of data that has both data (attributes) and methods (functions) associated with it."
             correct: true
           - value: "A tool for writing code"
-            explanation: "This option is incorrect. An object is not a tool for writing code; it is a data structure."
+            explanation: "An object is not a tool for writing code; it is a data structure."
             correct: false
           - value: "A programming language"
-            explanation: "This option is incorrect. Python is the programming language itself, not an object within it."
+            explanation: "Python is the programming language itself, not an object within it."
             correct: false
   - type: "paragraph"
     value: |
@@ -212,7 +227,10 @@ content:
   - type: "paragraph"
     value: |
       Here we print number 13 to the screen but we also have an expression `13+29` inside of our second statement. Expression will calculate the new value based on the provided values. And that is why the output that we see on the screen is `42` and not `13+29`. 
-      The `+` sign between values 13 and 29 is called an operator, which is a symbol that performs an operation on one or more values. There are different types of operators which will be explored later in detail. But for now let’s take a look at arithmetic operations available from the start in Python. These perform mathematical operations like addition (+), subtraction (-), multiplication (*), division (/), modulus/remainder (%), exponentiation (**), and floor division (//).
+
+      The `+` sign between values 13 and 29 is called an operator, which is a symbol that performs an operation on one or more values. There are different types of operators which will be explored later in detail. But for now let’s take a look at arithmetic operations available from the start in Python. 
+
+      These perform mathematical operations like `addition (+)`, `subtraction (-)`, `multiplication (*)`, `division (/)`, `modulus/remainder (%)`, `exponentiation (**)`, and `floor division (//)`.
   - type: "codeblock-exec"
     value: |
       print(54+90)
@@ -245,11 +263,12 @@ content:
   - type: "kata"
     task: |
       # What is your name?
-      Write your name inside the square brackets in the first statement, where we assign a new value to a variable `name`.
+      Your task is to store your name inside the variable `name` and then print it out. Replace `...` on the first line with your name inside quotes,
+      for example, `"Brad"` and replace `...` on the second line with the name of the variables (`name`).
     boilerplate: |
-      name=""
-      print("My name is ")
-      print(name)
+      name=...
+      print(...)
+      print("is learning Python!")
     solution: |
       name="Some Name"
       print("My name is ")
