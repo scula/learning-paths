@@ -33,7 +33,7 @@ sprints:
         collections:
           - node_string_id: "helper_py_sprint_one" # node_string_id with specified kntree sha must be in db
             group: "Sprints"
-            lesson_sha: "e82ec24" # combo for node_string_id and lession_sha should be in db
+            lesson_sha: "3115333" # combo for node_string_id and lession_sha should be in db
             file_path: "lessons/helper/py/sprint_one.yaml" # provided when lesson was not created before, ignored otherwise
       - type: "single"
         collections:
