@@ -152,7 +152,7 @@ content:
       Python allows you to give your computer a set of instructions step by step. These instructions can range from basic tasks like adding numbers or showing messages on the screen to more complex tasks like making decisions, repeating actions, and interacting with the internet. These instructions are also known as statements. 
       A Python statement is a single line of code that tells the computer to perform a specific action or task. Statements or commands in Python are used to give directions to the computer on what it should do.
       ## Zen of Python
-      In front of you is a simple program consisting of a single Python command: import this. This is a special command or an easter egg, if you will, that prints the Zen of Python.
+      In front of you is a simple program consisting of a single Python command: `import this`. This is a special command or an easter egg, if you will, that prints the Zen of Python.
   - type: "codeblock-exec"
     value: |
       import this
@@ -266,7 +266,7 @@ content:
     task: |
       # What is your name?
       Your task is to store your name inside the variable `name` and then print it out. Replace `...` on the first line with your name inside quotes,
-      for example, `"Brad"` and replace `...` on the second line with the name of the variables (`name`).
+      for example, `"Brad"` and replace `...` on the second line with the name of the variable (`name`).
     boilerplate: |
       name=...
       print(...)
