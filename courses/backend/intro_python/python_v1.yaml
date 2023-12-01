@@ -36,6 +36,7 @@ sprints:
             lesson_sha: "9575bbf" # combo for node_string_id and lession_sha should be in db
             file_path: "lessons/helper/py/sprint_one.yaml" # provided when lesson was not created before, ignored otherwise
             reminder: true # track if student hasn't finished lesson and send him email
+            public: true
       - type: "single"
         collections:
           - node_string_id: "stories_zombie_survival_intro"
