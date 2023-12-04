@@ -1,0 +1,52 @@
+node_ref: "prog_langs.python_3_11_4.philosophy"
+content:
+  - type: "paragraph"
+    value: |
+      # Mindset and Philosophy of Software Developers
+      Education and development can seem challenging if you go alone and without a plan. In this lesson, we discuss how important your mental health is during education, what Python's philosophy is, and how it will help us.
+
+
+      After completing this unit, you’ll be able to:
+      * Put your metal health first even while learning online
+      * Use Python Philosophy to your benefit
+
+      ## Why is your mental health important?
+      Prioritizing mental health while learning online is crucial for maintaining overall well-being and maximizing your learning potential. Here are some strategies to help you achieve a healthy balance:
+      ### Establish a Routine
+      Create a structured daily routine that includes dedicated time for learning, breaks, exercise, relaxation, and self-care activities. Having a consistent schedule can provide a sense of stability and help you stay focused.
+      ### Set Boundaries 
+      Define clear boundaries between your learning time and personal time. Designate specific hours for studying and avoid overextending yourself. Communicate these boundaries with others, including family, friends, or roommates, to ensure uninterrupted focus and prevent burnout.
+      ### Take Regular Breaks
+      Incorporate short breaks into your learning schedule. Engage in activities that help you relax and recharge, such as stretching, deep breathing exercises, meditation, or going for a walk. These breaks can help alleviate stress and maintain mental clarity.
+      ### Connect with Peers 
+      Seek opportunities to connect with fellow online learners. Engage with students in our Slack channel, virtual study groups, or other online communities related to your interests. Interacting with peers can provide a sense of camaraderie, support, and motivation during the learning process.
+      ### Minimize Distractions
+      Create a conducive learning environment by minimizing distractions. Find a quiet space, eliminate unnecessary notifications, and use tools or browser extensions that block distracting websites or apps during study sessions.
+      Remember, learning online comes with its own set of challenges, and it's essential to prioritize self-care and mental well-being throughout the process. By implementing these strategies, you can create a healthier and more balanced approach to online learning.
+
+      ## Time eaters in development
+      You probably think that everyone who works in software development spends most of their time coding. However, development is not only about coding. The majority of your time will be dedicated to system design, decision-making, and effective communication. While these time eaters are common in software development, effective planning, prioritization, collaboration, and adopting efficient development practices can help mitigate their impact and optimize the overall development process. 
+
+
+      When it comes to efficient development practices, Python has its own guiding principles, called the Zen of Python. It was written by Tim Peters and is included as a set of aphorisms within the Python documentation. The Zen of Python serves as a guiding philosophy and encapsulates the ideals and best practices that Python developers strive to follow. These principles emphasize simplicity, readability, and practicality in code development.
+
+
+      ## The Zen of Python
+      Nineteen of those principles are the following:
+      * "Beautiful is better than ugly."
+      * "Readability counts."
+      * "Simple is better than complex."
+      * "Errors should never pass silently."
+      * "There should be one-- and preferably only one --obvious way to do it."
+      * "Now is better than never."
+
+
+      The guiding principle behind Python's development process is "Simple is better than complex." This philosophy has propelled Python to become one of the most widely adopted programming languages across various domains, including backend development and data science. Python's ease of use allows beginners to quickly get started and achieve tangible results. 
+
+
+      Python developers often refer to the Zen of Python as a reminder of the core values that underpin Python programming and as a guide for writing clean, maintainable, and expressive code. The principles outlined in the Zen of Python help foster a community-driven culture focused on code quality and developer productivity.
+      You can also access the easter egg hidden in Python by running the command (which would print the mentioned 19 principles of Python):
+  - type: "codeblock-exec"
+    language: "python"
+    value: |
+      import this
