@@ -168,8 +168,6 @@ content:
       6. In the Face of Ambiguity, Refuse the Temptation to Guess: When code could be interpreted in multiple ways, avoid making assumptions or guesses. Be explicit about your intentions.
       7. Special Cases Aren't Special Enough to Break the Rules: Avoid making exceptions or special cases unless absolutely necessary. Consistency is key.
       8. Although Practicality Beats Purity: While it's important to follow best practices, practicality should not be sacrificed for theoretical purity.
-      9. Errors Should Never Pass Silently: When something goes wrong, Python should raise an exception or error to alert the developer, rather than silently ignoring the issue.
-      10. In the Face of Ambiguity, Refuse the Temptation to Guess: When code could be interpreted in multiple ways, avoid making assumptions or guesses. Be explicit about your intentions.
       These principles are meant to encourage Python developers to write clean, maintainable, and understandable code, which is one of the reasons Python is known for its readability and ease of use.
 
   - type: "paragraph"
