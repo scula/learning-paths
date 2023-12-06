@@ -36,7 +36,7 @@ sprints:
             lesson_sha: "77608bf" # combo for node_string_id and lession_sha should be in db
             file_path: "lessons/helper/py/sprint_one.yaml" # provided when lesson was not created before, ignored otherwise
             reminder: true # track if student hasn't finished lesson and send him email
-            public: true
+            public: true # add rbac rule allowign anyone to access this lesson in api
       - type: "single"
         collections:
           - node_string_id: "stories_zombie_survival_intro"
