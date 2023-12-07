@@ -29,7 +29,7 @@ kntree:
 sprints:
   - name: "Getting started"
     sprint_items:
-      - type: "single"
+      - type: "single" # type controls how many lessons are opened
         collections:
           - node_string_id: "helper_py_sprint_one" # node_string_id with specified kntree sha must be in db
             group: "Sprints"
