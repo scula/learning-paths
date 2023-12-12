@@ -97,6 +97,7 @@ content:
   - type: "paragraph"
     value: |
       # Why is Python cool?
+      
       **Python is free and open source**
 
       It means you can view its source code, use it anywhere, create anything you want with it and even sell it. It also has a vibrant and large community that takes care of Python as a technology and develops additional tools in multiple areas (like web development, data science and others).
