@@ -33,7 +33,7 @@ sprints:
         collections:
           - node_string_id: "helper_py_sprint_one" # node_string_id with specified kntree sha must be in db
             group: "Sprints"
-            lesson_sha: "a354471" # combo for node_string_id and lession_sha should be in db
+            lesson_sha: "adbe1da" # combo for node_string_id and lession_sha should be in db
             file_path: "lessons/helper/py/sprint_one.yaml" # provided when lesson was not created before, ignored otherwise
             reminder: true # track if student hasn't finished lesson and send them email
             public: true # add rbac rule allowign anyone to access this lesson in api
