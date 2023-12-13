@@ -7,35 +7,50 @@ software_dependencies:
 content:
   - type: "paragraph"
     hero_image: "https://storage.googleapis.com/scula-public-assets/landing/python/python_welcome.webp"
-    value: |
-      # Welcome! 
-      Welcome to the trial part of our upcoming program "Python for Beginners". Before you make a choice to proceed with the full version of this program, we want you to get acquainted with our platform and content first.
+    value: >
+      # Welcome!  
+
+      Welcome to the trial part of our upcoming program "Python for Beginners". Before you make a choice to
+      proceed with the full version of this program, we want you to get acquainted with our platform and
+      content first.
   - type: "paragraph"
-    value: |
-      ##  What is in it for you?
-      During the course you will learn not only Python fundamentals but the context of where it is used:
-      * You will be able to create complex programs for real-world scenarios, from automating mundane tasks to analyzing vast data sets or building your first small web application.
-      * You will learn how Python programs are executed and interact with the operating system.
-      * You will create projects that will be reviewed by working software engineers with a few years of experience and can be added to your portfolio.
-      Through interactive coding exercises, you will experience firsthand how Python's simplicity and power make it an ideal language for beginners and seasoned programmers alike.
+    value: >
+      ##  What is in it for you?  
+
+      During the course you will learn not only Python fundamentals but the context of where it is used: * You
+      will be able to create complex programs for real-world scenarios, from automating mundane tasks to
+      analyzing vast data sets or building your first small web application. * You will learn how Python
+      programs are executed and interact with the operating system. * You will create projects that will be
+      reviewed by working software engineers with a few years of experience and can be added to your
+      portfolio. Through interactive coding exercises, you will experience firsthand how Python's simplicity
+      and power make it an ideal language for beginners and seasoned programmers alike.
 
   - type: "paragraph"
-    value: |
-      ##  Our commitment to you
-      We are dedicated to making your learning experience not just education, but truly engaging and enjoyable. With our support community, where mentors and peers will answer your question in short time, interactive learning path and quizzes, project reviews, we are here to guide you every step of the way.
+    value: >
+      ##  Our commitment to you 
+
+      We are dedicated to making your learning experience not just education, but truly engaging and
+      enjoyable. With our support community, where mentors and peers will answer your question in short time,
+      interactive learning path and quizzes, project reviews, we are here to guide you every step of the way.
   - type: "paragraph"
-    value: |
-      ##  How will it work?
-      This is a trial lesson available for everyone. Here you can learn the basics of Python and try some of the interactive features we offer. At the end of the lesson you can apply for a complete course package by submitting a short form, which will be the only criteria to join it. The full version will include several additional features:
-      * Integrated development environment directly in your browser - our **Codelab**.
-      * Learning together with a group of students with private access to channels in Slack.
-      * Access to projects and code reviews from our mentors.
-      Full course version is divided into sprints - time bound frames where you will have 2 weeks to complete the theory and the project.
+    value: >
+      ##  How will it work? 
+
+      This is a trial lesson available for everyone. Here you can learn the basics of Python and try some of
+      the interactive features we offer. At the end of the lesson you can apply for a complete course package
+      by submitting a short form, which will be the only criteria to join it. The full version will include
+      several additional features: * Integrated development environment directly in your browser - our
+      **Codelab**. * Learning together with a group of students with private access to channels in Slack. *
+      Access to projects and code reviews from our mentors. Full course version is divided into sprints - time
+      bound frames where you will have 2 weeks to complete the theory and the project.
 
   - type: "paragraph"
-    value: |
-      ##  Start your journey now
-      This trial lesson can be completed at your own pace at any time before the start date. By the end of it, we are confident you will see why Python is not just a programming language, but a gateway to turning your ideas into reality.
+    value: >
+      ##  Start your journey now 
+
+      This trial lesson can be completed at your own pace at any time before the start date. By the end of it,
+      we are confident you will see why Python is not just a programming language, but a gateway to turning
+      your ideas into reality.
 
   - type: "quiz"
     quiz_items:
@@ -46,12 +61,13 @@ content:
             explanation: "We are ready too!"
 
   - type: "paragraph"
-    value: |
-      # Why do we use Python?
-      Python is a friendly and all-purpose tool in the world of programming. It's known for its simple, easy-to-read style, which makes it great for beginners. And don't just take our word for it, try to guess what will the following program (yes, it's a fully valid program in Python in just a single line) do:
-      ```
-      print("Kind of lonely around here")
-      ```
+    value: >
+      # Why do we use Python? 
+
+      Python is a friendly and all-purpose tool in the world of programming. It's known for its simple,
+      easy-to-read style, which makes it great for beginners. And don't just take our word for it, try to
+      guess what will the following program (yes, it's a fully valid program in Python in just a single line)
+      do: ``` print("Kind of lonely around here") ```
   - type: "quiz"
     quiz_items:
       - question: "What will happen when this program will run?"
@@ -64,28 +80,39 @@ content:
           - value: "Nothing, it's too little for an actual program to be working"
             explanation: "The program does perform an action."
   - type: "paragraph"
-    value: |
-      So Python is simple and easy to read because it doesn't require additional constructions or glue code to make things work. It's kind of like a Swiss Army knife — you can use it in many areas: creating websites, analyzing numbers and trends, or making smart computer programs (e.g. recommend movies on streaming services).
+    value: >
+      So Python is simple and easy to read because it doesn't require additional constructions or glue code to
+      make things work. It's kind of like a Swiss Army knife — you can use it in many areas: creating
+      websites, analyzing numbers and trends, or making smart computer programs (e.g. recommend movies on
+      streaming services).
   - type: "paragraph"
-    value: |
-      # What can we do with Python?
-      Python is a general-purpose language and it means we can use it for virtually everything. Whether it's a small startup or a large corporation, Python can be used to accomplish many tasks. In the next section we will highlight some of the largest usage areas but it's far from a complete list.
+    value: >
+      # What can we do with Python? 
+
+      Python is a general-purpose language and it means we can use it for virtually everything. Whether it's a
+      small startup or a large corporation, Python can be used to accomplish many tasks. In the next section
+      we will highlight some of the largest usage areas but it's far from a complete list.
 
       💻 **Building websites**
 
-      Python can be used to create complex and robust web applications that can handle millions of users simultaneously.
+      Python can be used to create complex and robust web applications that can handle millions of users
+      simultaneously.
 
       📀 **Analyzing data**
 
-      Python helps in sorting and understanding large amounts of data, making   sense of patterns or trends (for example, seeing how sales have changed over the year).
+      Python helps in sorting and understanding large amounts of data, making   sense of patterns or trends
+      (for example, seeing how sales have changed over the year).
 
       🤖 **Machine learning**
 
-      Python is a dominant tool in working Artificial Intelligence and Machine Learning. It enables developers and researchers to quickly create their own models which are used for analyzing raw data and make sense of it (like voice recognition or self-driving cars).
+      Python is a dominant tool in working Artificial Intelligence and Machine Learning. It enables developers
+      and researchers to quickly create their own models which are used for analyzing raw data and make sense
+      of it (like voice recognition or self-driving cars).
 
       ⚙️ **Automating Tasks**
 
-      If you have boring, repetitive tasks, Python can help automate them. It's like teaching your computer to be your personal assistant.   
+      If you have boring, repetitive tasks, Python can help automate them. It's like teaching your computer to
+      be your personal assistant.   
 
       ✏️ **Rapid Prototyping**
 
@@ -95,30 +122,59 @@ content:
 
       Python is also used by NASA and other space companies for various tasks.
   - type: "paragraph"
-    value: |
+    value: >
       # Why is Python cool?
-      
+
       **Python is free and open source**
 
-      It means you can view its source code, use it anywhere, create anything you want with it and even sell it. It also has a vibrant and large community that takes care of Python as a technology and develops additional tools in multiple areas (like web development, data science and others).
+      It means you can view its source code, use it anywhere, create anything you want with it and even sell
+      it. It also has a vibrant and large community that takes care of Python as a technology and develops
+      additional tools in multiple areas (like web development, data science and others).
 
       **It runs everywhere**
 
-      We can find and execute Python programs almost everywhere. It's being widely adopted by many hardware and software producers: from internet of things to supercomputers.
+      We can find and execute Python programs almost everywhere. It's being widely adopted by many hardware
+      and software producers: from internet of things to supercomputers.
 
       **It is easy to get started and gets very powerful**
 
-      Python conquered the hearts of many developers not only because of its simplicity but also versatility. With a few words and a couple of simple constructions you can achieve your goal much faster than in other languages.
+      Python conquered the hearts of many developers not only because of its simplicity but also versatility.
+      With a few words and a couple of simple constructions you can achieve your goal much faster than in
+      other languages.
   - type: "paragraph"
     hero_image: "https://storage.googleapis.com/scula-public-assets/landing/python/python_how_works.webp"
-    value: |
+    value: >
       # How does everything work?
-      ## Fundamentals of Program Execution
-      Think of a computer program like a recipe. Just as a chef translates a recipe into a delicious dish, a computer needs to translate the program (the recipe) into a language it understands to make it work. Now, there are different ways to write and translate these recipes. Some are written in a way that the computer understands immediately – these are like your fast-food recipes. Python, however, works a bit differently. It's more like a live cooking show where the chef (Python) is explaining the steps (the code) as they cook (run the program). This might be a bit slower, but it's easier to follow along.
-      ## Python's Path from Code to Action
-      When you tell Python to run your program, it's like giving your recipe to a very fast and efficient chef. First, Python quickly turns your recipe into a simpler set of instructions – think of it as a prep list that's easy for all kitchen staff (computers) to understand, no matter where they are from. This is done so your recipe can be cooked in any kitchen (computer), whether it's in New York or Tokyo. Python then takes this prep list and starts cooking, turning your instructions into the final dish (the running program).
-      ## How You Run a Python Program
-      As someone who writes Python programs, you have a couple of ways to tell Python to start cooking. One way is like having a conversation with the chef – you give them instructions one at a time, and they cook it step by step. This is great for trying out new ideas. The other way is like handing over a complete recipe book and asking the chef to prepare a full meal. You do this when you have a lot of instructions that need to be followed in order. The kitchen (your computer) is set up so that when you hand over your recipe book (Python script), the chef (Python program) knows exactly what to do to make your dish (run your program).
+  - type: "paragraph"
+    value: >
+      ## Fundamentals of Program Execution 
+
+      Think of a computer program like a recipe. Just as a chef translates a recipe into a delicious dish,  a
+      computer needs to translate the program (the recipe) into a language it understands to make it
+      work.  Now, there are different ways to write and translate these recipes. Some are written in a way
+      that the  computer understands immediately – these are like your fast-food recipes. Python, however,
+      works a bit differently. It's more like a live cooking show where the chef (Python) is explaining the
+      steps (the code)  as they cook (run the program). This might be a bit slower, but it's easier to follow
+      along. 
+
+      ## Python's Path from Code to Action 
+
+      When you tell Python to run your program, it's like giving your recipe to a very fast and efficient
+      chef. First, Python quickly turns your recipe into a simpler set of instructions – think of it as a prep
+      list that's easy for all kitchen staff (computers) to understand, no matter where they are from. This is
+      done so your recipe can be cooked in any kitchen (computer), whether it's in New York or Tokyo. Python
+      then takes this prep list and starts cooking, turning your instructions into the final dish (the running
+      program). 
+
+      ## How You Run a Python Program 
+
+      As someone who writes Python programs, you have a couple of ways to tell Python to start cooking. One
+      way is like having a conversation with the chef – you give them instructions one at a time, and they
+      cook it step by step. This is great for trying out new ideas. The other way is like handing over a
+      complete recipe book and asking the chef to prepare a full meal. You do this when you have a lot of
+      instructions that need to be followed in order. The kitchen (your computer) is set up so that when you
+      hand over your recipe book (Python script), the chef (Python program) knows exactly what to do to make
+      your dish (run your program).
   - type: "quiz"
     quiz_items:
       - question: "What is a computer program in the context of Python?"
@@ -127,90 +183,151 @@ content:
             explanation: "In Python, a program is a set of instructions that the computer can execute."
             correct: true
           - value: "A tool used by Python"
-            explanation: "A computer program is not a tool used by Python; it's a set of instructions created using Python."
+            explanation:
+              "A computer program is not a tool used by Python; it's a set of instructions created using
+              Python."
             correct: false
           - value: "A type of Python data"
             explanation: "A computer program is not a type of data in Python."
             correct: false
           - value: "A website created using Python"
-            explanation: "While Python can be used to create websites, a computer program is a broader concept that encompasses various types of applications."
+            explanation:
+              "While Python can be used to create websites, a computer program is a broader concept that
+              encompasses various types of applications."
             correct: false
   - type: "paragraph"
-    value: |
-      ## How to run programs with Scula?
-      Dive right into Python programming without leaving your lesson – it's as easy as typing on your computer. The interactive card below is your gateway to hands-on Python coding. It's a blend of an editor, where you can write and tweak your code, and a convenient button to bring your code to life.
+    value: >
+      ## How to run programs with Scula? 
 
-      This setup mirrors the real-world Python programming experience. Imagine you're working on your own computer: you'd write a Python script (usually inside a special program but it could be just a Notes app) and then run it to see what happens. That's exactly what you can do here. After pressing the run button, watch as the output of your program appears right below the editor, just like it would on your own machine.
+      Dive right into Python programming without leaving your lesson – it's as easy as typing on your
+      computer. The interactive card below is your gateway to hands-on Python coding. It's a blend of an
+      editor, where you can write and tweak your code, and a convenient button to bring your code to life.
 
-      Go ahead, experiment with the editor, run your code, and observe the results in real-time! After running it, try to change something inside quotes and run it again.
+      This setup mirrors the real-world Python programming experience. Imagine you're working on your own
+      computer: you'd write a Python script (usually inside a special program but it could be just a Notes
+      app) and then run it to see what happens. That's exactly what you can do here. After pressing the run
+      button, watch as the output of your program appears right below the editor, just like it would on your
+      own machine.
+
+      Go ahead, experiment with the editor, run your code, and observe the results in real-time! After running
+      it, try to change something inside quotes and run it again.
   - type: "codeblock-exec"
-    value: |
+    value: >
       print("Great to have you here 🎉")
 
   - type: "paragraph"
-    value: |
-      # Python Statements
-      Python allows you to give your computer a set of instructions step by step. These instructions can range from basic tasks like adding numbers or showing messages on the screen to more complex tasks like making decisions, repeating actions, and interacting with the internet. These instructions are also known as statements. 
-      A Python statement is a single line of code that tells the computer to perform a specific action or task. Statements or commands in Python are used to give directions to the computer on what it should do.
-      ## Zen of Python
-      In front of you is a simple program consisting of a single Python command: `import this`. This is a special command or an easter egg, if you will, that prints the Zen of Python.
+    value: >
+      # Python Statements 
+
+      Python allows you to give your computer a set of instructions step by step. These instructions can range
+      from basic tasks like adding numbers or showing messages on the screen to more complex tasks like making
+      decisions, repeating actions, and interacting with the internet. These instructions are also known as
+      statements. A Python statement is a single line of code that tells the computer to perform a specific
+      action or task. Statements or commands in Python are used to give directions to the computer on what it
+      should do. 
+
+      ## Zen of Python 
+
+      In front of you is a simple program consisting of a single Python command: `import this`. This is a
+      special command or an easter egg, if you will, that prints the Zen of Python.
   - type: "codeblock-exec"
-    value: |
+    value: >
       import this
   - type: "paragraph"
-    value: |
-      The "Zen of Python" is a collection of guiding aphorisms for writing computer programs in the Python language. It serves as a set of guiding principles or philosophies that Python developers should follow to write clean, readable, and Pythonic code.
-      Here are some key principles from the Zen of Python:
-      1. Readability Counts: Code should be easy to read and understand by humans. Python emphasizes clear and intuitive code over clever and complex code.
-      2. Simple is Better than Complex: Whenever possible, choose simple and straightforward solutions over overly complicated ones.
-      3. Explicit is Better than Implicit: Code should be explicit and not rely on hidden or magical behavior. Make your intentions clear in your code.
-      4. There Should Be One—and Preferably Only One—Obvious Way to Do It: Python encourages a single, clear way of accomplishing a task to avoid confusion and maintain consistency.
-      5. Errors Should Never Pass Silently: When something goes wrong, Python should raise an exception or error to alert the developer, rather than silently ignoring the issue.
-      6. In the Face of Ambiguity, Refuse the Temptation to Guess: When code could be interpreted in multiple ways, avoid making assumptions or guesses. Be explicit about your intentions.
-      7. Special Cases Aren't Special Enough to Break the Rules: Avoid making exceptions or special cases unless absolutely necessary. Consistency is key.
-      8. Although Practicality Beats Purity: While it's important to follow best practices, practicality should not be sacrificed for theoretical purity.
-      These principles are meant to encourage Python developers to write clean, maintainable, and understandable code, which is one of the reasons Python is known for its readability and ease of use.
+    value: >
+      The "Zen of Python" is a collection of guiding aphorisms for writing computer programs in the Python
+      language. It serves as a set of guiding principles or philosophies that Python developers should follow
+      to write clean, readable, and Pythonic code. Here are some key principles from the Zen of Python:  
+
+      1. Readability Counts: Code should be easy to read and understand by humans. Python emphasizes clear and
+      intuitive code over clever and complex code.  
+
+      2. Simple is Better than Complex: Whenever possible, choose simple and straightforward solutions over
+      overly complicated ones. 
+
+      3. Explicit is Better than Implicit: Code should be explicit and not rely on hidden or magical behavior.
+      Make your intentions clear in your code. 
+
+      4. There Should Be One—and Preferably Only One—Obvious Way to Do It: Python encourages a single, clear
+      way of accomplishing a task to avoid confusion and maintain consistency. 
+
+      5. Errors Should Never Pass Silently: When something goes wrong, Python should raise an exception or
+      error to alert the developer, rather than silently ignoring the issue. 
+
+      6. In the Face of Ambiguity, Refuse the Temptation to Guess: When code could be interpreted in multiple
+      ways, avoid making assumptions or guesses. Be explicit about your intentions. 
+
+      7. Special Cases Aren't Special Enough to Break the Rules: Avoid making exceptions or special cases
+      unless absolutely necessary. Consistency is key. 8. Although Practicality Beats Purity: While it's
+      important to follow best practices, practicality should not be sacrificed for theoretical purity. These
+      principles are meant to encourage Python developers to write clean, maintainable, and understandable
+      code, which is one of the reasons Python is known for its readability and ease of use.
 
   - type: "paragraph"
-    value: |
-      ## Output and print
-      Printing out information on the screen or sending it out somewhere to be accessed is a big deal in learning any programming language. Let's consider the following program consisting of 2 statements and investigate in depth what happens here.
+    value: >
+      ## Output and print 
+
+      Printing out information on the screen or sending it out somewhere to be accessed is a big deal in
+      learning any programming language. Let's consider the following program consisting of 2 statements and
+      investigate in depth what happens here.
   - type: "codeblock-exec"
-    value: |
-      print("Hey from the first statement")
-      print("Hello from the second")
+    value: >
+      print("Hey from the first statement") print("Hello from the second")
 
   - type: "paragraph"
-    value: |
-      First of all, there are two lines and two instructions in our program. Both of them invoke a function `print`  which takes some arguments (not only text like "Hey from the first instruction"` but also numbers and more) and sends them to a standard output device (in our case it's the area on the screen below the editor). 
+    value: >
+      First of all, there are two lines and two instructions in our program. Both of them invoke a function
+      `print`  which takes some arguments (not only text like "Hey from the first instruction"` but also
+      numbers and more) and sends them to a standard output device (in our case it's the area on the screen
+      below the editor). 
 
-      Function is a small, reusable piece of code that performs a specific task. You can think of it as a tool in your coding toolbox – whenever you need to perform the task that the tool (function) is designed for, you just use it instead of writing the code from scratch each time.
+      Function is a small, reusable piece of code that performs a specific task. You can think of it as a tool
+      in your coding toolbox – whenever you need to perform the task that the tool (function) is designed for,
+      you just use it instead of writing the code from scratch each time.
 
-      Now try to print out your name to the screen! Change the text inside the quotes to include your name and see the result after running a program:
+      Now try to print out your name to the screen! Change the text inside the quotes to include your name and
+      see the result after running a program:
   - type: "codeblock-exec"
-    value: |
+    value: >
       print("Bibbity Bob Change Me Quick!")
   - type: "paragraph"
-    value: |
-      ## Objects and types
-      In Python, an object is essentially a piece of data with certain characteristics and abilities. It's like an individual item or entity that Python can work with. Everything in Python is an object, whether it's a number, a string or something else.
+    value: >
+      # Objects and types 
 
-      Each object in Python has a type, which you can think of as a category or a label that tells Python what kind of object it is. The type determines what kind of data the object represents and what actions (methods) you can perform with it. 
+      In Python, an object is essentially a piece of data with certain characteristics and abilities. It's
+      like an individual item or entity that Python can work with. Everything in Python is an object, whether
+      it's a number, a string or something else.
 
-      The text that we were passing to our function `print` in previous examples is not just a text for Python. That is what types are used for, they help map data from our world to the format that Python will understand.
+      Each object in Python has a type, which you can think of as a category or a label that tells Python what
+      kind of object it is. The type determines what kind of data the object represents and what actions
+      (methods) you can perform with it. 
 
-      We will start with two simple types:
-      * Numbers. This is a type of object. When you have a number in Python, like 3 or 4.5, it's an object of type int (for integers) or float (for decimal numbers). As a number, it can be involved in mathematical operations like addition, subtraction, etc.
-      * Strings. This is another type of object. A string in Python, like "hello" or "123", is a sequence of characters and when we talk about string object it means it has a type of `str`. Strings have their own set of actions, like being able to be concatenated (joined together), sliced (cut into pieces), and more.
+      The text that we were passing to our function `print` in previous examples is not just a text for
+      Python. That is what types are used for, they help map data from our world to the format that Python
+      will understand.
+
+      We will start with two simple types: 
+
+      * Numbers. This is a type of object. When you have a number in Python, like 3 or 4.5, it's an object of
+      type int (for integers) or float (for decimal numbers). As a number, it can be involved in mathematical
+      operations like addition, subtraction, etc. 
+
+      * Strings. This is another type of object. A string in Python, like "hello" or "123", is a sequence of
+      characters and when we talk about string object it means it has a type of `str`. Strings have their own
+      set of actions, like being able to be concatenated (joined together), sliced (cut into pieces), and
+      more.
   - type: "quiz"
     quiz_items:
       - question: "What is an object in Python?"
         answers:
           - value: "A type of error"
-            explanation: "An object in Python is not a type of error; it is a fundamental concept in the language."
+            explanation:
+              "An object in Python is not a type of error; it is a fundamental concept in the language."
             correct: false
           - value: "A piece of data with certain characteristics"
-            explanation: "In Python, an object is a piece of data that has both data (attributes) and methods (functions) associated with it."
+            explanation:
+              "In Python, an object is a piece of data that has both data (attributes) and methods (functions)
+              associated with it."
             correct: true
           - value: "A tool for writing code"
             explanation: "An object is not a tool for writing code; it is a data structure."
@@ -219,65 +336,69 @@ content:
             explanation: "Python is the programming language itself, not an object within it."
             correct: false
   - type: "paragraph"
-    value: |
-      We already encountered objects when we were passing text like `"Hey from the first instruction"` to the `print` earlier.  Python creates an object of type string and passes it to the function `print`. Now let’s try to work with a new type and print a number.
+    value: >
+      We already encountered objects when we were passing text like `"Hey from the first instruction"` to the
+      `print` earlier.  Python creates an object of type string and passes it to the function `print`. Now
+      let’s try to work with a new type and print a number.
   - type: "codeblock-exec"
-    value: |
-      print(13)
-      print(13+29)
+    value: >
+      print(13) print(13+29)
   - type: "paragraph"
-    value: |
-      Here we print number 13 to the screen but we also have an expression `13+29` inside of our second statement. Expression will calculate the new value based on the provided values. And that is why the output that we see on the screen is `42` and not `13+29`. 
+    value: >
+      Here we print number 13 to the screen but we also have an expression `13+29` inside of our second
+      statement. Expression will calculate the new value based on the provided values. And that is why the
+      output that we see on the screen is `42` and not `13+29`. 
 
-      The `+` sign between values 13 and 29 is called an operator, which is a symbol that performs an operation on one or more values. There are different types of operators which will be explored later in detail. But for now let’s take a look at arithmetic operations available from the start in Python. 
+      The `+` sign between values 13 and 29 is called an operator, which is a symbol that performs an
+      operation on one or more values. There are different types of operators which will be explored later in
+      detail. But for now let’s take a look at arithmetic operations available from the start in Python. 
 
-      These perform mathematical operations like `addition (+)`, `subtraction (-)`, `multiplication (*)`, `division (/)`, `modulus/remainder (%)`, `exponentiation (**)`, and `floor division (//)`.
+      These perform mathematical operations like `addition (+)`, `subtraction (-)`, `multiplication (*)`,
+      `division (/)`, `modulus/remainder (%)`, `exponentiation (**)`, and `floor division (//)`.
   - type: "codeblock-exec"
-    value: |
-      print(54+90)
-      print(54-29)
-      print(98*32)
-      print(45/5)
-      print(11**100)
+    value: >
+      print(54+90) print(54-29) print(98*32) print(45/5) print(11**100)
   - type: "paragraph"
-    value: |
-      As you can see Python is pretty powerful in terms of calculating power, we can exponentiate quite big numbers and get the correct result. But working with raw values as we were up until now could be very cumbersome. It would be really nice if we could have some anchor or pointer which could take different values through the program lifecycle. Good news is, we have it and it’s called variables!
-      ## Variables
-      In the world of Python programming, think of a variable as a name tag stuck on a box. This box can store something, like a number, a piece of text, or even a list of things. When you create a variable, it's like you're writing on this name tag, saying, "This box is now called 'x' or 'age' or 'message'."
-      Now, whatever you put inside this box, that's what the variable holds. If you write age = 21, you're essentially putting the number 21 in a box labeled 'age'. You can later go back to this box, check what's inside, or even replace it with something else. For example, the next year, you might update your 'age' box to contain the number 22.
-      Let’s see it in action and create a variable for a student on a Scula platform. We will define age and name, and later print this information.
+    value: >
+      As you can see Python is pretty powerful in terms of calculating power, we can exponentiate quite big
+      numbers and get the correct result. But working with raw values as we were up until now could be very
+      cumbersome. It would be really nice if we could have some anchor or pointer which could take different
+      values through the program lifecycle. Good news is, we have it and it’s called variables! ## Variables
+      In the world of Python programming, think of a variable as a name tag stuck on a box. This box can store
+      something, like a number, a piece of text, or even a list of things. When you create a variable, it's
+      like you're writing on this name tag, saying, "This box is now called 'x' or 'age' or 'message'." Now,
+      whatever you put inside this box, that's what the variable holds. If you write age = 21, you're
+      essentially putting the number 21 in a box labeled 'age'. You can later go back to this box, check
+      what's inside, or even replace it with something else. For example, the next year, you might update your
+      'age' box to contain the number 22. Let’s see it in action and create a variable for a student on a
+      Scula platform. We will define age and name, and later print this information.
   - type: "codeblock-exec"
-    value: |
-      age=19
-      name="John Doe"
-      print("Student name:")
-      print(name)
-      print("Student’s age:")
-      print(age)
+    value: >
+      age=19 name="John Doe" print("Student name:") print(name) print("Student’s age:") print(age)
   - type: "paragraph"
-    value: |
-      Here we define 2 variables `age` and `name` where we store 2 objects of different types number and string. In the next statements we use the function `print` to output the data on the screen. You can see here that we `print` direct values like `"Student name:"` and variable `name`. Print function knows how to handle both values and variables.
-      So, a variable in Python is essentially a way to store, retrieve, and update information as your program runs, acting as a flexible, reusable container for your data.
-      ## First task
-      Wow, you’ve come a long way, we’ve covered a lot of ground and will go in detail in future lessons but let’s combine what you learned here and work on your first task. 
-      Tasks will not only run your program but they will also check if you wrote the code correctly. When you are done with the task, click the "Validate" button to see your solution is correct.
+    value: >
+      Here we define 2 variables `age` and `name` where we store 2 objects of different types number and
+      string. In the next statements we use the function `print` to output the data on the screen. You can see
+      here that we `print` direct values like `"Student name:"` and variable `name`. Print function knows how
+      to handle both values and variables. So, a variable in Python is essentially a way to store, retrieve,
+      and update information as your program runs, acting as a flexible, reusable container for your data. ##
+      First task Wow, you’ve come a long way, we’ve covered a lot of ground and will go in detail in future
+      lessons but let’s combine what you learned here and work on your first task.  Tasks will not only run
+      your program but they will also check if you wrote the code correctly. When you are done with the task,
+      click the "Validate" button to see your solution is correct.
   - type: "kata"
-    task: |
-      # What is your name?
-      Your task is to store your name inside the variable `name` and then print it out. Replace `...` on the first line with your name inside quotes,
-      for example, `"Brad"` and replace `...` on the second line with the name of the variable (`name`).
-    boilerplate: |
-      name=...
-      print(...)
-      print("is learning Python!")
-    solution: |
-      name="Some Name"
-      print("My name is ")
-      print(name)
-    test_code: |
-      from main import name
-      import unittest
-      class TestEmptyVariableName(unittest.TestCase):
+    task: >
+      # What is your name? 
+
+      Your task is to store your name inside the variable `name` and then print it out. Replace `...` on the
+      first line with your name inside quotes, for example, `"Brad"` and replace `...` on the second line with
+      the name of the variable (`name`).
+    boilerplate: >
+      name=... print(...) print("is learning Python!")
+    solution: >
+      name="Some Name" print("My name is ") print(name)
+    test_code: >
+      from main import name import unittest class TestEmptyVariableName(unittest.TestCase):
           def test_empty_name(self):
               self.assertNotEqual(name, "",
                               "Make sure that you added your name value to variable name.")
