@@ -7,12 +7,14 @@ software_dependencies:
 content:
   - type: "paragraph"
     hero_image: "https://storage.googleapis.com/scula-public-assets/landing/python/python_welcome.webp"
+    card_group: test_group
     value: |
       # Welcome! 
       Welcome to the trial part of our upcoming program "Python for Beginners". Before you make a choice to 
       proceed with the full version of this program, we want you to get acquainted with our platform and 
       content first.
   - type: "paragraph"
+    card_group: test_group
     value: |
       ##  What is in it for you?
       During the course you will learn not only Python fundamentals but the context of where it is used:
@@ -36,11 +38,13 @@ content:
       Full course version is divided into sprints - time bound frames where you will have 2 weeks to complete the theory and the project.
 
   - type: "paragraph"
+    card_group: test_group_2
     value: |
       ##  Start your journey now
       This trial lesson can be completed at your own pace at any time before the start date. By the end of it, we are confident you will see why Python is not just a programming language, but a gateway to turning your ideas into reality.
 
   - type: "quiz"
+    card_group: test_group_2
     quiz_items:
       - question: "Are you ready 🎸?"
         answers:
