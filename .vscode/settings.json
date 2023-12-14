@@ -1,0 +1,7 @@
+{
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.formatOnSave": true,
+    "yaml.format.printWidth": 110,
+    "yaml.format.proseWrap": "preserve"
+  }
+  

@@ -9,12 +9,15 @@ content:
     hero_image: "https://storage.googleapis.com/scula-public-assets/landing/python/python_welcome.webp"
     value: |
       # Welcome! 
-      Welcome to the trial part of our upcoming program "Python for Beginners". Before you make a choice to proceed with the full version of this program, we want you to get acquainted with our platform and content first.
+      Welcome to the trial part of our upcoming program "Python for Beginners". Before you make a choice to 
+      proceed with the full version of this program, we want you to get acquainted with our platform and 
+      content first.
   - type: "paragraph"
     value: |
       ##  What is in it for you?
       During the course you will learn not only Python fundamentals but the context of where it is used:
-      * You will be able to create complex programs for real-world scenarios, from automating mundane tasks to analyzing vast data sets or building your first small web application.
+      * You will be able to create complex programs for real-world scenarios, from automating mundane tasks 
+      to analyzing vast data sets or building your first small web application.
       * You will learn how Python programs are executed and interact with the operating system.
       * You will create projects that will be reviewed by working software engineers with a few years of experience and can be added to your portfolio.
       Through interactive coding exercises, you will experience firsthand how Python's simplicity and power make it an ideal language for beginners and seasoned programmers alike.
@@ -97,7 +100,7 @@ content:
   - type: "paragraph"
     value: |
       # Why is Python cool?
-      
+
       **Python is free and open source**
 
       It means you can view its source code, use it anywhere, create anything you want with it and even sell it. It also has a vibrant and large community that takes care of Python as a technology and develops additional tools in multiple areas (like web development, data science and others).
