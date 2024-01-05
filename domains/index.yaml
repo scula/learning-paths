@@ -228,7 +228,7 @@ nodes:
                 name: "PEP8"
                 tags: ["pep8"]
                 level: 2
-              - string_id: prog_langs_python_guidelines)variable_names
+              - string_id: prog_langs_python_guidelines_variable_names
                 name: "Variable names"
                 tags: ["variable-names"]
                 level: 2
