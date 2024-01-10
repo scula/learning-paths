@@ -39,7 +39,7 @@ content:
           - value: "It compiles the Python script into machine code."
             explanation: "The Python Interpreter doesn't compile scripts into machine code; it translates them into bytecode before execution."
           - value: "It reads and translates Python code into a language the computer understands."
-            explanation: "Correct! The interpreter translates Python code into bytecode, a computer-friendly version of the script."
+            explanation: "The interpreter translates Python code into bytecode, a computer-friendly version of the script."
             correct: true
           - value: "It writes additional Python code to enhance the script's functionality."
             explanation: "The interpreter does not write additional code; it reads and translates the existing Python script."
@@ -49,7 +49,7 @@ content:
           - value: "It can only be used on high-performance computers."
             explanation: "Being a high-level language is unrelated to the performance of the computer."
           - value: "It is designed to be easy to read and write, abstracting most complex details of computer operations."
-            explanation: "Correct! High-level languages like Python are closer to human languages and easier for us to understand."
+            explanation: "High-level languages like Python are closer to human languages and easier for us to understand."
             correct: true
           - value: "It is used exclusively for developing complex software systems."
             explanation: "Python's status as a high-level language does not limit it to complex software systems; it's versatile."
