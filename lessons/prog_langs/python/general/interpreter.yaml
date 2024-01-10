@@ -10,7 +10,6 @@ content:
       # Interpreter
       Today, we're going to dive into the world of Python and uncover the mysteries of the Python Interpreter. Imagine you're learning to speak a new language, and you have a friend who's fluent in it, ready to translate everything for you. The Python Interpreter is a bit like that friend, but for Python, a language that computers understand. Let's get started and discover how it works and why it's so important for you to know about it!
   - type: "paragraph"
-    card_group: interpreter_intro
     value: |
       ## What is the Python Interpreter?
       First off, what exactly is an interpreter? Well, in the world of computers, an interpreter is a program that reads and executes code. The Python Interpreter is a special program that understands the Python language. When you write a Python script, the interpreter reads your code and translates it into a language your computer understands. It's like reading a recipe and making a cake; the recipe is your code, and the cake is what the interpreter helps your computer produce.
@@ -28,9 +27,14 @@ content:
     value: |
       Here's where the interpreter comes in:
 
-      * Reading the Code: First, you write your Python script (a .py file). The interpreter starts at the top and reads your code line by line.
-      * Translating the Code: As the interpreter reads your code, it translates it into bytecode. This bytecode is a lower-level, computer-friendly version of your script.
-      * Executing the Code: Finally, the interpreter executes the bytecode, turning it into actions your computer understands and responds to.
+      * *Reading the Code.* First, you write your Python script (a .py file). The interpreter starts at the top and reads your code line by line.
+      * *Translating the Code.* As the interpreter reads your code, it translates it into bytecode. This bytecode is a lower-level, computer-friendly version of your script.
+      * *Executing the Code.* Finally, the interpreter executes the bytecode, turning it into actions your computer understands and responds to.
+
+  - type: "hint"
+    card_group: interpreter_intro
+    value: |
+      *Bytecode*: Imagine you wrote a letter in English, but the person receiving it only understands French. Bytecode is like a translated version of your Python script, a middle ground between your high-level Python code and the low-level machine code. When the Python Interpreter reads your script, it translates it into this special format called bytecode, which is a more efficient set of instructions that the computer can understand and execute. Think of it as the interpreter's way of quickly and efficiently telling the computer what to do.
 
   - type: "quiz"
     quiz_items:
@@ -54,7 +58,64 @@ content:
           - value: "It is used exclusively for developing complex software systems."
             explanation: "Python's status as a high-level language does not limit it to complex software systems; it's versatile."
 
-  - type: "codelab"
-    gcs_url: gs://scula-codelabs/codelabs_intro_python_syntax_practice-19afaba.tar.gz
-    codelab_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-intro-python:0.9
-    codelab_guard_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-guard-intro-python:0.13
+  - type: "paragraph"
+    value: |
+      ## Why is the Python Interpreter Important?
+
+      Understanding the Python Interpreter is crucial for several reasons:
+      * *Immediate Feedback.* Unlike some languages that require you to compile your code before running it, Python's interpreter allows you to run your code as soon as you write it. This immediate feedback is invaluable for learning and debugging.
+      * *Simplicity.* The interpreter handles the complex work of understanding your Python code and communicating with the computer. This simplicity allows you to focus on learning to program without worrying about the intricate details of the computer's language.
+      * *Portability.* Python is known for being cross-platform, which means your Python code can run on Windows, macOS, Linux, and more. The interpreter takes care of the details, making your code portable across different systems.
+
+  - type: "paragraph"
+    card_group: running_scripts
+    value: |
+      ## Running Python Scripts:
+      There are two main ways you can run your Python scripts:
+
+      * Using the *Command Line.* Navigate to the directory where your .py file is saved using the command line or terminal. Then, type python my_first_script.py (replace with your file name) and press Enter. The Python Interpreter will read your file and execute the script.
+      * Using the *Python Interactive Shell*. The Python Interactive Shell, also known as the Python REPL (Read-Eval-Print Loop), is a great place to try out small bits of Python code in real-time. It's like having a conversation with Python.
+      To access it, just type python in your command line and press Enter. You'll see something like >>>, which is Python waiting for you to type something.
+      In the shell, you can write any Python code and see the results immediately after pressing Enter. It's perfect for experimenting and testing out ideas before putting them into a script.
+
+  - type: "hint"
+    card_group: running_scripts
+    value: |
+      How does it works in Scula? When you browse the theory and see the code block with *Execute* button, the platform 
+      takes the code you see in the editor, creates a temporary .py file and runs it with the interpreter.
+      The output is then displayed in the console below the editor.
+
+      And you can do both modes in Scula explicitly in the *Codelab*! In the end of this lesson, we will launch
+      our first Codelab and you will try yourself how it works.
+
+  - type: "paragraph"
+    value: |
+      ## What Can You Do in the Shell Mode?
+      The shell is incredibly versatile and perfect for beginners. Here's what you can do:
+
+      * *Test Out Code.* Before adding code to your script, you can test it in the shell to see what it does.
+      * *Learn and Experiment.* Try out new functions and modules to see how they work. It's a great learning tool.
+      * *Debug.* If a part of your script isn't working, you can copy that part into the shell to test it and understand what's going wrong.
+
+  - type: "paragraph"
+    value: |
+      ## When Use Files or the Shell?
+      * *Files.* When you're building something more substantial or want to save your work to revisit later, you use files. It's like writing down a recipe so you can cook it again anytime.
+      * *Shell.* For quick experiments, learning, or testing small pieces of code, the shell is your go-to. It's like tasting as you cook to make sure everything is just right.
+
+  - type: "paragraph"
+    value: |
+      ## Difference Between Interpreter and Compiler
+      You might hear about languages that use a compiler instead of an interpreter. The main difference is when and how they translate your code. A compiler looks at your entire program at once, translates it into machine code, and creates a separate file that the computer can run. This process happens before you ever run your program. An interpreter, like Python's, translates and runs your code on the fly, one line at a time. This means you can write and test your Python code much more quickly, but it might run a bit slower than compiled code.
+
+  - type: "paragraph"
+    value: |
+      ## Error Handling
+      When you're just starting, you'll likely encounter errors in your code. Don't worry; it's a normal part of learning! The Python Interpreter is quite helpful here. It tries to execute your code, and if something goes wrong, it stops and tells you what and where the problem is with an error message. These messages might seem cryptic at first, but they're actually very informative once you learn how to read them. They usually tell you the type of error (like a SyntaxError or a NameError) and show you exactly where in your code the problem occurred. This immediate feedback is invaluable for learning what works and what doesn't in Python.
+
+  - type: "paragraph"
+    value: |
+      ## In Conclusion
+      Understanding the Python Interpreter is like learning the rules of a game. Once you know how the game is played, you can start having fun and creating amazing things. As you begin your journey with Python, remember that the interpreter is your guide, helping translate your ideas into a language the computer understands. So, embrace this new adventure, and before you know it, you'll be speaking fluent Python!
+
+      Keep experimenting, keep learning, and most importantly, have fun with it! If you have any questions or hit a snag, remember that every programmer starts somewhere, and every question is a step towards mastery. Happy coding!
