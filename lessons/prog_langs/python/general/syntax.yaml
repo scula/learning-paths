@@ -9,7 +9,7 @@ content:
     value: "# Python Syntax 2"
   - type: "codelab"
     gcs_url: gs://scula-codelabs/codelabs_intro_python_syntax_practice-19afaba.tar.gz
-    codelab_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-intro-python:0.9
+    codelab_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-intro-python:0.11
     codelab_guard_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-guard-intro-python:0.13
   - type: "paragraph"
     value: "# Python Syntax 2"

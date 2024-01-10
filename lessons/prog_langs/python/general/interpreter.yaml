@@ -103,6 +103,28 @@ content:
       * *Files.* When you're building something more substantial or want to save your work to revisit later, you use files. It's like writing down a recipe so you can cook it again anytime.
       * *Shell.* For quick experiments, learning, or testing small pieces of code, the shell is your go-to. It's like tasting as you cook to make sure everything is just right.
 
+  - type: "quiz"
+    quiz_items:
+      - question: "How can you run a Python script using the Command Line?"
+        answers:
+          - value: "By typing 'run my_first_script.py' in the terminal."
+            explanation: "The correct command is 'python my_first_script.py', not 'run'."
+          - value: "By navigating to the script's directory and typing 'python my_first_script.py'."
+            explanation: "This command tells the Python Interpreter to run your script."
+            correct: true
+          - value: "By opening the script with a text editor and pressing the run button."
+            explanation: "This method describes an Integrated Development Environment (IDE), not the Command Line."
+
+      - question: "What is the Python Interactive Shell used for?"
+        answers:
+          - value: "Compiling Python scripts into executable files."
+            explanation: "The Python Interactive Shell is used for real-time code execution, not compiling scripts."
+          - value: "Running and testing small bits of Python code in real-time."
+            explanation: "The Interactive Shell allows you to write and execute code on the fly."
+            correct: true
+          - value: "Creating large and complex Python applications."
+            explanation: "While possible, the shell is more suited for testing and experimentation, not full application development."
+
   - type: "paragraph"
     value: |
       ## Difference Between Interpreter and Compiler
