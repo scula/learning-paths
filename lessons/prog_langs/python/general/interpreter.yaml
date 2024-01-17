@@ -1,18 +1,41 @@
 node_string_id: "prog_langs_python_interpreter"
 name: "Python Interpreter"
-description: "How Python actually works?"
+description: "What does 'to run a program' mean in Python?"
 software_dependencies:
   - name: python
     version: 3.11.4
 content:
   - type: "paragraph"
     value: |
-      # Interpreter
-      Today, we're going to dive into the world of Python and uncover the mysteries of the Python Interpreter. Imagine you're learning to speak a new language, and you have a friend who's fluent in it, ready to translate everything for you. The Python Interpreter is a bit like that friend, but for Python, a language that computers understand. Let's get started and discover how it works and why it's so important for you to know about it!
+      # Interpreter: making a program **alive**
+      In this lesson we will focus on what does it mean `to run a program` and uncover the mysteries of the Python Interpreter.
+
   - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/prog_langs_python_interpreter/conductor.png
+    value: |
+      When we talk about "running a program" in the world of computer science, it's a bit like telling an actor to perform a play. 
+      The script is written (in this case, the program code), and the actor (the computer) performs it. 
+      Now, how does Python fit into this? Python is like a very talented translator, known as an interpreter, 
+      who reads the script line by line and translates it into actions the computer can understand and perform. 
+      Unlike some other languages that need to have the entire script (program) translated before the performance 
+      (execution), Python's interpreter works on-the-fly. It reads your Python code, one line at a time, and tells 
+      the computer what to do as it goes. This makes Python incredibly flexible and user-friendly, especially for 
+      beginners. You can write a bit of code, run it to see what happens, tweak it, and run it again. 
+      It's like having a rehearsal and live performance all at once, making programming more enjoyable and interactive.
+  - type: "paragraph"
+    card_group: what_is_interpreter
     value: |
       ## What is the Python Interpreter?
-      First off, what exactly is an interpreter? Well, in the world of computers, an interpreter is a program that reads and executes code. The Python Interpreter is a special program that understands the Python language. When you write a Python script, the interpreter reads your code and translates it into a language your computer understands. It's like reading a recipe and making a cake; the recipe is your code, and the cake is what the interpreter helps your computer produce.
+      First off, what exactly is an interpreter? Well, in the world of computers, an interpreter is a program that 
+      reads and executes code. 
+      The Python Interpreter is a special program that understands the Python language.
+      When you write a Python script, the interpreter reads your code and translates it into a language your computer 
+      understands. It's like reading a recipe and making a cake; the recipe is your code, and the cake is what the 
+      interpreter helps your computer produce.
+  - type: "paragraph"
+    card_group: what_is_interpreter
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/prog_langs_python_interpreter/diagram-intepreter.png
+    value: ""
   - type: "paragraph"
     card_group: interpreter_intro
     value: |

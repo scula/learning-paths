@@ -242,6 +242,10 @@ nodes:
             level: 1
           - string_id: prog_langs_python_interpreter
             name: "Python Interpreter"
+            learn_goals:
+              - "Explain how Python interpreter works"
+              - "Show difference between shell mode and script mode"
+              - "Show how to run Python code in shell and in script"
             level: 1
           - string_id: prog_langs_python_syntax
             name: "Syntax in Python"
