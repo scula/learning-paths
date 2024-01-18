@@ -6,22 +6,27 @@ software_dependencies:
     version: 3.11.4
 content:
   - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/prog_langs_python_interpreter/conductor.png
     value: |
       # Interpreter: making a program **alive**
       In this lesson we will focus on what does it mean `to run a program` and uncover the mysteries of the Python Interpreter.
 
   - type: "paragraph"
-    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/prog_langs_python_interpreter/conductor.png
     value: |
-      When we talk about "running a program" in the world of computer science, it's a bit like telling an actor to perform a play. 
-      The script is written (in this case, the program code), and the actor (the computer) performs it. 
-      Now, how does Python fit into this? Python is like a very talented translator, known as an interpreter, 
+      When we talk about **running a program** in the world of computer science, it's a bit like telling an *actor* to perform a play. 
+      The script is written (in this case, the program code), and the *actor* (the computer) performs it. 
+
+
+      Now, how does Python fit into this? Python is like a very talented translator, known as an *interpreter*, 
       who reads the script line by line and translates it into actions the computer can understand and perform. 
       Unlike some other languages that need to have the entire script (program) translated before the performance 
-      (execution), Python's interpreter works on-the-fly. It reads your Python code, one line at a time, and tells 
-      the computer what to do as it goes. This makes Python incredibly flexible and user-friendly, especially for 
+      (execution), Python's *interpreter* works on-the-fly. It reads your Python code, one line at a time, and tells 
+      the computer what to do as it goes. 
+
+
+      This makes Python incredibly flexible and user-friendly, especially for 
       beginners. You can write a bit of code, run it to see what happens, tweak it, and run it again. 
-      It's like having a rehearsal and live performance all at once, making programming more enjoyable and interactive.
+      It's like having a rehearsal and live performance all at once, making programming more enjoyable and interactive 💃.
   - type: "paragraph"
     card_group: what_is_interpreter
     value: |
@@ -39,20 +44,28 @@ content:
   - type: "paragraph"
     card_group: interpreter_intro
     value: |
-      ## How Does the Python Interpreter Work?
-      Now, let's talk about how the Python Interpreter works. When you write a Python program, you're creating a set of instructions for the computer to follow. These instructions are written in Python, which is a high-level language that's easy for humans to understand but not directly understandable by computers.
+      # How Does the Python Interpreter Work?
+      Now, let's talk about how the Python Interpreter works. When you write a Python program, you're creating a set 
+      of instructions for the computer to follow. These instructions are written in Python, which is a high-level 
+      language that's easy for humans to understand but not directly understandable by computers.
   - type: "hint"
     card_group: interpreter_intro
     value: |
-      High-Level Language: Python is often described as a "high-level language." This means it's closer to human languages and further from the machine's binary language of 0s and 1s. High-level languages are designed to be easy for us to read and write, abstracting away most of the complex details of the computer's operations. They let you focus on what you want to do in your program, rather than how to make the computer do it.
+      High-Level Language: Python is often described as a "high-level language." This means it's closer to human 
+      languages and further from the machine's binary language of 0s and 1s. High-level languages are designed 
+      to be easy for us to read and write, abstracting away most of the complex details of the computer's operations. 
+      They let you focus on what you want to do in your program, rather than how to make the computer do it.
   - type: "paragraph"
     card_group: interpreter_intro
     value: |
       Here's where the interpreter comes in:
 
-      * *Reading the Code.* First, you write your Python script (a .py file). The interpreter starts at the top and reads your code line by line.
-      * *Translating the Code.* As the interpreter reads your code, it translates it into bytecode. This bytecode is a lower-level, computer-friendly version of your script.
-      * *Executing the Code.* Finally, the interpreter executes the bytecode, turning it into actions your computer understands and responds to.
+      * *Reading the Code.* First, you write your Python script (a .py file). The interpreter starts at the top and 
+      reads your code line by line.
+      * *Translating the Code.* As the interpreter reads your code, it translates it into bytecode. This bytecode 
+      is a lower-level, computer-friendly version of your script.
+      * *Executing the Code.* Finally, the interpreter executes the bytecode, turning it into actions your computer 
+      understands and responds to.
 
   - type: "hint"
     card_group: interpreter_intro
@@ -93,13 +106,20 @@ content:
   - type: "paragraph"
     card_group: running_scripts
     value: |
-      ## Running Python Scripts:
+      # Running Python Scripts:
       There are two main ways you can run your Python scripts:
 
-      * Using the *Command Line.* Navigate to the directory where your .py file is saved using the command line or terminal. Then, type python my_first_script.py (replace with your file name) and press Enter. The Python Interpreter will read your file and execute the script.
-      * Using the *Python Interactive Shell*. The Python Interactive Shell, also known as the Python REPL (Read-Eval-Print Loop), is a great place to try out small bits of Python code in real-time. It's like having a conversation with Python.
-      To access it, just type python in your command line and press Enter. You'll see something like >>>, which is Python waiting for you to type something.
-      In the shell, you can write any Python code and see the results immediately after pressing Enter. It's perfect for experimenting and testing out ideas before putting them into a script.
+      * Using the *Command Line.* Working with Python files using the command line is a straightforward process. 
+      It starts by going to the folder where your Python script is saved. Then, you use a simple command 
+      that tells the Python Interpreter to read your file and run the script. This is how your script comes 
+      to life and does its job. The command line acts as a bridge between you and the script, making it 
+      easy to get your code up and running.
+      * Using the *Python Interactive Shell*. The **Python Interactive Shell**, or Python REPL, is a handy tool for
+       experimenting with Python code quickly. Think of it as having a chat with Python itself. 
+       You can start it simply by typing 'python' in your command line and pressing Enter. 
+       When you see `>>>` appear, that's Python ready and waiting for your code. Here, you can type any
+       Python code and instantly see what it does as soon as you press Enter. It's ideal for trying out small code 
+       snippets or testing ideas before adding them to a larger script.
 
   - type: "hint"
     card_group: running_scripts
@@ -108,12 +128,29 @@ content:
       takes the code you see in the editor, creates a temporary .py file and runs it with the interpreter.
       The output is then displayed in the console below the editor.
 
-      And you can do both modes in Scula explicitly in the *Codelab*! In the end of this lesson, we will launch
-      our first Codelab and you will try yourself how it works.
+      And you can do both modes in Scula explicitly in the *Codelab*! We will try it right away in the next **Codelab**.
 
   - type: "paragraph"
     value: |
-      ## What Can You Do in the Shell Mode?
+      ### What is a terminal? Quick crash introduction
+      A terminal is a program that allows you to interact with your computer using text commands.
+      It's like a text-based user interface to your computer. You can use it to navigate your computer's file system,
+      run programs, and execute commands. It's a powerful tool that can help you get things done faster and more efficiently.
+
+
+      They look a bit intimidating at first, but don't worry; they're not as scary as they seem.
+      The interface can be different but the idea is the same. 
+      You type in a command, and the terminal executes it.
+      Usually you can type after the `$` or `>` sign. And when you want to execute the command, you press `Enter`.
+
+  - type: "codelab"
+    gcs_url: gs://scula-codelabs/codelabs_intro_python_interpreter_lesson-7ca1260.tar.gz
+    codelab_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-intro-python:0.20
+    codelab_guard_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-guard-intro-python:0.13
+
+  - type: "paragraph"
+    value: |
+      ## What Can You Do in the **Python Interactive Shell** Mode?
       The shell is incredibly versatile and perfect for beginners. Here's what you can do:
 
       * *Test Out Code.* Before adding code to your script, you can test it in the shell to see what it does.
@@ -138,10 +175,10 @@ content:
           - value: "By opening the script with a text editor and pressing the run button."
             explanation: "This method describes an Integrated Development Environment (IDE), not the Command Line."
 
-      - question: "What is the Python Interactive Shell used for?"
+      - question: "What is the **Python Interactive Shell** used for?"
         answers:
           - value: "Compiling Python scripts into executable files."
-            explanation: "The Python Interactive Shell is used for real-time code execution, not compiling scripts."
+            explanation: "The **Python Interactive Shell** is used for real-time code execution, not compiling scripts."
           - value: "Running and testing small bits of Python code in real-time."
             explanation: "The Interactive Shell allows you to write and execute code on the fly."
             correct: true
