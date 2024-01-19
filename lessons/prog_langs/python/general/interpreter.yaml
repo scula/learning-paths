@@ -8,7 +8,7 @@ content:
   - type: "paragraph"
     hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/prog_langs_python_interpreter/conductor.png
     value: |
-      # Interpreter: making a program **alive**
+      # Interpreter: making a program alive
       In this lesson we will focus on what does it mean `to run a program` and uncover the mysteries of the Python Interpreter.
 
   - type: "paragraph"
@@ -95,6 +95,7 @@ content:
             explanation: "Python's status as a high-level language does not limit it to complex software systems; it's versatile."
 
   - type: "paragraph"
+    card_group: why_interpreter_is_important
     value: |
       ## Why is the Python Interpreter Important?
 
@@ -103,10 +104,17 @@ content:
       * *Simplicity.* The interpreter handles the complex work of understanding your Python code and communicating with the computer. This simplicity allows you to focus on learning to program without worrying about the intricate details of the computer's language.
       * *Portability.* Python is known for being cross-platform, which means your Python code can run on Windows, macOS, Linux, and more. The interpreter takes care of the details, making your code portable across different systems.
 
+  - type: "hint"
+    card_group: why_interpreter_is_important
+    value: |
+      Compilation is the process of translating a program from a high-level language into a lower-level language.
+      It means that the program is translated all at once before it's executed. This is different from interpretation, 
+      where the program is translated line by line as it's executed like Python does.
+
   - type: "paragraph"
     card_group: running_scripts
     value: |
-      # Running Python Scripts:
+      # Running Python Scripts
       There are two main ways you can run your Python scripts:
 
       * Using the *Command Line.* Working with Python files using the command line is a straightforward process. 
@@ -132,7 +140,10 @@ content:
 
   - type: "paragraph"
     value: |
-      ### What is a terminal? Quick crash introduction
+      ### What is a terminal?
+      We mentioned the *Command Line* in the previous section. But what is it exactly?
+
+
       A terminal is a program that allows you to interact with your computer using text commands.
       It's like a text-based user interface to your computer. You can use it to navigate your computer's file system,
       run programs, and execute commands. It's a powerful tool that can help you get things done faster and more efficiently.
@@ -150,7 +161,7 @@ content:
 
   - type: "paragraph"
     value: |
-      ## What Can You Do in the **Python Interactive Shell** Mode?
+      ## What Can You Do in the Python Interactive Shell Mode?
       The shell is incredibly versatile and perfect for beginners. Here's what you can do:
 
       * *Test Out Code.* Before adding code to your script, you can test it in the shell to see what it does.
@@ -163,19 +174,36 @@ content:
       * *Files.* When you're building something more substantial or want to save your work to revisit later, you use files. It's like writing down a recipe so you can cook it again anytime.
       * *Shell.* For quick experiments, learning, or testing small pieces of code, the shell is your go-to. It's like tasting as you cook to make sure everything is just right.
 
+  - type: "paragraph"
+    card_group: small_practice_run_file
+    value: |
+      ## Running Python Script
+
+      Most of the time, you'll be writing Python code in a file and running it from the command line.
+      In Scula, you can do it directly in the lesson. Modify the code as you wish and press the *Execute* button.
+
+      You've tried it before, but now you should understand what's happening behind the scenes.
+
+  - type: "codeblock-exec"
+    card_group: small_practice_run_file
+    value: |
+      healthy_fruit = "🍎"
+      pizza = "🍕"
+      print(f"Today I will eat {pizza}!")
+
   - type: "quiz"
     quiz_items:
       - question: "How can you run a Python script using the Command Line?"
         answers:
-          - value: "By typing 'run my_first_script.py' in the terminal."
-            explanation: "The correct command is 'python my_first_script.py', not 'run'."
-          - value: "By navigating to the script's directory and typing 'python my_first_script.py'."
+          - value: "By typing `run my_first_script.py` in the terminal."
+            explanation: "The correct command is `python my_first_script.py`, not `run`."
+          - value: "By navigating to the script's directory and typing `python my_first_script.py`."
             explanation: "This command tells the Python Interpreter to run your script."
             correct: true
           - value: "By opening the script with a text editor and pressing the run button."
             explanation: "This method describes an Integrated Development Environment (IDE), not the Command Line."
 
-      - question: "What is the **Python Interactive Shell** used for?"
+      - question: "What is the Python Interactive Shell used for?"
         answers:
           - value: "Compiling Python scripts into executable files."
             explanation: "The **Python Interactive Shell** is used for real-time code execution, not compiling scripts."
@@ -186,14 +214,56 @@ content:
             explanation: "While possible, the shell is more suited for testing and experimentation, not full application development."
 
   - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/prog_langs_python_interpreter/diagram-compiler-vs-interpreter.png
     value: |
-      ## Difference Between Interpreter and Compiler
-      You might hear about languages that use a compiler instead of an interpreter. The main difference is when and how they translate your code. A compiler looks at your entire program at once, translates it into machine code, and creates a separate file that the computer can run. This process happens before you ever run your program. An interpreter, like Python's, translates and runs your code on the fly, one line at a time. This means you can write and test your Python code much more quickly, but it might run a bit slower than compiled code.
+      # Difference Between Interpreter and Compiler
+      You might hear about languages that use a **compiler** instead of an **interpreter**. The main difference is when and how
+      they translate your code. A **compiler** looks at your entire program at once, translates it into **machine code**, 
+      and creates a separate file that the computer can run. This process happens before you ever run your program. 
+      An **interpreter**, like Python's, translates and runs your code on the fly, one line at a time. 
+      This means you can write and test your Python code much more quickly, but it might run a bit slower 
+      than compiled code.
 
   - type: "paragraph"
     value: |
-      ## Error Handling
-      When you're just starting, you'll likely encounter errors in your code. Don't worry; it's a normal part of learning! The Python Interpreter is quite helpful here. It tries to execute your code, and if something goes wrong, it stops and tells you what and where the problem is with an error message. These messages might seem cryptic at first, but they're actually very informative once you learn how to read them. They usually tell you the type of error (like a SyntaxError or a NameError) and show you exactly where in your code the problem occurred. This immediate feedback is invaluable for learning what works and what doesn't in Python.
+      # Embracing errors
+      When you're just starting, you'll likely encounter errors in your code. Don't worry; it's a normal 
+      part of learning and working with code! The Python Interpreter is quite helpful here and your friend.
+
+
+      It tries to execute your code, and if something goes wrong, it stops and tells you what and 
+      where the problem is with an error message. These messages might seem cryptic at first, 
+      but they're actually very informative once you learn how to read them. They usually tell 
+      you the type of error (like a SyntaxError or a NameError) and show you exactly where in 
+      your code the problem occurred. This immediate feedback is invaluable for learning what 
+      works and what doesn't in Python.
+
+  - type: "kata"
+    task: |
+      # Errors on the loose
+      The following code is full of errors! Don't try to fix it immediately, first run it, and see what error you receive.
+
+      Then, try to fix it and run it again. Then fix the next error and so on until you get the correct output.
+    boilerplate: |
+      10guests = 10
+          print(10guests + " will come to my party")
+      pizzas = 0
+      pizzas_per_guest = 10guests / pizzas 
+      print("Each guest will have {pizzas_per_guest} pizzas")
+
+    solution: |
+      guests = 10
+      print(guests + " will come to my party")
+      pizzas = 2
+      pizzas_per_guest = pizzas / guests
+      print("Each guest will have {pizzas_per_guest} pizzas")
+    test_code: |
+      from main import pizzas_per_guest
+      import unittest
+      class TestEmptyVariableName(unittest.TestCase):
+          def test_empty_name(self):
+              self.assertNotEqual(name, "",
+                              "Make sure you've fixed all errors.")
 
   - type: "paragraph"
     value: |
