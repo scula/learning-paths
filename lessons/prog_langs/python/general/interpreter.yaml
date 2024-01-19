@@ -232,46 +232,76 @@ content:
     value: |
       # Embracing errors
       When you're just starting, you'll likely encounter errors in your code. Don't worry; it's a normal 
-      part of learning and working with code! The Python Interpreter is quite helpful here and your friend.
+      part of learning and working with code! The **Python Interpreter** is quite helpful here and your friend.
 
 
       It tries to execute your code, and if something goes wrong, it stops and tells you what and 
       where the problem is with an error message. These messages might seem cryptic at first, 
       but they're actually very informative once you learn how to read them. They usually tell 
-      you the type of error (like a SyntaxError or a NameError) and show you exactly where in 
+      you the type of error (like a **SyntaxError** or a **NameError**) and show you exactly where in 
       your code the problem occurred. This immediate feedback is invaluable for learning what 
       works and what doesn't in Python.
 
   - type: "kata"
     task: |
-      # Errors on the loose
+      ## Errors on the loose
       The following code is full of errors! Don't try to fix it immediately, first run it, and see what error you receive.
+
+      First, you will see something like this:
+      ```
+      10guests = 10
+      ^
+      SyntaxError: invalid syntax
+      ```
+
+      You can see how the interpreter points to the exact line where the error occurred. There are many types of errors,
+      and you will learn about them in the next lessons. But for now, SyntaxError means that the interpreter doesn't understand
+      the code you wrote or your code doesn't follow the rules of the Python language.
+
+
+      In this case, the rule is that variable names cannot start with a number. So, you need to fix the variable name 
+      so that it starts with a letter, not a number, and run the code again.
+
+      Then, you will see the next error:
+      ```
+      print(10guests)
+      IndentationError: unexpected indent
+      ```
+
+      This error means that you have an extra space at the beginning of the line. Python is very strict about indentation,
+      and you need to remove the extra space to fix the error. Just make sure that the line starts at the beginning of the line.
+
+      If you run it again, we will see our final error, again SyntaxError:
+      ```
+      print(10guests)
+      ^
+      SyntaxError: invalid syntax
+      ```
+      This time, it's not so obvious what's wrong. But if you remember, before we fixed the variable name, but here 
+      it stayed the same. The interpreter can't do anything with the variable because it was not declared before.
+      Change it to the correct variable name that you've set up earlier and run the code again.
 
       Then, try to fix it and run it again. Then fix the next error and so on until you get the correct output.
     boilerplate: |
       10guests = 10
-          print(10guests + " will come to my party")
-      pizzas = 0
-      pizzas_per_guest = 10guests / pizzas 
-      print("Each guest will have {pizzas_per_guest} pizzas")
+          print(10guests)
+      print("will come to my party")
 
     solution: |
       guests = 10
-      print(guests + " will come to my party")
-      pizzas = 2
-      pizzas_per_guest = pizzas / guests
-      print("Each guest will have {pizzas_per_guest} pizzas")
+      print(guests)
+      print("will come to my party")
     test_code: |
-      from main import pizzas_per_guest
-      import unittest
-      class TestEmptyVariableName(unittest.TestCase):
-          def test_empty_name(self):
-              self.assertNotEqual(name, "",
-                              "Make sure you've fixed all errors.")
+      import main
 
   - type: "paragraph"
     value: |
       ## In Conclusion
-      Understanding the Python Interpreter is like learning the rules of a game. Once you know how the game is played, you can start having fun and creating amazing things. As you begin your journey with Python, remember that the interpreter is your guide, helping translate your ideas into a language the computer understands. So, embrace this new adventure, and before you know it, you'll be speaking fluent Python!
+      Understanding the Python Interpreter is like learning the rules of a game. Once you know how the game is played,
+      you can start having fun and creating amazing things. As you begin your journey with Python, remember that 
+      the interpreter is your guide, helping translate your ideas into a language the computer understands. 
+      So, embrace this new adventure, and before you know it, you'll be speaking fluent Python!
 
-      Keep experimenting, keep learning, and most importantly, have fun with it! If you have any questions or hit a snag, remember that every programmer starts somewhere, and every question is a step towards mastery. Happy coding!
+      Keep experimenting, keep learning, and most importantly, have fun with it! If you have any questions or
+      hit a wall, remember that every programmer starts somewhere, and every question is a step towards
+      mastery. Happy coding!
