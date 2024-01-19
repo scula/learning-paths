@@ -214,9 +214,13 @@ content:
             explanation: "While possible, the shell is more suited for testing and experimentation, not full application development."
 
   - type: "paragraph"
-    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/prog_langs_python_interpreter/diagram-compiler-vs-interpreter.png
+    card_group: difference
     value: |
       # Difference Between Interpreter and Compiler
+  - type: "paragraph"
+    card_group: difference
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/prog_langs_python_interpreter/diagram-compiler-vs-interpreter.png
+    value: |
       You might hear about languages that use a **compiler** instead of an **interpreter**. The main difference is when and how
       they translate your code. A **compiler** looks at your entire program at once, translates it into **machine code**, 
       and creates a separate file that the computer can run. This process happens before you ever run your program. 
