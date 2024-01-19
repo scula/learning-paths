@@ -51,7 +51,7 @@ sprints:
             file_path: "lessons/prog_langs/python/general/syntax.yaml"
           - node_string_id: "prog_langs_python_interpreter"
             group: "General"
-            lesson_sha: "64657ae"
+            lesson_sha: "189ee70"
             file_path: "lessons/prog_langs/python/general/interpreter.yaml"
           - node_string_id: "os_command_line_shell"
             group: "OS"
