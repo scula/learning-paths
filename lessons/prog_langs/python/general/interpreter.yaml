@@ -258,10 +258,13 @@ content:
       print(guests)
       print("will come to my party")
     test_code: |
-      try:
-        import main
-      except BaseException:
-        print("Not all errors were fixed, try again or read the help below")
+      import unittest
+      class TestErrors(unittest.TestCase):
+          def test_errors(self):
+              try:
+                import main
+              except BaseException:
+                self.assertTrue(False, "Not all errors were fixed, try again or read the help below")
 
   - type: "paragraph"
     card_group: errors_on_the_loose
