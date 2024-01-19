@@ -260,9 +260,8 @@ content:
     test_code: |
       try:
         import main
-      except ImportError:
-        print("Something went wrong with your code. Please check it and try again.")
-        exit(1)
+      except BaseException:
+        print("Not all errors were fixed, try again or read the help below")
 
   - type: "paragraph"
     card_group: errors_on_the_loose
