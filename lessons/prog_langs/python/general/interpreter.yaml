@@ -243,10 +243,30 @@ content:
       works and what doesn't in Python.
 
   - type: "kata"
+    card_group: errors_on_the_loose
     task: |
       ## Errors on the loose
       The following code is full of errors! Don't try to fix it immediately, first run it, and see what error you receive.
 
+    boilerplate: |
+      10guests = 10
+          print(10guests)
+      print("will come to my party")
+
+    solution: |
+      guests = 10
+      print(guests)
+      print("will come to my party")
+    test_code: |
+      try:
+        import main
+      except ImportError:
+        print("Something went wrong with your code. Please check it and try again.")
+        exit(1)
+
+  - type: "paragraph"
+    card_group: errors_on_the_loose
+    value: |
       First, you will see something like this:
       ```
       10guests = 10
@@ -280,19 +300,6 @@ content:
       This time, it's not so obvious what's wrong. But if you remember, before we fixed the variable name, but here 
       it stayed the same. The interpreter can't do anything with the variable because it was not declared before.
       Change it to the correct variable name that you've set up earlier and run the code again.
-
-      Then, try to fix it and run it again. Then fix the next error and so on until you get the correct output.
-    boilerplate: |
-      10guests = 10
-          print(10guests)
-      print("will come to my party")
-
-    solution: |
-      guests = 10
-      print(guests)
-      print("will come to my party")
-    test_code: |
-      import main
 
   - type: "paragraph"
     value: |
