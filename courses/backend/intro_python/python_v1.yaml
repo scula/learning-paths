@@ -47,7 +47,7 @@ sprints:
         collections:
           - node_string_id: "prog_langs_python_syntax"
             group: "General"
-            lesson_sha: "d47db29"
+            lesson_sha: "2c684da"
             file_path: "lessons/prog_langs/python/general/syntax.yaml"
           - node_string_id: "prog_langs_python_interpreter"
             group: "General"
