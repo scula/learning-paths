@@ -47,7 +47,7 @@ sprints:
         collections:
           - node_string_id: "prog_langs_python_syntax"
             group: "General"
-            lesson_sha: "703fd0d"
+            lesson_sha: "447830c"
             file_path: "lessons/prog_langs/python/general/syntax.yaml"
             complementary:
               - node_string_id: "statements_expressions_deep_dive"
