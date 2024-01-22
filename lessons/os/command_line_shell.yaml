@@ -92,10 +92,11 @@ content:
   - type: "hint"
     card_group: "basic_cmds"
     value: |
-      For now we'll just list most popular commands but you will have to practice them in the Codelab 
-      at the of the lesson.
+      For now we'll just list most popular commands but you will have the chance to practice them in the Codelab 
+      at the end of the lesson.
 
   - type: "paragraph"
+    card_group: "navigating"
     value: |
       ## Change directory command
 
@@ -113,16 +114,22 @@ content:
        And now, if we run the `ls` command, we will see all the files and directories in the `student` directory.
        And if we want to go back to the previous directory, we can use the `cd` command with the `..` argument.
        ```
-       $ cd.
+       $ cd ..
        ```
-       The `.` and `..` are special directories. The `.` directory is the current directory, and the `..` directory
-       is the parent directory. So if we run the `cd` command with the `..` argument, we will go back to the parent
-       directory. And if we run the `cd` command with the `.` argument, we will stay in the current directory.
+  - type: "hint"
+    card_group: "navigating"
+    value: |
+      The `.` and `..` are special directories. The `.` directory is the current directory, and the `..` directory
+      is the parent directory. So if we run the `cd` command with the `..` argument, we will go back to the parent
+      directory. And if we run the `cd` command with the `.` argument, we will stay in the current directory.
 
-       To check the current working directory, we can use the `pwd` command. `pwd` stands for print working directory.
-       ```
-       $ pwd
-       ```
+  - type: "paragraph"
+    card_group: "navigating"
+    value: |
+      To check the current working directory, we can use the `pwd` command. `pwd` stands for print working directory.
+      ```
+      $ pwd
+      ```
 
   - type: "paragraph"
     value: |
@@ -151,10 +158,12 @@ content:
       $ rmdir directory
       ```
   - type: "paragraph"
+    card_group: "codelab_fun"
     value: |
       ## Practice in the Lab
       Now let's practice in the lab. Click on the button below to create a new lab session.
   - type: "codelab"
+    card_group: "codelab_fun"
     gcs_url: gs://scula-codelabs/codelabs_intro_python_commandline-af75b6c.tar.gz
     codelab_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-intro-python:0.20
     codelab_guard_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-guard-intro-python:0.13
