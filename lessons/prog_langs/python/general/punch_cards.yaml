@@ -1,0 +1,121 @@
+node_string_id: "prog_langs_python_punch_cards"
+name: "Punch Cards"
+description: "Punch Cards"
+software_dependencies:
+  - name: python
+    version: 3.11.4
+content:
+  - type: "paragraph"
+    value: |
+      # Python Syntax
+      Before we dive into how to write Python code, let's take a look at what we are trying to 
+      achieve by writing it.
+  - type: "paragraph"
+    value: |
+      # This is a data's world
+      Usually programming involves some manipulation of the **data**. By **data** we mean information in
+       **any kind of form**: bank statements, measurements of the weather throughout the year, 
+       pictures, messages, etc. Working with the data is the universal problem we encounter and 
+       all programming languages are designed to handle this processing:
+      * When we use social media, like Instagram, there is a lot of data exchange happening in the background. 
+      People upload their photos, Instagram saves them somewhere and later when other people request it 
+      by browsing their home page, downloads them. Here most of the data is *visual representation*.
+      * When we use messaging apps, like Whatsapp, it also involves a lot of data processing. People send 
+      messages and Whatsapp app knows how to save and deliver it to the recipient. 
+      * Working with Microsoft Word also involves working with data. We can input text, format it and the 
+      application knows how to save it on our computer, so later we can retrieve this file and continue our work.
+  - type: "paragraph"
+    card_group: "computers_see_information"
+    value: |
+      ## How computers see information
+      We talked a lot about data but people and computers perceive the same information differently. 
+      Due to the physical evolution of the computer and processors, they can only work with 2 states: 
+      **off** and **on** (or 0 and 1). It goes to the simple light bulb - when it's on, the electricity is flowing 
+      and we have an **on** or **1** condition. When it's off, we have **0**. If we combine several of 
+      those light bulbs, we can have them all at different states, some could be turned on and off. 
+      We could even represent them like this: `0100`.
+
+  - type: "paragraph"
+    card_group: "computers_see_information"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/prog_langs_python_syntax/lightbulbs.png
+    value: ""
+
+  - type: "paragraph"
+    value: |
+      ## Binary system
+      With these sets of zeros and ones we can **encode** any information we want. We can define 
+      some rules that would specify, that letter **A** would be `1000001` for example. 
+      We can encode the whole alphabet with that and now we can work the **text** data 
+      through the computer because we are able to speak the language of the machine. 
+      We can go further and have longer sets of 0 and 1, for encoding images for example and 
+      they would be thousands symbols long due to amount of information in the image. 
+
+
+      For numbers we can directly convert from the **binary** system (because we only have 2 values — 0 and 1) 
+      to **decimal** (all our usual digits: 0, 1, 2, .., 9). This way 6 would be 110 and 3 — 11. 
+      Now we can feed information to the machine using the language it understands.
+       But what if we wanted to process it, for example calculate the addition of two numbers? 
+       We can define that special combination of 1 and 0 would “remember” our number, another 
+       combination would perform an addition and the third combination would print the result.
+
+  - type: "paragraph"
+    card_group: "punch_cards"
+    value: |
+      ## How computing started with punch cards
+
+      Let's take a look at the example of the program that would add 6 and 3 and print the result.
+      We will use punch cards system to represent the program. Punch cards were used to
+      input the program into the computer. They were made of paper and had holes in them.
+      The holes represented the binary system. If there was a hole, it would be 1, if there was no hole, it would be 0.
+
+
+      Our first command would be `LOAD 6` or `0010 110` where `0010` is the command to load a new 
+      number in the memory and `110` is our value of number 6 in the binary system. 
+      This would load number 6 in the memory of the machine.
+      Next command would be `ADD 3` or `0011 11` where `0011` is the command to add a number 
+      to the previously loaded number and `11` is the binary value for 3. 
+      This command would perform an addition and store the result in the memory.
+      Last command would be `PRINT` or `1001` which would just output the 
+      result value to the output device of the computer.
+      Combined it could look like several lines of zeros and ones:
+      ```
+      0010
+      110
+      0011
+      11
+      1001
+      ```
+      And would represent a simple version of the program. In fact, this 
+      principle was used for the first computers with punch cards:
+  - type: "paragraph"
+    card_group: "punch_cards"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/prog_langs_python_syntax/punch_cards.jpeg
+    value: ""
+
+  - type: "paragraph"
+    card_group: "punch_cards"
+    value: |
+      Programmers would load cards with 0 and 1 into the machines and wait 
+      for the result of the program. It was quite hard and time consuming 
+      but the programming logic is actually similar to the one we use today!
+
+  - type: "quiz"
+    quiz_items:
+      - question: "What kind of data do social media platforms like Instagram primarily handle?"
+        answers:
+          - value: "Visual data, primarily photographs and videos"
+            explanation: "Correct. Instagram primarily deals with visual data like photos and videos."
+            correct: true
+          - value: "Textual data such as messages and comments"
+            explanation: "While text is part of the data, Instagram mainly handles visual data."
+          - value: "Numerical data like bank statements"
+            explanation: "Instagram does not primarily deal with numerical data like bank statements."
+      - question: "What is the main difference between how computers and people perceive information?"
+        answers:
+          - value: "Computers can only work with 0 and 1, while people can work with any kind of information"
+            explanation: "Correct. Computers can only work with 0 and 1, while people can work with any kind of information."
+            correct: true
+          - value: "People can only work with 0 and 1, while computers can work with any kind of information"
+            explanation: "People can work with any kind of information, while computers can only work with 0 and 1."
+          - value: "People can only work with 0 and 1, while computers can only work with people"
+            explanation: "People can work with any kind of information, while computers can only work with 0 and 1."
