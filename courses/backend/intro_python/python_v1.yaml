@@ -49,10 +49,14 @@ sprints:
             group: "General"
             lesson_sha: "2c684da"
             file_path: "lessons/prog_langs/python/general/syntax.yaml"
+            complementary:
+              - node_string_id: "statements_expressions_deep_dive"
           - node_string_id: "prog_langs_python_interpreter"
             group: "General"
             lesson_sha: "0fc93a7"
             file_path: "lessons/prog_langs/python/general/interpreter.yaml"
+            complementary:
+              - node_string_id: "punch_cards"
           - node_string_id: "os_command_line_shell"
             group: "OS"
             lesson_sha: "810b6d6"
@@ -148,6 +152,8 @@ sprints:
             group: "Github"
           - node_string_id: "productivity_tools.github.ssh_keys"
             group: "Github"
+          - node_string_id: "prog_langs_python_packages_general"
+            group: "General"
       - type: "parallel"
         collections:
           - node_string_id: "productivity_tools.vscode_1_79.usage"

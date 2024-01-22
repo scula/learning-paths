@@ -8,113 +8,317 @@ content:
   - type: "paragraph"
     value: |
       # Python Syntax
-      Before we dive into how to write Python code, let's take a look at what we are trying to 
-      achieve by writing it.
-  - type: "paragraph"
-    value: |
-      ## This is a data's world
-      Usually it involves some manipulation of the **data**. By **data** we mean information in
-       **any kind of form**: bank statements, measurements of the weather throughout the year, 
-       pictures, messages, etc. Working with the data is the universal problem we encounter and 
-       all programming languages are designed to handle this processing:
-      * When we use social media, like Instagram, there is a lot of data exchange happening in the background. 
-      People upload their photos, Instagram saves them somewhere and later when other people request it 
-      by browsing their home page, downloads them. Here most of the data is visual representation.
-      * When we use messaging apps, like Whatsapp, it also involves a lot of data processing. People send 
-      messages and Whatsapp app knows how to save and deliver it to the recipient. 
-      * Working with Microsoft Word also involves working with data. We can input text, format it and the 
-      application knows how to save it on our computer, so later we can retrieve this file and continue our work.
-  - type: "paragraph"
-    card_group: "computers_see_information"
-    value: |
-      ## How computers see information
-      We talked a lot about data but people and computers perceive the same information differently. 
-      Due to the physical evolution of the computer and processors, they can only work with 2 states: 
-      off and on (or 0 and 1). It goes to simple light bulb - when it's on, the electricity is flowing 
-      and we have an **on** or **1** condition. When it's off, we have **0**. If we combine several of 
-      those light bulbs, we can have them all at different states, some could be turned on and off. 
-      We could even represent them like this: `0100`.
-
-  - type: "paragraph"
-    card_group: "computers_see_information"
-    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/prog_langs_python_syntax/lightbulbs.png
-    value: ""
-
-  - type: "paragraph"
-    card_group: "punch_cards"
-    value: |
-      With these sets of zeros and ones we can **encode** any information we want. We can define 
-      some rules that would specify, that letter **A** would be `1000001` for example. 
-      We can encode the whole alphabet with that and now we can work the **text** data 
-      through the computer because we are able to speak the language of the machine. 
-      We can go further and have longer sets of 0 and 1, for encoding images for example and 
-      they would be thousands symbols long (because there is a lot of information in each picture). 
+      Before we go deep into the semantics of the language, let's think of 
+      what are we trying to achieve by writing Python code. Very informally,
+      we want to *tell the computer what to do*. The main matter we are dealing
+      with is **data**. By **data** we mean information in any kind of form:
+      bank statements, measurements of the weather throughout the year,
+      pictures, messages, etc. And manipulation of the data usually involves
+      operations like addition or multiplication.
 
 
-      For numbers we can directly convert from binary system (because we only have 2 values — 0 and 1) 
-      to decimal (all our usual digits: 0, 1, 2, .., 9). This way 6 would be 110 and 3 — 11. 
-      Now we can feed information to the machine using the language it understands.
-       But what if we wanted to process it, for example calculate the addition of two numbers? 
-       We can define that special combination of 1 and 0 would “remember” our number, another 
-       combination would perform an addition and the third combination would print the result:
-
-
-      Our first command would be `LOAD 6` or `0010 110` where `0010` is the command to load a new 
-      number in the memory and `110` is our value of number 6 in the binary system. 
-      This would load number 6 in the memory of the machine.
-      Next command would be `ADD 3` or `0011 11` where `0011` is the command to add a number 
-      to the previously loaded number and `11` is the binary value for 3. 
-      This command would perform an addition and store the result in the memory.
-      Last command would be `PRINT` or `1001` which would just output the 
-      result value to the output device of the computer.
-      Combined it could look like several lines of zeros and ones:
-      ```
-      0010
-      110
-      0011
-      11
-      1001
-      ```
-      And would represent a simple version of the program. In fact, this 
-      principle was used for the first computers with punch cards:
-  - type: "paragraph"
-    card_group: "punch_cards"
-    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/prog_langs_python_syntax/punch_cards.jpeg
-    value: ""
-
-  - type: "paragraph"
-    card_group: "punch_cards"
-    value: |
-      Programmers would load cards with 0 and 1 into the machines and wait 
-      for the result of the program. It was quite hard and time consuming 
-      but the programming logic is actually similar to the one we use today!
+      In Python **data** takes the form of **objects**. As we go through the course,
+      we will learn more about objects and how to work with them. For now, let's
+      just think of them as *containers* that hold some information. And everything 
+      in Python is an object.
 
   - type: "quiz"
     quiz_items:
-      - question: "What kind of data do social media platforms like Instagram primarily handle?"
+      - question: "So, in Python we are dealing with..."
         answers:
-          - value: "Visual data, primarily photographs and videos"
-            explanation: "Correct. Instagram primarily deals with visual data like photos and videos."
+          - value: "Data and operations. And everything is an object (whatever that means)."
             correct: true
-          - value: "Textual data such as messages and comments"
-            explanation: "While text is part of the data, Instagram mainly handles visual data."
-          - value: "Numerical data like bank statements"
-            explanation: "Instagram does not primarily deal with numerical data like bank statements."
-      - question: "What is the main difference between how computers and people perceive information?"
-        answers:
-          - value: "Computers can only work with 0 and 1, while people can work with any kind of information"
-            explanation: "Correct. Computers can only work with 0 and 1, while people can work with any kind of information."
-            correct: true
-          - value: "People can only work with 0 and 1, while computers can work with any kind of information"
-            explanation: "People can work with any kind of information, while computers can only work with 0 and 1."
-          - value: "People can only work with 0 and 1, while computers can only work with people"
-            explanation: "People can work with any kind of information, while computers can only work with 0 and 1."
+            explanation: "Exactly! We'll learn more about the insides of objects later."
 
-  - type: "codelab"
-    gcs_url: gs://scula-codelabs/codelabs_intro_python_syntax_practice-19afaba.tar.gz
-    codelab_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-intro-python:0.20
-    codelab_guard_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-guard-intro-python:0.13
   - type: "paragraph"
-    value: "# Python Syntax 2"
+    value: |
+      # Built-in objects
+      We use objects to represent data. But what kind of data can we represent?
+      Most of the time we are dealing with familiar things:
+      * **Number** - 56, 3.14, 0.0001
+      * **String** - "Hello, World!", "Python is awesome!" (Note that strings are always enclosed in quotes)
+      * **Boolean** - True, False (Booleans are used to represent logical values - on or off, yes or no, etc.)
+      * **Lists** - [1, 2, 3], ["a", "b", "c"] (Lists help us to group data together)
+
+      ## Part of the ship 
+
+      What does it mean being built-in object? It means that we don't need to
+      `import` anything to use them.
+      For example, by running the following code:
+      ```
+      >>> "I am text"
+      ```
+      Python generates and returns a **string** object. This is a specific syntax 
+      in Python to create this object.
+
+      ## Dynamic nature of Python
+
+      Now, if we try to run the next code: 
+      ```
+      >>> 90000
+      >>> "The moon is made of cheese"
+      ```
+      We will see that Python returns two objects: first, it returns a **number** object
+      and then it returns a **string** object. 
+
+      How does Python know what kind of object to return? It doesn't. It just
+      looks at the syntax and tries to figure out what kind of object we want to
+      create. This is called **dynamic typing**. It means that we don't need to
+      specify the type of the object we want to create. Python will figure it out
+      for us.
+
+  - type: "quiz"
+    quiz_items:
+      - question: "If I need to represent some data in Python, I need to..."
+        answers:
+          - value: "Create an object with the data I need in the specific syntax of Python."
+            correct: true
+            explanation: "And Python will figure out what kind of object I need."
+
   - type: "paragraph"
-    value: "# Python Syntax 2"
+    value: |
+      # Working with objects
+
+      Now that we now how we can represent data in Python through objects, 
+      let's see how we can work with them. We started with the smallest 
+      building blocks of Python - **objects**. Now we will move to the next
+      level - where we combine objects together to create more complex
+      structures and also learn Python syntax.
+
+  - type: "paragraph"
+    value: |
+      ## Conceptual hierarchy of Python
+
+      There are multiple levels of program structure in Python:
+      1. **Objects** - the smallest building blocks of Python. They represent
+      data and operations on this data.
+      2. **Expressions** - they create and process objects. 
+      3. **Statements** - they combine expressions into larger structures.
+      4. **Programs** - they are composed of statements.
+
+      All in all, programs in Python consist of statements and expressions. 
+      We will go through each of these levels in the next sections.
+
+  - type: "paragraph"
+    card_group: expression_values
+    value: |
+      ## Expressions and values
+
+      **Expression** is a piece of code that produces a **value**. For example,
+      the following code:
+      ```
+      >>> 2 + 2
+      ```
+      produces the value `4`. The **value** produced by an expression is called
+      **return value**. In the example above, the return value is `4`.
+  - type: "hint"
+    card_group: expression_values
+    value: |
+      Value is the data that is produced by an expression and stored as an object.
+      For example, the expression `2 + 2` produces the value `4` and stores it
+      as a **number** object.
+  - type: "paragraph"
+    card_group: expression_values
+    value: |
+      Expressions operate on objects. In the example above, the expression
+      `2 + 2` operates on two **number** objects. The result of the operation
+      is another **number** object.
+
+      The `+` symbol is called an **operator**. Operators are used to perform
+      operations on objects. There are many operators in Python and we will
+      learn about them in the next lessons.
+
+  - type: "paragraph"
+    value: |
+      ## Statements 
+
+      **Statement** is a piece of code that performs some action. Each statement
+      in Python is written on a separate line and has its own purpose and syntax.
+      For example, the following code:
+      ```
+      print("Hello, World!")
+      ```
+      prints the text `Hello, World!` to the screen. The statement `print("Hello, World!")`
+      is called a **print statement**. It prints the text to the screen.
+
+  - type: "paragraph"
+    value: |
+      ### Assignment statement
+
+      Another example of a statement is an **assignment statement**. It assigns
+      a value to a variable and its role is to create a reference to an object.
+      For example, the following code:
+      ```
+      b = "Bim"
+      ```
+      creates a variable `b` and assigns a **string** object `"Bim"` to it.
+      The statement `b = "Bim"` is called an **assignment statement**. It assigns
+      a value to a variable.
+
+  - type: "paragraph"
+    value: |
+      ### Calls and running functions 
+
+      A good example of a statement is a **function call**. It runs a function
+      and its role is to perform some action. For example, the following code:
+      ```
+      print("Hello, World!")
+      ```
+      runs the function `print` and prints the text `Hello, World!` to the screen.
+
+      We will talk more about functions in the next lessons but in this context function 
+      is just a piece of code that performs some action.
+
+  - type: "paragraph"
+    value: |
+      ## Combining statements and expressions
+
+      In fact, you've just reached an important milestone in your Python journey.
+      Because the rest of the course we will master combining statements and
+      expressions to create more complex programs but the main idea is already
+      here.
+
+      Let's look at the following code:
+      ```
+      calories = 100
+      caloriesPerWeek = calories * 7
+      print(caloriesPerWeek)
+      ```
+      This code creates a variable `calories` and assigns a **number** object `100`
+      to it. Then it creates another variable `caloriesPerWeek` and assigns a 
+      result of the expression `calories * 7` to it. Finally, it prints the value
+      of the variable `caloriesPerWeek` to the screen.
+
+  - type: "paragraph"
+    value: |
+      # Variables and scope
+
+      We've already practiced creating variables and assigning values to them.
+      But what is a variable? And what is a value? And how do they relate to
+      objects?
+
+      ## variables
+
+      **Variable** is a name that refers to an object. For example, in the code
+      ```
+      calories = 100
+      ```
+      `calories` is a variable. It refers to an object `100`. We can use the
+      variable `calories` to access the object `100`. We use the **assignment
+      operator** `=` to assign a value to a variable.
+
+      ## Scope
+
+      **Scope** is a part of the program where a variable is visible. For example,
+      we can only use the variable `calories` after we assign a value to it. If
+      we try to use it before we assign a value to it, we will get an error. Try to 
+      run the following code and notice the error.
+
+  - type: "codeblock-exec"
+    card_group: scope
+    value: |
+      print(calories)
+      calories = 100
+
+  - type: "paragraph"
+    card_group: scope
+    value: |
+      As you can see, we get an error `NameError: name 'calories' is not defined`.
+      It means that the variable `calories` is not defined in the current scope.
+      In other words, we are trying to use a variable that doesn't exist yet.
+
+
+      To fix it, change the order of lines in the code and try to run it again.
+      ```
+      calories = 100
+      print(calories)
+      ```
+      Now we get the correct result `100`."
+
+  - type: "paragraph"
+    card_group: indent
+    value: |
+      # Indentation and comments
+
+      Indentation is the way we structure and group our code. We mentioned before multiple
+      **statements** and some of them require special syntax to group them together.
+      For example, the **if statement** requires a special syntax to group the code
+      that should be executed if the condition is true.
+
+  - type: "hint"
+    card_group: indent
+    value: |
+      **If statement** is a statement that checks if a condition is true and executes
+      the code if the condition is true. We will learn more about it in the next lessons.
+
+  - type: "paragraph"
+    card_group: indent
+    value: |
+      Let's look at the following
+      code:
+      ```
+      if 2 + 2 == 4:
+          print("Math is working!")
+      ```
+      The code above prints the text `Math is working!` to the screen. But how does
+      Python know that the `print` statement should be executed if the condition is true? 
+
+
+      By indenting the code! The code that should be executed if the condition is true
+      should be indented. In the example above, the `print` statement is indented with 4 spaces
+      (which is the default indentation in Python) and Python knows that it should be executed
+      if the condition is true.
+
+  - type: "paragraph"
+    card_group: comments
+    value: |
+      ## Comments
+
+      **Comments** are pieces of text that are ignored by Python. They are used to
+      explain the code and make it more readable. For example, the following code:
+      ```
+      # This is a comment
+      print("Hello, World!") # This is another comment
+      ```
+      prints the text `Hello, World!` to the screen. But the comments are ignored by
+      Python. They are used to explain the code and make it more readable.
+
+      Try to run the following code and notice that the comment is ignored by Python.
+
+  - type: "codeblock-exec"
+    card_group: comments
+    value: |
+      # This is a comment
+      print("Hello, World!") # This is another comment
+
+  - type: "quiz"
+    quiz_items:
+      - question: "What is the smallest building block in Python programming?"
+        answers:
+          - value: "Objects"
+            explanation: "Objects are the smallest building blocks in Python, representing data and operations on data."
+            correct: true
+          - value: "Expressions"
+            explanation: "While important, expressions are not the smallest building blocks. They create and process objects."
+          - value: "Statements"
+            explanation: "Statements are larger structures that combine expressions, not the smallest building blocks."
+
+      - question: "What does an expression do in Python?"
+        answers:
+          - value: "It performs some action."
+            explanation: "This is actually the role of a statement, not an expression."
+          - value: "It produces a value."
+            explanation: "Correct, an expression is a piece of code that produces a value."
+            correct: true
+          - value: "It assigns a value to a variable."
+            explanation: "This is the role of an assignment statement, not an expression."
+
+      - question: "What is a statement in Python?"
+        answers:
+          - value: "A piece of code that produces a value."
+            explanation: "This is the role of an expression, not a statement."
+          - value: "A piece of code that performs some action."
+            explanation: "Correct, a statement is a code construct that performs some action."
+            correct: true
+          - value: "A reference to a value stored in memory."
+            explanation: "This describes a variable, not a statement."
