@@ -157,7 +157,7 @@ content:
   - type: "codelab"
     gcs_url: gs://scula-codelabs/codelabs_intro_python_interpreter_lesson-7ca1260.tar.gz
     codelab_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-intro-python:0.20
-    codelab_guard_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-guard-intro-python:0.13
+    codelab_guard_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-guard-intro-python:0.14
 
   - type: "paragraph"
     value: |

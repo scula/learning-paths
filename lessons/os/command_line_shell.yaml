@@ -166,4 +166,4 @@ content:
     card_group: "codelab_fun"
     gcs_url: gs://scula-codelabs/codelabs_intro_python_commandline-af75b6c.tar.gz
     codelab_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-intro-python:0.20
-    codelab_guard_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-guard-intro-python:0.13
+    codelab_guard_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-guard-intro-python:0.14
