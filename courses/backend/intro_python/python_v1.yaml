@@ -47,19 +47,19 @@ sprints:
         collections:
           - node_string_id: "prog_langs_python_syntax"
             group: "General"
-            lesson_sha: "447830c"
+            lesson_sha: "9191c97"
             file_path: "lessons/prog_langs/python/general/syntax.yaml"
             complementary:
               - node_string_id: "statements_expressions_deep_dive"
           - node_string_id: "prog_langs_python_interpreter"
             group: "General"
-            lesson_sha: "0fc93a7"
+            lesson_sha: "9191c97"
             file_path: "lessons/prog_langs/python/general/interpreter.yaml"
             complementary:
               - node_string_id: "punch_cards"
           - node_string_id: "os_command_line_shell"
             group: "OS"
-            lesson_sha: "0bce960"
+            lesson_sha: "9191c97"
             file_path: "lessons/os/command_line_shell.yaml"
       - type: "single"
         collections:
