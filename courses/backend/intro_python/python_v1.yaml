@@ -59,7 +59,7 @@ sprints:
               - node_string_id: "punch_cards"
           - node_string_id: "os_command_line_shell"
             group: "OS"
-            lesson_sha: "810b6d6"
+            lesson_sha: "83d90bc"
             file_path: "lessons/os/command_line_shell.yaml"
       - type: "single"
         collections:
