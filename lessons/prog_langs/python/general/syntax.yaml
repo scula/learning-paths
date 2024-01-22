@@ -1,6 +1,6 @@
 node_string_id: "prog_langs_python_syntax"
 name: "Python Syntax"
-description: "Syntax in Python"
+description: "Objects and main rules"
 software_dependencies:
   - name: python
     version: 3.11.4
@@ -197,7 +197,7 @@ content:
       But what is a variable? And what is a value? And how do they relate to
       objects?
 
-      ## variables
+      ## Variables
 
       **Variable** is a name that refers to an object. For example, in the code
       ```
@@ -207,6 +207,9 @@ content:
       variable `calories` to access the object `100`. We use the **assignment
       operator** `=` to assign a value to a variable.
 
+  - type: "codeblock-exec"
+    card_group: scope
+    value: |
       ## Scope
 
       **Scope** is a part of the program where a variable is visible. For example,
@@ -277,8 +280,8 @@ content:
       **Comments** are pieces of text that are ignored by Python. They are used to
       explain the code and make it more readable. For example, the following code:
       ```
-      # This is a comment
-      print("Hello, World!") # This is another comment
+      #This is a comment
+      print("Hello, World!") #This is another comment
       ```
       prints the text `Hello, World!` to the screen. But the comments are ignored by
       Python. They are used to explain the code and make it more readable.
