@@ -46,6 +46,8 @@ nodes:
   - string_id: helper
     name: "Course Specific Nodes"
     nodes:
+      - string_id: helper_how_edu_in_scula_works
+        name: "How to learn with Scula?"
       - string_id: helper_py
         name: "Python Introduction Helper Nodes"
         tags: ["python", "helper-nodes"]

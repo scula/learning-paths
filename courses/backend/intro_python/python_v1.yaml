@@ -43,6 +43,18 @@ sprints:
             group: "Story"
             lesson_sha: "101b0c2"
             file_path: "lessons/story/zombie_survival/intro.yaml"
+      - type: "single"
+        collections:
+          - node_string_id: "helper_how_edu_in_scula_works"
+            group: "General"
+            lesson_sha: "9191c97"
+            file_path: "lessons/helper/helper_how_edu_in_scula_works.yaml"
+      - type: "single"
+        collections:
+          - node_string_id: "os_command_line_shell"
+            group: "OS"
+            lesson_sha: "9191c97"
+            file_path: "lessons/os/command_line_shell.yaml"
       - type: parallel
         collections:
           - node_string_id: "prog_langs_python_syntax"
@@ -57,10 +69,6 @@ sprints:
             file_path: "lessons/prog_langs/python/general/interpreter.yaml"
             complementary:
               - node_string_id: "punch_cards"
-          - node_string_id: "os_command_line_shell"
-            group: "OS"
-            lesson_sha: "9191c97"
-            file_path: "lessons/os/command_line_shell.yaml"
       - type: "single"
         collections:
           - node_string_id: stories_zombie_survival_day_one
