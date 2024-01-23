@@ -1,0 +1,136 @@
+node_string_id: "helper_how_edu_in_scula_works"
+name: "How to learn with Scula?"
+description: "How to use the platform and tools?"
+software_dependencies:
+content:
+  - type: "paragraph"
+    value: |
+      # Learning with Scula
+
+      Learning with Scula is quite straightforward. We have our platform where you can learn,
+      practice theory and work on your projects. We also use a couple of external tools to
+      communicate and work together.
+
+  - type: "paragraph"
+    value: |
+      # Schedule and Curriculum
+
+      You can find the curriculum (or topics that we'll cover) on the main page of the course. 
+      There you can also notice that the educational process is time-boxed in **Sprints**.
+
+      ## Sprints
+
+      Each **Sprint** is 2 weeks long and has a set of lessons and a project that you should complete. 
+      There is no strict schedule but we recommend to finish the theory during the first week and
+      focus on the project during the second week.
+
+      ## Theory and lessons 
+
+      Each lesson has a theory part and interactive practical parts. Some practical tasks are 
+      embedded inside the lesson, some will require working with **Codelab** — a part of Scula
+      platform where you will have a virtual workspace to work on more complex tasks and projects. 
+
+      ## Projects
+
+      Each **Sprint** has a **Project** that you should complete. You can select one of the suggested projects
+      and work on it together with a mentor.
+
+  - type: "paragraph"
+    value: |
+      # Codelab
+
+      **Codelab** is a virtual workspace inside the Scula platform for you to work independently from 
+      your own device. Each time you will open a new **Codelab** workspace it will be a fresh environment
+      with all the necessary tools and libraries installed. 
+
+      ## How to launch Codelab?
+
+      Inside some of the lessons you will find a special card labeled **Codelab** which you will need to 
+      complete in order to finish the lesson. When you click on the card you will be redirected to the
+      **Codelab** workspace.
+
+      ## How to use Codelab?
+
+      **Codelab** consists of 2 parts:
+      * Scula sidebar with tasks outline and help. There you can find the list of tasks that you need to complete
+      and some additional information about the lesson. If you get stuck, use the hint button for each tasks.
+      * VSCode IDE connected to the virtual machine. Think of it as a remote computer that you can access from 
+      your browser. VSCode is the most popular IDE among developers and it has a lot of useful features.
+      Working with it will give you a good understanding of how developers work.
+
+  - type: "paragraph"
+    card_group: "vscode"
+    value: |
+      ## How to use VSCode inside Codelab?
+
+      ### Overview
+  - type: "paragraph"
+    card_group: "vscode"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/overview.png
+    value: |
+      This is the overview of the **Codelab**. On the left you can see the tasks and on the right you can see the
+      VSCode IDE.
+
+      ### Files Explorer
+  - type: "paragraph"
+    card_group: "vscode"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/explorer.png
+    value: |
+      Here you can see the **Explorer** panel. It shows the files and folders in the current working directory.
+      You can create new files and folders here, rename them, move them around and delete them. Use the right 
+      mouse button to open the context menu. 
+
+      ### Editor
+  - type: "paragraph"
+    card_group: "vscode"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/editor.png
+    value: |
+      This is the **Editor** of the file. You can open it by clicking on the file in the **Explorer** panel.
+      Here you can edit the content of the file. On top of the **Editor** panel  you can see the name of the opened 
+      file and other opened files. You can switch between them by clicking on the tabs.
+
+      ### Terminal Launch
+  - type: "paragraph"
+    card_group: "vscode"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/terminal_launch.png
+    value: |
+      Terminal is a program that runs on your computer and allows you to interact with the operating
+      system. The VSCode IDE that you see in the **Codelab** is running on a virtual machine as a usual
+      program. But you can't hide it or close it to see the desktop because there is actually no 
+      graphical interface for that virtual machine. But you can still interact with it through the
+      **Terminal**.
+
+      To open it click on 3 parallel lines icon on the top left corner of the VSCode IDE and select
+      **Terminal** -> **New Terminal**. This will open a new **Terminal** panel at the bottom of the
+      VSCode IDE.
+
+      ### Running commands in the Terminal
+  - type: "paragraph"
+    card_group: "vscode"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/terminal_command.png
+    value: |
+      Now you can run commands in the **Terminal**. What does `to run a command` or `execute a command` mean?
+
+      It means you can interact with the Operating System through the **Terminal**. You can run programs,
+      install programs, create files, delete files, move files around, and do all of that without ever
+      touching the mouse. To run a command you just type it in the **Terminal** and press `Enter`.
+
+      You will always see the result of the command in the **Terminal** whether it was successful or not.
+
+  - type: "paragraph"
+    value: |
+      # Project
+
+      To be done
+
+  - type: "paragraph"
+    value: |
+      # Slack
+
+      To be done
+
+  - type: "paragraph"
+    value: |
+      # Support
+
+      To be done
