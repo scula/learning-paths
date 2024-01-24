@@ -104,10 +104,14 @@ content:
       and emerge as a confident coder.
 
   - type: "paragraph"
-    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/codelab_steps_overview.png
+    card_group: "codelab_intro"
     value: |
       # Codelab
 
+  - type: "paragraph"
+    card_group: "codelab_intro"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/codelab_steps_overview.png
+    value: |
       **Codelab** offers you a personalized virtual workspace to explore and develop your coding skills
       right from your own device. Each time you open a new **Codelab** workspace it is a fresh environment 
       with all the necessary tools and libraries already installed.
@@ -172,8 +176,8 @@ content:
     card_group: "vscode_panel"
     hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/vscode/2_vscode_steps.png
     value: |
-      On the left side of the **Codelab** you can see the control panel. There you will find either a list of steps
-      to complete the **Codelab** or a description of the **Project.
+      On the left side you can see the control panel. There you will find either a list of steps
+      to complete the **Codelab** or a description of the **Project**.
 
       After you complete a step, click on the "Validate code" button to check your solution. If you are stuck, you can
       click on the "?" button to get a hint or ask for help in the Slack channel.
@@ -187,8 +191,8 @@ content:
     hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/vscode/3_vscode_explorer.png
     value: |
       Here you can see the **Explorer** panel. It shows the files and folders in the current working directory.
-      You can create new files and folders here, rename them, move them around and delete them. Use the right 
-      mouse button to open the context menu.
+      Use the right mouse button to open the context menu where you can create new files and folders, rename them, 
+      move them around and delete them.
 
   - type: "paragraph"
     card_group: "vscode_editor"
@@ -198,9 +202,11 @@ content:
     card_group: "vscode_editor"
     hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/vscode/3_vscode_editor.png
     value: |
-      This is the **Editor** of the file. You can open it by clicking on the file in the **Explorer** panel.
-      Here you can edit the content of the file. On top of the **Editor** panel  you can see the name of the opened 
-      file and other opened files. You can switch between them by clicking on the tabs.
+      This interface is the **Editor**, which allows you to modify the content of a file. 
+      To access it, simply click on the desired file within the **Explorer** panel. 
+      At the top of the **Editor** panel, you'll find the title of the currently open file, 
+      along with tabs for any other files you have open. You can easily switch between these 
+      files by clicking on their respective tabs.
 
   - type: "paragraph"
     card_group: "vscode_launch"
@@ -210,15 +216,18 @@ content:
     card_group: "vscode_launch"
     hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/vscode/4_vscode_terminal_launch.png
     value: |
-      Terminal is a program that runs on your computer and allows you to interact with the operating
-      system. The VSCode IDE that you see in the **Codelab** is running on a virtual machine as a usual
-      program. But you can't hide it or close it to see the desktop because there is actually no 
-      graphical interface for that virtual machine. But you can still interact with it through the
-      **Terminal**.
+      The **Terminal** is a vital tool that enables direct interaction with your computer's operating system.
+      In the **Codelab**, the VSCode Integrated Development Environment (IDE) you're using operates
+      within a virtual machine, functioning like a standard application. 
+      However, unlike typical applications, you can't minimize or close it to access a desktop 
+      environment, as this virtual machine lacks a traditional graphical interface. 
+      Nonetheless, you can engage with it effectively using the Terminal.
 
-      To open it click on 3 parallel lines icon on the top left corner of the VSCode IDE and select
-      **Terminal** -> **New Terminal**. This will open a new **Terminal** panel at the bottom of the
-      VSCode IDE.
+
+      To access the **Terminal** in VSCode, simply click on the icon with three horizontal lines 
+      located at the top left corner of the IDE. Then, navigate to 'Terminal' and select 'New Terminal'. 
+      This action will launch a new **Terminal** panel at the bottom of the VSCode interface, 
+      allowing you to execute commands and manage tasks within the virtual machine environment.
 
   - type: "paragraph"
     card_group: "vscode_cmd"
@@ -228,13 +237,16 @@ content:
     card_group: "vscode_cmd"
     hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/vscode/5_vscode_terminal_cmd.png
     value: |
-      Now you can run commands in the **Terminal**. What does `to run a command` or `execute a command` mean?
+      Once the **Terminal** is open, you have the capability to execute various commands. 
+      "Running" or "executing" a command refers to the process of issuing instructions to 
+      the Operating System via the **Terminal**. This powerful tool allows you to perform a 
+      wide range of tasks such as running programs, installing software, creating, 
+      deleting, and moving files, all through keyboard inputs without the need for a mouse.
 
-      It means you can interact with the Operating System through the **Terminal**. You can run programs,
-      install programs, create files, delete files, move files around, and do all of that without ever
-      touching the mouse. To run a command you just type it in the **Terminal** and press `Enter`.
-
-      You will always see the result of the command in the **Terminal** whether it was successful or not.
+      To execute a command, simply type it into the **Terminal** and press **Enter**. The **Terminal** 
+      provides immediate feedback, displaying the outcome of your command, whether it's 
+      successful or encounters an error. This direct interaction with the Operating 
+      System through typed commands is a highly efficient way to manage your computing tasks.
 
   - type: "paragraph"
     card_group: "slack_support"
@@ -266,19 +278,19 @@ content:
       ## Scula's Slack workspace setup
 
       Now, let's take a look at the main channels of communication.
-      1. [#py_1_info](https://join.slack.com/t/scula-workspace/shared_invite/zt-29ck0kft2-hvHqRKwQRzI1MXENoMX9ig). This channel is dedicated to important course-related updates, 
+      1. **#py_1_info** This channel is dedicated to important course-related updates, 
       including announcements, essential dates, and deadlines. It's your go-to source 
       for staying in the loop and ensuring you don't miss any crucial information 
       throughout the course.
-      2. [#py_1_theory](https://join.slack.com/t/scula-workspace/shared_invite/zt-29ck0kft2-hvHqRKwQRzI1MXENoMX9ig). This channel is your go-to place for theory-related questions. 
+      2. **#py_1_theory**. This channel is your go-to place for theory-related questions. 
       Feel free to ask about concepts, dive into discussions, and deepen your understanding 
       of the subject matter.
-      3. [#py_1_project](https://join.slack.com/t/scula-workspace/shared_invite/zt-29ck0kft2-hvHqRKwQRzI1MXENoMX9ig). If you have any questions or need guidance regarding the projects, 
+      3. **#py_1_project**. If you have any questions or need guidance regarding the projects, 
       you're in the right place. When it comes to project-related questions, you have a dual 
       support system. Our dedicated reviewers and your fellow peers are here to help you out.
-      4. [#py_1_lounge](https://join.slack.com/t/scula-workspace/shared_invite/zt-29ck0kft2-hvHqRKwQRzI1MXENoMX9ig). This channel is your space to engage in discussions, both formal and 
+      4. **#py_1_lounge**. This channel is your space to engage in discussions, both formal and 
       informal. It's a place to connect, share ideas, and build a sense of community.
-      5. [#beta-news](https://join.slack.com/t/scula-workspace/shared_invite/zt-29ck0kft2-hvHqRKwQRzI1MXENoMX9ig). This is a place for direct communication with our founding team, developers 
+      5. **#beta-news**. This is a place for direct communication with our founding team, developers 
       and authors. Here we share some development updates, news and new features.
 
 
@@ -301,26 +313,26 @@ content:
       face-to-face interactions, it's easy for messages to be misunderstood or misinterpreted. 
       To foster clear and effective communication within our digital space, we recommend adhering 
       to the following guidelines:
-      1. Use Channels Appropriately: Respect the purpose of each Slack channel. Post your 
+      1. **Use Channels Appropriately**: Respect the purpose of each Slack channel. Post your 
       messages in the relevant channels to keep the conversations organized and on-topic.
-      2. Be Clear and Concise: Time is valuable. Write clearly and concisely. Avoid long paragraphs. 
+      2. **Be Clear and Concise**: Time is valuable. Write clearly and concisely. Avoid long paragraphs. 
       Bullet points can be effective for listing ideas or questions.
-      3. Start Threads for Specific Discussions: To keep conversations focused and easy to follow, 
+      3. **Start Threads for Specific Discussions**: To keep conversations focused and easy to follow, 
       start a thread when replying to a specific point. This helps contain discussions within 
       their relevant context.
-      4. Use Mentions Sparingly: Tag specific people (@name) only when their attention is needed. 
+      4. **Use Mentions Sparingly**: Tag specific people (@name) only when their attention is needed. 
       Overusing mentions can lead to notification fatigue.
-      5. Share Files Thoughtfully: When sharing files or documents, provide a brief description of 
+      5. **Share Files Thoughtfully**: When sharing files or documents, provide a brief description of 
       the content to help your colleagues understand the context.
-      6. Respect Work-Life Balance: Be mindful of sending messages during off-hours. Consider 
+      6. **Respect Work-Life Balance: Be mindful of sending messages during off-hours. Consider 
       scheduling messages to be sent during work hours if it's not urgent.
-      7. Proofread Before Sending: Typos and grammatical errors can lead to misunderstandings. 
+      7. **Proofread Before Sending**: Typos and grammatical errors can lead to misunderstandings. 
       A quick proofread can ensure clarity in your communication.
-      8. Acknowledge Messages: If a message requires a more detailed response, or if you need 
+      8. **Acknowledge Messages: If a message requires a more detailed response, or if you need 
       time to gather information, acknowledge receipt and give a timeframe for your reply.
-      9. Use Emojis and Reactions Appropriately: Emojis and reactions can add tone and clarity 
+      9. **Use Emojis and Reactions Appropriately**: Emojis and reactions can add tone and clarity 
       to your messages but use them appropriately, keeping in mind the professional environment.
-      10. Stay Inclusive and Professional: Always communicate with respect and inclusivity. 
+      10. **Stay Inclusive and Professional**: Always communicate with respect and inclusivity. 
       Avoid language or topics that could be deemed inappropriate or offensive.
 
 
@@ -330,7 +342,8 @@ content:
     card_group: "slack"
     value: |
       By now, you should have received your invitation to join our Slack workspace. 
-      In case you haven't, please don't hesitate to reach out to us at info@scula.com for assistance.
+      In case you haven't, please don't hesitate to reach out to us at info@scula.com for assistance
+      or you can follow this [link](https://join.slack.com/t/scula-workspace/shared_invite/zt-29ck0kft2-hvHqRKwQRzI1MXENoMX9ig) to join it.
 
   - type: "paragraph"
     value: |
@@ -342,6 +355,15 @@ content:
 
       To make sure you never feel lost or overwhelmed in your learning path, we've established a 
       dedicated support team, committed to being there for you every step of the way!
+
+  - type: "paragraph"
+    value: |
+      That was quite a bit of information! 😄 Don't worry if you can't recall every 
+      single detail from this lesson right away. A lot of what's been covered will 
+      become clearer and more familiar as you engage in hands-on activities. 
+      Remember, it's perfectly normal to feel a bit overwhelmed at the start of a 
+      new course, but you'll gradually become more comfortable as you practice and 
+      apply what you've learned.
 
   - type: "quiz"
     quiz_items:
