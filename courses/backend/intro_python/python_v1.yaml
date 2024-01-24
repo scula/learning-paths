@@ -37,27 +37,30 @@ sprints:
             file_path: "lessons/helper/py/sprint_one.yaml" # provided when lesson was not created before, ignored otherwise
             reminder: true # track if student hasn't finished lesson and send them email
             public: true # add rbac rule allowign anyone to access this lesson in api
+
+      - type: "single"
+        collections:
+          - node_string_id: "helper_how_edu_in_scula_works"
+            group: "General"
+            public: true
+            lesson_sha: "dcf65d4"
+            file_path: "lessons/helper/helper_how_edu_in_scula_works.yaml"
+
       - type: "single"
         collections:
           - node_string_id: "stories_zombie_survival_intro"
             group: "Story"
             lesson_sha: "101b0c2"
             file_path: "lessons/story/zombie_survival/intro.yaml"
+
       - type: "parallel"
         collections:
-          - node_string_id: "helper_how_edu_in_scula_works"
-            group: "General"
-            public: true
-            lesson_sha: "4bc951c"
-            file_path: "lessons/helper/helper_how_edu_in_scula_works.yaml"
           - node_string_id: "prog_langs_python_syntax"
             group: "General"
             lesson_sha: "d949ee7"
             file_path: "lessons/prog_langs/python/general/syntax.yaml"
             complementary:
               - node_string_id: "statements_expressions_deep_dive"
-      - type: "single"
-        collections:
           - node_string_id: "os_command_line_shell"
             group: "OS"
             lesson_sha: "91a6be6"
