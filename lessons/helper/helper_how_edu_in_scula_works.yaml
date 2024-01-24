@@ -322,3 +322,4 @@ content:
         answers:
           - value: "... I am up to no good"
             correct: true
+            explanation: "🐾"
