@@ -1,12 +1,12 @@
 node_string_id: "helper_how_edu_in_scula_works"
-name: "How to learn with Scula?"
-description: "How to use the platform and tools?"
+name: "How we learn in Scula"
+description: "Learn more about how we do things in Scula"
 software_dependencies:
 content:
   - type: "paragraph"
     hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/hero.png
     value: |
-      # How we learn in Scula
+      # Scula learning experience
 
       Navigating the Scula learning experience is seamless and user-friendly. 
       Our platform offers a comprehensive space for learning, theory practice, 
@@ -18,10 +18,13 @@ content:
       platform's core components, ensuring you feel at ease as you navigate it independently.
 
   - type: "paragraph"
-    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/schedule_and_sprints.png
+    card_group: "scula_platform_lesson"
     value: |
       # Schedule and lesson structure
-
+  - type: "paragraph"
+    card_group: "scula_platform_lesson"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/schedule_and_sprints.png
+    value: |
       ## Schedule and Sprints
 
       Our program officially kicks off on January 29th and will run until February 25th.
