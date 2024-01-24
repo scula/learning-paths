@@ -43,7 +43,7 @@ sprints:
           - node_string_id: "helper_how_edu_in_scula_works"
             group: "General"
             public: true
-            lesson_sha: "e63f47b"
+            lesson_sha: "f2d1b0d"
             file_path: "lessons/helper/helper_how_edu_in_scula_works.yaml"
 
       - type: "single"
