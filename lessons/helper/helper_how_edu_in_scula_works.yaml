@@ -164,36 +164,52 @@ content:
       VSCode IDE.
 
   - type: "paragraph"
+    card_group: "vscode_panel"
+    value: |
+      ### Control panel
+
+  - type: "paragraph"
+    card_group: "vscode_panel"
     hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/vscode/2_vscode_steps.png
     value: |
-      ### Control panel 
-
       On the left side of the **Codelab** you can see the control panel. There you will find either a list of steps
-      to complete the **Codelab** or a description of the **Project. 
+      to complete the **Codelab** or a description of the **Project.
 
       After you complete a step, click on the "Validate code" button to check your solution. If you are stuck, you can
       click on the "?" button to get a hint or ask for help in the Slack channel.
 
   - type: "paragraph"
-    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/vscode/3_vscode_explorer.png
+    card_group: "vscode_explorer"
     value: |
       ### VSCode IDE: Explorer
+  - type: "paragraph"
+    card_group: "vscode_explorer"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/vscode/3_vscode_explorer.png
+    value: |
       Here you can see the **Explorer** panel. It shows the files and folders in the current working directory.
       You can create new files and folders here, rename them, move them around and delete them. Use the right 
       mouse button to open the context menu.
 
   - type: "paragraph"
-    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/vscode/3_vscode_editor.png
+    card_group: "vscode_editor"
     value: |
       ### VSCode IDE: Editor
+  - type: "paragraph"
+    card_group: "vscode_editor"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/vscode/3_vscode_editor.png
+    value: |
       This is the **Editor** of the file. You can open it by clicking on the file in the **Explorer** panel.
       Here you can edit the content of the file. On top of the **Editor** panel  you can see the name of the opened 
       file and other opened files. You can switch between them by clicking on the tabs.
 
   - type: "paragraph"
-    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/vscode/4_vscode_terminal_launch.png
+    card_group: "vscode_launch"
     value: |
       ### VSCode IDE: Terminal Launch
+  - type: "paragraph"
+    card_group: "vscode_launch"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/vscode/4_vscode_terminal_launch.png
+    value: |
       Terminal is a program that runs on your computer and allows you to interact with the operating
       system. The VSCode IDE that you see in the **Codelab** is running on a virtual machine as a usual
       program. But you can't hide it or close it to see the desktop because there is actually no 
@@ -205,9 +221,13 @@ content:
       VSCode IDE.
 
   - type: "paragraph"
-    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/vscode/5_vscode_terminal_cmd.png
+    card_group: "vscode_cmd"
     value: |
       ### Running commands in the Terminal
+  - type: "paragraph"
+    card_group: "vscode_cmd"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/vscode/5_vscode_terminal_cmd.png
+    value: |
       Now you can run commands in the **Terminal**. What does `to run a command` or `execute a command` mean?
 
       It means you can interact with the Operating System through the **Terminal**. You can run programs,
@@ -217,9 +237,13 @@ content:
       You will always see the result of the command in the **Terminal** whether it was successful or not.
 
   - type: "paragraph"
+    card_group: "slack_support"
     value: |
       # Slack
-
+  - type: "paragraph"
+    card_group: "slack_support"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/slack.png
+    value: |
       ## Why do we use Slack?
 
       Many tech companies use Slack for their day-to-day communication and collaboration.
