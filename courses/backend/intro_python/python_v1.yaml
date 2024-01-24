@@ -29,7 +29,7 @@ kntree:
 sprints:
   - name: "Getting started"
     sprint_items:
-      - type: "single" # type controls how many lessons are opened
+      - type: "parallel" # type controls how many lessons are opened
         collections:
           - node_string_id: "helper_py_sprint_one" # node_string_id with specified kntree sha must be in db
             group: "Sprints"
@@ -37,9 +37,6 @@ sprints:
             file_path: "lessons/helper/py/sprint_one.yaml" # provided when lesson was not created before, ignored otherwise
             reminder: true # track if student hasn't finished lesson and send them email
             public: true # add rbac rule allowign anyone to access this lesson in api
-
-      - type: "single"
-        collections:
           - node_string_id: "helper_how_edu_in_scula_works"
             group: "General"
             public: true
