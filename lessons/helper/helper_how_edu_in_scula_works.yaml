@@ -348,7 +348,7 @@ content:
   - type: "paragraph"
     card_group: "support_slack"
     value: |
-      ## Support
+      # Support
 
   - type: "paragraph"
     card_group: "support_slack"
