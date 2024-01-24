@@ -77,9 +77,9 @@ sprints:
         collections:
           - node_string_id: "prog_langs_python_types_and_data_structures"
             group: "Structures"
-            lesson_sha: ""
+            lesson_sha: "d949ee7"
             file_path: "lessons/prog_langs/python_3_11_4/types_and_data_structures/prog_langs_python_types_and_data_structures.yaml"
-          - node_string_id: "prog_langs.python_3_11_4.input_output.print"
+          - node_string_id: "prog_langs.python_3_11_4.input_output"
             group: "Input and Output"
       - type: "single"
         collections:
