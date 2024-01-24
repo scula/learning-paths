@@ -75,7 +75,7 @@ content:
   - type: "codeblock-exec"
     card_group: "code_demo"
     value: |
-      print("I am a code demo, try to hit the "Execute" button")
+      print("I am a code demo, try to hit the Execute button")
 
   - type: "paragraph"
     value: |
@@ -307,6 +307,11 @@ content:
 
   - type: "paragraph"
     value: |
-      # Support
+      ## Support
 
-      To be done
+      Believe us, we know how important it is to have support when you are just starting 
+      to learn something new. Especially when it comes to learning complex technical concepts. 
+
+
+      To make sure you never feel lost or overwhelmed in your learning path, we've established a 
+      dedicated support team, committed to being there for you every step of the way!
