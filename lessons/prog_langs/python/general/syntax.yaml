@@ -207,7 +207,7 @@ content:
       variable `calories` to access the object `100`. We use the **assignment
       operator** `=` to assign a value to a variable.
 
-  - type: "codeblock-exec"
+  - type: "hint"
     card_group: scope
     value: |
       ## Scope

@@ -1,0 +1,320 @@
+node_string_id: "prog_langs_python_types_and_data_structures"
+name: "Types and Data Structures"
+description: "Types, variables and structures"
+software_dependencies:
+  - name: python
+    version: 3.11.4
+content:
+  - type: "paragraph"
+    value: |
+      # Python Types, Variables, and Data Structures
+
+      Welcome to our lesson on Python types, variables, and data structures! 
+      In this session, we'll explore the rich variety of data types available in Python, 
+      understand what variables are and how Python's dynamic typing works. 
+      We'll also dive deep into core data types like numbers, strings, lists, dictionaries, and more. 
+      Let's get started!
+
+  - type: "paragraph"
+    card_group: "object_types"
+    value: |
+      # Python Objects and Types
+
+      Before we discussed that working with data is the main purpose of programming.
+      And data is represented by objects of different **types** in Python. 
+
+      **Type** of an object defines what operations can be performed on it and what values it can hold.
+      For example, an operator `+` does different things for numbers and strings. Try to run the next 
+      example and notice the difference in the output.
+
+  - type: "codeblock-exec"
+    card_group: "object_types"
+    value: |
+      ```
+      numberSum = 1 + 2
+      stringSum = "1" + "2"
+      print(numberSum)
+      print(stringSum)
+      ```
+
+  - type: "paragraph"
+    value: |
+      # Dynamic Typing
+
+      The smart thing about Python is that we don't need to specify the type of an object.
+      Python will automatically determine the type of an object based on the value we assign to it.
+      This is called **dynamic typing**.
+
+
+      For example, in the following code:
+      ```
+      a = 132
+      b = "132"
+      c = True 
+      d = 1.32
+      e = [1, 3, 2]
+      ```
+      Python will automatically determine the type of each variable based on the value we assign to it.
+      In this case, `a` will be an integer, `b` will be a string, `c` will be a boolean, `d` will be a float,
+      and `e` will be a list.
+
+
+      Now we will explore in depth each of the core data types in Python.
+
+  - type: "paragraph"
+    card_group: numeric_types
+    value: |
+      # Numeric types in Python
+      Python primarily supports three types of numbers:
+      - **Integers (`int`):** These are whole numbers without a decimal point, like 42 or -3.
+      - **Floating-Point Numbers (`float`):** These represent real numbers and contain decimal points, 
+      such as 3.14 or -0.001.
+      - **Complex Numbers (`complex`):** Less common but equally important, these numbers have a real and 
+      imaginary part, represented as `a + bj`, where `a` and `b` are floats.
+
+  - type: "hint"
+    card_group: types_python
+    value: |
+      The function **type** used below is used to determine the type of an object.
+      With it we can check the type of any object in Python.
+
+  - type: "codeblock-exec"
+    card_group: types_python
+    description: "This codeblock demonstrates the creation of different numeric types in Python."
+    language: "python"
+    value: |
+      integer_number = 42
+      float_number = 3.14
+      complex_number = 1 + 5j
+      print(type(integer_number), type(float_number), type(complex_number))
+
+  - type: "paragraph"
+    card_group: operations
+    value: |
+      ## Operations with Numeric Types
+      Python supports a wide range of operations with numeric types, enabling us to perform 
+      mathematical calculations effortlessly. These operations include:
+      - **Arithmetic Operations:** Addition (`+`), subtraction (`-`), multiplication (`*`), division (`/`), 
+      floor division (`//`), modulus (`%`), and exponentiation (`**`).
+      - **Comparison Operations:** Equals (`==`), not equals (`!=`), greater than (`>`), less than (`<`), 
+      greater than or equal to (`>=`), and less than or equal to (`<=`).
+      - **Type Conversion:** You can convert between different numeric types using functions like 
+      `int()`, `float()`, and `complex()`.
+
+  - type: "codeblock-exec"
+    description: "Demonstrating basic arithmetic operations with integers and floats."
+    language: "python"
+    value: |
+      # Addition
+      sum = 10 + 15
+      # Subtraction
+      difference = 20 - 5
+      # Multiplication
+      product = 4 * 7
+      # Division
+      quotient = 8 / 2
+      print("Sum:", sum, "Difference:", difference, "Product:", product, "Quotient:", quotient)
+
+  - type: "kata"
+    boilerplate: |
+      number1 = 7
+      number2 = 3
+      result = # your code here
+    task: "Calculate the product of `number1` and `number2`, and assign it to the variable `result`.\n"
+    solution: |
+      number1 = 7
+      number2 = 3
+      result = number1 * number2
+    test_code: |
+      from main import number1, number2, result
+      import unittest
+      class TestMultiplication(unittest.TestCase):
+          def test_result(self):
+              self.assertEqual(result, number1 * number2, "Ensure that the product is calculated correctly.")
+
+  - type: "quiz"
+    quiz_items:
+      - question: "Which Python numeric type represents whole numbers?"
+        answers:
+          - value: "int"
+            explanation: "The `int` type is used for whole numbers without a decimal point."
+            correct: true
+          - value: "float"
+          - value: "complex"
+      - question: "What does the expression `5 // 2` return in Python?"
+        answers:
+          - value: "2.5"
+          - value: "2"
+            explanation: "The floor division `//` returns the largest integer less than or equal to the division result."
+            correct: true
+          - value: "3"
+
+  - type: "paragraph"
+    card_group: strings_basics
+    value: |
+      # Strings
+      Strings are the way we handle text in Python, and they are incredibly versatile. 
+      Imagine strings as a necklace of characters; each bead is a letter, a space, or even a punctuation mark. 
+      We'll start with the basics and gradually delve into more complex string manipulations.
+
+  - type: "hint"
+    card_group: strings_basics
+    value: |
+      **Tip:** Remember, in Python, a string is just a sequence of characters. 
+      It can be as short as a single letter, or as long as an entire book!
+
+  - type: "codeblock-exec"
+    description: "This code block demonstrates how to create a simple string in Python and print it."
+    language: "python"
+    value: |
+      greeting = "Hello, Python Learner!"
+      print(greeting)
+
+  - type: "paragraph"
+    card_group: string_operations
+    value: |
+      ## Dive into String Operations
+      Strings are not just for storing text; they're tools for text manipulation. 
+      Python provides a variety of operations to manipulate strings, making them one of the most 
+      useful data types in Python. Let's explore some common operations like slicing, concatenation, and formatting.
+
+  - type: "codeblock-exec"
+    card_group: string_operations
+    description: "Here's how you can slice a string to extract a specific part of it."
+    language: "python"
+    value: |
+      sample_string = "Python Programming"
+      slice = sample_string[7:18]
+      print(slice)
+
+  - type: "hint"
+    card_group: string_operations
+    value: |
+      **Note:** String slicing in Python starts with index 0. `sample_string[7:18]` extracts 
+      characters from index 7 to 17.
+
+  - type: "kata"
+    boilerplate: |
+      message = "Python Programming"
+      sliced_message = # your code here
+    task: "Slice the string stored in the variable `message` to extract the word 'Programming' and assign it to `sliced_message`.\n"
+    solution: |
+      message = "Python Programming"
+      sliced_message = message[7:]
+    test_code: |
+      from main import sliced_message
+      from main import message
+      import unittest
+      class TestStringSlicing(unittest.TestCase):
+          def test_slice(self):
+              self.assertEqual(sliced_message, message[7:], "Make sure that you slice the string correctly to extract 'Programming'.")
+
+  - type: "quiz"
+    quiz_items:
+      - question: "What will `sample_string[2:5]` return if `sample_string = 'Python'`?"
+        answers:
+          - value: "yth"
+            explanation: "Slicing starts at index 2 and ends at index 4, so it returns 'yth'."
+            correct: true
+          - value: "tho"
+          - value: "Pyt"
+      - question: "What is the result of `len('Hello World')`?"
+        answers:
+          - value: "11"
+            correct: true
+          - value: "10"
+            explanation: "Remember to count the space as a character."
+          - value: "12"
+
+  - type: "paragraph"
+    card_group: "introduction"
+    value: |
+      # Lists and Dictionaries
+      Lists and Dictionaries are more than just places to store data; they are the backbone of Python scripting, 
+      offering incredible flexibility and power.
+
+  - type: "paragraph"
+    card_group: "lists_basics"
+    value: |
+      ## Understanding Lists in Python
+      A list in Python is like a treasure chest that can hold a variety of items. 
+      Imagine it as a collection of different things, like books, coins, or even other chests! 
+      The beauty of Python lists is their ability to hold different types of data, change size 
+      dynamically, and be manipulated with ease.
+
+  - type: "hint"
+    card_group: "lists_basics"
+    value: |
+      **Hint:** Lists are created using square brackets `[]`, and you can access their elements 
+      using indexes, just like how you would count items in a treasure chest!
+
+  - type: "codeblock-exec"
+    description: "Creating a list and accessing its elements"
+    language: "python"
+    value: |
+      my_list = [5, "Hello", True]
+      print(my_list[0])  # Outputs 5
+      print(my_list[1])  # Outputs 'Hello'
+
+  - type: "paragraph"
+    card_group: "dictionaries_basics"
+    value: |
+      ## Exploring Python Dictionaries
+      Dictionaries in Python are like secret maps that lead to hidden treasures. 
+      They hold information in pairs - a key and a value. Just like a real dictionary, 
+      where you look up a word (key) to find its definition (value), Python dictionaries allow you to store and 
+      retrieve data efficiently.
+
+  - type: "hint"
+    card_group: "dictionaries_basics"
+    value: |
+      **Hint:** Dictionaries are created with curly braces `{}` with each item being a key-value pair 
+      separated by a colon. Remember, keys are unique in a dictionary!
+
+  - type: "codeblock-exec"
+    description: "Creating a dictionary and accessing its values"
+    language: "python"
+    value: |
+      my_dict = {"name": "Alice", "age": 30}
+      print(my_dict["name"])  # Outputs 'Alice'
+      print(my_dict["age"])   # Outputs 30
+
+  - type: "kata"
+    boilerplate: |
+      shopping_list = []
+      # your code here to add items
+    task: "Add three items to the `shopping_list` list. For example, 'apples', 'bananas', and 'oranges'.\n"
+    solution: |
+      shopping_list = []
+      shopping_list.append('apples')
+      shopping_list.append('bananas')
+      shopping_list.append('oranges')
+    test_code: |
+      from main import shopping_list
+      import unittest
+      class TestShoppingList(unittest.TestCase):
+          def test_list_contents(self):
+              self.assertEqual(len(shopping_list), 3, "Ensure you add exactly three items.")
+              self.assertIn('apples', shopping_list, "Make sure 'apples' is in the list.")
+              self.assertIn('bananas', shopping_list, "Ensure 'bananas' is in the list.")
+              self.assertIn('oranges', shopping_list, "Check that 'oranges' are in the list.")
+
+  - type: "quiz"
+    quiz_items:
+      - question: "Which of the following is a valid list in Python?"
+        answers:
+          - value: "[1, 2, 'three', 4]"
+            correct: true
+            explanation: "Python lists can contain different types of elements."
+          - value: "(1, 2, 3)"
+            explanation: "This is a tuple, not a list."
+          - value: "{1: 'one', 2: 'two'}"
+            explanation: "This is a dictionary, not a list."
+      - question: "How do you access the value associated with the key 'color' in a dictionary `my_dict`?"
+        answers:
+          - value: "my_dict['color']"
+            correct: true
+          - value: "my_dict[0]"
+            explanation: "Dictionaries are accessed by keys, not numeric indices."
+          - value: "my_dict.color"
+            explanation: "This syntax is not used for accessing dictionary elements in Python."

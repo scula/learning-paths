@@ -14,18 +14,21 @@ node_ref: "lesson_name_id"
 content:
   - type: "paragraph" # contains markdown text (headers, lists, links, etc.)
     hero_image: "url" #display before text if present
+    card_group: indent # card group name can be used to group cards together
     value: |
       # Lesson Name
       Some content
-      * Some list
-  - type: "image" # description contains detailed description of image and value holds the link
-    description: "Detailed description of image (graph or image)"
-    value: "https://some_link_to_image"
+      * Some list with formatting **term** for example
+  - type: "hint"
+    card_group: indent
+    value: |
+      Hint text for explaining something in detail
   - type: "codeblock-exec" # description contains detailed description of codeblock and value holds the code
     description: "Detailed description of codeblock"
     language: "python"
     value: |
       import this
+      print("hey man")
   - type: "kata" # Kata has task, start code and solution
     boilerplate: |
       Pi = 3.141592653589793

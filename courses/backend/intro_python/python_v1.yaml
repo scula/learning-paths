@@ -75,8 +75,10 @@ sprints:
             group: "Story"
       - type: parallel
         collections:
-          - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures"
+          - node_string_id: "prog_langs_python_types_and_data_structures"
             group: "Structures"
+            lesson_sha: ""
+            file_path: "lessons/prog_langs/python_3_11_4/types_and_data_structures/prog_langs_python_types_and_data_structures.yaml"
           - node_string_id: "prog_langs.python_3_11_4.input_output.print"
             group: "Input and Output"
       - type: "single"
