@@ -346,8 +346,14 @@ content:
       or you can follow this [link](https://join.slack.com/t/scula-workspace/shared_invite/zt-29ck0kft2-hvHqRKwQRzI1MXENoMX9ig) to join it.
 
   - type: "paragraph"
+    card_group: "support_slack"
     value: |
       ## Support
+
+  - type: "paragraph"
+    card_group: "support_slack"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/team.png
+    value: |
 
       Believe us, we know how important it is to have support when you are just starting 
       to learn something new. Especially when it comes to learning complex technical concepts. 
