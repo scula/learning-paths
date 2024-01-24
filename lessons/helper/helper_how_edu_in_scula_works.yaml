@@ -315,3 +315,10 @@ content:
 
       To make sure you never feel lost or overwhelmed in your learning path, we've established a 
       dedicated support team, committed to being there for you every step of the way!
+
+  - type: "quiz"
+    quiz_items:
+      - question: "I solemnly swear that..."
+        answers:
+          - value: "... I am up to no good"
+            correct: true
