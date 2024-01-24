@@ -4,59 +4,148 @@ description: "How to use the platform and tools?"
 software_dependencies:
 content:
   - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/hero.png
     value: |
-      # Learning with Scula
+      # How we learn in Scula
 
-      Learning with Scula is quite straightforward. We have our platform where you can learn,
-      practice theory and work on your projects. We also use a couple of external tools to
-      communicate and work together.
+      Navigating the Scula learning experience is seamless and user-friendly. 
+      Our platform offers a comprehensive space for learning, theory practice, 
+      and project development. In addition, we use a range of external tools 
+      for effective communication and collaborative work. 
+
+
+      In this lesson, our aim is to provide a step-by-step walkthrough of the 
+      platform's core components, ensuring you feel at ease as you navigate it independently.
+
+  - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/schedule_and_sprints.png
+    value: |
+      # Schedule and lesson structure
+
+      ## Schedule and Sprints
+
+      Our program officially kicks off on January 29th and will run until February 25th.
+      Designed with flexibility in mind, it includes **two dynamic Sprints**, each lasting two weeks. 
+      At the end of each Sprint, you'll have the chance to apply your newfound knowledge to a 
+      practical **project assignment**.
+
+
+      While there's no rigid timetable, we suggest dedicating the first week of each Sprint to 
+      absorbing the theory, leaving the second week to dive deep into your project work. 
+      This is, however, just a guideline – you have complete freedom to tailor your learning 
+      experience. Whether you're someone who can power through the lessons in a single day or 
+      prefer to pace yourself with smaller, daily learning sessions, it's all up to you. 
+      Our priority is to accommodate your unique learning style and life commitments.
+
+
+      Remember, there's no single 'correct' way to learn. We believe in supporting your 
+      individual journey as you explore the basics of Python, ensuring you feel at ease and 
+      confident every step of the way.
 
   - type: "paragraph"
     value: |
-      # Schedule and Curriculum
+      ## Theory and practice
 
-      You can find the curriculum (or topics that we'll cover) on the main page of the course. 
-      There you can also notice that the educational process is time-boxed in **Sprints**.
+      Our program is a fully online, text-based learning adventure, designed to make 
+      coding both fun and accessible. Each lesson is carefully crafted with 
+      a theoretical segment that introduces you to key concepts and definitions, 
+      paired with interactive, hands-on sections where you can put those ideas into practice.
 
-      ## Sprints
 
-      Each **Sprint** is 2 weeks long and has a set of lessons and a project that you should complete. 
-      There is no strict schedule but we recommend to finish the theory during the first week and
-      focus on the project during the second week.
-
-      ## Theory and lessons 
-
-      Each lesson has a theory part and interactive practical parts. Some practical tasks are 
-      embedded inside the lesson, some will require working with **Codelab** — a part of Scula
-      platform where you will have a virtual workspace to work on more complex tasks and projects. 
-
-      ## Projects
-
-      Each **Sprint** has a **Project** that you should complete. You can select one of the suggested projects
-      and work on it together with a mentor.
+      Let's explore the different ways you can interact with code in our program:
 
   - type: "paragraph"
+    value: |
+      ### Code Snippet 
+
+      Embedded right within the lesson, these snippets allow you to see the code 
+      and copy it to your workspace. It will look like this:
+      ```
+      print("I am a code snippet")
+      ```
+  - type: "paragraph"
+    card_group: "code_demo"
+    value: |
+      ### CodeDemo 
+
+      This is where things get even more exciting. Embedded in the lesson, 
+      these demos are fully interactive. You can run the code, spot errors, 
+      and tweak it to see how changes affect the output. It's a brilliant tool for
+      experimenting and learning from trial and error.
+  - type: "codeblock-exec"
+    card_group: "code_demo"
+    value: |
+      print("I am a code demo, try to hit the "Execute" button")
+
+  - type: "paragraph"
+    value: |
+      ### Codelab
+      Step into our virtual workspace. Part of the Scula platform, Codelab is where 
+      you can take on more complex tasks and projects. Here, you're not just learning; 
+      you're doing. More details on this in just a bit.
+
+  - type: "paragraph"
+    value: |
+      ### Project
+
+      At the end of each Sprint, you'll face the ultimate challenge: a **Project**. 
+      Think of it as the 'boss level' in a video game. You'll need to apply everything you've 
+      learned to conquer it. These projects are your opportunity to build real services that 
+      actual people might use. And the best part? A professional software engineer reviews every 
+      line of your code, ensuring it's not just functional but also adheres to industry standards.
+
+
+      In summary, our program is more than just learning; it's about applying, experimenting,
+      and truly understanding how code comes to life. We're here to guide you through
+      each step, ensuring you have the tools and support to tackle each challenge 
+      and emerge as a confident coder.
+
+  - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/codelab_steps_overview.png
     value: |
       # Codelab
 
-      **Codelab** is a virtual workspace inside the Scula platform for you to work independently from 
-      your own device. Each time you will open a new **Codelab** workspace it will be a fresh environment
-      with all the necessary tools and libraries installed. 
+      **Codelab** offers you a personalized virtual workspace to explore and develop your coding skills
+      right from your own device. Each time you open a new **Codelab** workspace it is a fresh environment 
+      with all the necessary tools and libraries already installed.
 
+  - type: "paragraph"
+    card_group: "how_to_launch_codelab"
+    value: |
       ## How to launch Codelab?
 
       Inside some of the lessons you will find a special card labeled **Codelab** which you will need to 
       complete in order to finish the lesson. When you click on the card you will be redirected to the
       **Codelab** workspace.
 
+  - type: "paragraph"
+    card_group: "how_to_launch_codelab"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/codelab_card.png
+    value: |
+      These cards are key components of the lesson and must be completed to progress. Clicking on one of 
+      these cards seamlessly transports you into the Codelab workspace, where your coding adventure begins.
+
+  - type: "paragraph"
+    card_group: "how_to_use_codelab"
+    value: |
       ## How to use Codelab?
 
-      **Codelab** consists of 2 parts:
-      * Scula sidebar with tasks outline and help. There you can find the list of tasks that you need to complete
-      and some additional information about the lesson. If you get stuck, use the hint button for each tasks.
-      * VSCode IDE connected to the virtual machine. Think of it as a remote computer that you can access from 
-      your browser. VSCode is the most popular IDE among developers and it has a lot of useful features.
-      Working with it will give you a good understanding of how developers work.
+      Codelab is divided into two main sections:
+      * **Task Sidebar**: This is your guide and assistant rolled into one. Here, you'll find 
+      a detailed outline of tasks to be completed along with supplemental information relevant 
+      to the lesson. Feeling stuck? Don't worry! The sidebar also includes a 'Hint' feature 
+      for each task, offering you a nudge in the right direction whenever you need it.
+      * **VSCode IDE Integration**: Picture this as your gateway to a virtual computer,
+      accessible directly from your browser. VSCode, a top choice among developers 
+      worldwide, is your workspace in Codelab. It's not just an editor; it's a powerhouse 
+      of features that mirrors the real-world tools used by professional developers. 
+      By using VSCode within Codelab, you'll gain practical insights into how developers work, 
+      setting a solid foundation for your future in coding.
+  - type: "hint"
+    card_group: "how_to_use_codelab"
+    value: |
+      Codelab isn't just a feature of Scula; it's your personal coding lab, where theory meets practice, 
+      helping you evolve from learning concepts to applying them in real-world scenarios.
 
   - type: "paragraph"
     card_group: "vscode"
@@ -66,34 +155,42 @@ content:
       ### Overview
   - type: "paragraph"
     card_group: "vscode"
-    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/overview.png
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/vscode/1_vscode_overview.png
     value: |
-      This is the overview of the **Codelab**. On the left you can see the tasks and on the right you can see the
+      This is the overview of the **Codelab**. On the left you can see the control panel and on the right you can see the
       VSCode IDE.
 
-      ### Files Explorer
   - type: "paragraph"
-    card_group: "vscode"
-    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/explorer.png
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/vscode/2_vscode_steps.png
     value: |
+      ### Control panel 
+
+      On the left side of the **Codelab** you can see the control panel. There you will find either a list of steps
+      to complete the **Codelab** or a description of the **Project. 
+
+      After you complete a step, click on the "Validate code" button to check your solution. If you are stuck, you can
+      click on the "?" button to get a hint or ask for help in the Slack channel.
+
+  - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/vscode/3_vscode_explorer.png
+    value: |
+      ### VSCode IDE: Explorer
       Here you can see the **Explorer** panel. It shows the files and folders in the current working directory.
       You can create new files and folders here, rename them, move them around and delete them. Use the right 
-      mouse button to open the context menu. 
+      mouse button to open the context menu.
 
-      ### Editor
   - type: "paragraph"
-    card_group: "vscode"
-    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/editor.png
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/vscode/3_vscode_editor.png
     value: |
+      ### VSCode IDE: Editor
       This is the **Editor** of the file. You can open it by clicking on the file in the **Explorer** panel.
       Here you can edit the content of the file. On top of the **Editor** panel  you can see the name of the opened 
       file and other opened files. You can switch between them by clicking on the tabs.
 
-      ### Terminal Launch
   - type: "paragraph"
-    card_group: "vscode"
-    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/terminal_launch.png
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/vscode/4_vscode_terminal_launch.png
     value: |
+      ### VSCode IDE: Terminal Launch
       Terminal is a program that runs on your computer and allows you to interact with the operating
       system. The VSCode IDE that you see in the **Codelab** is running on a virtual machine as a usual
       program. But you can't hide it or close it to see the desktop because there is actually no 
@@ -104,11 +201,10 @@ content:
       **Terminal** -> **New Terminal**. This will open a new **Terminal** panel at the bottom of the
       VSCode IDE.
 
-      ### Running commands in the Terminal
   - type: "paragraph"
-    card_group: "vscode"
-    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/terminal_command.png
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/working_with_scula/vscode/5_vscode_terminal_cmd.png
     value: |
+      ### Running commands in the Terminal
       Now you can run commands in the **Terminal**. What does `to run a command` or `execute a command` mean?
 
       It means you can interact with the Operating System through the **Terminal**. You can run programs,
@@ -119,15 +215,95 @@ content:
 
   - type: "paragraph"
     value: |
-      # Project
+      # Slack
 
-      To be done
+      ## Why do we use Slack?
+
+      Many tech companies use Slack for their day-to-day communication and collaboration.
+      At Scula, our aim is not just to educate you but to also prepare you for real-world 
+      tech environments. That's why we place a strong emphasis on familiarizing you with 
+      Slack, mirroring the communication dynamics you're likely to encounter in your 
+      future tech career.
+
+
+      Understanding how to effectively use Slack is more than a skill—it's an essential part 
+      of your professional toolkit. Given the widespread adoption of Slack in the tech industry, 
+      there's a high probability that it will be your primary platform for workplace communication. 
+      By mastering Slack with Scula, you're not only learning how to use a tool; you're also 
+      learning the language of modern tech communication. This knowledge will not only ease 
+      your transition into a tech role but also position you as a collaborative and 
+      tech-savvy team member from day one.
 
   - type: "paragraph"
     value: |
-      # Slack
+      ## Scula's Slack workspace setup
 
-      To be done
+      Now, let's take a look at the main channels of communication.
+      1. [#py_1_info](https://join.slack.com/t/scula-workspace/shared_invite/zt-29ck0kft2-hvHqRKwQRzI1MXENoMX9ig). This channel is dedicated to important course-related updates, 
+      including announcements, essential dates, and deadlines. It's your go-to source 
+      for staying in the loop and ensuring you don't miss any crucial information 
+      throughout the course.
+      2. [#py_1_theory](https://join.slack.com/t/scula-workspace/shared_invite/zt-29ck0kft2-hvHqRKwQRzI1MXENoMX9ig). This channel is your go-to place for theory-related questions. 
+      Feel free to ask about concepts, dive into discussions, and deepen your understanding 
+      of the subject matter.
+      3. [#py_1_project](https://join.slack.com/t/scula-workspace/shared_invite/zt-29ck0kft2-hvHqRKwQRzI1MXENoMX9ig). If you have any questions or need guidance regarding the projects, 
+      you're in the right place. When it comes to project-related questions, you have a dual 
+      support system. Our dedicated reviewers and your fellow peers are here to help you out.
+      4. [#py_1_lounge](https://join.slack.com/t/scula-workspace/shared_invite/zt-29ck0kft2-hvHqRKwQRzI1MXENoMX9ig). This channel is your space to engage in discussions, both formal and 
+      informal. It's a place to connect, share ideas, and build a sense of community.
+      5. [#beta-news](https://join.slack.com/t/scula-workspace/shared_invite/zt-29ck0kft2-hvHqRKwQRzI1MXENoMX9ig). This is a place for direct communication with our founding team, developers 
+      and authors. Here we share some development updates, news and new features.
+
+
+      We encourage you to actively engage with the various channels, each designed for specific purposes. 
+      Please don't hesitate to ask questions or start discussions whenever you need clarity or 
+      assistance. It's important to us that you feel comfortable in expressing your thoughts 
+      and seeking help when needed. 
+
+
+      Prior to the start of the course on January 29th, we request that you take some time to 
+      familiarize yourself with these channels and ensure that you have access to all of them. 
+      This proactive step will help you to seamlessly integrate into the course activities from day one.
+
+  - type: "paragraph"
+    card_group: "slack"
+    value: |
+      ## How we communicate in Slack
+
+      Navigating the nuances of online communication can be challenging. Without the benefit of 
+      face-to-face interactions, it's easy for messages to be misunderstood or misinterpreted. 
+      To foster clear and effective communication within our digital space, we recommend adhering 
+      to the following guidelines:
+      1. Use Channels Appropriately: Respect the purpose of each Slack channel. Post your 
+      messages in the relevant channels to keep the conversations organized and on-topic.
+      2. Be Clear and Concise: Time is valuable. Write clearly and concisely. Avoid long paragraphs. 
+      Bullet points can be effective for listing ideas or questions.
+      3. Start Threads for Specific Discussions: To keep conversations focused and easy to follow, 
+      start a thread when replying to a specific point. This helps contain discussions within 
+      their relevant context.
+      4. Use Mentions Sparingly: Tag specific people (@name) only when their attention is needed. 
+      Overusing mentions can lead to notification fatigue.
+      5. Share Files Thoughtfully: When sharing files or documents, provide a brief description of 
+      the content to help your colleagues understand the context.
+      6. Respect Work-Life Balance: Be mindful of sending messages during off-hours. Consider 
+      scheduling messages to be sent during work hours if it's not urgent.
+      7. Proofread Before Sending: Typos and grammatical errors can lead to misunderstandings. 
+      A quick proofread can ensure clarity in your communication.
+      8. Acknowledge Messages: If a message requires a more detailed response, or if you need 
+      time to gather information, acknowledge receipt and give a timeframe for your reply.
+      9. Use Emojis and Reactions Appropriately: Emojis and reactions can add tone and clarity 
+      to your messages but use them appropriately, keeping in mind the professional environment.
+      10. Stay Inclusive and Professional: Always communicate with respect and inclusivity. 
+      Avoid language or topics that could be deemed inappropriate or offensive.
+
+
+      By adhering to these guidelines, you can contribute to a more efficient, respectful, 
+      and productive Slack environment.
+  - type: "hint"
+    card_group: "slack"
+    value: |
+      By now, you should have received your invitation to join our Slack workspace. 
+      In case you haven't, please don't hesitate to reach out to us at info@scula.com for assistance.
 
   - type: "paragraph"
     value: |
