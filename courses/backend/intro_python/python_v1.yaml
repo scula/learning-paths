@@ -77,7 +77,7 @@ sprints:
         collections:
           - node_string_id: "prog_langs_python_types_and_data_structures"
             group: "Structures"
-            lesson_sha: "d949ee7"
+            lesson_sha: "8183618"
             file_path: "lessons/prog_langs/python_3_11_4/types_and_data_structures/prog_langs_python_types_and_data_structures.yaml"
           - node_string_id: "prog_langs.python_3_11_4.input_output"
             group: "Input and Output"
@@ -117,10 +117,10 @@ sprints:
             group: "Story"
       - type: "parallel"
         collections:
-          - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.mapping_types_dict"
-            group: "Structures"
-          - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.set_types"
-            group: "Structures"
+          # - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.mapping_types_dict"
+          #   group: "Structures"
+          # - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.set_types"
+          #   group: "Structures"
           - node_string_id: "prog_langs.python_3_11_4.functions"
             group: "Functions"
             complementary:
@@ -130,10 +130,10 @@ sprints:
         collections:
           - node_string_id: story.zombie_survival.day_five
             group: "Story"
-      - type: "single"
-        collections:
-          - node_string_id: "prog_langs.python_3_11_4.input_output.input"
-            group: "Input and Output"
+      # - type: "single"
+      #   collections:
+      #     - node_string_id: "prog_langs.python_3_11_4.input_output.input"
+      #       group: "Input and Output"
       - type: "selection"
         collections:
           - node_string_id: "prog_langs.python_3_11_4.projects.hangman_game"
