@@ -59,7 +59,7 @@ sprints:
         collections:
           - node_string_id: "prog_langs_python_syntax"
             group: "General"
-            lesson_sha: "9191c97"
+            lesson_sha: "d949ee7"
             file_path: "lessons/prog_langs/python/general/syntax.yaml"
             complementary:
               - node_string_id: "statements_expressions_deep_dive"
@@ -85,20 +85,20 @@ sprints:
         collections:
           - node_string_id: story.zombie_survival.day_two
             group: "Story"
-      - type: "parallel"
-        collections:
-          - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.numbers"
-            group: "Structures"
-            complementary:
-              - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.numbers_precision_error"
-          - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.strings"
-            group: "Structures"
-            complementary:
-              - node_string_id: "prog_langs.python_3_11_4.guidelines.string_formatting"
-          - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.boolean"
-            group: "Structures"
-            complementary:
-              - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.none"
+      # - type: "parallel"
+      #   collections:
+      #     - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.numbers"
+      #       group: "Structures"
+      #       complementary:
+      #         - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.numbers_precision_error"
+      #     - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.strings"
+      #       group: "Structures"
+      #       complementary:
+      #         - node_string_id: "prog_langs.python_3_11_4.guidelines.string_formatting"
+      #     - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.boolean"
+      #       group: "Structures"
+      #       complementary:
+      #         - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.none"
       - type: "single"
         collections:
           - node_string_id: story.zombie_survival.day_three

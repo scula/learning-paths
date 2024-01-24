@@ -30,12 +30,10 @@ content:
   - type: "codeblock-exec"
     card_group: "object_types"
     value: |
-      ```
       numberSum = 1 + 2
       stringSum = "1" + "2"
       print(numberSum)
       print(stringSum)
-      ```
 
   - type: "paragraph"
     value: |
@@ -120,6 +118,7 @@ content:
       number1 = 7
       number2 = 3
       result = # your code here
+      print(result)
     task: "Calculate the product of `number1` and `number2`, and assign it to the variable `result`.\n"
     solution: |
       number1 = 7
@@ -197,6 +196,7 @@ content:
     boilerplate: |
       message = "Python Programming"
       sliced_message = # your code here
+      print(sliced_message)
     task: "Slice the string stored in the variable `message` to extract the word 'Programming' and assign it to `sliced_message`.\n"
     solution: |
       message = "Python Programming"
@@ -217,11 +217,14 @@ content:
             explanation: "Slicing starts at index 2 and ends at index 4, so it returns 'yth'."
             correct: true
           - value: "tho"
+            explanation: "Slicing starts at index 2 and ends at index 4, so it returns 'yth'."
           - value: "Pyt"
+            explanation: "Slicing starts at index 2 and ends at index 4, so it returns 'yth'."
       - question: "What is the result of `len('Hello World')`?"
         answers:
           - value: "11"
             correct: true
+            explanation: "The `len()` function returns the length of a string."
           - value: "10"
             explanation: "Remember to count the space as a character."
           - value: "12"
@@ -314,7 +317,106 @@ content:
         answers:
           - value: "my_dict['color']"
             correct: true
+            explanation: "This is the correct syntax for accessing dictionary values."
           - value: "my_dict[0]"
             explanation: "Dictionaries are accessed by keys, not numeric indices."
           - value: "my_dict.color"
             explanation: "This syntax is not used for accessing dictionary elements in Python."
+
+  - type: "paragraph"
+    card_group: "introduction"
+    value: |
+      # Boolean and None Types
+      Now that you know about numbers, strings, and lists, it's time to learn about two more types: 
+      Booleans and None. These types are fundamental to Python and programming in general. 
+      They're also the building blocks of more complex data structures, 
+      like dictionaries. Let's dive in!
+
+  - type: "paragraph"
+    card_group: "boolean_basics"
+    value: |
+      ## The Power of Booleans
+      In Python, Booleans represent one of two values: `True` or `False`. 
+      Imagine them as the binary decision-makers at the heart of your code's logic. 
+      They help in making choices, controlling flow, and evaluating conditions.
+       When you're asking your code to make decisions, Booleans are your go-to tool.
+
+  - type: "hint"
+    card_group: "boolean_basics"
+    value: |
+      **Hint:** Booleans are often the result of comparisons or conditions. 
+      For example, `5 > 3` evaluates to `True` because 5 is indeed greater than 3.
+
+  - type: "codeblock-exec"
+    description: "Understanding Boolean expressions"
+    language: "python"
+    value: |
+      print(10 > 9)   # Outputs True
+      print(4 == 5)   # Outputs False
+      print(6 <= 6)   # Outputs True
+
+  - type: "paragraph"
+    card_group: "none_basics"
+    value: |
+      ## None: The Absence of a Value
+      In Python, `None` is a special type representing the absence of a value. 
+      It's like an empty box or a placeholder saying “nothing to see here.” 
+      This type is particularly useful when you need to indicate that a variable exists, 
+      but it doesn't have a value yet.
+
+  - type: "hint"
+    card_group: "none_basics"
+    value: |
+      **Hint:** Use `None` to initialize variables or to indicate a special condition in your code. 
+      It's different from `False`, `0`, or an empty string `""`, all of which are valid values.
+
+  - type: "codeblock-exec"
+    description: "Using None in Python"
+    language: "python"
+    value: |
+      my_variable = None
+      if my_variable is None:
+          print("No value yet!")
+      else:
+          print("There's something here.")
+
+  - type: "kata"
+    boilerplate: |
+      def check_presence(value):
+          return # your code here
+      print(check_presence(None))
+      print(check_presence(5)
+    task: |
+      Write a function `check_presence` that returns `True` if the given 
+      value is not `None`, otherwise returns `False`. 
+
+      Even though we didn't work with functions yet, you can still complete this task!
+      Just replace `# your code here` with your solution where you check the `value` variable with None.
+    solution: |
+      def check_presence(value):
+          return value is not None
+    test_code: |
+      from main import check_presence
+      import unittest
+      class TestCheckPresence(unittest.TestCase):
+          def test_presence(self):
+              self.assertTrue(check_presence(5), "5 is not None.")
+              self.assertFalse(check_presence(None), "None should return False.")
+
+  - type: "quiz"
+    quiz_items:
+      - question: "What does the expression `not False` evaluate to in Python?"
+        answers:
+          - value: "True"
+            correct: true
+            explanation: "The `not` operator inverts the Boolean value. Thus, `not False` is `True`."
+          - value: "False"
+          - value: "None"
+      - question: "What is the type of `None` in Python?"
+        answers:
+          - value: "int"
+          - value: "bool"
+          - value: "NoneType"
+            correct: true
+            explanation: "`None` is of the `NoneType` type, representing the absence of a value."
+          - value: "str"
