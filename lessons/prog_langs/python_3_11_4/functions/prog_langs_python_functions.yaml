@@ -1,0 +1,97 @@
+node_string_id: "prog_langs_python_functions"
+name: "Functions"
+description: "Functions: Building blocks of Python"
+software_dependencies:
+  - name: python
+    version: 3.11.4
+content:
+  - type: "paragraph"
+    value: |
+      # Welcome to Python Functions: Your Gateway to Efficient Coding
+      Hey there, coding enthusiast! 🌟 Ready to dive into the fascinating world of **Python Functions**? 
+      Functions are like your personal coding assistants; they help you keep your code organized, reusable, 
+      and super-efficient. In this lesson, we'll start from the basics and then explore the incredible
+      things you can do with functions in Python. Let's embark on this exciting journey together!
+
+  - type: "paragraph"
+    value: |
+      ## Understanding Functions: The Basics
+      Imagine you're a chef 🍳 in a kitchen. Each recipe is like a function - it tells you what 
+      ingredients you need and the steps to make a dish. In Python, a function works similarly. 
+      You give it some inputs (like ingredients), it does some magic (the recipe steps), and 
+      voilà, you get an output (a delicious dish)!
+
+  - type: "hint"
+    value: |
+      **Hint:** Remember, functions help avoid repetition in your code. If you find yourself writing 
+      the same code over and over, it's probably time to think about using a function.
+
+  - type: "codeblock-exec"
+    description: "Let's start with a simple function. This one takes a name and greets the person."
+    language: "python"
+    value: |
+      def greet(name):
+          return f"Hello, {name}!"
+      print(greet("Alice"))
+
+  - type: "paragraph"
+    value: |
+      ## Advancing with Arguments and Parameters
+      In functions, **arguments** are the values you pass, and **parameters** are the variables that 
+      receive these values. It's like when someone gives you a gift 🎁 (argument), and you take it 
+      in your hands (parameter).
+
+  - type: "codeblock-exec"
+    description: "Here's how you can use multiple parameters."
+    language: "python"
+    value: |
+      def multiply(x, y):
+          return x * y
+      print(multiply(5, 3))
+
+  - type: "paragraph"
+    value: |
+      ## Default Values: Making Functions Flexible
+      Sometimes, you want to set a default value for a parameter. It's like having a backup plan 🛡️. 
+      If no specific value is given, the function knows what to do.
+
+  - type: "codeblock-exec"
+    description: "This function has a default value for one of its parameters."
+    language: "python"
+    value: |
+      def make_coffee(type="espresso"):
+          return f"Making a cup of {type}"
+      print(make_coffee())
+      print(make_coffee("latte"))
+
+  - type: "kata"
+    boilerplate: |
+      def calculate_area(length, width):
+          # your code here
+    task: "Write a function to calculate the area of a rectangle. \nAssign the result of the calculation to the return value of the function.\n"
+    solution: |
+      def calculate_area(length, width):
+          return length * width
+    test_code: |
+      from main import calculate_area
+      import unittest
+      class TestAreaCalculation(unittest.TestCase):
+          def test_area_calculation(self):
+              self.assertEqual(calculate_area(5, 3), 15, "Make sure that you calculate the area correctly.")
+
+  - type: "quiz"
+    quiz_items:
+      - question: "What is the main purpose of a function in Python?"
+        answers:
+          - value: "To repeat code multiple times"
+          - value: "To organize and reuse code efficiently"
+            correct: true
+            explanation: "Functions in Python are used to organize and reuse code, making it more efficient and manageable."
+          - value: "To display output on the screen"
+      - question: "Which of the following is true about default parameters?"
+        answers:
+          - value: "They must be specified every time a function is called"
+          - value: "They are optional and have a predefined value if not given"
+            correct: true
+            explanation: "Default parameters in functions have a predefined value and are optional when calling the function."
+          - value: "They cannot be used in Python functions"

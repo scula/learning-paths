@@ -1,0 +1,121 @@
+node_string_id: "prog_langs_python_input_output"
+name: "Input and Output"
+description: "Working with data flows"
+software_dependencies:
+  - name: python
+    version: 3.11.4
+content:
+  - type: "paragraph"
+    value: |
+      # Understanding Input and Output in Python
+
+      Imagine you're having a conversation with a friend. You speak (output), they listen (input), 
+      and then respond (output again). Similarly, in computing, there's always a flow of data. 
+      Computers receive data (input) through various means like keyboards, files, or even the internet. 
+      They process this data and then output it, maybe as a display on your screen, a file, or 
+      sending it across the network.
+
+
+      Now, let's narrow this down to Python. Understanding how data flows into and out of our Python 
+      programs is crucial. It's like knowing how to have a conversation with your computer! We'll 
+      explore how Python handles input (getting data into your program) and output (displaying results 
+      or saving them), both interactively and through files. This lesson will make these concepts crystal 
+      clear and get you comfortable with Python's input/output capabilities.
+
+  - type: "hint"
+    value: |
+      Remember, input and output in computing are like a two-way conversation. 
+      Your Python program 'listens' (input) and 'talks' (output).
+
+  - type: "paragraph"
+    value: |
+      ## Input in Python
+
+      In Python, getting data into your program can be as simple as asking the user for it. 
+      This is called interactive input. For instance, the `input()` function allows your 
+      program to pause and wait for user input.
+
+
+      But what if you want to read lots of data, maybe from a file? Python makes it easy to 
+      read from files too. This is especially useful for processing data in batch or 
+      handling data that's too large to type in manually.
+
+      Both these methods are essential tools in your Python toolkit. Let's see 
+      how they work in practice.
+
+  - type: "codeblock-exec"
+    description: "Using the input() function to get user input"
+    language: "python"
+    value: |
+      name = input("What is your name? ")
+      print(f"Hello, {name}!")
+
+  - type: "codeblock-exec"
+    description: "Reading data from a file in Python"
+    language: "python"
+    value: |
+      with open('example.txt', 'r') as file:
+          content = file.read()
+      print(content)
+
+  - type: "paragraph"
+    value: |
+      ## Output in Python
+
+      Now, for the other side of the conversation: output. In Python, the most 
+      common way to output data is using the `print()` function. It's straightforward and quite powerful. 
+      But output isn't limited to the console. We can also write data to files, which is handy 
+      for saving results, logging information, or sharing data with other programs.
+
+
+      Both console and file output are essential for effective programming 
+      in Python. Let's check out some examples.
+
+  - type: "codeblock-exec"
+    description: "Printing to the console using print()"
+    language: "python"
+    value: |
+      message = "Python is fun!"
+      print(message)
+
+  - type: "codeblock-exec"
+    description: "Writing data to a file in Python"
+    language: "python"
+    value: |
+      with open('output.txt', 'w') as file:
+          file.write("Python makes file handling easy!")
+
+  - type: "kata"
+    boilerplate: |
+      filename = 'data.txt'
+      content = # your code here
+    task: "Read the contents of a file named `data.txt` and assign it to the variable `content`.\n"
+    solution: |
+      filename = 'data.txt'
+      with open(filename, 'r') as file:
+          content = file.read()
+    test_code: |
+      from main import content
+      import unittest
+      class TestFileReading(unittest.TestCase):
+          def test_file_reading(self):
+              with open('data.txt', 'r') as file:
+                  expected_content = file.read()
+              self.assertEqual(content, expected_content, "Make sure that you read the file correctly.")
+
+  - type: "quiz"
+    quiz_items:
+      - question: "Which Python function is used to read user input in an interactive way?"
+        answers:
+          - value: "print()"
+          - value: "input()"
+            correct: true
+            explanation: "The `input()` function is used to read user input. `print()` is used for output."
+          - value: "read()"
+      - question: "What is the correct way to open a file for reading in Python?"
+        answers:
+          - value: "open('filename', 'r')"
+            correct: true
+            explanation: "Opening a file with 'r' mode is the correct way to read from a file."
+          - value: "open('filename', 'w')"
+          - value: "read('filename')"

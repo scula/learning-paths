@@ -1,0 +1,113 @@
+node_string_id: "prog_langs_python_control_flow_conditional_statements"
+name: "Conditional Statements"
+description: "Control your code with conditional statements"
+software_dependencies:
+  - name: python
+    version: 3.11.4
+content:
+  - type: "paragraph"
+    value: |
+      # Navigating Python's Crossroads: Conditional Statements
+      Welcome to the world of decision-making in Python! 🚦 Conditional statements 
+      are like the traffic signals of programming. They help your code make decisions and choose 
+      directions. Today, we'll explore the `if-else` statement in Python, understanding how it 
+      guides the flow of your program based on different conditions.
+
+  - type: "paragraph"
+    value: |
+      ## The Basics of `if-else`
+      Imagine you're getting ready for a day out. You look outside and think, "If it's sunny, 
+      I'll wear sunglasses; else, I'll take an umbrella." That's exactly what an `if-else` 
+      statement does in Python. It evaluates a condition, and if the condition is true, it 
+      executes a block of code; otherwise, it executes a different block of code.
+
+  - type: "hint"
+    value: |
+      **Hint:** The condition in an `if` statement must always return a Boolean value, which 
+      is either `True` or `False`.
+
+  - type: "codeblock-exec"
+    description: "A simple example of using `if-else` to make a decision based on a number."
+    language: "python"
+    value: |
+      number = 10
+      if number > 5:
+          print("Number is greater than 5")
+      else:
+          print("Number is less than or equal to 5")
+
+  - type: "paragraph"
+    value: |
+      ## Going Beyond: The `elif` Clause
+      What if there are multiple conditions? Enter `elif` (short for 'else if'). It's like 
+      adding more choices to your decision tree 🌳. You can have multiple `elif` blocks 
+      between an `if` and an `else`.
+
+  - type: "codeblock-exec"
+    description: "Here's how you can use `elif` to check multiple conditions."
+    language: "python"
+    value: |
+      age = 20
+      if age < 13:
+          print("Child")
+      elif age < 18:
+          print("Teen")
+      else:
+          print("Adult")
+
+  - type: "paragraph"
+    value: |
+      ## Nesting and Combining Conditions
+      You can even nest `if` statements inside one another, like layers of an onion 🧅, or combine 
+      conditions using `and`, `or`, and `not` for more complex decision making.
+
+  - type: "codeblock-exec"
+    description: "Using nested `if` statements and combined conditions."
+    language: "python"
+    value: |
+      weather = "sunny"
+      temperature = 30
+      if weather == "sunny":
+          if temperature > 25:
+              print("Wear sunscreen!")
+          else:
+              print("Enjoy the mild weather!")
+      else:
+          print("Check for rain!")
+
+  - type: "kata"
+    boilerplate: |
+      weather = "rainy"
+      temperature = 20
+      # your code here
+    task: "Write an `if-else` block to print 'Take an umbrella.' if it's rainy, and 'Enjoy your day!' otherwise.\n"
+    solution: |
+      weather = "rainy"
+      temperature = 20
+      if weather == "rainy":
+          print("Take an umbrella.")
+      else:
+          print("Enjoy your day!")
+    test_code: |
+      from main import weather, temperature
+      import unittest
+      class TestWeatherAdvice(unittest.TestCase):
+          def test_weather_advice(self):
+              self.assertEqual(weather, "rainy", "Make sure to check the weather condition correctly.")
+
+  - type: "quiz"
+    quiz_items:
+      - question: "What is the purpose of the `elif` clause in Python?"
+        answers:
+          - value: "To create a loop"
+          - value: "To check another condition if the previous ones were false"
+            correct: true
+            explanation: "`elif` allows you to check multiple conditions sequentially, each one if the previous conditions were false."
+          - value: "To end the `if` statement"
+      - question: "Can `if` statements be nested inside each other in Python?"
+        answers:
+          - value: "Yes, for creating multi-level decision structures"
+            correct: true
+            explanation: "Nesting `if` statements allow for more complex decision structures by combining multiple conditions."
+          - value: "No, `if` statements can't be nested"
+          - value: "Only in specific cases"

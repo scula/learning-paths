@@ -80,8 +80,10 @@ sprints:
             group: "Structures"
             lesson_sha: "0cab8c9"
             file_path: "lessons/prog_langs/python_3_11_4/types_and_data_structures/prog_langs_python_types_and_data_structures.yaml"
-          - node_string_id: "prog_langs.python_3_11_4.input_output"
+          - node_string_id: "prog_langs_python_input_output"
             group: "Input and Output"
+            file_path: "lessons/prog_langs/python_3_11_4/input_output/prog_langs_python_input_output.yaml"
+            lesson_sha: ""
       - type: "single"
         collections:
           - node_string_id: story.zombie_survival.day_two
@@ -106,11 +108,20 @@ sprints:
             group: "Story"
       - type: "parallel"
         collections:
-          - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.sequence_types"
-            group: "Structures"
-          - node_string_id: "prog_langs.python_3_11_4.control_flow.conditional_statements"
+          - node_string_id: "prog_langs_python_functions"
+            file_path: "lessons/prog_langs/python_3_11_4/functions/prog_langs_python_functions.yaml"
+            lesson_sha: ""
+            group: "Functions"
+            complementary:
+              - node_string_id: "prog_langs.python_3_11_4.functions.lambda"
+                group: "Functions"
+          - node_string_id: "prog_langs_python_control_flow_conditional_statements"
+            file_path: "prog_langs_python_control_flow_conditional_statements.yaml"
+            lesson_sha: ""
             group: "Control Flow"
-          - node_string_id: "prog_langs.python_3_11_4.control_flow.loops"
+          - node_string_id: "prog_langs_python_control_flow_loops"
+            file_path: "lessons/prog_langs/python_3_11_4/control_flow/prog_langs_python_control_flow_loops.yaml"
+            lesson_sha: ""
             group: "Control Flow"
       - type: "single"
         collections:
@@ -122,11 +133,7 @@ sprints:
           #   group: "Structures"
           # - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.set_types"
           #   group: "Structures"
-          - node_string_id: "prog_langs.python_3_11_4.functions"
-            group: "Functions"
-            complementary:
-              - node_string_id: "prog_langs.python_3_11_4.functions.lambda"
-                group: "Functions"
+
       - type: "single"
         collections:
           - node_string_id: story.zombie_survival.day_five

@@ -1,0 +1,110 @@
+node_string_id: "prog_langs_python_control_flow_loops"
+name: "Loops"
+description: "Repeating things in Python"
+software_dependencies:
+  - name: python
+    version: 3.11.4
+content:
+  - type: "paragraph"
+    value: |
+      # Looping Through Python: The Power of Repetition
+      Welcome, coding adventurers, to the rhythmic world of **Python Loops**! 🔄 Just like repeating 
+      your favorite chorus in a song, loops in Python allow you to repeat code. Whether it's iterating 
+      over a list, repeating an action until a condition is met, or processing data, loops make it all 
+      easier. Let's unwrap the different types of loops in Python and understand why they're so useful.
+
+  - type: "paragraph"
+    value: |
+      ## The 'for' Loop: The Organized Repeater
+      Imagine you have a box of chocolates 🍫, and you want to savor each one. In Python, a `for` loop 
+      lets you go through items in a collection (like a box of chocolates) one by one. It's great for 
+      when you know how many times you want to repeat an action.
+
+  - type: "codeblock-exec"
+    description: "A basic `for` loop example, iterating over a list."
+    language: "python"
+    value: |
+      for chocolate in ['dark', 'milk', 'white']:
+          print(f"Tasting {chocolate} chocolate")
+
+  - type: "paragraph"
+    value: |
+      ## The 'while' Loop: The Condition Checker
+      Now, think of a musician practicing a piece until it's perfect. A `while` loop keeps running as 
+      long as a certain condition is true. It's like saying, "Keep playing the song, until you get it right."
+
+  - type: "codeblock-exec"
+    description: "Using a `while` loop to repeat an action until a condition changes."
+    language: "python"
+    value: |
+      count = 5
+      while count > 0:
+          print(f"Countdown: {count}")
+          count -= 1
+
+  - type: "paragraph"
+    value: |
+      ## Break and Continue: The Loop Controllers
+      Sometimes in life, you need to take a break or skip something. In loops, `break` and `continue` 
+      do just that. Use `break` to completely exit a loop, and `continue` to skip the current 
+      iteration and go to the next one.
+
+  - type: "codeblock-exec"
+    description: "Demonstrating the use of `break` and `continue` in a loop."
+    language: "python"
+    value: |
+      for number in range(1, 10):
+          if number == 5:
+              continue
+          if number == 8:
+              break
+          print(number)
+
+  - type: "paragraph"
+    value: |
+      ## Nesting Loops: The Multi-Layered Approach
+      Life is full of combinations, like a pizza with different toppings 🍕. In Python, you can have 
+      loops inside loops (nested loops), giving you the power to handle complex scenarios with multiple layers.
+
+  - type: "codeblock-exec"
+    description: "Example of nested loops in Python."
+    language: "python"
+    value: |
+      for outer in ['first', 'second']:
+          for inner in range(3):
+              print(f"{outer} layer, {inner} level")
+
+  - type: "kata"
+    boilerplate: |
+      numbers = [1, 2, 3, 4, 5]
+      sum = 0
+      # your code here
+    task: "Use a `for` loop to calculate the sum of all numbers in the `numbers` list.\n"
+    solution: |
+      numbers = [1, 2, 3, 4, 5]
+      sum = 0
+      for number in numbers:
+          sum += number
+    test_code: |
+      from main import numbers, sum
+      import unittest
+      class TestSumCalculation(unittest.TestCase):
+          def test_sum_calculation(self):
+              self.assertEqual(sum, 15, "Ensure that you add up all numbers correctly.")
+
+  - type: "quiz"
+    quiz_items:
+      - question: "When should you use a `for` loop instead of a `while` loop?"
+        answers:
+          - value: "When you want to iterate over a collection of items"
+            correct: true
+            explanation: "A `for` loop is ideal for iterating over a collection of items, as it automatically handles the iteration process."
+          - value: "When you need to repeat an action until a certain condition is met"
+          - value: "When you are not sure how many times the loop should run"
+      - question: "What does the `break` statement do in a loop?"
+        answers:
+          - value: "It pauses the loop temporarily"
+          - value: "It stops the execution of the loop entirely"
+            correct: true
+            explanation: "The `break` statement is used to exit a loop prematurely, stopping its execution entirely."
+          - value: "It skips the current iteration and continues with the next one"
