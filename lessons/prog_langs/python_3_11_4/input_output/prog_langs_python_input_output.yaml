@@ -88,20 +88,46 @@ content:
   - type: "kata"
     boilerplate: |
       filename = 'data.txt'
-      content = # your code here
-    task: "Read the contents of a file named `data.txt` and assign it to the variable `content`.\n"
+      contentToWrite = 'I am learning Python!'
+      with open(filename, 'w') as file:
+          # write contentToWrite to file 2 times
+      scannedContent=""
+      # read the contents of the file to the scannedContent variable and print it
+    task: "Write the content of `contentToWrite` variable to file named `filename` 2 times, then read the contents of this file and print the result .\n"
     solution: |
       filename = 'data.txt'
+      contentToWrite = 'I am learning Python!'
+      with open(filename, 'w') as file:
+          file.write(contentToWrite)
+          file.write(contentToWrite)
+      scannedContent=""
       with open(filename, 'r') as file:
-          content = file.read()
+          scannedContent = file.read()
+          print(scannedContent)
     test_code: |
-      from main import content
+      from io import StringIO
+      from contextlib import redirect_stdout
       import unittest
+      from main import contentToWrite 
+
       class TestFileReading(unittest.TestCase):
           def test_file_reading(self):
-              with open('data.txt', 'r') as file:
-                  expected_content = file.read()
-              self.assertEqual(content, expected_content, "Make sure that you read the file correctly.")
+              outIO = StringIO()
+              result = "Passed"
+              with redirect_stdout(outIO):
+                  try:
+                      with open("main.py", "r") as f:
+                          exec(f.read())
+                          output = outIO.getvalue()
+                          print(output)
+                          outputResult = output
+                          print("now check")
+                          if len(output.split(contentToWrite)) < 3:
+                              raise Exception("Make sure you are printing the content of the file twice")
+                  except Exception as e:
+                      result = str(e)
+              self.assertEqual(result, "Passed", "Make sure you are printing the content of the file twice")
+              print(result)
 
   - type: "quiz"
     quiz_items:
