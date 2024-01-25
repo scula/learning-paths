@@ -123,10 +123,10 @@ content:
                           outputResult = output
                           print("now check")
                           if len(output.split(contentToWrite)) < 3:
-                              raise Exception("Make sure you are printing the content of the file twice")
+                              raise Exception("Make sure you are writing the content to the file twice")
                   except Exception as e:
                       result = str(e)
-              self.assertEqual(result, "Passed", "Make sure you are printing the content of the file twice")
+              self.assertEqual(result, "Passed", "Make sure you are writing the content to the file twice")
               print(result)
 
   - type: "quiz"
