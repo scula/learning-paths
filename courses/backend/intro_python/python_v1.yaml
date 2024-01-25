@@ -83,7 +83,7 @@ sprints:
           - node_string_id: "prog_langs_python_input_output"
             group: "Input and Output"
             file_path: "lessons/prog_langs/python_3_11_4/input_output/prog_langs_python_input_output.yaml"
-            lesson_sha: "a8bb2a8"
+            lesson_sha: "9836af1"
       - type: "single"
         collections:
           - node_string_id: story.zombie_survival.day_two
