@@ -1,0 +1,56 @@
+node_string_id: "prog_langs_python_projects_weather_prediction"
+name: "Weather Predictor"
+description: "Predict the weather using Python"
+type: "project"
+project:
+  gcs_url: gs://scula-codelabs/codelabs_intro_python_projects_sprint1_weather_predictor-f1f00a1.tar.gz
+  codelab_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-intro-python:0.20
+  codelab_guard_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-guard-intro-python:0.14
+software_dependencies:
+  - name: python
+    version: 3.11.4
+content:
+  - type: "paragraph"
+    value: |
+      # Weather Predictor Project
+
+      ## Description
+
+      In this Weather Predictor Project, you will create a Python program to predict tomorrow's weather using historical weather data. This could be the ideal first project you want to focus on data analysis with Python in the future.
+
+      ## Sample Data Format
+
+      The weather data file will consist of lines formatted as follows:
+
+      ```
+      Date, Weather
+      2023-01-01, Sunny
+      2023-01-02, Rainy
+      2023-01-03, Cloudy
+      ```
+
+      Each line contains a date and the weather condition observed on that day.
+
+      ## Technical Requirements
+
+      General requirements:
+
+      - Develop the project using Python 3, focusing on using the standard library.
+      - The program should be a command-line application, executable through the terminal.
+      - Use predict_weather.py to launch the program: python predict_weather.py.
+
+      System requirements:
+
+      - Use open() for reading data from the provided weather dataset file.
+      - Implement print() to display outputs like predictions and error messages.
+      - Apply loops and conditional statements to process the data.
+
+      Project requirements:
+
+      - Begin with a brief introduction explaining the program's functionality.
+      - Write a Python script to read and process weather data from the given file.
+      - The program should predict the next day's weather using a simple calculation: the most frequent weather condition in the last 7 days.
+      - To implement this, the program will count occurrences of each weather condition for the past 7 days and select the most frequent one as the prediction.
+      - After analyzing the data, the program should output the predicted weather condition for the following day.
+      - Include error handling for situations like file-not-found errors or malformed data.
+      - This project aims to solidify fundamental Python skills and introduce data analysis in a straightforward and engaging way. It's a great stepping stone for students to understand how programming can be used to solve everyday problems.
