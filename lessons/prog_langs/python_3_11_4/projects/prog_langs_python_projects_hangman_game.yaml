@@ -1,15 +1,15 @@
 node_string_id: "prog_langs_python_projects_hangman_game"
 name: "Hangman Game"
 description: "A text game in Python"
+type: "project"
+project:
+  gcs_url: gs://scula-codelabs/codelabs_intro_python_projects_sprint1_hangman-f1f00a1.tar.gz
+  codelab_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-intro-python:0.20
+  codelab_guard_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-guard-intro-python:0.14
 software_dependencies:
   - name: python
     version: 3.11.4
 content:
-  - type: "codelab"
-    gcs_url: gs://scula-codelabs/codelabs_intro_python_projects_sprint1_hangman-f1f00a1.tar.gz
-    codelab_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-intro-python:0.20
-    codelab_guard_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-guard-intro-python:0.14
-
   - type: "paragraph"
     value: |
       # Hangman Game
