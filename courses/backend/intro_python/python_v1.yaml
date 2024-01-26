@@ -127,12 +127,12 @@ sprints:
         collections:
           - node_string_id: story.zombie_survival.day_four
             group: "Story"
-      - type: "parallel"
-        collections:
-          - node_string_id: "random"
-            group: "Standard Library"
-          - node_string_id: "problem_solving"
-            group: "Algorithms"
+      # - type: "parallel"
+      #   collections:
+      #     - node_string_id: "random"
+      #       group: "Standard Library"
+      #     - node_string_id: "problem_solving"
+      #       group: "Algorithms"
       - type: "single"
         collections:
           - node_string_id: story.zombie_survival.day_five
