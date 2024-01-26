@@ -152,7 +152,7 @@ sprints:
             group: "Projects"
           - node_string_id: "prog_langs_python_projects_weather_prediction"
             file_path: "lessons/prog_langs/python_3_11_4/projects/prog_langs_python_projects_weather_prediction.yaml"
-            lesson_sha: ""
+            lesson_sha: "a1f38b7"
             group: "Projects"
       - type: "single"
         collections:
