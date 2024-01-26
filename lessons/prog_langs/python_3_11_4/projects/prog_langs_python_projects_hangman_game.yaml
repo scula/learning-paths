@@ -1,0 +1,43 @@
+node_string_id: "prog_langs_python_projects_hangman_game"
+name: "Hangman Game"
+description: "A text game in Python"
+software_dependencies:
+  - name: python
+    version: 3.11.4
+content:
+  - type: "codelab"
+    gcs_url: gs://scula-codelabs/codelabs_intro_python_projects_sprint1_hangman-f1f00a1.tar.gz
+    codelab_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-intro-python:0.20
+    codelab_guard_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-guard-intro-python:0.14
+
+  - type: "paragraph"
+    value: |
+      # Hangman Game
+
+      ## Description
+
+      This is a simple hangman game. The user has to guess the word by guessing the letters. The user has 6 lives. If the user guesses the word before the lives run out, the user wins. If the user runs out of lives before guessing the word, the user loses.
+
+      ## Technical Requirements
+
+      General requirements:
+
+      - The program should be written in Python 3 using only the standard library (i.e. no external packages should be used).
+      - The program should run in the command line mode (without graphical interface and launched through terminal).
+      - The program should be launched by running the `main.py` file: `python main.py`.
+
+      System requirements:
+
+      - The program should use the `input()` function to get user input.
+      - The program should use the `print()` function to output data to the user.
+      - The program should use loops and conditional statements to implement the game logic.
+
+      Game requirements:
+
+      - Game should start with a welcome message and explanation of the rules.
+      - Then the program should choose a random word from the list of words.
+      - The program should show the user the word with the letters hidden masked as `*` and the number of letters in the word.
+      - The user should be able to guess the letters until the word is guessed or the user runs out of lives.
+      - The use should be able to see after each guess if the letter was correct or not, number of lives left and the word with the correctly guessed letters.
+      - When the user guesses the word, the program should show a congratulation message and the number of guesses the user made.
+      - When the user runs out of lives, the program should show a message that the user lost and the word that the user was trying to guess.

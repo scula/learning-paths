@@ -1,5 +1,5 @@
 node_string_id: "prog_langs_python_control_flow_conditional_statements"
-name: "Conditional Statements"
+name: "To If or Not to If"
 description: "Control your code with conditional statements"
 software_dependencies:
   - name: python

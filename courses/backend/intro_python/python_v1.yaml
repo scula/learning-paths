@@ -83,7 +83,7 @@ sprints:
           - node_string_id: "prog_langs_python_input_output"
             group: "Input and Output"
             file_path: "lessons/prog_langs/python_3_11_4/input_output/prog_langs_python_input_output.yaml"
-            lesson_sha: "9836af1"
+            lesson_sha: "744872f"
       - type: "single"
         collections:
           - node_string_id: story.zombie_survival.day_two
@@ -129,11 +129,10 @@ sprints:
             group: "Story"
       - type: "parallel"
         collections:
-          # - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.mapping_types_dict"
-          #   group: "Structures"
-          # - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.set_types"
-          #   group: "Structures"
-
+          - node_string_id: "random"
+            group: "Standard Library"
+          - node_string_id: "problem_solving"
+            group: "Algorithms"
       - type: "single"
         collections:
           - node_string_id: story.zombie_survival.day_five
@@ -144,7 +143,9 @@ sprints:
       #       group: "Input and Output"
       - type: "selection"
         collections:
-          - node_string_id: "prog_langs.python_3_11_4.projects.hangman_game"
+          - node_string_id: "prog_langs_python_projects_hangman_game"
+            file_path: "lessons/prog_langs/python_3_11_4/projects/prog_langs_python_projects_hangman_game.yaml"
+            lesson_sha: ""
             group: "Projects"
           - node_string_id: "prog_langs.python_3_11_4.projects.resource_management_system"
             group: "Projects"
