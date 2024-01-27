@@ -1,17 +1,127 @@
 node_string_id: "os_command_line_shell"
-name: "Command line"
-description: "How to talk to computer?"
+name: "Terminal"
+description: "Terminals are not only for 🛫"
 software_dependencies:
   - name: python
     version: 3.11.4
 content:
   - type: "paragraph"
     value: |
-      # Shell and Command line
+      # Learning Objectives
 
-      Before jumping into the command lines and shells, let's talk about operating systems 
-      and how to interact with them. The operating system is software that manages a computer's hardware
-      and software resources. It is the most critical software that runs on a computer.
+      In this lesson, we will learn more about a new (but actually oldschool 🎸) way to interact with the computer
+      through the terminal. These are the necessary skills for anyone who wants to learn Python and programming 
+      in general:
+
+      1. **Running Python Scripts from the Terminal:** Our code doesn't live in a vacuum, it works 
+      with other programs, files and operating system. We need to understand the environment in which our
+      program is running. 
+
+      2. **Navigating and Managing Files and Directories:** This is a fundamental skill for any programmer and
+      again relates to the environment we are in. Our program and (and we) need to be aware of our surroundings 
+      (files and directories).
+
+      3. **Basic Knowledge of the Operating System:** We'll cover just the basics of the operating system (OS), like
+      how programs and files interact with each other and how OS manages all of that.
+
+
+      command_line_shell/terminal_text_file_cat.png
+
+  - type: "paragraph"
+    card_group: "what_is_terminal"
+    value: |
+      # What is a terminal?
+
+      We are used to interacting with the computer through the graphical user interface or **GUI**. We launch 
+      programs just by clicking on icons, navigate through files and directories by clicking on them, and
+      we can see the data in them by opening them with the appropriate program. For example, to view the contents 
+      of the folder, we can open it with some built-in file manager (doesn't matter what OS you are using,
+      you can definitely recognise what happens here):
+  - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/command_line_shell/gui_folder.png
+    card_group: "what_is_terminal"
+    value: |
+      But there is another way to interact with the computer, even more powerful 🔋 and flexible. Surprisingly,
+      it's done with a simple text. You type in a command, and the computer executes it. And the **terminal** is
+      just a program through which we can access the super mode:
+  - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/command_line_shell/terminal_folder_empty.png
+    card_group: "what_is_terminal"
+    value: |
+      It looks different on different operating systems but the idea is always the same. Usually we see the 
+      **prompt** (symbol that indicates that the terminal is ready to accept the command, in our example 
+      it's the dollar sign `$`) and the **cursor** (symbol that indicates where the next character will 
+      appear, in our example it's a white rectangle).
+
+  - type: "paragraph"
+    card_group: "rules"
+    value: |
+      # Two simple rules of working with the terminal
+
+      **First**, in terminal you are *always in some directory*. It's not like in the GUI where you can just open
+      multiple windows and switch between them. In the terminal you are always in some directory and to change
+      it you will need to use the command. 
+
+      So here:
+  - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/command_line_shell/terminal_folder_empty.png
+    card_group: "rules"
+    value: |
+      we are actually in the same directory as in the GUI, but we can't see the contents of the directory 
+      or the name of the directory. To see it we can use the **second rule** - we invoke programs by typing 
+      their name and pressing **Enter**. 
+
+      Let's look around and check in what directory we are in. We will use `pwd` command which stands for
+      **print working directory**:
+  - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/command_line_shell/terminal_folder_pwd.png
+    card_group: "rules"
+    value: |
+      We can see a new text below our command, it's called the **output**. In our case, it's:
+      ```
+      /Users/nzavyalov/dev/temp/our_folder
+      ```
+      Which is the path to the current directory. Path represents the hierarchy of directories and files.
+      Everything starts from the toop `/` directory, which is called the **root** directory. And then we
+      have directories and files inside of it. And `our_folder` is actually nested several levels deep in 
+      the hierarchy.
+
+  - type: "paragraph"
+    card_group: "commands_programs"
+    value: |
+      # Commands and Programs 
+
+      Now that we know the basics, let's check what's inside our directory. We can use the `ls` command which
+      stands for **list**. It will list all the files and directories in the current directory:
+  - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/command_line_shell/terminal_folder_ls.png
+    card_group: "commands_programs"
+    value: |
+      Which is the same as in the GUI. But what if we want to see the contents of the file? We can use the `cat`
+      command which stands for **concatenate** but is usually used to print the contents of the file to the terminal:
+  - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/command_line_shell/terminal_text_file_cat.png
+    card_group: "commands_programs"
+    value: |
+      And we can see the contents of the file. But this time we didn't type only the name of the program, we also
+      added the name of the file. And that's because `cat` is a program that accepts arguments. And the arguments
+      are just additional information that we pass to the program. In our case, we passed the name of the file
+      to the `cat` program. Spoiler: same will happen when we will try to launch our Python program.
+
+  - type: "paragraph"
+    value: |
+      Create new python file through terminal 
+      Launch it
+
+
+      Let's explore how the terminal works through a comparison with the usual graphical user interface.
+
+  - type: "hint"
+    value: |
+      Bonus: Terminal is actually just a program that allows us to interact with the shell which is another 
+      program 🪆 that does the actual communication with the operating system. There are many different shells,
+      but we will use **bash** because it's one of the most popular shells and the default shell on most Linux
+      distributions, Mac OS and can be installed on Windows too.
 
   - type: "paragraph"
     value: |
@@ -38,7 +148,9 @@ content:
       there are two ways. The first one is through the graphical user interface or **GUI**. That's what you
       are doing right now. You are using your mouse to click on the buttons and links, your
       keyboard to type in the search queries, and your screen to see the output. But there is
-      another way to interact with the operating system, and that's through the **command line**. It's a text-based interface allows us to type commands and execute them. And the program that we use to interact
+      another way to interact with the operating system, and that's through the **command line**. 
+      It's a text-based interface allows us to type commands and execute them. And the program that 
+      we use to interact
       with the operating system is called the **shell**.
 
       ## Command line and Shell

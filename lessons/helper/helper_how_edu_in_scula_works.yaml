@@ -69,7 +69,7 @@ content:
   - type: "paragraph"
     card_group: "code_demo"
     value: |
-      ### CodeDemo 
+      ### Code Demo 
 
       This is where things get even more exciting. Embedded in the lesson, 
       these demos are fully interactive. You can run the code, spot errors, 
@@ -274,6 +274,7 @@ content:
       tech-savvy team member from day one.
 
   - type: "paragraph"
+    card_group: "workspace_setup"
     value: |
       ## Scula's Slack workspace setup
 
@@ -297,9 +298,11 @@ content:
       We encourage you to actively engage with the various channels, each designed for specific purposes. 
       Please don't hesitate to ask questions or start discussions whenever you need clarity or 
       assistance. It's important to us that you feel comfortable in expressing your thoughts 
-      and seeking help when needed. 
+      and seeking help when needed.
 
-
+  - type: "hint"
+    card_group: "workspace_setup"
+    value: |
       Prior to the start of the course on January 29th, we request that you take some time to 
       familiarize yourself with these channels and ensure that you have access to all of them. 
       This proactive step will help you to seamlessly integrate into the course activities from day one.
