@@ -60,7 +60,7 @@ sprints:
               - node_string_id: "statements_expressions_deep_dive"
           - node_string_id: "os_command_line_shell"
             group: "OS"
-            lesson_sha: "91a6be6"
+            lesson_sha: "8b3706d"
             file_path: "lessons/os/command_line_shell.yaml"
       - type: single
         collections:
