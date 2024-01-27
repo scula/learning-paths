@@ -84,11 +84,11 @@ content:
     card_group: "other_objects"
     value: |
       ## More object types
-      We don't only work with numbers in Python. Other types of data is represented 
+      We don't work only with numbers in Python. Other types of data are represented 
       by different **types** of objects.
 
 
-      Most of the time we are dealing with familiar things:
+      Most of the time we are dealing with familiar concepts:
       * **Number** - 56, 3.14, 0.0001
       * **String** - "Hello, World!", "Python is awesome!" (Note that strings are always enclosed in quotes)
       * **Boolean** - True, False (Booleans are used to represent logical values - on or off, yes or no, etc.)
@@ -128,6 +128,10 @@ content:
       b = "The moon is made of cheese"
       print(a, " has type ", type(a)) 
       print(b, " has type ", type(b))
+  - type: "paragraph"
+    card_group: "dynamic"
+    value: |
+      `<class 'int'>` means that the object is an integer and `<class 'str'>` means that the object is a string.
 
   - type: "quiz"
     quiz_items:
@@ -139,8 +143,7 @@ content:
 
   - type: "paragraph"
     value: |
-      # Working with objects
-
+      # Expressions and statements
       Now that we now how we can represent data in Python through objects, 
       let's see how we can work with them. We started with the smallest 
       building blocks of Python - **objects**. Now we will move to the next
@@ -153,7 +156,7 @@ content:
       ## Conceptual hierarchy of Python
   - type: "paragraph"
     card_group: "concepts"
-    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/prog_langs_python_syntax/hero.png
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/prog_langs_python_syntax/fractal.png
     value: |
       There are multiple levels of program structure in Python:
       1. **Objects** - the smallest building blocks of Python. They represent
@@ -237,6 +240,7 @@ content:
       is just a piece of code that performs some action.
 
   - type: "paragraph"
+    card_group: "combining"
     value: |
       ## Combining statements and expressions
 
@@ -255,6 +259,12 @@ content:
       to it. Then it creates another variable `caloriesPerWeek` and assigns a 
       result of the expression `calories * 7` to it. Finally, it prints the value
       of the variable `caloriesPerWeek` to the screen.
+  - type: "codeblock-exec"
+    card_group: "combining"
+    value: |
+      calories = 100
+      caloriesPerWeek = calories * 7
+      print(caloriesPerWeek)"
 
   - type: "quiz"
     quiz_items:
@@ -263,7 +273,7 @@ content:
           - value: "An error message"
             explanation: "Expressions don't inherently produce error messages; they produce values."
           - value: "A value stored as an object"
-            explanation: "Correct! An expression produces a value and stores it as an object, like `4` in the expression `2 + 2`."
+            explanation: "An expression produces a value and stores it as an object, like `4` in the expression `2 + 2`."
             correct: true
           - value: "A print statement"
             explanation: "Expressions themselves are not print statements, though they can be part of them."
@@ -273,7 +283,7 @@ content:
           - value: "To declare a variable"
             explanation: "Operators are used to perform operations on objects, not to declare variables."
           - value: "To perform operations on objects"
-            explanation: "Correct! Operators, like the '+' in `2 + 2`, are used to perform operations on objects."
+            explanation: "Operators, like the '+' in `2 + 2`, are used to perform operations on objects."
             correct: true
           - value: "To print output to the screen"
             explanation: "Operators are used within expressions to perform operations, not directly for printing output."
@@ -281,7 +291,7 @@ content:
       - question: "What is a statement in Python?"
         answers:
           - value: "A piece of code that performs some action"
-            explanation: "Correct! A statement is a unit of code that performs an action, like the print statement `print('Hello, World!')`."
+            explanation: "A statement is a unit of code that performs an action, like the print statement `print('Hello, World!')`."
             correct: true
           - value: "A question asked by a program"
             explanation: "Statements are not questions, but rather commands or actions."
@@ -293,7 +303,7 @@ content:
           - value: "Prints a value"
             explanation: "An assignment statement assigns a value to a variable, rather than printing it."
           - value: "Creates a reference to an object"
-            explanation: "Correct! An assignment statement, like `b = 'Bim'`, creates a reference to an object."
+            explanation: "An assignment statement, like `b = 'Bim'`, creates a reference to an object."
             correct: true
           - value: "Compares two values"
             explanation: "Assignment statements are for assigning values, not for comparison."
@@ -316,7 +326,7 @@ content:
       variable `calories` to access the object `100`. We use the **assignment
       operator** `=` to assign a value to a variable.
 
-  - type: "hint"
+  - type: "paragraph"
     card_group: scope
     value: |
       ## Scope
@@ -391,11 +401,13 @@ content:
       if 2 + 2 == 4:
           print("Hello, World!")
     test_code: |
-      from main import *
       import unittest
       class TestIndent(unittest.TestCase):
           def test_indent(self):
-            self.assertEqual(print("Hello, World!"), "Hello, World!", "Make sure that you indent the code correctly.")
+              try:
+                  import main
+              except BaseException:
+                  self.fail("Make sure that you indent the code correctly.")
 
   - type: "paragraph"
     card_group: comments
