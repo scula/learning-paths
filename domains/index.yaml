@@ -377,8 +377,8 @@ nodes:
                     name: "Collections"
                     tags: ["collections"]
                     level: 3
-                  - string_id: prog_langs_python_types_and_data_structures_data_types_array
-                    name: "Efficient arrays"
+                  - string_id: prog_langs_python_types_and_data_structures_data_types_lists_and_dictionaries
+                    name: "Lists and Dictionaries"
                     tags: ["array"]
                     level: 3
                   - string_id: prog_langs_python_types_and_data_structures_data_types_copy

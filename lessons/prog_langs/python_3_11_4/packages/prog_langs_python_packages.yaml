@@ -1,0 +1,137 @@
+node_string_id: "prog_langs_python_packages"
+name: "Packages and Modules"
+description: "Power of extensive libraries"
+software_dependencies:
+  - name: python
+    version: 3.11.4
+content:
+  - type: "paragraph"
+    card_group: "intro"
+    value: |
+      # Learning Objectives
+
+      Up until now all the code we used was written by us. 
+      But there are a lot of actions that are repeated in many programs. For example,
+      doing math operations, effectively managing and manipulating data, and so on.
+
+      And in this lesson we will learn how to use that code that was already written by someone else.
+      Spoiler: in Python, it's very easy to do!
+
+  - type: "paragraph"
+    card_group: "intro"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/prog_langs_python_packages/xkcd.png
+    value: |
+      *Famous xkcd comic about Python packages*
+
+  - type: "paragraph"
+    value: |
+      # Python Hierarchy
+
+      Let's start with a quick recap of the Python hierarchy.
+      1. Objects are the most basic building blocks of Python.
+      2. Expressions create and process objects.
+      3. Statements contain expressions and other statements.
+      4. Modules contain statements.
+      5. Programs are made of modules.
+
+      We already covered expressions and statements — usually we work with them in a single file. 
+      Now we will learn more about how programs are structured.
+
+  - type: "paragraph"
+    value: |
+      # Modules
+
+      Modules in Python are like libraries or toolboxes filled with a 
+      set of functions and variables that you can use in your programs. 
+      Every Python file with the `.py` extension is a module. For example,
+      in the following file structure we have 2 modules: `main.py` and `utils.py`:
+      ```
+      project/ 
+      ├── main.py
+      └── utils.py
+      ```
+
+      ## Programs and Entrypoints
+
+      The program in Python is a collection of modules. But how does Python know which module to run first?
+      The answer is simple: it starts with the module that you specify as the entrypoint.
+      By default, the name of the entrypoint module is `main.py` (but you can change it).
+
+  - type: "paragraph"
+    card_group: "basic_modules"
+    value: |
+      # Basic Module Usage
+      Let's start simple. To use a module, you need to `import` it into your Python script. 
+      It's possible to import the module which is either located in the same directory as your script
+      or is in the Python standard library (means it's always available in any Python script).
+
+      For example, `import math` brings in the math module. 
+      Try using `math.sqrt(4)` to see how you can use a function from the math module.
+  - type: "codeblock-exec"
+    card_group: "basic_modules"
+    value: |
+      import math
+      print(math.sqrt(4))
+
+  - type: "paragraph"
+    value: |
+      # Exploring the Python Standard Library
+      Python comes with a lot of pre-built modules known as the Standard Library.
+      It contains modules for working with different data types,
+      performing mathematical operations, working with files, and so on.
+
+      ## Understanding the `import` and `from` Statements
+      There are two ways to import: using `import moduleName` imports the entire module, 
+      while `from moduleName import attributeName` lets you import specific parts of 
+      the module. It's like choosing between getting a whole toolbox or just a single tool.
+
+      Let's explore some of the most useful modules in the Python Standard Library.
+
+  - type: "paragraph"
+    card_group: "random"
+    value: |
+      # `random` Module
+      The `random` module contains functions for generating random numbers. 
+      Let's try using the `randint()` function from the `random` module. 
+      It generates a random integer between two numbers (inclusive).
+  - type: "codeblock-exec"
+    card_group: "random"
+    value: |
+      import random
+      print(random.randint(1, 10))
+
+  - type: "paragraph"
+    card_group: "math"
+    value: |
+      # `math` Module
+      The `math` module contains functions for performing mathematical operations. 
+      Let's try using the `cos()` function from the `math` module.
+  - type: "codeblock-exec"
+    card_group: "math"
+    value: |
+      import math
+      print(math.cos(0))
+
+  - type: "paragraph"
+    card_group: "basic_modules"
+    value: |
+      # Introduction to Packages
+      A package in Python is a way of organizing related modules into a single directory hierarchy. 
+      It's like a folder containing different modules. 
+      Each package must contain a special file named `__init__.py`.
+
+      ## Importing Packages
+      To import a package, you can use the `import` statement.
+      For example, `import package_name` imports the entire package,
+      while `from package_name import module_name` lets you import specific modules from the package.
+
+      Packages are useful for creating libraries which can be easily shared with other developers.
+
+  - type: "paragraph"
+    value: |
+      # Next steps
+      In this lesson, we learned about packages and modules in Python and how to use them.
+      We also explored some of the most useful modules in the Python Standard Library.
+
+      In the next lessons we will learn about other Python packages and how to install them 
+      from the Python Package Index (PyPI).
