@@ -119,7 +119,7 @@ sprints:
             lesson_sha: "f9d2ff8"
           - node_string_id: "prog_langs_python_control_flow_conditional_statements"
             file_path: "lessons/prog_langs/python_3_11_4/control_flow/prog_langs_python_control_flow_conditional_statements.yaml"
-            lesson_sha: "a8bb2a8"
+            lesson_sha: "2e6b5fc"
             group: "Control Flow"
           - node_string_id: "prog_langs_python_control_flow_loops"
             file_path: "lessons/prog_langs/python_3_11_4/control_flow/prog_langs_python_control_flow_loops.yaml"
