@@ -7,6 +7,17 @@ software_dependencies:
 content:
   - type: "paragraph"
     value: |
+      # Learning Objectives
+
+      In this lesson, you will learn about:
+      - How to get and save data in Python
+      - How to use tools for input and output in Python
+
+      This is one of the most common tasks any Python related job will require you to do.
+
+  - type: "paragraph"
+    card_group: "under"
+    value: |
       # Understanding Input and Output in Python
 
       Imagine you're having a conversation with a friend. You speak (output), they listen (input), 
@@ -23,44 +34,103 @@ content:
       clear and get you comfortable with Python's input/output capabilities.
 
   - type: "hint"
+    card_group: "under"
     value: |
       Remember, input and output in computing are like a two-way conversation. 
       Your Python program 'listens' (input) and 'talks' (output).
 
   - type: "paragraph"
     value: |
-      ## Input in Python
+      # Input in Python
+
+      There are two main ways to get data into your Python program: interactively and from some source (like a file
+      but this could also be some remote location and accessed via the Internet).
+
+  - type: "paragraph"
+    card_group: "interactive_input"
+    value: |
+      ## Interactive Input
 
       In Python, getting data into your program can be as simple as asking the user for it. 
-      This is called interactive input. For instance, the `input()` function allows your 
+      This is called an interactive input. For instance, the `input()` function allows your 
       program to pause and wait for user input.
 
+  - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/prog_langs_python_input_output/input.png
+    card_group: "interactive_input"
+    value: |
+      The simple program which asks the user for their name and then prints a greeting would look like this:
+      ```
+      name = input("What is your name? ")
+      print(f"Hello, {name}!")
+      ```
+      Here, the `input()` function takes a string as an argument, which is displayed to the user.
+      The user can then type in their name and press enter. The `input()` function then returns
+      the user's input as a string, which is stored in the `name` variable. Finally, the program
+      prints a greeting using the `print()` function.
+
+      ### Blocking Input
+
+      The `input()` function is a blocking function. This means that when the program reaches the
+      `input()` function, it will pause and wait for the user to enter some input. Only after the
+      user has entered some input and pressed enter will the program continue to execute.
+
+  - type: "quiz"
+    quiz_items:
+      - question: "When the `input()` function is called, what happens?"
+        answers:
+          - value: "The program pauses and waits for the user to enter some input through the terminal."
+            correct: true
+            explanation: "After the user has entered some input and pressed enter, the program continues to execute."
+
+  - type: "paragraph"
+    card_group: "file_input"
+    value: |
+      ## File Input
 
       But what if you want to read lots of data, maybe from a file? Python makes it easy to 
       read from files too. This is especially useful for processing data in batch or 
       handling data that's too large to type in manually.
 
-      Both these methods are essential tools in your Python toolkit. Let's see 
-      how they work in practice.
-
-  - type: "codeblock-exec"
-    description: "Using the input() function to get user input"
-    language: "python"
-    value: |
-      name = input("What is your name? ")
-      print(f"Hello, {name}!")
-
-  - type: "codeblock-exec"
-    description: "Reading data from a file in Python"
-    language: "python"
-    value: |
+      Let's take a look at the following program:
+      ```
       with open('example.txt', 'r') as file:
           content = file.read()
-      print(content)
+          print(content)
+      ```
+      Here, we use the `open()` function to open a file named `example.txt` in read mode.
+      The `open()` function returns a file object, which we store in the `file` variable.
+      We then use the `read()` method of the file object to read the contents of the file
+      and store it in the `content` variable. Finally, we print the contents of the file
+      using the `print()` function.
+
+  - type: "hint"
+    card_group: "file_input"
+    value: |
+      The "with ... as" syntax is used to ensure that the file is closed after we're done
+      reading from it. This is important because if we don't close the file, it will remain
+      open and other programs may not be able to access it.
+
+  - type: "quiz"
+    quiz_items:
+      - question: "What does the `open()` function return?"
+        answers:
+          - value: "A file object"
+            correct: true
+            explanation: "The `open()` function returns a file object, which can be used to read from or write to the file."
+          - value: "The contents of the file"
+          - value: "The name of the file"
+      - question: "What does the `read()` method of a file object do?"
+        answers:
+          - value: "It reads the contents of the file and returns it as a string."
+            correct: true
+            explanation: "We use the opened file object to call the `read()` method, which returns the contents of the file as a string."
+          - value: "It reads the contents of the file and prints it to the console."
+          - value: "It reads the contents of the file and stores it in a variable."
 
   - type: "paragraph"
     value: |
-      ## Output in Python
+      # Output in Python
 
       Now, for the other side of the conversation: output. In Python, the most 
       common way to output data is using the `print()` function. It's straightforward and quite powerful. 
@@ -71,63 +141,35 @@ content:
       Both console and file output are essential for effective programming 
       in Python. Let's check out some examples.
 
+  - type: "paragraph"
+    card_group: "console_output"
+    value: |
+      ## Console Output
+
+      This is how we've been working with output so far. The `print()` function takes a string as an argument and
+      displays it on the console. For example:
   - type: "codeblock-exec"
+    card_group: "console_output"
     description: "Printing to the console using print()"
     language: "python"
     value: |
       message = "Python is fun!"
       print(message)
 
-  - type: "codeblock-exec"
-    description: "Writing data to a file in Python"
-    language: "python"
+  - type: "paragraph"
+    card_group: "file_output"
     value: |
+      ## File Output
+
+      We can also write data to files using the `write()` method of a file object. The process is 
+      similar to reading from a file. We also need to open the file in write mode using the `open()` function.
+      ```
       with open('output.txt', 'w') as file:
           file.write("Python makes file handling easy!")
-
-  - type: "kata"
-    boilerplate: |
-      filename = 'data.txt'
-      contentToWrite = 'I am learning Python!'
-      with open(filename, 'w') as file:
-          # write contentToWrite to file 2 times
-      scannedContent=""
-      # read the contents of the file to the scannedContent variable and print it
-    task: "Write the content of `contentToWrite` variable to file named `filename` 2 times, then read the contents of this file and print the result .\n"
-    solution: |
-      filename = 'data.txt'
-      contentToWrite = 'I am learning Python!'
-      with open(filename, 'w') as file:
-          file.write(contentToWrite)
-          file.write(contentToWrite)
-      scannedContent=""
-      with open(filename, 'r') as file:
-          scannedContent = file.read()
-          print(scannedContent)
-    test_code: |
-      from io import StringIO
-      from contextlib import redirect_stdout
-      import unittest
-      from main import contentToWrite 
-
-      class TestFileReading(unittest.TestCase):
-          def test_file_reading(self):
-              outIO = StringIO()
-              result = "Passed"
-              with redirect_stdout(outIO):
-                  try:
-                      with open("main.py", "r") as f:
-                          exec(f.read())
-                          output = outIO.getvalue()
-                          print(output)
-                          outputResult = output
-                          print("now check")
-                          if len(output.split(contentToWrite)) < 3:
-                              raise Exception("Make sure you are writing the content to the file twice")
-                  except Exception as e:
-                      result = str(e)
-              self.assertEqual(result, "Passed", "Make sure you are writing the content to the file twice")
-              print(result)
+      ```
+      Here, we open a file named `output.txt` in write mode. We then use the `write()` method of the file object
+      to write the string `"Python makes file handling easy!"` to the file. And because we used the `with ... as` syntax,
+      the file is automatically closed after we're done writing to it.
 
   - type: "quiz"
     quiz_items:
@@ -145,3 +187,16 @@ content:
             explanation: "Opening a file with 'r' mode is the correct way to read from a file."
           - value: "open('filename', 'w')"
           - value: "read('filename')"
+
+  - type: "paragraph"
+    card_group: "codelab"
+    value: |
+      # Codelab: Input and Output
+
+      In this codelab, you'll get to practice using input and output in Python.
+
+  - type: "codelab"
+    card_group: codelab
+    gcs_url: gs://scula-codelabs/codelabs_intro_python_input_output-a143794.tar.gz
+    codelab_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-intro-python:0.20
+    codelab_guard_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-guard-intro-python:0.14
