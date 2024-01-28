@@ -78,12 +78,13 @@ content:
           print("You can do better")
 
   - type: "paragraph"
+    card_group: "nesting"
     value: |
       ## Nesting and Combining Conditions
-      You can even nest `if` statements inside one another, like layers of an onion 🧅, or combine 
-      conditions using `and`, `or`, and `not` for more complex decision making.
+      You can even nest `if` statements inside one another, like layers of an onion 🧅:
 
   - type: "codeblock-exec"
+    card_group: "nesting"
     description: "Using nested `if` statements and combined conditions."
     language: "python"
     value: |
@@ -179,13 +180,20 @@ content:
       else:
           print("Let's stay home!")
   - type: "paragraph"
-    card_group: "combining"
+    card_group: "precendence"
     value: |
       ## Operator Precedence
       When combining conditions, it's important to remember that `not` has the highest precedence, followed by `and`, and finally `or`.
       For example, `not True or False and True` is evaluated as `False or False and True` which is `False or True` which is `True`.
       If you want to change the order of evaluation, you can use parentheses. For example, `(not True or False) and True` is evaluated as
       `(False or False) and True` which is `False and True` which is `False`.
+  - type: "codeblock-exec"
+    card_group: "precendence"
+    value: |
+      complexCondition = not True or False and True
+      print("not True or False and True is ", complexCondition)
+      complexCondition = (not True or False) and True
+      print("(not True or False) and True is ", complexCondition)
 
   - type: "kata"
     boilerplate: |
