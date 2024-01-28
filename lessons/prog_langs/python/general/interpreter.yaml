@@ -6,13 +6,21 @@ software_dependencies:
     version: 3.11.4
 content:
   - type: "paragraph"
-    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/prog_langs_python_interpreter/conductor.png
     value: |
-      # Interpreter: making a program alive
-      In this lesson we will focus on what does it mean `to run a program` and uncover the mysteries of the Python Interpreter.
+      # Learning Objectives
+
+      In this lesson we will focus on the following:
+      * What is the Python Interpreter?
+      * How does the Python Interpreter work?
+      * Why is the Python Interpreter important?
+      * How to run Python scripts?
+      * What is the difference between the Python Interpreter and Compiler?
+      * Why errors are good and how do they help you?
 
   - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/prog_langs_python_interpreter/conductor.png
     value: |
+      # Program Execution 🕴️
       When we talk about **running a program** in the world of computer science, it's a bit like telling an *actor* to perform a play. 
       The script is written (in this case, the program code), and the *actor* (the computer) performs it. 
 
@@ -67,10 +75,14 @@ content:
       * *Executing the Code.* Finally, the interpreter executes the bytecode, turning it into actions your computer 
       understands and responds to.
 
-  - type: "hint"
+  - type: "paragraph"
     card_group: interpreter_intro
     value: |
-      *Bytecode*: Imagine you wrote a letter in English, but the person receiving it only understands French. Bytecode is like a translated version of your Python script, a middle ground between your high-level Python code and the low-level machine code. When the Python Interpreter reads your script, it translates it into this special format called bytecode, which is a more efficient set of instructions that the computer can understand and execute. Think of it as the interpreter's way of quickly and efficiently telling the computer what to do.
+      Bytecode is like a translated version of your Python script, a middle ground between your high-level 
+      Python code and the low-level machine code. When the Python Interpreter reads your script, 
+      it translates it into this special format called bytecode, which is a more efficient 
+      set of instructions that the computer can understand and execute. Think of it as the 
+      interpreter's way of quickly and efficiently telling the computer what to do.
 
   - type: "quiz"
     quiz_items:
@@ -117,17 +129,36 @@ content:
       # Running Python Scripts
       There are two main ways you can run your Python scripts:
 
-      * Using the *Command Line.* Working with Python files using the command line is a straightforward process. 
+      ## Command Line
+      Working with Python files using the command line is a straightforward process. 
       It starts by going to the folder where your Python script is saved. Then, you use a simple command 
       that tells the Python Interpreter to read your file and run the script. This is how your script comes 
       to life and does its job. The command line acts as a bridge between you and the script, making it 
-      easy to get your code up and running.
-      * Using the *Python Interactive Shell*. The **Python Interactive Shell**, or Python REPL, is a handy tool for
-       experimenting with Python code quickly. Think of it as having a chat with Python itself. 
-       You can start it simply by typing 'python' in your command line and pressing Enter. 
-       When you see `>>>` appear, that's Python ready and waiting for your code. Here, you can type any
-       Python code and instantly see what it does as soon as you press Enter. It's ideal for trying out small code 
-       snippets or testing ideas before adding them to a larger script.
+      easy to get your code up and running. Usually, it looks like this in your terminal:
+      ```
+      python main.py
+      ```
+
+      ## Python Interactive Shell
+      The **Python Interactive Shell**, or Python REPL, is a handy tool for
+      experimenting with Python code quickly. Think of it as having a chat with Python itself. 
+      You can start it simply by typing 'python' in your command line and pressing Enter. 
+      When you see `>>>` appear, that's Python ready and waiting for your code. Here, you can type any
+      Python code and instantly see what it does as soon as you press Enter. It's ideal for trying out small code 
+      snippets or testing ideas before adding them to a larger script. To launch it in your terminal, type:
+      ```
+      python
+      ```
+      Which will launch an interactive prompt:
+      ```
+      >>> 
+      ```
+      Where you can type in Python code and see the results immediately:
+      ```
+      >>> print("Hello, World!")
+      Hello, World!
+      ```
+      To exit the interactive shell, type `exit()` and press Enter.
 
   - type: "hint"
     card_group: running_scripts
@@ -139,22 +170,12 @@ content:
       And you can do both modes in Scula explicitly in the *Codelab*! We will try it right away in the next **Codelab**.
 
   - type: "paragraph"
+    card_group: codelab
     value: |
-      ### What is a terminal?
-      We mentioned the *Command Line* in the previous section. But what is it exactly?
-
-
-      A terminal is a program that allows you to interact with your computer using text commands.
-      It's like a text-based user interface to your computer. You can use it to navigate your computer's file system,
-      run programs, and execute commands. It's a powerful tool that can help you get things done faster and more efficiently.
-
-
-      They look a bit intimidating at first, but don't worry; they're not as scary as they seem.
-      The interface can be different but the idea is the same. 
-      You type in a command, and the terminal executes it.
-      Usually you can type after the `$` or `>` sign. And when you want to execute the command, you press `Enter`.
-
+      # Codelab: 2 Ways to Run Python Code
+      In this codelab, you will learn how to run Python code in two ways: using files and the Python Interactive Shell.
   - type: "codelab"
+    card_group: codelab
     gcs_url: gs://scula-codelabs/codelabs_intro_python_interpreter_lesson-7ca1260.tar.gz
     codelab_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-intro-python:0.20
     codelab_guard_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-guard-intro-python:0.14

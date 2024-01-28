@@ -429,7 +429,7 @@ content:
   - type: "codeblock-exec"
     card_group: comments
     value: |
-      # This is a comment
+      #This is a comment
       print("Hello, World!") # This is another comment
 
   - type: "quiz"
