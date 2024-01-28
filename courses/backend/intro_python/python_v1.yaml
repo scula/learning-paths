@@ -80,7 +80,7 @@ sprints:
             group: "Structures"
             lesson_sha: "7aa194b"
             file_path: "lessons/prog_langs/python_3_11_4/types_and_data_structures/prog_langs_python_types_and_data_structures.yaml"
-      - type: parallel
+      - type: single
         collections:
           - node_string_id: "prog_langs_python_functions"
             file_path: "lessons/prog_langs/python_3_11_4/functions/prog_langs_python_functions.yaml"
@@ -119,7 +119,7 @@ sprints:
             lesson_sha: "f9d2ff8"
           - node_string_id: "prog_langs_python_control_flow_conditional_statements"
             file_path: "lessons/prog_langs/python_3_11_4/control_flow/prog_langs_python_control_flow_conditional_statements.yaml"
-            lesson_sha: "2e6b5fc"
+            lesson_sha: "707e1e3"
             group: "Control Flow"
           - node_string_id: "prog_langs_python_control_flow_loops"
             file_path: "lessons/prog_langs/python_3_11_4/control_flow/prog_langs_python_control_flow_loops.yaml"
