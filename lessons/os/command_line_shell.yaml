@@ -41,9 +41,19 @@ content:
     hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/command_line_shell/gui_folder.png
     card_group: "what_is_terminal"
     value: |
-      But there is another way to interact with the computer, even more powerful 🔋 and flexible. Surprisingly,
-      it's done with a simple text. You type in a command, and the computer executes it. And the **terminal** is
-      just a program through which we can access the super mode:
+      But there is another way to interact with the computer, and it involves using a terminal. 
+
+      A terminal is a text-based interface used to interact with a computer's operating system and execute commands. 
+      Unlike graphical user interfaces (GUIs), which rely on icons, windows, and mouse clicks, 
+      terminals rely on text commands entered by the user.
+
+      In a terminal, you typically type commands in text form, and the computer responds
+       with text-based output. It provides direct access to system functions, file manipulation, 
+       software installation, and a wide range of other tasks by entering specific commands.
+
+      Terminals are especially popular among programmers, system administrators, and power users 
+      because they offer greater control and efficiency for certain tasks compared to GUIs. 
+      They can be found on various operating systems, including Linux, macOS, and Windows.
   - type: "paragraph"
     hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/command_line_shell/terminal_folder_empty.png
     card_group: "what_is_terminal"
