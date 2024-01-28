@@ -10,32 +10,24 @@ content:
     value: |
       # Learning Objectives
 
-      In this lesson, we will learn about the main building blocks of Python
-      and how to combine them together to create more complex programs. These
-      are the necessary skills for anyone who wants to learn Python and programming 
-      in general:
-
-      1. **Objects:** We will learn about the smallest building blocks of Python - objects. 
-      They represent data and operations on this data.
-      2. **Expressions:** We will learn how to create and process objects.
-      3. **Statements:** We will learn how to combine expressions into larger structures.
-      4. **Programs:** We will learn how to combine statements into programs.
+      After completing this lesson you will be able to understand Python syntax,
+      create and run basic Python programs and know how to work with data.
 
   - type: "paragraph"
     value: |
-      # Goal of programming
+      # Understanding the purpose of Python: data and objects
       Before we go deep into the semantics of the language, let's think of 
       what are we trying to achieve by writing Python code. Very informally,
       we want to *tell the computer what to do*. The main matter we are dealing
-      with is **data**. By **data** we mean information in any kind of form:
+      with is data. By data we mean information in any kind of form:
       bank statements, measurements of the weather throughout the year,
       pictures, messages, etc. And manipulation of the data usually involves
       operations like addition or multiplication.
 
 
-      In Python **data** takes the form of **objects**. As we go through the course,
+      In Python data takes the form of **objects**. As we go through the course,
       we will learn more about objects and how to work with them. For now, let's
-      just think of them as *containers* that hold some information. And everything 
+      just think of them as *containers that hold some information*. And everything 
       in Python is an object.
 
   - type: "quiz"
@@ -56,8 +48,10 @@ content:
       that can do things and remember stuff.
 
       ```
-      fiat = 34500 # A new object is created with the value 34500
+      fiat = 34500 
       ```
+      In the example above, a new object is created with the value `34500`.
+
   - type: "hint"
     card_group: "objects"
     value: |
@@ -67,13 +61,15 @@ content:
     card_group: "objects"
     value: |
       ## Number objects 
-      When you have a number like 5, it's not just a number; it's a number object. 
+      When you have a number like 5, it's not just a number; it's a **number object**. 
       This object knows how to do things like addition, subtraction, and multiplication. 
       So, if you have two number objects, like 5 and 10, you can ask them 
       to add up, and they'll do it for you.
       ```
-      result = 5 + 10  # The number objects 5 and 10 add up to 15
+      result = 5 + 10  
       ```
+      In the example above, two number objects are created with the values `5` and `10`.
+      Then they are added together and the result is stored in a new object with the value `15`.
   - type: "codeblock-exec"
     card_group: "objects"
     value: |
@@ -85,42 +81,45 @@ content:
     value: |
       ## More object types
       We don't work only with numbers in Python. Other types of data are represented 
-      by different **types** of objects.
+      by different types of objects.
 
 
       Most of the time we are dealing with familiar concepts:
       * **Number** - 56, 3.14, 0.0001
-      * **String** - "Hello, World!", "Python is awesome!" (Note that strings are always enclosed in quotes)
+      * **String** - "Hello, World!", "Python is awesome!" (Note: strings are always enclosed in quotes)
       * **Boolean** - True, False (Booleans are used to represent logical values - on or off, yes or no, etc.)
       * **Lists** - [1, 2, 3], ["a", "b", "c"] (Lists help us to group data together)
   - type: "hint"
     card_group: "other_objects"
     value: |
-      Why does it matter what type of object we are dealing with? It's actually comes down to zero and ones 
-      (as everything in programming). Computer memory physically looks something like endless lines of 
-      `101001`. And letter **A** can be represented as **101001** but number 41 can also be represented as **101001**.
-      And how would the computer know to differentiate between them? It's the type of the object that tells the computer
-      how to interpret the data.
+      Why does the type of object we work with hold significance? It ultimately boils 
+      down to binary code, the foundational language of programming. In the realm of computer memory, 
+      it appears as an endless sequence of 0s and 1s—101001, 101001, and so on. 
+      Surprisingly, both the letter 'A' and the number '41' can be encoded as 101001. 
+      The crucial question then arises: how does the computer distinguish between them?
+
+      The answer lies in the type of the object itself. It is the object's type that provides 
+      the computer with the necessary instructions for interpreting the data correctly.
 
   - type: "paragraph"
     card_group: "dynamic"
     value: |
       # Dynamic nature of Python
 
-      Now, if we try to run the next code: 
+      In the snippet below, we create two objects by providing some data:
       ```
       a = 90000
       b = "The moon is made of cheese"
       ```
-      How does Python know what kind of object to return? It doesn't. It just
-      looks at the syntax and tries to figure out what kind of object we want to
+      How does Python know what kind of object will be created? It doesn't. It just
+      looks at the syntax and tries to figure out what type of object we want to
       create. This is called **dynamic typing**. It means that we don't need to
       specify the type of the object we want to create. Python will figure it out
       for us.
 
-      We can use the `type()` function to check the type of the object. (Don't worry about 
+      We can use the `type()` function to check the type of the object. Don't worry about 
       functions for now, we will learn about them in the next lessons. Just remember that
-      we have a tool to check the type of the object.)
+      we have a function to check the type of the object.
   - type: "codeblock-exec"
     card_group: "dynamic"
     value: |
@@ -137,7 +136,7 @@ content:
     quiz_items:
       - question: "Objects in Python are..."
         answers:
-          - value: "containers that hold some information and can do things"
+          - value: "containers that hold some information."
             correct: true
             explanation: "And Python can figure out what kind of object we want to create."
 
@@ -146,7 +145,7 @@ content:
       # Expressions and statements
       Now that we now how we can represent data in Python through objects, 
       let's see how we can work with them. We started with the smallest 
-      building blocks of Python - **objects**. Now we will move to the next
+      building blocks of Python — objects. Now we will move to the next
       level - where we combine objects together to create more complex
       structures and also learn Python syntax.
 
@@ -159,11 +158,11 @@ content:
     hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/prog_langs_python_syntax/fractal.png
     value: |
       There are multiple levels of program structure in Python:
-      1. **Objects** - the smallest building blocks of Python. They represent
+      1. **Objects** are the smallest building blocks of Python. They represent
       data and operations on this data.
-      2. **Expressions** - they create and process objects. 
-      3. **Statements** - they combine expressions into larger structures.
-      4. **Programs** - they are composed of statements.
+      2. **Expressions** create and process objects. 
+      3. **Statements** combine expressions into larger structures.
+      4. **Programs** are composed of statements.
 
       All in all, programs in Python consist of statements and expressions. 
       We will go through each of these levels in the next sections.
@@ -178,8 +177,8 @@ content:
       ```
       >>> 2 + 2
       ```
-      produces the value `4`. The **value** produced by an expression is called
-      **return value**. In the example above, the return value is `4`.
+      produces the value '4'. The value produced by an expression is called
+      **return value**. In the example above, the return value is '4'.
   - type: "hint"
     card_group: expression_values
     value: |
@@ -255,7 +254,7 @@ content:
       caloriesPerWeek = calories * 7
       print(caloriesPerWeek)
       ```
-      This code creates a variable `calories` and assigns a **number** object `100`
+      This code creates a variable `calories` and assigns a number object '100'
       to it. Then it creates another variable `caloriesPerWeek` and assigns a 
       result of the expression `calories * 7` to it. Finally, it prints the value
       of the variable `caloriesPerWeek` to the screen.
@@ -322,9 +321,9 @@ content:
       ```
       calories = 100
       ```
-      `calories` is a variable. It refers to an object `100`. We can use the
-      variable `calories` to access the object `100`. We use the **assignment
-      operator** `=` to assign a value to a variable.
+      `calories` is a variable. It refers to an object with value '100'. We can use the
+      variable `calories` to access the object '100'. We use the **assignment
+      operator** '=' to assign a value to a variable.
 
   - type: "paragraph"
     card_group: scope
@@ -362,16 +361,17 @@ content:
     value: |
       # Indentation and comments
 
-      Indentation is the way we structure and group our code. We mentioned before multiple
-      **statements** and some of them require special syntax to group them together.
-      For example, the **if statement** requires a special syntax to group the code
+      **Indentation** is the way we structure and group our code. We mentioned before multiple
+      statements and some of them require special syntax to group them together.
+      For example, the `if` statement requires a special syntax to group the code
       that should be executed if the condition is true.
 
   - type: "hint"
     card_group: indent
     value: |
-      **If statement** is a statement that checks if a condition is true and executes
-      the different branch of code. We will learn more about it in the next lessons.
+      `If` statement is a statement that checks if a condition is true and executes
+      the different branch of code. For condition checks we use `==` operator that compares if two objects
+      are equal. We will learn more about it in the next lessons.
 
   - type: "paragraph"
     card_group: indent
@@ -382,7 +382,7 @@ content:
       if 2 + 2 == 4:
           print("Math is working!")
       ```
-      The code above prints the text `Math is working!` to the screen. But how does
+      The code above prints the text 'Math is working!' to the screen. But how does
       Python know that the `print` statement should be executed if the condition is true? 
 
 
@@ -393,7 +393,7 @@ content:
   - type: "kata"
     card_group: indent
     task: |
-      Indent the code below so that it prints the text `Hello, World!` to the screen.
+      Indent the code below so that it prints the text 'Hello, World!' to the screen.
     boilerplate: |
       if 2 + 2 == 4:
       print("Hello, World!")
@@ -420,7 +420,7 @@ content:
       #This is a comment
       print("Hello, World!") #This is another comment
       ```
-      prints the text `Hello, World!` to the screen. But the comments are ignored by
+      prints the text 'Hello, World!' to the screen. But the comments are ignored by
       Python. They are used to explain the code and make it more readable. 
       Also developers use it to leave notes for themselves or other developers.
 
@@ -481,7 +481,7 @@ content:
 
 
       **Statements** combine expressions into larger structures. For example, the statement `print("Hello, World!")`
-      combines the expression `print("Hello, World!")` and prints the text `Hello, World!` to the screen.
+      combines the expression `print("Hello, World!")` and prints the text 'Hello, World!' to the screen.
 
 
       **Programs** are composed of statements.
