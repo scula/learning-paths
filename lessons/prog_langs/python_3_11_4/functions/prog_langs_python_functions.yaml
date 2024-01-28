@@ -7,47 +7,138 @@ software_dependencies:
 content:
   - type: "paragraph"
     value: |
-      # Welcome to Python Functions: Your Gateway to Efficient Coding
-      Hey there, coding enthusiast! 🌟 Ready to dive into the fascinating world of **Python Functions**? 
-      Functions are like your personal coding assistants; they help you keep your code organized, reusable, 
-      and super-efficient. In this lesson, we'll start from the basics and then explore the incredible
-      things you can do with functions in Python. Let's embark on this exciting journey together!
+      # Learning Objectives
+
+      In this lesson, you will learn about:
+      - How to use functions in Python
+      - Why do we need functions in Python
+      - How to create them and understand their syntax
+  - type: "paragraph"
+    card_group: "functions"
+    value: |
+      # Functions in Python
+
+      Up until now we've been writing code in a linear fashion. This means that we write one line of code, 
+      then the next, and so on. But what if we want to reuse some code? Or what if we want to write a
+      piece of code that we can use multiple times? 
+
+      For example, we want to write a program that calculates the area of a rectangle. We can write the
+      code to calculate the area once, but what if we want to calculate the area of multiple rectangles?
+      Let's it without functions first:
+  - type: "codeblock-exec"
+    card_group: "functions"
+    value: |
+      length1, width1 = 5, 3
+      length2, width2 = 10, 2
+      length3, width3 = 4, 4
+      print(length1 * width1)
+      print(length2 * width2)
+      print(length3 * width3)
+  - type: "paragraph"
+    card_group: "functions"
+    value: |
+      As you can see, we have to write the same code multiple times. This is not very efficient. 
+      We can use functions to solve this problem. Functions are a way to organize and reuse code.
 
   - type: "paragraph"
+    card_group: "basics"
     value: |
-      ## Understanding Functions: The Basics
+      # Understanding Functions
       Imagine you're a chef 🍳 in a kitchen. Each recipe is like a function - it tells you what 
       ingredients you need and the steps to make a dish. In Python, a function works similarly. 
       You give it some inputs (like ingredients), it does some magic (the recipe steps), and 
       voilà, you get an output (a delicious dish)!
 
-  - type: "hint"
-    value: |
-      **Hint:** Remember, functions help avoid repetition in your code. If you find yourself writing 
-      the same code over and over, it's probably time to think about using a function.
-
+      Let's modify our previous example to use a function instead.
   - type: "codeblock-exec"
-    description: "Let's start with a simple function. This one takes a name and greets the person."
-    language: "python"
+    card_group: "basics"
     value: |
-      def greet(name):
-          return f"Hello, {name}!"
-      print(greet("Alice"))
+      def calculate_area(length, width):
+          return length * width
+          
+      print(calculate_area(5, 3))
+      print(calculate_area(10, 2))
+      print(calculate_area(4, 4))
+  - type: "paragraph"
+    card_group: "basics"
+    value: |
+      Here, we've defined a function called "calculate_area".  This is much more efficient 
+      than writing the same code multiple times because if the formula should be adapted or the code
+      should be changed, we only have to do it once.
 
   - type: "paragraph"
     value: |
-      ## Advancing with Arguments and Parameters
+      # Anatomy of a Function
+      Let's take a closer look at the function we just wrote. Let's start with function definition:
+      ```
+      def calculate_area(length, width):
+      ```
+      The first line of a function is called the **function definition**. It starts with the keyword `def`,
+      followed by the name of the function, and then a pair of parentheses. The parentheses can contain
+      one or more **parameters**. Parameters are like variables that are used inside the function. They
+      are placeholders for the actual values that will be passed to the function when it is called.
+
+
+      The body of the function is the code that is executed when the function is called. It is indented
+      to indicate that it is part of the function. The body of the function starts with a colon (`:`) and
+      can contain one or more statements. The body of the function ends when the indentation ends:
+      ```
+      def calculate_area(length, width): # this is the function definition
+          return length * width # this is the body of the function
+      ```
+
+      The last line of the function is the **return statement**. It is used to return a value from the function.
+      Returning a value means that a place in the code where the function is called will be replaced by the
+      value that is returned by the function. For example:
+      ```
+      result = calculate_area(5, 3)
+      ```
+      Here, the variable `result` will be assigned the value that is returned by the function `calculate_area`.
+      In this case, the value is `15`. It will happen during the execution of the program, so the variable `result`
+      will contain the value `15` after the function is called.
+
+  - type: "paragraph"
+    card_group: "calling"
+    value: |
+      # Calling a Function
+      To call a function, we use the function name followed by a pair of parentheses. The parentheses can contain
+      one or more **arguments**. Arguments are the actual values that are passed to the function when it is called.
+      For example:
+      ```
+      calculate_area(5, 3)
+      ```
+      Here, we are calling the function `calculate_area` with the arguments `5` and `3`. The function will be executed
+      and the value that is returned by the function will be used in place of the function call. For example:
+      ```
+      print(calculate_area(5, 3))
+      ```
+      Here, the function `calculate_area` is called with the arguments `5` and `3`. The function will be executed and
+      the value that is returned by the function will be printed to the console.
+  - type: "hint"
+    card_group: "calling"
+    value: |
+      Arguments vs Parameters. Arguments are the objects we pass to a function when we call it. 
+      Parameters are the variables that receive these objects inside the function. Parameters 
+      allow functions to hide the details of how they work. This is called **abstraction**.
+
+  - type: "paragraph"
+    card_group: "arguments"
+    value: |
+      # Advancing with Arguments and Parameters
       In functions, **arguments** are the values you pass, and **parameters** are the variables that 
       receive these values. It's like when someone gives you a gift 🎁 (argument), and you take it 
-      in your hands (parameter).
+      in your hands (parameter). You can then do whatever you want with the gift. You can open it,
+      throw it away, or even give it to someone else. The same goes for parameters. You can use them
+      in your function however you want.
 
   - type: "codeblock-exec"
+    card_group: "arguments"
     description: "Here's how you can use multiple parameters."
     language: "python"
     value: |
-      def multiply(x, y):
-          return x * y
-      print(multiply(5, 3))
+      def multiply(x, y, z):
+          return x * y * z
+      print(multiply(5, 3, 9))
 
   - type: "paragraph"
     value: |
@@ -68,10 +159,12 @@ content:
     boilerplate: |
       def calculate_area(length, width):
           # your code here
+      print(calculate_area(5, 3))
     task: "Write a function to calculate the area of a rectangle. \nAssign the result of the calculation to the return value of the function.\n"
     solution: |
       def calculate_area(length, width):
           return length * width
+      print(calculate_area(5, 3))
     test_code: |
       from main import calculate_area
       import unittest
