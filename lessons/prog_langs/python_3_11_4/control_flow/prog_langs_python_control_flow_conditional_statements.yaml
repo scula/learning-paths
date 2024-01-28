@@ -7,53 +7,75 @@ software_dependencies:
 content:
   - type: "paragraph"
     value: |
-      # Navigating Python's Crossroads: Conditional Statements
-      Welcome to the world of decision-making in Python! 🚦 Conditional statements 
-      are like the traffic signals of programming. They help your code make decisions and choose 
-      directions. Today, we'll explore the `if-else` statement in Python, understanding how it 
-      guides the flow of your program based on different conditions.
+      # Learning Objectives
+
+      In this lesson you will learn how to control the flow of your code depending on certain conditions.
+      It's a really valuable skill because it enables you to write more complex programs that 
+      can change their behavior depending on the input.
 
   - type: "paragraph"
+    card_group: "flow"
     value: |
-      ## The Basics of `if-else`
-      Imagine you're getting ready for a day out. You look outside and think, "If it's sunny, 
-      I'll wear sunglasses; else, I'll take an umbrella." That's exactly what an `if-else` 
-      statement does in Python. It evaluates a condition, and if the condition is true, it 
-      executes a block of code; otherwise, it executes a different block of code.
+      # Flow of control and branching
 
-  - type: "hint"
-    value: |
-      **Hint:** The condition in an `if` statement must always return a Boolean value, which 
-      is either `True` or `False`.
-
+      All Python programs are executed sequentially, line by line. For example, if you have the following code:
   - type: "codeblock-exec"
-    description: "A simple example of using `if-else` to make a decision based on a number."
-    language: "python"
+    card_group: "flow"
     value: |
-      number = 10
-      if number > 5:
-          print("Number is greater than 5")
+      distance = 99
+      print("You are ", distance, " meters away from the finish line.")
+  - type: "paragraph"
+    card_group: "flow"
+    value: |
+      Python will execute it line by line starting from the top. Flow of control is the order in 
+      which the program executes the code. 
+
+      ## Branching
+      There are multiple ways to change the sequential flow. One of them is **branching** which allows
+      you to execute different parts of the code depending on certain conditions. For example, you can
+      write a program that will print "You are close to the finish line" if the distance is less than 100
+      and "Keep up the good work" otherwise.
+  - type: "codeblock-exec"
+    card_group: "flow"
+    value: |
+      distance = 99
+      if distance < 100:
+          print("You are close to the finish line")
       else:
-          print("Number is less than or equal to 5")
+          print("Keep up the good work")
 
   - type: "paragraph"
+    card_group: "ifelse"
     value: |
-      ## Going Beyond: The `elif` Clause
-      What if there are multiple conditions? Enter `elif` (short for 'else if'). It's like 
-      adding more choices to your decision tree 🌳. You can have multiple `elif` blocks 
-      between an `if` and an `else`.
+      # If/else statements
 
-  - type: "codeblock-exec"
-    description: "Here's how you can use `elif` to check multiple conditions."
-    language: "python"
-    value: |
-      age = 20
-      if age < 13:
-          print("Child")
-      elif age < 18:
-          print("Teen")
+      Let's take a closer look at the code above. The `if` statement is used to check if a certain condition is true.
+      For that Python uses a Boolean value which can be either `True` or `False`. In our case, the condition is
+      `distance < 100` which is `True` if the distance is less than 100 and `False` otherwise. If the condition is
+      `True`, the code inside the `if` block will be executed. 
+      ```
+      if [condition]:
+          [code to execute if the condition is True]
       else:
-          print("Adult")
+          [code to execute if the condition is False]
+      ```
+
+      Here you can see 2 branches of the code or 2 possible paths that the program can take. If the condition is
+      `True`, the first branch will be executed, otherwise the second branch will be executed. 
+
+      The branch body is indented to indicate that it is part of the branch. The indentation is important because
+      it tells Python which code belongs to which branch. The body of the branch ends when the indentation ends 
+      and can contain one or more statements. For example:
+  - type: "codeblock-exec"
+    card_group: "ifelse"
+    value: |
+      distance = 99
+      if distance < 100:
+          print("You are close to the finish line")
+          print("Keep up the good work")
+      else:
+          print("You are far from the finish line")
+          print("You can do better")
 
   - type: "paragraph"
     value: |
@@ -75,39 +97,122 @@ content:
       else:
           print("Check for rain!")
 
+  - type: "paragraph"
+    card_group: "conditions"
+    value: |
+      # Conditions
+      In the previous example, we used a condition to check if the weather is sunny. Conditions are expressions
+      that evaluate to a Boolean value. For example, `weather == "sunny"` is a condition that evaluates to `True`
+
+      The if statement doesn't care how exactly the condition is evaluated. It only cares about the final 
+      object which should have a Boolean type. For example, we can use a variable that contains a Boolean value
+      as a condition:
+  - type: "codeblock-exec"
+    card_group: "conditions"
+    value: |
+      is_sunny = True
+      if is_sunny:
+          print("Enjoy the sunshine!")
+      else:
+          print("Check for rain!")
+  - type: "paragraph"
+    card_group: "conditions"
+    value: |
+      We can also use a comparison operator to compare 2 values and get a Boolean value as a result:
+  - type: "codeblock-exec"
+    card_group: "conditions"
+    value: |
+      distance = 99
+      finishLineNear = distance < 100
+      if finishLineNear:
+          print("You are close to the finish line")
+      else:
+          print("You are far from the finish line")
+  - type: "paragraph"
+    card_group: "conditions"
+    value: |
+      And finally we can evaluate a condition directly in the if statement:
+  - type: "codeblock-exec"
+    card_group: "conditions"
+    value: |
+      distance = 99
+      if distance < 100:
+          print("You are close to the finish line")
+      else:
+          print("You are far from the finish line")
+
+  - type: "paragraph"
+    card_group: "combining"
+    value: |
+      ## Combining Conditions
+      We can combine multiple conditions using `and`, `or`, and `not` operators. 
+      The operators work with Boolean values and allow us to apply logical operations to them.
+      For example, we can check if the weather is sunny and the temperature is above 25 degrees:
+  - type: "codeblock-exec"
+    card_group: "combining"
+    value: |
+      weather = "sunny"
+      temperature = 30
+      if weather == "sunny" and temperature > 25:
+          print("Wear sunscreen!")
+      else:
+          print("Enjoy the mild weather!")
+  - type: "paragraph"
+    card_group: "combining"
+    value: |
+      * **and** operator returns `True` if both conditions are `True` and `False` otherwise.
+      * **or** operator returns `True` if at least one of the conditions is `True` and `False` otherwise.
+      * **not** operator returns the opposite of the condition. For example, `not True` is `False` and `not False` is `True`.
+  - type: "codeblock-exec"
+    card_group: "combining"
+    value: |
+      weather = "sunny"
+      temperature = -10
+      goodWeather = temperature > 10 # it's good weather if the temperature is above 5 degrees
+      goodVisibility = weather == "sunny" or weather == "cloudy" # good visibility if it's sunny or cloudy but not raining
+      walkTime = goodWeather and goodVisibility # it's a good time for a walk if it's good weather and good visibility at the same time
+      pubTime = not goodWeather and goodVisibility # it's a good time for a pub if it's not good weather but good visibility
+      if walkTime:
+          print("Let's go for a walk!")
+      if pubTime:
+          print("Let's go to the pub!")
+      else:
+          print("Let's stay home!")
+  - type: "paragraph"
+    card_group: "combining"
+    value: |
+      ## Operator Precedence
+      When combining conditions, it's important to remember that `not` has the highest precedence, followed by `and`, and finally `or`.
+      For example, `not True or False and True` is evaluated as `False or False and True` which is `False or True` which is `True`.
+      If you want to change the order of evaluation, you can use parentheses. For example, `(not True or False) and True` is evaluated as
+      `(False or False) and True` which is `False and True` which is `False`.
+
   - type: "kata"
     boilerplate: |
       weather = "rainy"
       temperature = 20
+      advice = ""
       # your code here
-    task: "Write an `if-else` block to print 'Take an umbrella.' if it's rainy, and 'Enjoy your day!' otherwise.\n"
+      print(advice)
+
+    task: |
+      Write an `if-else` block to modify the `advice` variable with a proper text: 
+      "Take an umbrella." if it's rainy, and "Enjoy your day!" otherwise.
     solution: |
       weather = "rainy"
       temperature = 20
+      advice = ""
       if weather == "rainy":
-          print("Take an umbrella.")
+         advice = "Take an umbrella."
       else:
-          print("Enjoy your day!")
+          advice = "Enjoy your day!"
+      print(advice)
     test_code: |
-      from main import weather, temperature
+      from main import weather, advice
       import unittest
       class TestWeatherAdvice(unittest.TestCase):
           def test_weather_advice(self):
-              self.assertEqual(weather, "rainy", "Make sure to check the weather condition correctly.")
-
-  - type: "quiz"
-    quiz_items:
-      - question: "What is the purpose of the `elif` clause in Python?"
-        answers:
-          - value: "To create a loop"
-          - value: "To check another condition if the previous ones were false"
-            correct: true
-            explanation: "`elif` allows you to check multiple conditions sequentially, each one if the previous conditions were false."
-          - value: "To end the `if` statement"
-      - question: "Can `if` statements be nested inside each other in Python?"
-        answers:
-          - value: "Yes, for creating multi-level decision structures"
-            correct: true
-            explanation: "Nesting `if` statements allow for more complex decision structures by combining multiple conditions."
-          - value: "No, `if` statements can't be nested"
-          - value: "Only in specific cases"
+              if weather == "rainy":
+                  self.assertEqual(advice, "Take an umbrella.", "Make sure to check the weather condition correctly.")
+              else:
+                  self.assertEqual(advice, "Enjoy your day!", "Make sure to check the weather condition correctly.")
