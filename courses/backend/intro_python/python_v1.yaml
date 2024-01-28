@@ -78,13 +78,13 @@ sprints:
         collections:
           - node_string_id: "prog_langs_python_types_and_data_structures"
             group: "Structures"
-            lesson_sha: "7aa194b"
+            lesson_sha: "104f3f0"
             file_path: "lessons/prog_langs/python_3_11_4/types_and_data_structures/prog_langs_python_types_and_data_structures.yaml"
       - type: parallel
         collections:
           - node_string_id: "prog_langs_python_types_and_data_structures_data_types_lists_and_dictionaries"
             group: "Structures"
-            lesson_sha: ""
+            lesson_sha: "104f3f0"
             file_path: "lessons/prog_langs/python_3_11_4/types_and_data_structures/prog_langs_python_types_and_data_structures_data_types_lists_and_dictionaries.yaml"
           - node_string_id: "prog_langs_python_functions"
             file_path: "lessons/prog_langs/python_3_11_4/functions/prog_langs_python_functions.yaml"
@@ -134,7 +134,7 @@ sprints:
           - node_string_id: "prog_langs_python_packages"
             group: "General"
             file_path: "lessons/prog_langs/python_3_11_4/packages/prog_langs_python_packages.yaml"
-            lesson_sha: ""
+            lesson_sha: "104f3f0"
       - type: "single"
         collections:
           - node_string_id: story.zombie_survival.day_four
