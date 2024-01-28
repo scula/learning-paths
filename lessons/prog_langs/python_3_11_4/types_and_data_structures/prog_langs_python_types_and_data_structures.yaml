@@ -7,10 +7,10 @@ software_dependencies:
 content:
   - type: "paragraph"
     value: |
-      # Python Types, Variables, and Data Structures
+      # Learning Objectives
 
-      Welcome to our lesson on Python types, variables, and data structures! 
-      In this session, we'll explore the rich variety of data types available in Python, 
+      In this lesson, we will talk again and learn more about Python types, variables, and data structures! 
+      We'll explore the rich variety of data types available in Python, 
       understand what variables are and how Python's dynamic typing works. 
       We'll also dive deep into core data types like numbers, strings, lists, dictionaries, and more. 
       Let's get started!
@@ -24,7 +24,7 @@ content:
       And data is represented by objects of different **types** in Python. 
 
       **Type** of an object defines what operations can be performed on it and what values it can hold.
-      For example, an operator `+` does different things for numbers and strings. Try to run the next 
+      For example, an operator "+" does different things for numbers and strings. Try to run the next 
       example and notice the difference in the output.
 
   - type: "codeblock-exec"
@@ -34,6 +34,14 @@ content:
       stringSum = "1" + "2"
       print(numberSum)
       print(stringSum)
+  - type: "paragraph"
+    card_group: "object_types"
+    value: |
+      The same operator "+" does different things for numbers and strings.
+      For numbers it performs addition, for strings it performs concatenation.
+
+
+      This behavior is defined by the type of the objects we are working with.
 
   - type: "paragraph"
     value: |
@@ -112,6 +120,9 @@ content:
       # Division
       quotient = 8 / 2
       print("Sum:", sum, "Difference:", difference, "Product:", product, "Quotient:", quotient)
+      print("sum == difference:", sum == difference)
+      print("sum > difference:", sum > difference)
+      print("Converting float to int will truncate the decimal part:", int(quotient))
 
   - type: "kata"
     boilerplate: |
