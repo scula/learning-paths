@@ -11,7 +11,7 @@ content:
       # Learning Objectives
   - type: "paragraph"
     card_group: "objectives"
-    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/command_line_shell/terminal_folder_empty.png
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/command_line_shell/hero.png
     value: |
       In this lesson, we will learn more about a new (but actually oldschool 🎸) way to interact with the computer
       through the terminal. After completing it you will be able to:
