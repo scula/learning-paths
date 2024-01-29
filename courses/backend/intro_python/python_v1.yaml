@@ -111,10 +111,6 @@ sprints:
       #       group: "Structures"
       #       complementary:
       #         - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.none"
-      - type: "single"
-        collections:
-          - node_string_id: story.zombie_survival.day_three
-            group: "Story"
       - type: "parallel"
         collections:
           - node_string_id: "prog_langs_python_control_flow_conditional_statements"
@@ -146,10 +142,6 @@ sprints:
       #     - node_string_id: "problem_solving"
       #       group: "Algorithms"
 
-      - type: "single"
-        collections:
-          - node_string_id: story.zombie_survival.day_five
-            group: "Story"
       # - type: "single"
       #   collections:
       #     - node_string_id: "prog_langs.python_3_11_4.input_output.input"
@@ -166,10 +158,6 @@ sprints:
             file_path: "lessons/prog_langs/python_3_11_4/projects/prog_langs_python_projects_weather_prediction.yaml"
             lesson_sha: "a1f38b7"
             group: "Projects"
-      - type: "single"
-        collections:
-          - node_string_id: story.zombie_survival.day_six
-            group: "Story"
   - name: "Python: Data and OS Interaction"
     sprint_items:
       - type: "single"
