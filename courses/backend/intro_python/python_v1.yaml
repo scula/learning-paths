@@ -58,7 +58,7 @@ sprints:
             file_path: "lessons/prog_langs/python/general/syntax.yaml"
           - node_string_id: "os_command_line_shell"
             group: "OS"
-            lesson_sha: "e4f5322"
+            lesson_sha: "f095de9"
             file_path: "lessons/os/command_line_shell.yaml"
 
       - type: single

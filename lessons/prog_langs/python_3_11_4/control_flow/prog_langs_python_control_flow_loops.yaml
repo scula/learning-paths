@@ -7,33 +7,63 @@ software_dependencies:
 content:
   - type: "paragraph"
     value: |
-      # Looping Through Python: The Power of Repetition
-      Welcome, coding adventurers, to the rhythmic world of **Python Loops**! 🔄 Just like repeating 
-      your favorite chorus in a song, loops in Python allow you to repeat code. Whether it's iterating 
-      over a list, repeating an action until a condition is met, or processing data, loops make it all 
-      easier. Let's unwrap the different types of loops in Python and understand why they're so useful.
+      # Learning Objectives
+
+      In this lesson you will learn how to make things repeat in Python.
+      It's an extremely powerful concept that will allow you to create more complex programs. 
+      The power comes from the fact that computers can repeat things very quickly, for example
+      going over millions of records within a fraction of a second.
 
   - type: "paragraph"
     value: |
+      # Looping Through Python: The Power of Repetition
+      We will explore when and how to use loops in Python. Loops are a powerful tool that allow you to repeat
+      a certain action multiple times. They are a fundamental concept in programming, and you will use them
+      in almost every program you write.
+
+  - type: "paragraph"
+    card_group: "loop"
+    value: |
       ## The 'for' Loop: The Organized Repeater
-      Imagine you have a box of chocolates 🍫, and you want to savor each one. In Python, a `for` loop 
-      lets you go through items in a collection (like a box of chocolates) one by one. It's great for 
+       In Python, a `for` loop lets you go through items in a collection one by one. It's great for 
       when you know how many times you want to repeat an action.
 
+      We already worked with lists in Python. They help us organize data in a collection:
+      ```
+      chocolates = ['dark', 'milk', 'white']
+      ```
+
+      We can use a `for` loop to go through each item in the list and print it out
+
   - type: "codeblock-exec"
+    card_group: "loop"
     description: "A basic `for` loop example, iterating over a list."
     language: "python"
     value: |
-      for chocolate in ['dark', 'milk', 'white']:
+      chocolates = ['dark', 'milk', 'white']
+      for chocolate in chocolates:
           print(f"Tasting {chocolate} chocolate")
+  - type: "paragraph"
+    card_group: "loop"
+    value: |
+      The 'for' keyword tells Python that we want to go through each item in the list.
+      After this keyword, we have to specify a variable name that will be used to refer to each item in the list.
+      In this case, we chose the name `chocolate`. You can choose any name you want, but it's a good idea to pick
+      a name that makes sense in the context of the list you are iterating over.
+
+      After the variable name, we have the `in` keyword, which tells Python that we want to iterate over the items
+      in the list. Finally, we have the list itself, which is `chocolates` in this case.
 
   - type: "paragraph"
+    card_group: "while"
     value: |
-      ## The 'while' Loop: The Condition Checker
-      Now, think of a musician practicing a piece until it's perfect. A `while` loop keeps running as 
-      long as a certain condition is true. It's like saying, "Keep playing the song, until you get it right."
+      # The 'while' Loop: The Condition Checker
+      A `while` loop keeps running as 
+      long as a certain condition is true. It's great for when you don't know how many times you want to 
+      repeat an action or you want to create a clean exit condition.
 
   - type: "codeblock-exec"
+    card_group: "while"
     description: "Using a `while` loop to repeat an action until a condition changes."
     language: "python"
     value: |
@@ -43,13 +73,15 @@ content:
           count -= 1
 
   - type: "paragraph"
+    card_group: "break"
     value: |
-      ## Break and Continue: The Loop Controllers
+      # Break and Continue: The Loop Controllers
       Sometimes in life, you need to take a break or skip something. In loops, `break` and `continue` 
       do just that. Use `break` to completely exit a loop, and `continue` to skip the current 
       iteration and go to the next one.
 
   - type: "codeblock-exec"
+    card_group: "break"
     description: "Demonstrating the use of `break` and `continue` in a loop."
     language: "python"
     value: |
@@ -59,20 +91,14 @@ content:
           if number == 8:
               break
           print(number)
-
   - type: "paragraph"
+    card_group: "break"
     value: |
-      ## Nesting Loops: The Multi-Layered Approach
-      Life is full of combinations, like a pizza with different toppings 🍕. In Python, you can have 
-      loops inside loops (nested loops), giving you the power to handle complex scenarios with multiple layers.
-
-  - type: "codeblock-exec"
-    description: "Example of nested loops in Python."
-    language: "python"
-    value: |
-      for outer in ['first', 'second']:
-          for inner in range(3):
-              print(f"{outer} layer, {inner} level")
+      In this example, we use the `range()` function to create a list of numbers from 1 to 10. 
+      Then, we use a `for` loop to go through each number in the list. Inside the loop, we use 
+      `if` statements to check if the number is 5 or 8. If it's 5, we use the `continue` keyword 
+      to skip the current iteration and go to the next one. If it's 8, we use the `break` keyword 
+      to exit the loop completely. Finally, we print out the number.
 
   - type: "kata"
     boilerplate: |
