@@ -63,7 +63,7 @@ content:
     card_group: "hope"
     value: |
       print("Cheer up, Ada! ☀️")
-  - type: "codeblock-exec"
+  - type: "paragraph"
     card_group: "hope"
     value: |
       Well, that was easy! I wonder what else I can do with this Python thing...
