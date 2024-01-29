@@ -1,0 +1,67 @@
+node_string_id: "stories_zombie_survival_day_three"
+name: "Day Three"
+description: "Power outage"
+content:
+  - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/stories_zombie_survival_intro/9.png
+    value: |
+      # A Day of Challenges and Learning
+      On the third day, Ada faced new challenges. She noticed that the power supply to the warehouse was fluctuating. Concerned, she decided to write a Python script that would monitor the power levels and alert her if they dropped too low. She used a `for` loop to iterate through a list of power readings and an `if-else` statement to check each reading. If a reading was below a certain threshold, the script would trigger an alarm.
+
+  - type: "codeblock-exec"
+    value: |
+      power_readings = [80, 90, 75, 60, 85, 50]
+      threshold = 70
+
+      def check_power(readings, limit):
+          for reading in readings:
+              if reading < limit:
+                  return "Power low! Alarm triggered."
+          return "Power stable."
+
+      alarm_status = check_power(power_readings, threshold)
+      print(alarm_status)
+
+  - type: "paragraph"
+    value: |
+      # Securing Resources
+      With the power situation under control, Ada's next task was to secure her food and water supplies. She decided to use Python to sort and categorize her supplies. Implementing a `for` loop, she sorted items into `food` and `water` lists based on their type. Then, using `if-else` statements, she determined which items were nearing their expiration date and should be consumed first.
+
+  - type: "codeblock-exec"
+    value: |
+      supplies = [("beans", "food"), ("water bottle", "water"), ("canned fruit", "food"), ("water jug", "water")]
+      food = []
+      water = []
+
+      for item, type in supplies:
+          if type == "food":
+              food.append(item)
+          else:
+              water.append(item)
+
+      print("Food:", food)
+      print("Water:", water)
+
+  - type: "paragraph"
+    value: |
+      # Unexpected Visitors
+      As night fell, Ada detected movement outside through her `monitorAreas` function. She observed a group of survivors trying to enter the warehouse. Using her Python skills, she quickly wrote a script to selectively open doors for the survivors while keeping the zombies out. This script used a combination of `for` loops and `if-else` statements to control each door based on camera inputs.
+
+  - type: "codeblock-exec"
+    value: |
+      doors = ["front", "back", "side"]
+      camera_inputs = {"front": "survivors", "back": "clear", "side": "zombies"}
+
+      def control_doors(door_list, inputs):
+          commands = {}
+          for door in door_list:
+              if inputs[door] == "survivors":
+                  commands[door] = "open"
+              elif inputs[door] == "clear":
+                  commands[door] = "lock"
+              else:
+                  commands[door] = "close"
+          return commands
+
+      door_commands = control_doors(doors, camera_inputs)
+      print(door_commands)

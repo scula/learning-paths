@@ -1,0 +1,65 @@
+node_string_id: "stories_zombie_survival_day_two"
+name: "Day Two"
+description: "Building defenses"
+content:
+  - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/stories_zombie_survival_intro/7.png
+    value: |
+      # Unforeseen Challenges
+      On the second day, Ada's routine was abruptly interrupted by the sound of shuffling outside the warehouse. 
+      Peering through the security cameras, she saw a small group of zombies wandering near the entrance. Ada's 
+      heart raced as she realized the immediate danger. She quickly turned to her Python skills, writing a 
+      function named `securePerimeter` that would close all doors and turn on exterior lights. 
+      This function utilized a list of door statuses and a dictionary mapping each door to its 
+      corresponding control command.
+
+  - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/stories_zombie_survival_intro/8.png
+    value: |
+      # Tactical Response
+      Ada executed the `securePerimeter` function, and the warehouse transformed into a fortress. 
+      The doors slammed shut, and the lights illuminated the surrounding area. Watching from the safety of 
+      her control room, Ada could see the zombies retreating from the bright lights. She exhaled in 
+      relief but knew this was a temporary reprieve. She needed to fortify her defenses further. 
+      Ada began crafting more functions, like `monitorAreas`, which used a dictionary to keep track of camera 
+      feeds and alert her to any changes outside.
+  - type: "codeblock-exec"
+    value: |
+      def securePerimeter(doors, commands):
+          for door in doors:
+              commands[door] = "close"
+          return commands
+      doors = ["front", "back", "side"]
+      commands = {"front": "open", "back": "open", "side": "open"}
+      commands = securePerimeter(doors, commands)
+      print(commands)
+
+  - type: "paragraph"
+    value: |
+      # Strategic Planning
+      With the immediate threat mitigated, Ada turned her attention to long-term survival. 
+      She started writing a function called `inventoryCheck` that would help her manage resources. 
+      This function used a list to track food supplies and a dictionary to categorize different 
+      types of technology and tools she found in the warehouse. By automating these checks, Ada 
+      could efficiently plan her rationing and understand the tools at her disposal.
+
+  - type: "paragraph"
+    value: |
+      # A New Discovery
+      Later that evening, while exploring a previously locked room, Ada stumbled upon an old radio transmitter. 
+      This discovery sparked an idea. She started working on a function named `sendDistressSignal`. 
+      The function would use a dictionary to encode a message and a list of frequencies to attempt 
+      contact with any survivors. Ada knew it was a long shot, but with her growing Python skills and 
+      the resources at her disposal, she felt a glimmer of hope.
+  - type: "codeblock-exec"
+    value: |
+      message = "Need help at the warehouse"
+      frequencies = [88.5, 102.3, 94.7, 107.9]
+
+      def transmit_message(msg, freqs):
+          transmitted = [(msg, freq) for freq in freqs]
+          return transmitted
+
+      transmitted = transmit_message(message, frequencies)
+
+      print(transmitted)

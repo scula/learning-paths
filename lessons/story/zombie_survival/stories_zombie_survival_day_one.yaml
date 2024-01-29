@@ -3,6 +3,7 @@ name: "Day One"
 description: "A new life begins"
 content:
   - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/stories_zombie_survival_intro/5.png
     value: |
       # Embracing Python
       As Ada delved into the pages of the Python guide and explored the old computer, 
@@ -14,6 +15,7 @@ content:
       by a newfound purpose amidst the chaos outside.
 
   - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/stories_zombie_survival_intro/6.png
     value: |
       # A Fortified Haven
       During her explorations, Ada stumbled upon a control room within the warehouse. To 
