@@ -54,13 +54,11 @@ sprints:
         collections:
           - node_string_id: "prog_langs_python_syntax"
             group: "General"
-            lesson_sha: "dd6bc57"
+            lesson_sha: "e4f5322"
             file_path: "lessons/prog_langs/python/general/syntax.yaml"
-            complementary:
-              - node_string_id: "statements_expressions_deep_dive"
           - node_string_id: "os_command_line_shell"
             group: "OS"
-            lesson_sha: "83c6228"
+            lesson_sha: "e4f5322"
             file_path: "lessons/os/command_line_shell.yaml"
 
       - type: single
