@@ -76,7 +76,7 @@ sprints:
         collections:
           - node_string_id: stories_zombie_survival_day_one
             file_path: "lessons/story/zombie_survival/stories_zombie_survival_day_one.yaml"
-            lesson_sha: "ab98285"
+            lesson_sha: "2139f9d"
             group: "Story"
 
       - type: parallel
