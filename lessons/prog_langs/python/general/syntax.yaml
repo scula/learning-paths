@@ -263,7 +263,7 @@ content:
     value: |
       calories = 100
       caloriesPerWeek = calories * 7
-      print(caloriesPerWeek)"
+      print(caloriesPerWeek)
 
   - type: "quiz"
     quiz_items:
