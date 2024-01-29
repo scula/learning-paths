@@ -62,6 +62,7 @@ sprints:
             group: "OS"
             lesson_sha: "83c6228"
             file_path: "lessons/os/command_line_shell.yaml"
+
       - type: single
         collections:
           - node_string_id: "prog_langs_python_interpreter"
@@ -70,16 +71,21 @@ sprints:
             file_path: "lessons/prog_langs/python/general/interpreter.yaml"
             complementary:
               - node_string_id: "punch_cards"
+
       - type: "single"
         collections:
           - node_string_id: stories_zombie_survival_day_one
+            file_path: "lessons/story/zombie_survival/stories_zombie_survival_day_one.yaml"
+            lesson_sha: ""
             group: "Story"
+
       - type: parallel
         collections:
           - node_string_id: "prog_langs_python_types_and_data_structures"
             group: "Structures"
             lesson_sha: "104f3f0"
             file_path: "lessons/prog_langs/python_3_11_4/types_and_data_structures/prog_langs_python_types_and_data_structures.yaml"
+
       - type: parallel
         collections:
           - node_string_id: "prog_langs_python_types_and_data_structures_data_types_lists_and_dictionaries"
@@ -93,10 +99,12 @@ sprints:
             complementary:
               - node_string_id: "prog_langs.python_3_11_4.functions.lambda"
                 group: "Functions"
+
       - type: "single"
         collections:
           - node_string_id: story.zombie_survival.day_two
             group: "Story"
+
       # - type: "parallel"
       #   collections:
       #     - node_string_id: "prog_langs.python_3_11_4.types_and_data_structures.built_in.numbers"
@@ -131,10 +139,12 @@ sprints:
             group: "General"
             file_path: "lessons/prog_langs/python_3_11_4/packages/prog_langs_python_packages.yaml"
             lesson_sha: "104f3f0"
+
       - type: "single"
         collections:
           - node_string_id: story.zombie_survival.day_four
             group: "Story"
+
       # - type: "parallel"
       #   collections:
       #     - node_string_id: "random"
@@ -152,8 +162,8 @@ sprints:
             file_path: "lessons/prog_langs/python_3_11_4/projects/prog_langs_python_projects_hangman_game.yaml"
             lesson_sha: "c5c6c11"
             group: "Projects"
-          - node_string_id: "prog_langs.python_3_11_4.projects.resource_management_system"
-            group: "Projects"
+          # - node_string_id: "prog_langs.python_3_11_4.projects.resource_management_system"
+          #   group: "Projects"
           - node_string_id: "prog_langs_python_projects_weather_prediction"
             file_path: "lessons/prog_langs/python_3_11_4/projects/prog_langs_python_projects_weather_prediction.yaml"
             lesson_sha: "a1f38b7"

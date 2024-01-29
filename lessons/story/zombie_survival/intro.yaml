@@ -3,19 +3,66 @@ name: "The story begins"
 description: "What do zombies and Python have in common?"
 content:
   - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/stories_zombie_survival_intro/1.png
     value: |
-      # So the story begins
-      Seven days have passed since life, as I know it was over. What started as a new epidemic outbreak quickly turned into a real zombie apocalypse. The pop culture ideas of such an event turned out to be wrong. The reality was brutal and unforgiving.
-      My name is Ada, and I'm left alone in my temporary Airbnb in the stranded New York. I came here two weeks to apply for the Art School. Luckily, I was in my apartment when it all started. All the government services and media were too slow to react, and quickly, the streets became rivers of hungry monsters. 
-      On the bright side, the zombies were afraid of the sun and active only underground or at night. But the amount of food I had left (none) pushed me to work on a plan to leave the city and find a proper shelter.
+      # The Beginning of the Story
+      It has been seven days since my familiar world ended. What began as an outbreak of a new epidemic 
+      quickly escalated into a full-blown zombie apocalypse. Contrary to popular culture's portrayal, 
+      the reality was harsh and merciless. My name is Ada, and I find myself alone in a temporary Airbnb 
+      in deserted New York. I arrived here two weeks ago to apply to Art School. Fortunately, I was in 
+      my apartment when the chaos erupted. Government services and the media were too slow to respond, 
+      and the streets soon turned into a haven for ravenous monsters. 
+      On a positive note, the zombies seemed to fear sunlight and were active only underground or at night. 
+      However, my dwindling food supply (now completely exhausted) forced me to devise a plan to 
+      leave the city in search of a safer refuge.
+
   - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/stories_zombie_survival_intro/2.png
     value: |
-      ## New home
-      I left the house at dawn. The idea was to bicycle to my aunt's place in the suburbs. I knew she was living on the outskirts of her small countryside city, which would be perfect for hiding there. 
-      It took eight hours of non-stop pedalling, and I could barely breathe. Even before I could see the house, I knew something was wrong. The smoke was coming from the earth as if it just finished burning, and pieces of scrap metal were everywhere. 
-      Auntie's house was nowhere to be seen, and I realised that the military decided to shell the suburbs last week in a feeble attempt to stop the spreading. At this point, I had around 2 hours before darkness would invite monsters to take a bite of me, and my options were slim.
+      ## A New Home
+      I departed at dawn, aiming to cycle to my aunt's house in the suburbs. 
+      She resided on the outskirts of a small countryside town, an ideal spot for concealment. 
+      After eight grueling hours of continuous pedaling, I was gasping for breath. 
+      Even before the house came into view, I sensed something amiss. Smoke was rising from the 
+      ground as if recently extinguished, and scraps of metal lay scattered about. 
+      The house was nowhere in sight, and it dawned on me that the military had bombed the suburbs 
+      last week in a desperate attempt to contain the outbreak. 
+      With roughly two hours before nightfall, which would unleash the monsters, my options were limited.
+
   - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/stories_zombie_survival_intro/3.png
     value: |
-      I took a road to the next tiny village through the abandoned warehouses. By the end, I noticed one that was not damaged and had an intriguing fade sign "Tech..y". As every phone was no more useful as a brick at this point without electricity, I decided to look inside for batteries or accumulators.
-      Without huge expectations, I peeked inside and was astonished. Thick dust covered several isles of canned food, some old computers and many boxes with different tech stuff. No human or zombie has visited that place for years.
-      Without better options right now, I guess this could work as a temporary base for my future operations.
+      I took a route through abandoned warehouses towards the next small village. Eventually, 
+      I stumbled upon one that was intact, with a faded sign reading "Tech..y." 
+      Since phones were as useful as bricks without electricity, I decided to search inside for batteries or accumulators.
+      My expectations were low as I peered inside, but what I found left me astounded. Layers of thick dust 
+      covered aisles of canned food, old computers, and numerous boxes of various tech items. 
+      It appeared that no human or zombie had set foot in this place for years.
+      Lacking better options at the moment, I decided this could serve as a temporary base 
+      for my forthcoming endeavors.
+  - type: "paragraph"
+    card_group: "hope"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/stories_zombie_survival_intro/4.png
+    value: |
+      ## A Glimmer of Hope
+      Amidst the layers of dust and the hushed silence of the abandoned warehouse, I stumbled upon an old, 
+      yet seemingly intact computer. With a mix of curiosity and desperation, I pressed the power button, 
+      half-expecting nothing to happen. To my surprise, the machine hummed to life, its screen flickering as 
+      it booted up. The desktop, cluttered with files and folders, had an icon for Python prominently 
+      displayed, hinting at its previous user's interests. 
+
+
+      Beside the keyboard, partially covered in dust, lay a well-used book titled "Python Programming: A 
+      Comprehensive Guide". The sight of it sparked a flicker of hope within me. Perhaps, within these 
+      digital and paper pages, I could find valuable knowledge or tools to aid in my survival in 
+      this new, chaotic world.
+
+      After briefly skimming through the book, I tried to run one simple program to cheer me up:
+  - type: "codeblock-exec"
+    card_group: "hope"
+    value: |
+      print("Cheer up, Ada! ☀️")
+  - type: "codeblock-exec"
+    card_group: "hope"
+    value: |
+      Well, that was easy! I wonder what else I can do with this Python thing...

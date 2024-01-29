@@ -1,0 +1,59 @@
+node_string_id: "stories_zombie_survival_day_one"
+name: "Day One"
+description: "A new life begins"
+content:
+  - type: "paragraph"
+    value: |
+      # Embracing Python
+      As Ada delved into the pages of the Python guide and explored the old computer, 
+      her understanding of the Python syntax began to flourish. She discovered the power 
+      of the Python interpreter, a tool that allowed her to write and execute code dynamically. 
+      Night after night, she absorbed the basics of Python, practicing simple scripts and commands. 
+      The abandoned warehouse, once a place of desolation, became her sanctuary of learning. 
+      Her determination to master Python grew with each passing day, driven 
+      by a newfound purpose amidst the chaos outside.
+
+  - type: "paragraph"
+    value: |
+      # A Fortified Haven
+      During her explorations, Ada stumbled upon a control room within the warehouse. To 
+      her amazement, she found that the warehouse was equipped with security cameras and 
+      automated door systems, all connected to a central computer. The realization that she 
+      could enhance her safety and monitor her surroundings with these scripts filled her with a sense of empowerment.
+
+  - type: "paragraph"
+    value: |
+      # Accelerating the Learning Curve
+      Ada's success with controlling the warehouse's systems fueled her desire to learn
+       Python more rapidly. She understood that mastering this programming language could 
+       be the key to her survival and perhaps, eventual escape. In her quest for knowledge, 
+       Ada uncovered a hidden stash of canned food and water in a concealed compartment, 
+       a find that significantly eased her immediate survival concerns. 
+       With basic needs met, she devoted more time to studying Python, eager to explore its 
+       potential further and strengthen her hold on her fortified base.
+
+  - type: "paragraph"
+    value: |
+      # Practical Application
+      One evening, Ada decided to write a simple Python script to control the warehouse 
+      doors more efficiently. She aimed to learn how to use print and variables in Python.
+  - type: "kata"
+    boilerplate: |
+      name = # your code here
+      print(name)
+    task: "Create a variable named `name` and assign Ada's name as a string to it. Then, print the value of the variable.\n"
+    solution: |
+      name = "Ada"
+      print(name)
+    test_code: |
+      import io
+      import sys
+      from main import name
+
+      class TestPrintName(unittest.TestCase):
+          def test_print_name(self):
+              capturedOutput = io.StringIO()
+              sys.stdout = capturedOutput
+              print(name)
+              sys.stdout = sys.__stdout__
+              self.assertEqual(capturedOutput.getvalue().strip(), "Ada", "Make sure that the name Ada is printed correctly.")

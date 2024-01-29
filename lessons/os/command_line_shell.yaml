@@ -6,12 +6,15 @@ software_dependencies:
     version: 3.11.4
 content:
   - type: "paragraph"
+    card_group: "objectives"
     value: |
       # Learning Objectives
-
+  - type: "paragraph"
+    card_group: "objectives"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/command_line_shell/terminal_folder_empty.png
+    value: |
       In this lesson, we will learn more about a new (but actually oldschool 🎸) way to interact with the computer
-      through the terminal. These are the necessary skills for anyone who wants to learn Python and programming 
-      in general:
+      through the terminal. After completing it you will be able to:
 
       1. **Running Python Scripts from the Terminal:** Our code doesn't live in a vacuum, it works 
       with other programs, files and operating system. We need to understand the environment in which our
@@ -32,11 +35,11 @@ content:
     value: |
       # What is a terminal?
 
-      We are used to interacting with the computer through the graphical user interface or **GUI**. We launch 
-      programs just by clicking on icons, navigate through files and directories by clicking on them, and
-      we can see the data in them by opening them with the appropriate program. For example, to view the contents 
+      We are used to interacting with the computer through the Graphical User Interface or **GUI**. We simply 
+      initiate programs by clicking on icons, seamlessly browse files and directories with a mere click,
+      and effortlessly access data by using the appropriate application. For example, to view the contents 
       of the folder, we can open it with some built-in file manager (doesn't matter what OS you are using,
-      you can definitely recognise what happens here):
+      you can definitely recognise what happens here)
   - type: "paragraph"
     hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/command_line_shell/gui_folder.png
     card_group: "what_is_terminal"
@@ -44,8 +47,8 @@ content:
       But there is another way to interact with the computer, and it involves using a terminal. 
 
       A terminal is a text-based interface used to interact with a computer's operating system and execute commands. 
-      Unlike graphical user interfaces (GUIs), which rely on icons, windows, and mouse clicks, 
-      terminals rely on text commands entered by the user.
+      Unlike Graphical User Interfaces (GUIs), which rely on icons, windows, and mouse clicks, 
+      terminals rely on text commands entered by the user. 
 
       In a terminal, you typically type commands in text form, and the computer responds
        with text-based output. It provides direct access to system functions, file manipulation, 
@@ -58,27 +61,36 @@ content:
     hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/command_line_shell/terminal_folder_empty.png
     card_group: "what_is_terminal"
     value: |
-      It looks different on different operating systems but the idea is always the same. Usually we see the 
-      **prompt** (symbol that indicates that the terminal is ready to accept the command, in our example 
-      it's the dollar sign `$`) and the **cursor** (symbol that indicates where the next character will 
-      appear, in our example it's a white rectangle).
+      The terminal is a special program on your computer where you can type commands for 
+      the computer to do certain tasks. It might look different if you're using a Windows computer, 
+      a Mac, or another type of computer, but it works in a similar way on all of them. When 
+      you open the terminal, you usually see two main things:
+
+      * The **prompt**: This is a small symbol that shows you the terminal is ready for you to 
+      type a command. Think of it like a computer's way of saying, "I'm ready to listen!" 
+      In many cases, this symbol is a dollar sign $.
+      * The **cursor**: This is usually a small blinking line or a rectangle. It shows where the 
+      letters will appear when you start typing. It moves forward as you type, showing you 
+      exactly where your next letter will go.
 
   - type: "paragraph"
     card_group: "rules"
     value: |
       # Two simple rules of working with the terminal
 
-      **First**, in terminal you are *always in some directory*. It's not like in the GUI where you can just open
+      **First**, in terminal you are *always in some directory*. Directory is the same thing as folder in the GUI.
+      It's not like in the GUI where you can just open
       multiple windows and switch between them. In the terminal you are always in some directory and to change
       it you will need to use the command. 
 
-      So here:
+      Remember the screenshot of the folder in the GUI above? This is how being in the same directory looks like
+      in the terminal:
   - type: "paragraph"
     hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/command_line_shell/terminal_folder_empty.png
     card_group: "rules"
     value: |
-      we are actually in the same directory as in the GUI, but we can't see the contents of the directory 
-      or the name of the directory. To see it we can use the **second rule** - we invoke programs by typing 
+      Not much right? We are actually in the same directory as in the GUI, but we can't see the contents of the directory 
+      or the name of the directory immediately. To see it we can use the **second rule** - we invoke programs by typing 
       their name and pressing **Enter**. 
 
       Let's look around and check in what directory we are in. We will use `pwd` command which stands for
@@ -92,9 +104,14 @@ content:
       /Users/nzavyalov/dev/temp/our_folder
       ```
       Which is the path to the current directory. Path represents the hierarchy of directories and files.
-      Everything starts from the toop `/` directory, which is called the **root** directory. And then we
+      Everything starts from the toop **/** directory, which is called the **root** directory. And then we
       have directories and files inside of it. And `our_folder` is actually nested several levels deep in 
       the hierarchy.
+
+      You've already encountered paths in the GUI when working with files and folders. For example, 
+      you maybe worked with the `Downloads` folder which is located in the `Home` directory. Or you used 
+      different disks like `C:` or `D:` on Windows. Which would be the root directories of different disks.
+      And folders inside them would be nested several levels deep in the hierarchy just like in our example.
 
   - type: "paragraph"
     card_group: "commands_programs"
@@ -107,7 +124,12 @@ content:
     hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/command_line_shell/terminal_folder_ls.png
     card_group: "commands_programs"
     value: |
-      Which is the same as in the GUI. But what if we want to see the contents of the file? We can use the `cat`
+      Which is the same as in the GUI:
+  - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/command_line_shell/gui_folder.png
+    card_group: "commands_programs"
+    value: |
+      But what if we want to see the contents of the file? We can use the `cat`
       command which stands for **concatenate** but is usually used to print the contents of the file to the terminal:
   - type: "paragraph"
     hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/command_line_shell/terminal_text_file_cat.png
@@ -133,7 +155,17 @@ content:
     hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/command_line_shell/terminal_echo.png
     card_group: "python_launch"
     value: |
-      And we can also used the previously learned commands to check that the file was created and to see its contents:
+      Let's check that a new file was created with GUI first:
+  - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/command_line_shell/gui_mainpy.png
+    card_group: "python_launch"
+    value: |
+      And we can also see the contents of the file with a simple text editor:
+  - type: "paragraph"
+    hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/command_line_shell/gui_mainpy_content.png
+    card_group: "python_launch"
+    value: |
+      Now let's use the previously learned commands to check that the file was created and to see its contents:
   - type: "paragraph"
     hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/command_line_shell/terminal_echo_check.png
     card_group: "python_launch"
@@ -145,6 +177,11 @@ content:
     card_group: "python_launch"
     value: |
       And we can see that our program was executed and the output was printed to the terminal.
+
+      This is how we can launch Python programs from the terminal. That's why it's important to understand how
+      the terminal works and how to navigate through the directories. Because our program doesn't live in a vacuum,
+      it works with other programs, files and operating system. And we need to understand the environment in which
+      our program is running.
 
   - type: "paragraph"
     value: |
