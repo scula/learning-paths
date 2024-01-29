@@ -19,7 +19,7 @@ content:
   - type: "paragraph"
     hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/stories_zombie_survival_intro/2.png
     value: |
-      ## A New Home
+      # A New Home
       I departed at dawn, aiming to cycle to my aunt's house in the suburbs. 
       She resided on the outskirts of a small countryside town, an ideal spot for concealment. 
       After eight grueling hours of continuous pedaling, I was gasping for breath. 
@@ -32,6 +32,7 @@ content:
   - type: "paragraph"
     hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/stories_zombie_survival_intro/3.png
     value: |
+      # Tech..y
       I took a route through abandoned warehouses towards the next small village. Eventually, 
       I stumbled upon one that was intact, with a faded sign reading "Tech..y." 
       Since phones were as useful as bricks without electricity, I decided to search inside for batteries or accumulators.
@@ -44,7 +45,7 @@ content:
     card_group: "hope"
     hero_image: https://storage.googleapis.com/scula-public-assets/courses/python/stories_zombie_survival_intro/4.png
     value: |
-      ## A Glimmer of Hope
+      # A Glimmer of Hope
       Amidst the layers of dust and the hushed silence of the abandoned warehouse, I stumbled upon an old, 
       yet seemingly intact computer. With a mix of curiosity and desperation, I pressed the power button, 
       half-expecting nothing to happen. To my surprise, the machine hummed to life, its screen flickering as 
