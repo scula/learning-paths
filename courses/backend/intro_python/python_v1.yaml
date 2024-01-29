@@ -47,7 +47,7 @@ sprints:
         collections:
           - node_string_id: "stories_zombie_survival_intro"
             group: "Story"
-            lesson_sha: "151fd30"
+            lesson_sha: "81ab05d"
             file_path: "lessons/story/zombie_survival/intro.yaml"
 
       - type: "parallel"
@@ -76,7 +76,7 @@ sprints:
         collections:
           - node_string_id: stories_zombie_survival_day_one
             file_path: "lessons/story/zombie_survival/stories_zombie_survival_day_one.yaml"
-            lesson_sha: "2139f9d"
+            lesson_sha: "81ab05d"
             group: "Story"
 
       - type: parallel
@@ -102,8 +102,10 @@ sprints:
 
       - type: "single"
         collections:
-          - node_string_id: story.zombie_survival.day_two
+          - node_string_id: stories_zombie_survival_day_two
             group: "Story"
+            file_path: "lessons/story/zombie_survival/stories_zombie_survival_day_two.yaml"
+            lesson_sha: "81ab05d"
 
       # - type: "parallel"
       #   collections:
@@ -142,8 +144,10 @@ sprints:
 
       - type: "single"
         collections:
-          - node_string_id: story.zombie_survival.day_four
+          - node_string_id: stories_zombie_survival_day_three
             group: "Story"
+            file_path: "lessons/story/zombie_survival/stories_zombie_survival_day_three.yaml"
+            lesson_sha: "81ab05d"
 
       # - type: "parallel"
       #   collections:
