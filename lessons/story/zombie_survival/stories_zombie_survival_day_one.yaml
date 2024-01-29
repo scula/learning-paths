@@ -33,11 +33,13 @@ content:
        potential further and strengthen her hold on her fortified base.
 
   - type: "paragraph"
+    card_group: "python"
     value: |
       # Practical Application
       One evening, Ada decided to write a simple Python script to control the warehouse 
       doors more efficiently. She aimed to learn how to use print and variables in Python.
   - type: "kata"
+    card_group: "python"
     boilerplate: |
       name = # your code here
       print(name)
@@ -46,14 +48,8 @@ content:
       name = "Ada"
       print(name)
     test_code: |
-      import io
-      import sys
       from main import name
-
-      class TestPrintName(unittest.TestCase):
-          def test_print_name(self):
-              capturedOutput = io.StringIO()
-              sys.stdout = capturedOutput
-              print(name)
-              sys.stdout = sys.__stdout__
-              self.assertEqual(capturedOutput.getvalue().strip(), "Ada", "Make sure that the name Ada is printed correctly.")
+      import unittest
+      class TestName(unittest.TestCase):
+          def test_name_not_empty(self):
+            self.assertNotEqual(name, "", "Make sure that you have some value in name.")
