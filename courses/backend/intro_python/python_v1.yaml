@@ -81,7 +81,7 @@ sprints:
         collections:
           - node_string_id: "prog_langs_python_types_and_data_structures"
             group: "Structures"
-            lesson_sha: "cfaafa0"
+            lesson_sha: "c425b53"
             file_path: "lessons/prog_langs/python_3_11_4/types_and_data_structures/prog_langs_python_types_and_data_structures.yaml"
 
       - type: parallel

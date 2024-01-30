@@ -152,36 +152,23 @@ content:
       * `<=` less than or equal to
       * `==` equal to
       * `!=` not equal to
-      * `is` object identity
-      * `is not` negated object identity
 
-      Last two operators are a bit special. If other operators compare values, `is` and `is not` compare objects.
-      They check if two objects are the same object which happens for 2 reasons:
-      * Variables just point to the address in memory where the object is stored. So if two variables point to the same
-      address in memory, they point to the same object.
-      * Variables can be reassigned and we can have multiple variables pointing to the same object.
-
-      Let's take a look at the example:
+      The result of the comparison is always a boolean value `True` or `False`. Let's take a look at the example:
   - type: "codeblock-exec"
     card_group: "operators_comparison"
     value: |
-      a = 970032
-      b = 970032
-      c = a
-      print("a is b ", a is b)
-      print("b is c ", b is c)
-      print("a is c ", a is c)
-      print("a == b ", a == b)
-      print("b == c ", b == c)
-      print("a == c ", a == c)
+      res = 45 != 39 
+      print("45 != 39 is", res)
+
+      total = res == True
   - type: "quiz"
     card_group: "operators_comparison"
     quiz_items:
-      - question: "The main difference between '==' and 'is' operators is that"
+      - question: "What is the value of the variable `total`?"
         answers:
-          - value: "'==' compares values and 'is' compares objects"
+          - value: "It's a boolean value `True`"
             correct: true
-            explanation: "The '==' operator compares values and 'is' operator compares objects."
+            explanation: "Because `res` variable is equal to `True` and compared to `True`."
 
   - type: "paragraph"
     card_group: numeric_types
