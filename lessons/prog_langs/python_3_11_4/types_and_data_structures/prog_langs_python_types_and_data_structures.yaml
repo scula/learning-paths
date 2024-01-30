@@ -64,8 +64,123 @@ content:
       In this case, `a` will be an integer, `b` will be a string, `c` will be a boolean, `d` will be a float,
       and `e` will be a list.
 
+  - type: "paragraph"
+    card_group: "reassigning_variables"
+    value: |
+      ## Reassigning Variables
 
-      Now we will explore in depth each of the core data types in Python.
+      Besides dynamic typing, Python also allows us to reassign variables to different types or values. 
+      This means that we can assign a value of one type to a variable and later reassign it to a value of a different type.
+
+      What value do you think the variable `a` will have after the following code is executed?
+  - type: "codeblock-exec"
+    card_group: "reassigning_variables"
+    value: |
+      a = 1
+      a = "Hello"
+      print(a)
+  - type: "quiz"
+    card_group: "reassigning_variables"
+    quiz_items:
+      - question: "Value of the variable `a` is"
+        answers:
+          - value: "1"
+            explanation: "The variable `a` did have the value '1' but after the second assignment it was reassigned to a string value."
+          - value: "Hello"
+            correct: true
+            explanation: "The variable `a` is reassigned to a string value."
+          - value: "None"
+            explanation: "This is a correct assignment and we wouldn't get None value here."
+          - value: "Error"
+            explanation: "This is a correct assignment and we wouldn't get an error here."
+
+  - type: "paragraph"
+    value: |
+      # Operators and operands
+
+      We talked about objects, values and types. But just by themselves they are not very useful.
+      They just sit there and do nothing. We need to do something with them.
+
+      In programming, we use **operators** to perform operations on objects and **operands** are the 
+      objects that operators work on. For example, in expression `1 + 2` the operator is `+` and 
+      operands are `1` and `2`.
+
+      Python supports a wide range of operators for different types of objects. But sometimes the same 
+      operator can do different things for different types of objects. For example, `+` operator can
+      perform addition for numbers and concatenation for strings. 
+
+      Let's take a look at some of the operators we can use in Python.
+
+  - type: "paragraph"
+    card_group: "operators"
+    value: |
+      ## ♾️ **Mathematical operators**
+
+      Mathematical operators are used to perform mathematical operations on numbers. They look very similar 
+      to the operators we use in math with some differences:
+      * `+` addition
+      * `-` subtraction
+      * `*` multiplication
+      * `/` division
+      * `//` floor division (11 // 2 = 5)
+      * `%` modulus (11 % 2 = 1)
+      * `**` exponentiation (2 ** 3 = 8)
+      Which cover most of the operations we need to perform on numbers. Python also has some nice perks 
+      built-in like the ability to work with extremely large numbers. Try to run the next code and see the result.
+  - type: "codeblock-exec"
+    card_group: "operators"
+    value: |
+      print(999**999)
+  - type: "paragraph"
+    card_group: "operators"
+    value: |
+      The interesting thing about it, that most of the languages don't support this feature out of the box and would 
+      require painful workarounds to achieve the same result.
+
+  - type: "paragraph"
+    card_group: "operators_comparison"
+    value: |
+      ## ⚖️ **Comparison operators**
+
+      Comparison operators are used to compare two values. They return a boolean value `True` or `False` depending on
+      the result of the comparison. For example, `1 > 2` will return `False` because `1` is not greater than `2`.
+      Here is the list of comparison operators:
+      * `>` greater than
+      * `<` less than
+      * `>=` greater than or equal to
+      * `<=` less than or equal to
+      * `==` equal to
+      * `!=` not equal to
+      * `is` object identity
+      * `is not` negated object identity
+
+      Last two operators are a bit special. If other operators compare values, `is` and `is not` compare objects.
+      They check if two objects are the same object which happens for 2 reasons:
+      * Variables just point to the address in memory where the object is stored. So if two variables point to the same
+      address in memory, they point to the same object.
+      * Variables can be reassigned and we can have multiple variables pointing to the same object.
+
+      Let's take a look at the example:
+  - type: "codeblock-exec"
+    card_group: "operators_comparison"
+    value: |
+      a = 970032
+      b = 970032
+      c = a
+      print("a is b ", a is b)
+      print("b is c ", b is c)
+      print("a is c ", a is c)
+      print("a == b ", a == b)
+      print("b == c ", b == c)
+      print("a == c ", a == c)
+  - type: "quiz"
+    card_group: "operators_comparison"
+    quiz_items:
+      - question: "The main difference between '==' and 'is' operators is that"
+        answers:
+          - value: "'==' compares values and 'is' compares objects"
+            correct: true
+            explanation: "The '==' operator compares values and 'is' operator compares objects."
 
   - type: "paragraph"
     card_group: numeric_types
@@ -79,13 +194,13 @@ content:
       imaginary part, represented as `a + bj`, where `a` and `b` are floats.
 
   - type: "hint"
-    card_group: types_python
+    card_group: numeric_types
     value: |
       The function **type** used below is used to determine the type of an object.
       With it we can check the type of any object in Python.
 
   - type: "codeblock-exec"
-    card_group: types_python
+    card_group: numeric_types
     description: "This codeblock demonstrates the creation of different numeric types in Python."
     language: "python"
     value: |
@@ -95,7 +210,7 @@ content:
       print(type(integer_number), type(float_number), type(complex_number))
 
   - type: "paragraph"
-    card_group: operations
+    card_group: operations_numeric
     value: |
       ## Operations with Numeric Types
       Python supports a wide range of operations with numeric types, enabling us to perform 
@@ -108,6 +223,7 @@ content:
       `int()`, `float()`, and `complex()`.
 
   - type: "codeblock-exec"
+    card_group: operations_numeric
     description: "Demonstrating basic arithmetic operations with integers and floats."
     language: "python"
     value: |
@@ -130,7 +246,12 @@ content:
       number2 = 3
       result = # your code here
       print(result)
-    task: "Calculate the product of `number1` and `number2`, and assign it to the variable `result`.\n"
+    task: |
+      Calculate the product of `number1` and `number2`, and assign it to the variable `result`.
+
+      Product is simply the result of multiplying two numbers. For example, the product of 2 and 3 is 6.
+
+      Don't forget to use the '*' operator and use the correct variable names!
     solution: |
       number1 = 7
       number2 = 3
