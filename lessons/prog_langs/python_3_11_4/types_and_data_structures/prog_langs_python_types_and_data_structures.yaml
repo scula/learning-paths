@@ -125,7 +125,8 @@ content:
       * `//` floor division (11 // 2 = 5)
       * `%` modulus (11 % 2 = 1)
       * `**` exponentiation (2 ** 3 = 8)
-      Which cover most of the operations we need to perform on numbers. Python also has some nice perks 
+
+      Which covers most of the operations we need to perform on numbers. Python also has some nice perks 
       built-in like the ability to work with extremely large numbers. Try to run the next code and see the result.
   - type: "codeblock-exec"
     card_group: "operators"
@@ -227,13 +228,13 @@ content:
     description: "Demonstrating basic arithmetic operations with integers and floats."
     language: "python"
     value: |
-      # Addition
+      ## Addition
       sum = 10 + 15
-      # Subtraction
+      ## Subtraction
       difference = 20 - 5
-      # Multiplication
+      ## Multiplication
       product = 4 * 7
-      # Division
+      ## Division
       quotient = 8 / 2
       print("Sum:", sum, "Difference:", difference, "Product:", product, "Quotient:", quotient)
       print("sum == difference:", sum == difference)
