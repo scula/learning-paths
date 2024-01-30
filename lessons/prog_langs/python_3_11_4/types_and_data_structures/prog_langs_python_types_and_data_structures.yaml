@@ -210,6 +210,33 @@ content:
       - **Type Conversion:** You can convert between different numeric types using functions like 
       `int()`, `float()`, and `complex()`.
 
+      ### Type Conversion
+
+      We briefly explored artithmetic and comparison operations above. Now, let's take a look at type conversion.
+
+      Type conversion is the process of converting one data type to another. For example, you can convert
+      a float to an integer (for example, if you want to display only the whole number part of a float) or 
+      you can convert an integer to a string (in fact it happens everytime you print a number).
+
+      Let's take a look at some examples of type conversion in Python.
+  - type: "codeblock-exec"
+    card_group: operations_numeric
+    description: "Demonstrating basic arithmetic operations with integers and floats."
+    language: "python"
+    value: |
+      float_number = 3.14
+      integer_number = int(float_number)
+      string_number = str(integer_number)
+      print(float_number)
+      print(integer_number)
+      print(string_number)
+  - type: "paragraph"
+    card_group: operations_numeric
+    value: |
+      In the example above we converted a float number to an integer and then to a string.
+
+
+      Now let's see all the basic operations we can perform with numeric types in Python.
   - type: "codeblock-exec"
     card_group: operations_numeric
     description: "Demonstrating basic arithmetic operations with integers and floats."
