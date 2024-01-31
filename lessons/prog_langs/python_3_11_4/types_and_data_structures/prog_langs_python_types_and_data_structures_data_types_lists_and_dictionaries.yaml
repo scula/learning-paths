@@ -289,7 +289,8 @@ content:
     boilerplate: |
       # Initial dictionary with person's details
       person_dict = {"name": "John", "age": 28, "profession": "Engineer"}
-      dictionary_operations = # your code here
+      # your code here with dictionary_operations as the final variable
+      print(dictionary_operations)
     task: |
       Perform the following operations on the `person_dict`:
       1. Add a new key-value pair: `"city": "New York"`.

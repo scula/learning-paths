@@ -223,7 +223,7 @@ content:
       print(len("Python 3 was released in 2008"))
 
   - type: "paragraph"
-    card_group: operations
+    card_group: formatting
     value: |
       # Formatting and printing
 
@@ -239,28 +239,28 @@ content:
       We can use the `format()` method on a string to replace the curly braces `{}` in the string with the values
       of the objects passed to the `format()` method.
   - type: "codeblock-exec"
-    card_group: operations
+    card_group: formatting
     value: |
       first_name = "John"
       last_name = "Doe"
       full_name = "{} {}".format(first_name, last_name)
       print(full_name)
   - type: "paragraph"
-    card_group: operations
+    card_group: formatting
     value: |
       **Using f-strings**
 
       We can also use f-strings to format a string. f-strings are a special type of string that allow us to
       embed expressions inside the string. We can do this by prefixing the string with the letter `f`.
   - type: "codeblock-exec"
-    card_group: operations
+    card_group: formatting
     value: |
       first_name = "John"
       last_name = "Doe"
       full_name = f"{first_name} {last_name}"
       print(full_name)
   - type: "paragraph"
-    card_group: operations
+    card_group: formatting
     value: |
       This is a very powerful feature of Python and allows us to create strings that are dynamic and change
       based on the values of the objects we work with.
