@@ -71,7 +71,7 @@ content:
       | False     | True      | True   |
       | False     | False     | False  |
 
-      ** 'not' operator
+      **'not' operator**
 
       The `not` operator returns `True` if the operand is `False`, otherwise it returns `False`.
       The logic table for the `not` operator is as follows:

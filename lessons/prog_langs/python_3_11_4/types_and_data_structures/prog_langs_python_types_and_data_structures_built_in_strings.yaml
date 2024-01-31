@@ -34,8 +34,8 @@ content:
   - type: "codeblock-exec"
     card_group: creating_strings
     value: |
-      single_quote_with_double_quotes = 'This is a string with "double quotes" inside it.'
-      double_quote_with_single_quotes = "This is a string with 'single quotes' inside it."
+      single_quote_with_double_quotes = 'string with "double quotes" inside.'
+      double_quote_with_single_quotes = "string with 'single quotes' it."
       print(single_quote_with_double_quotes)
       print(double_quote_with_single_quotes)
   - type: "paragraph"
@@ -64,8 +64,8 @@ content:
   - type: "codeblock-exec"
     card_group: escaping_characters
     value: |
-      single_quote_with_single_quotes = 'This is a string with \'single quotes\' inside it.'
-      double_quote_with_double_quotes = "This is a string with \"double quotes\" inside it."
+      single = 'This is a string with \'single quotes\' inside it.'
+      double = "This is a string with \"double quotes\" inside it."
       print(single_quote_with_single_quotes)
       print(double_quote_with_double_quotes)
   - type: "paragraph"
@@ -119,11 +119,10 @@ content:
       This means that you can access individual characters in a string by using their index.
       The index is the position of the character in the string. The first character in a string
       has index 0, the second character has index 1, and so on.
-      ```
+
       | P | y | t | h | o | n |
       |---|---|---|---|---|---|
       | 0 | 1 | 2 | 3 | 4 | 5 |
-      ```
 
       So when we say we want to access the character at index 2, we are referring to the character `t`.
 
