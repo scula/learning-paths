@@ -361,20 +361,12 @@ content:
       - question: "What will `sample_string[2:5]` return if `sample_string = 'Python'`?"
         answers:
           - value: "yth"
-            explanation: "Slicing starts at index 2 and ends at index 4, so it returns 'yth'."
-            correct: true
+            explanation: "Remember that string slicing starts at index 0. So, `sample_string[2:5]` returns 'tho'."
           - value: "tho"
-            explanation: "Slicing starts at index 2 and ends at index 4, so it returns 'yth'."
-          - value: "Pyt"
-            explanation: "Slicing starts at index 2 and ends at index 4, so it returns 'yth'."
-      - question: "What is the result of `len('Hello World')`?"
-        answers:
-          - value: "11"
+            explanation: "Slicing starts at index 2 and ends at index 5 (not including it), so it returns 'tho'."
             correct: true
-            explanation: "The `len()` function returns the length of a string."
-          - value: "10"
-            explanation: "Remember to count the space as a character."
-          - value: "12"
+          - value: "Pyt"
+            explanation: "Remember that string slicing starts at index 0. So, `sample_string[2:5]` returns 'tho'."
 
   - type: "paragraph"
     card_group: "introduction"
