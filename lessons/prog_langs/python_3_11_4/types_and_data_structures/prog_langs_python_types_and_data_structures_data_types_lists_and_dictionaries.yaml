@@ -40,11 +40,10 @@ content:
       ```
 
       This list as any other sequence in Python is indexed starting from 0.
-      ```
       | 0 | 1 | 2 | 3 |
       |---|---|---|---|
       | 6 | 2 | 9 | 4 |
-      ```
+
       To access an element of a list, we use the index of that element in square brackets:
   - type: "codeblock-exec"
     card_group: "lists_basics"
@@ -134,6 +133,7 @@ content:
       mixed_list.remove(2)          # Removes True [5, "apple", 7.5, "banana"]
       list_operations = mixed_list[0:3] # Slices the list
     test_code: |
+      from main import list_operations
       import unittest
       class TestListOperations(unittest.TestCase):
           def test_list_operations(self):
@@ -306,6 +306,8 @@ content:
       keys_list = list(person_dict.keys())       # Creates a list of keys
       dictionary_operations = (person_dict, keys_list)
     test_code: |
+      from main import dictionary_operations
+
       import unittest
       class TestDictionaryOperations(unittest.TestCase):
           def test_dictionary_operations(self):
