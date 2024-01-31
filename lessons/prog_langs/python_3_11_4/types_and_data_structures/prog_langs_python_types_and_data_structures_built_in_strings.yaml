@@ -66,8 +66,8 @@ content:
     value: |
       single = 'This is a string with \'single quotes\' inside it.'
       double = "This is a string with \"double quotes\" inside it."
-      print(single_quote_with_single_quotes)
-      print(double_quote_with_double_quotes)
+      print(single)
+      print(double)
   - type: "paragraph"
     card_group: escaping_characters
     value: |
@@ -130,7 +130,8 @@ content:
       We use square brackes after the string '[ ]' to treat the string as a sequence and access
       individual characters in it. 
 
-      ** Accessing a single character in a string **
+      **Accessing a single character in a string**
+
       We can do this by specifying the index of the character we want to access inside the square brackets.
   - type: "codeblock-exec"
     card_group: sequences
@@ -142,7 +143,8 @@ content:
   - type: "paragraph"
     card_group: sequences
     value: |
-      ** Accessing a range of characters in a string **
+      **Accessing a range of characters in a string**
+
       Imagine you want to access a range of characters in a string. For example, you want to access
       the word 'released' in the string 'Python 3 was released in 2008'. You can do this by specifying
       the start and end index of the range you want to access inside the square brackets, separated by a colon.
@@ -178,7 +180,8 @@ content:
       Now that we know how to create and access strings, let's take a look at some common operations
       we can perform on strings.
 
-      ** Concatenation **
+      **Concatenation**
+
       Concatenation is the process of combining two strings together and creating 
       a new string object. We can do this using the `+` operator.
   - type: "codeblock-exec"
@@ -191,7 +194,8 @@ content:
   - type: "paragraph"
     card_group: operations
     value: |
-      ** Repetition **
+      **Repetition**
+
       We can repeat a string multiple times using the `*` operator.
   - type: "codeblock-exec"
     card_group: operations
@@ -200,7 +204,8 @@ content:
   - type: "paragraph"
     card_group: operations
     value: |
-      ** Membership **
+      **Membership**
+
       We can check if a string is a part of another string using the `in` operator.
   - type: "codeblock-exec"
     card_group: operations
@@ -209,7 +214,8 @@ content:
   - type: "paragraph"
     card_group: operations
     value: |
-      ** Length **
+      **Length**
+
       We can find the length of a string using the `len()` function.
   - type: "codeblock-exec"
     card_group: operations
@@ -228,7 +234,8 @@ content:
       Before we just passed multiple objects to the `print()` function and it printed them one after the other.
       But we can work smarter and use string formatting to print a string that contains the values of the objects.
 
-      ** Using the `format()` method **
+      **Using the `format()` method**
+
       We can use the `format()` method on a string to replace the curly braces `{}` in the string with the values
       of the objects passed to the `format()` method.
   - type: "codeblock-exec"
@@ -241,7 +248,8 @@ content:
   - type: "paragraph"
     card_group: operations
     value: |
-      ** Using f-strings **
+      **Using f-strings**
+
       We can also use f-strings to format a string. f-strings are a special type of string that allow us to
       embed expressions inside the string. We can do this by prefixing the string with the letter `f`.
   - type: "codeblock-exec"
@@ -260,6 +268,7 @@ content:
     boilerplate: |
       # Create an ASCII art using f-string and string multiplication
       art = # your code here
+      print(art)
     task: |
       Create a simple ASCII art in one line using an f-string and the multiplication of a string. 
       Your task is to create a small pyramid shape exactly like the one below and save it in a single 
@@ -277,6 +286,7 @@ content:
       # Solution
       art = f"{'*' * 1}\n{'*' * 3}\n{'*' * 5}"
     test_code: |
+      from main import art
       import unittest
       class TestAsciiArt(unittest.TestCase):
           def test_ascii_art(self):

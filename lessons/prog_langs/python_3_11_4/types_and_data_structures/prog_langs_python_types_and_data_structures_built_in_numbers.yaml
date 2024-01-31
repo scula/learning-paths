@@ -133,10 +133,10 @@ content:
       - question: "What will be the result of the operation above?"
         answers:
           - value: "True"
-            description: "In fact 0.1 + 0.2 in computers gets evaluated to 0.30000000000000004. Which is not equal to 0.3."
+            explanation: "In fact 0.1 + 0.2 in computers gets evaluated to 0.30000000000000004. Which is not equal to 0.3."
           - value: "False"
             correct: true
-            description: "In fact 0.1 + 0.2 in computers gets evaluated to 0.30000000000000004. Which is not equal to 0.3."
+            explanation: "In fact 0.1 + 0.2 in computers gets evaluated to 0.30000000000000004. Which is not equal to 0.3."
   - type: "paragraph"
     card_group: float_operations
     value: |
