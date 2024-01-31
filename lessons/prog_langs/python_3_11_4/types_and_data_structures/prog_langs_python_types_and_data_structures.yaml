@@ -9,11 +9,8 @@ content:
     value: |
       # Learning Objectives
 
-      In this lesson, we will talk again and learn more about Python types, variables, and data structures! 
-      We'll explore the rich variety of data types available in Python, 
-      understand what variables are and how Python's dynamic typing works. 
-      We'll also dive deep into core data types like numbers, strings, lists, dictionaries, and more. 
-      Let's get started!
+      In this lesson, we will talk again and learn more about Python objects, their types and how to work with them.
+      You will learn to differentiate between different types and determine the type of an object.
 
   - type: "paragraph"
     card_group: "object_types"
@@ -23,8 +20,8 @@ content:
       Before we discussed that working with data is the main purpose of programming.
       And data is represented by objects of different **types** in Python. 
 
-      **Type** of an object defines what operations can be performed on it and what values it can hold.
-      For example, an operator "+" does different things for numbers and strings. Try to run the next 
+      Type of an object defines what operations can be performed on it and what values it can hold.
+      For example, an operator '+' does different things for numbers and strings. Try to run the next 
       example and notice the difference in the output.
 
   - type: "codeblock-exec"
@@ -41,9 +38,45 @@ content:
       For numbers it performs addition, for strings it performs concatenation.
 
 
-      This behavior is defined by the type of the objects we are working with.
+      This behavior is defined by the type of the object we are working with and that's why 
+      it's important to understand the types and their capabilities.
 
   - type: "paragraph"
+    value: |
+      # Main Python types
+
+      Python has a wide range of types for different purposes. Later you will even learn how to create your own types.
+      But for now let's have a thousand feet overview of the main types in Python.
+
+      🔢 **Numeric types**
+
+      Numeric types are used to represent numbers in Python (560, 3.14, 1 + 5j, etc.).
+
+      🔡 **String type**
+
+      String type is used to represent text in Python and is always enclosed in quotes ('Hello', "World", etc.).
+
+      📦 **Container types**
+
+      Container types are used to store multiple values in a single object. For example, a list of numbers 
+      would be a container type. There are many different container types in Python and we will talk about them later.
+
+      🚫 **None type**
+
+      None type is used to represent the absence of a value. It is used to indicate that a variable exists,
+      but it doesn't have a value yet. The value of None type is always `None` without quotes.
+
+      🚦 **Boolean type**
+
+      Boolean type is used to represent logical values `True` and `False`. It is used to indicate the result of
+      a comparison or a logical operation. For example, `1 > 2` will create a boolean value `False` because `1` is not
+      greater than `2`.
+
+      That's quite a lot of types, but don't worry, we will talk about them in more detail later. 
+      Now let's see how Python determines the type of an object and how we can determine it ourselves.
+
+  - type: "paragraph"
+    card_group: "dynamic_typing"
     value: |
       # Dynamic Typing
 
@@ -64,13 +97,37 @@ content:
       In this case, `a` will be an integer, `b` will be a string, `c` will be a boolean, `d` will be a float,
       and `e` will be a list.
 
+      ## Determining the type of an object
+
+      And to check the type of an object we can use the function `type()` which will return the type of an object.
+  - type: "codeblock-exec"
+    card_group: "dynamic_typing"
+    value: |
+      a = 132
+      b = "132"
+      c = True 
+      d = 1.32
+      e = [1, 3, 2]
+      print(type(a))
+      print(type(b))
+      print(type(c))
+      print(type(d))
+      print(type(e))
+  - type: "paragraph"
+    card_group: "dynamic_typing"
+    value: |
+      You will not see the name of the type as we defined it above, but you will see the internal 
+      name of the type. For example, the type of `a` will be `int` and the type of `b` will be `str`, etc.
+
   - type: "paragraph"
     card_group: "reassigning_variables"
     value: |
-      ## Reassigning Variables
+      # Reassigning variables
 
-      Besides dynamic typing, Python also allows us to reassign variables to different types or values. 
-      This means that we can assign a value of one type to a variable and later reassign it to a value of a different type.
+      Variables are used to store values in Python. And we can assign any value to a variable. But Python
+      also allows us to reassign variables to different types or values. 
+      This means that we can assign a value of one type to a variable and later 
+      reassign it to a value of a different type.
 
       What value do you think the variable `a` will have after the following code is executed?
   - type: "codeblock-exec"
@@ -99,14 +156,14 @@ content:
       # Operators and operands
 
       We talked about objects, values and types. But just by themselves they are not very useful.
-      They just sit there and do nothing. We need to do something with them.
+      They just sit there and do nothing. Usually we want to do something with them to get the result we need.
 
       In programming, we use **operators** to perform operations on objects and **operands** are the 
-      objects that operators work on. For example, in expression `1 + 2` the operator is `+` and 
-      operands are `1` and `2`.
+      objects that operators work on. For example, in expression `1 + 2` the operator is '+' and 
+      operands are '1' and '2'.
 
       Python supports a wide range of operators for different types of objects. But sometimes the same 
-      operator can do different things for different types of objects. For example, `+` operator can
+      operator can do different things for different types of objects. For example, '+' operator can
       perform addition for numbers and concatenation for strings. 
 
       Let's take a look at some of the operators we can use in Python.
@@ -118,13 +175,13 @@ content:
 
       Mathematical operators are used to perform mathematical operations on numbers. They look very similar 
       to the operators we use in math with some differences:
-      * `+` addition
-      * `-` subtraction
-      * `*` multiplication
-      * `/` division
-      * `//` floor division (11 // 2 = 5)
-      * `%` modulus (11 % 2 = 1)
-      * `**` exponentiation (2 ** 3 = 8)
+      * '+' addition
+      * '-' subtraction
+      * '*' multiplication
+      * '/' division
+      * '//' floor division (11 // 2 = 5)
+      * '%' modulus (11 % 2 = 1)
+      * '**' exponentiation (2 ** 3 = 8)
 
       Which covers most of the operations we need to perform on numbers. Python also has some nice perks 
       built-in like the ability to work with extremely large numbers. Try to run the next code and see the result.
@@ -159,309 +216,55 @@ content:
     value: |
       res = 45 != 39 
       print("45 != 39 is", res)
-
-      total = res == True
   - type: "quiz"
     card_group: "operators_comparison"
     quiz_items:
-      - question: "What is the value of the variable `total`?"
+      - question: "What is the value of the variable `res`?"
         answers:
-          - value: "It's a boolean value `True`"
+          - value: "It's a boolean value 'True'"
             correct: true
-            explanation: "Because `res` variable is equal to `True` and compared to `True`."
+            explanation: "Because 45 is not equal to 39."
 
   - type: "paragraph"
-    card_group: numeric_types
+    card_group: "logical_operators"
     value: |
-      # Numeric types in Python
-      Python primarily supports three types of numbers:
-      - **Integers (`int`):** These are whole numbers without a decimal point, like 42 or -3.
-      - **Floating-Point Numbers (`float`):** These represent real numbers and contain decimal points, 
-      such as 3.14 or -0.001.
-      - **Complex Numbers (`complex`):** Less common but equally important, these numbers have a real and 
-      imaginary part, represented as `a + bj`, where `a` and `b` are floats.
+      ## 🚦 **Logical operators**
 
-  - type: "hint"
-    card_group: numeric_types
-    value: |
-      The function **type** used below is used to determine the type of an object.
-      With it we can check the type of any object in Python.
+      Logical operators are used to combine multiple boolean values into a single boolean value. 
+      They are used to perform logical operations on boolean values. For example, `True and False` will return `False`
+      because `and` operator requires both operands to be `True` to return `True`. Here is the list of logical operators:
+      * `and` logical and
+      * `or` logical or
+      * `not` logical not
 
+      Let's take a look at the example where we will use variable name for storing some fact and
+      value of the variable will be either `True` or `False`.
   - type: "codeblock-exec"
-    card_group: numeric_types
-    description: "This codeblock demonstrates the creation of different numeric types in Python."
-    language: "python"
+    card_group: "logical_operators"
     value: |
-      integer_number = 42
-      float_number = 3.14
-      complex_number = 1 + 5j
-      print(type(integer_number), type(float_number), type(complex_number))
-
-  - type: "paragraph"
-    card_group: operations_numeric
-    value: |
-      ## Operations with Numeric Types
-      Python supports a wide range of operations with numeric types, enabling us to perform 
-      mathematical calculations effortlessly. These operations include:
-      - **Arithmetic Operations:** Addition (`+`), subtraction (`-`), multiplication (`*`), division (`/`), 
-      floor division (`//`), modulus (`%`), and exponentiation (`**`).
-      - **Comparison Operations:** Equals (`==`), not equals (`!=`), greater than (`>`), less than (`<`), 
-      greater than or equal to (`>=`), and less than or equal to (`<=`).
-      - **Type Conversion:** You can convert between different numeric types using functions like 
-      `int()`, `float()`, and `complex()`.
-
-      ### Type Conversion
-
-      We briefly explored artithmetic and comparison operations above. Now, let's take a look at type conversion.
-
-      Type conversion is the process of converting one data type to another. For example, you can convert
-      a float to an integer (for example, if you want to display only the whole number part of a float) or 
-      you can convert an integer to a string (in fact it happens everytime you print a number).
-
-      Let's take a look at some examples of type conversion in Python.
-  - type: "codeblock-exec"
-    card_group: operations_numeric
-    description: "Demonstrating basic arithmetic operations with integers and floats."
-    language: "python"
-    value: |
-      float_number = 3.14
-      integer_number = int(float_number)
-      string_number = str(integer_number)
-      print(float_number)
-      print(integer_number)
-      print(string_number)
-  - type: "paragraph"
-    card_group: operations_numeric
-    value: |
-      In the example above we converted a float number to an integer and then to a string.
-
-
-      Now let's see all the basic operations we can perform with numeric types in Python.
-  - type: "codeblock-exec"
-    card_group: operations_numeric
-    description: "Demonstrating basic arithmetic operations with integers and floats."
-    language: "python"
-    value: |
-      ## Addition
-      sum = 10 + 15
-      ## Subtraction
-      difference = 20 - 5
-      ## Multiplication
-      product = 4 * 7
-      ## Division
-      quotient = 8 / 2
-      print("Sum:", sum, "Difference:", difference, "Product:", product, "Quotient:", quotient)
-      print("sum == difference:", sum == difference)
-      print("sum > difference:", sum > difference)
-      print("Converting float to int will truncate the decimal part:", int(quotient))
-
-  - type: "kata"
-    boilerplate: |
-      number1 = 7
-      number2 = 3
-      result = # your code here
-      print(result)
-    task: |
-      Calculate the product of `number1` and `number2`, and assign it to the variable `result`.
-
-      Product is simply the result of multiplying two numbers. For example, the product of 2 and 3 is 6.
-
-      Don't forget to use the '*' operator and use the correct variable names!
-    solution: |
-      number1 = 7
-      number2 = 3
-      result = number1 * number2
-    test_code: |
-      from main import number1, number2, result
-      import unittest
-      class TestMultiplication(unittest.TestCase):
-          def test_result(self):
-              self.assertEqual(result, number1 * number2, "Ensure that the product is calculated correctly.")
-
+      treesCanWalk = False
+      sunIsHot = True
+      combinationOfFacts = treesCanWalk and sunIsHot
+      print("Combination of facts is", combinationOfFacts)
   - type: "quiz"
+    card_group: "logical_operators"
     quiz_items:
-      - question: "Which Python numeric type represents whole numbers?"
+      - question: "What is the value of the variable `combinationOfFacts`?"
         answers:
-          - value: "int"
-            explanation: "The `int` type is used for whole numbers without a decimal point."
+          - value: "It's a boolean value 'False'"
             correct: true
-          - value: "float"
-          - value: "complex"
-      - question: "What does the expression `5 // 2` return in Python?"
-        answers:
-          - value: "2.5"
-          - value: "2"
-            explanation: "The floor division `//` returns the largest integer less than or equal to the division result."
-            correct: true
-          - value: "3"
+            explanation: "Because one of the operands is `False` and logical AND requires both operands to be `True` to return `True`."
+  - type: "paragraph"
+    card_group: "logical_operators"
+    value: |
+      Usually we don't use logical operators and variables names like that. We will see later how 
+      to use them in a more useful way.
 
   - type: "paragraph"
-    card_group: strings_basics
     value: |
-      # Strings
-      Strings are the way we handle text in Python, and they are incredibly versatile. 
-      Imagine strings as a necklace of characters; each bead is a letter, a space, or even a punctuation mark. 
-      We'll start with the basics and gradually delve into more complex string manipulations.
+      # Summary
 
-  - type: "hint"
-    card_group: strings_basics
-    value: |
-      **Tip:** Remember, in Python, a string is just a sequence of characters. 
-      It can be as short as a single letter, or as long as an entire book!
-
-  - type: "codeblock-exec"
-    description: "This code block demonstrates how to create a simple string in Python and print it."
-    language: "python"
-    value: |
-      greeting = "Hello, Python Learner!"
-      print(greeting)
-
-  - type: "paragraph"
-    card_group: string_operations
-    value: |
-      ## Dive into String Operations
-      Strings are not just for storing text; they're tools for text manipulation. 
-      Python provides a variety of operations to manipulate strings, making them one of the most 
-      useful data types in Python. Let's explore some common operations like slicing, concatenation, and formatting.
-
-  - type: "codeblock-exec"
-    card_group: string_operations
-    description: "Here's how you can slice a string to extract a specific part of it."
-    language: "python"
-    value: |
-      sample_string = "Python Programming"
-      slice = sample_string[7:18]
-      print(slice)
-
-  - type: "hint"
-    card_group: string_operations
-    value: |
-      **Note:** String slicing in Python starts with index 0. `sample_string[7:18]` extracts 
-      characters from index 7 to 17.
-
-  - type: "kata"
-    boilerplate: |
-      message = "Python Programming"
-      sliced_message = # your code here
-      print(sliced_message)
-    task: "Slice the string stored in the variable `message` to extract the word 'Programming' and assign it to `sliced_message`.\n"
-    solution: |
-      message = "Python Programming"
-      sliced_message = message[7:]
-    test_code: |
-      from main import sliced_message
-      from main import message
-      import unittest
-      class TestStringSlicing(unittest.TestCase):
-          def test_slice(self):
-              self.assertEqual(sliced_message, message[7:], "Make sure that you slice the string correctly to extract 'Programming'.")
-
-  - type: "quiz"
-    quiz_items:
-      - question: "What will `sample_string[2:5]` return if `sample_string = 'Python'`?"
-        answers:
-          - value: "yth"
-            explanation: "Remember that string slicing starts at index 0. So, `sample_string[2:5]` returns 'tho'."
-          - value: "tho"
-            explanation: "Slicing starts at index 2 and ends at index 5 (not including it), so it returns 'tho'."
-            correct: true
-          - value: "Pyt"
-            explanation: "Remember that string slicing starts at index 0. So, `sample_string[2:5]` returns 'tho'."
-
-  - type: "paragraph"
-    card_group: "introduction"
-    value: |
-      # Boolean and None Types
-      Now that you know about numbers and strings, it's time to learn about two more types: 
-      Booleans and None. These types are fundamental to Python and programming in general. 
-      They're also the building blocks of more complex data structures, 
-      like dictionaries. Let's dive in!
-
-  - type: "paragraph"
-    card_group: "boolean_basics"
-    value: |
-      ## The Power of Booleans
-      In Python, Booleans represent one of two values: `True` or `False`. 
-      Imagine them as the binary decision-makers at the heart of your code's logic. 
-      They help in making choices, controlling flow, and evaluating conditions.
-       When you're asking your code to make decisions, Booleans are your go-to tool.
-
-  - type: "hint"
-    card_group: "boolean_basics"
-    value: |
-      **Hint:** Booleans are often the result of comparisons or conditions. 
-      For example, `5 > 3` evaluates to `True` because 5 is indeed greater than 3.
-
-  - type: "codeblock-exec"
-    description: "Understanding Boolean expressions"
-    language: "python"
-    value: |
-      print(10 > 9)   # Outputs True
-      print(4 == 5)   # Outputs False
-      print(6 <= 6)   # Outputs True
-
-  - type: "paragraph"
-    card_group: "none_basics"
-    value: |
-      ## None: The Absence of a Value
-      In Python, `None` is a special type representing the absence of a value. 
-      It's like an empty box or a placeholder saying “nothing to see here.” 
-      This type is particularly useful when you need to indicate that a variable exists, 
-      but it doesn't have a value yet.
-
-  - type: "hint"
-    card_group: "none_basics"
-    value: |
-      **Hint:** Use `None` to initialize variables or to indicate a special condition in your code. 
-      It's different from `False`, `0`, or an empty string `""`, all of which are valid values.
-
-  - type: "codeblock-exec"
-    description: "Using None in Python"
-    language: "python"
-    value: |
-      my_variable = None
-      if my_variable is None:
-          print("No value yet!")
-      else:
-          print("There's something here.")
-
-  - type: "kata"
-    boilerplate: |
-      def check_presence(value):
-          return # your code here
-      print(check_presence(None))
-      print(check_presence(5))
-    task: |
-      Write a function `check_presence` that returns `True` if the given 
-      value is not `None`, otherwise returns `False`. 
-
-      Even though we didn't work with functions yet, you can still complete this task!
-      Just replace `# your code here` with your solution where you check the `value` variable with None.
-    solution: |
-      def check_presence(value):
-          return value is not None
-    test_code: |
-      from main import check_presence
-      import unittest
-      class TestCheckPresence(unittest.TestCase):
-          def test_presence(self):
-              self.assertTrue(check_presence(5), "5 is not None.")
-              self.assertFalse(check_presence(None), "None should return False.")
-
-  - type: "quiz"
-    quiz_items:
-      - question: "What does the expression `not False` evaluate to in Python?"
-        answers:
-          - value: "True"
-            correct: true
-            explanation: "The `not` operator inverts the Boolean value. Thus, `not False` is `True`."
-          - value: "False"
-          - value: "None"
-      - question: "What is the type of `None` in Python?"
-        answers:
-          - value: "int"
-          - value: "bool"
-          - value: "NoneType"
-            correct: true
-            explanation: "`None` is of the `NoneType` type, representing the absence of a value."
-          - value: "str"
+      In this lesson, we learned about Python objects, their types and how to work with them. 
+      The important thing to remember is that Python is a dynamically typed language and 
+      we don't need to specify the type of an object when we create it.  And that objects of different types 
+      can have different capabilities.

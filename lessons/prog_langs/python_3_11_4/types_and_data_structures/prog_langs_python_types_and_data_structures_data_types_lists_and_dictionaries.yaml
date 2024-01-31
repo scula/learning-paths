@@ -1,100 +1,315 @@
 node_string_id: "prog_langs_python_types_and_data_structures_data_types_lists_and_dictionaries"
-name: "Lists and Dictionaries"
-description: "Storing many items"
+name: "Collections"
+description: "Containers and sequences: lists, tuples, sets, and dictionaries"
 software_dependencies:
   - name: python
     version: 3.11.4
 content:
   - type: "paragraph"
-    card_group: "introduction"
     value: |
-      # Lists and Dictionaries
-      Lists and Dictionaries are more than just places to store data; they are the backbone of Python scripting, 
-      offering incredible flexibility and power.
+      ## Learning Objectives
+
+      In this lesson, we will learn about the different types of collections in Python. They are used 
+      to store inside them other objects, such as numbers, strings, or even other collections.
+
+      By the end of this lesson, you will be able to create and manipulate lists, tuples, sets, and dictionaries.
+
+  - type: "paragraph"
+    value: |
+      # Collections in Python
+
+      Collections are containers that hold other objects. They are used to group related data together
+      and are one of the most important concepts in Python. There are four main types of collections in Python:
+      * Lists
+      * Tuples
+      * Sets
+      * Dictionaries
+
+      Each of these types has its own unique properties and use cases. Let's explore them in more detail.
 
   - type: "paragraph"
     card_group: "lists_basics"
     value: |
-      ## Understanding Lists in Python
-      A list in Python is like a treasure chest that can hold a variety of items. 
-      Imagine it as a collection of different things, like books, coins, or even other chests! 
-      The beauty of Python lists is their ability to hold different types of data, change size 
-      dynamically, and be manipulated with ease.
+      # Lists
 
-  - type: "hint"
+      List is a collection of items that are ordered and changeable. Items in a list can be of different types.
+      Lists are created using square brackets `[]` and their elements are accessed using indexes.
+      For example, the following list contains 4 elements of integer type:
+      ```
+      my_list = [6, 2, 9, 4]
+      ```
+
+      This list as any other sequence in Python is indexed starting from 0.
+      ```
+      | 0 | 1 | 2 | 3 |
+      |---|---|---|---|
+      | 6 | 2 | 9 | 4 |
+      ```
+      To access an element of a list, we use the index of that element in square brackets:
+  - type: "codeblock-exec"
     card_group: "lists_basics"
     value: |
-      **Hint:** Lists are created using square brackets `[]`, and you can access their elements 
-      using indexes, just like how you would count items in a treasure chest!
-
-  - type: "codeblock-exec"
-    description: "Creating a list and accessing its elements"
-    language: "python"
+      my_list = [6, 2, 9, 4]
+      print(my_list[0])  
+      print(my_list[2])
+  - type: "paragraph"
+    card_group: "lists_basics"
     value: |
-      my_list = [5, "Hello", True]
-      print(my_list[0])  # Outputs 5
-      print(my_list[1])  # Outputs 'Hello'
+      Lists are mutable and can be changed after they are created. We can add new elements to a list using the `append` method:
+  - type: "codeblock-exec"
+    card_group: "lists_basics"
+    value: |
+      my_list = [6, 2, 9, 4]
+      my_list.append(7)
+      print(my_list)
+  - type: "paragraph"
+    card_group: "lists_basics"
+    value: |
+      We can also change the value of an existing element in a list by assigning a new value to it:
+  - type: "codeblock-exec"
+    card_group: "lists_basics"
+    value: |
+      my_list = [6, 2, 9, 4]
+      my_list[1] = 5
+      print(my_list)
+  - type: "paragraph"
+    card_group: "lists_basics"
+    value: |
+      We can also remove elements from a list using the `remove` method:
+  - type: "codeblock-exec"
+    card_group: "lists_basics"
+    value: |
+      my_list = [6, 2, 9, 4]
+      my_list.remove(2)
+      print(my_list)
+  - type: "paragraph"
+    card_group: "lists_basics"
+    value: |
+      To get a slice of a list, we can use the colon operator `:`. We use it inside 
+      the square brackets and specify the start and end indexes of the slice (the end index is not included in the slice).
+      For example, to get the first two elements of a list:
+  - type: "codeblock-exec"
+    card_group: "lists_basics"
+    value: |
+      my_list = [6, 2, 9, 4]
+      print(my_list[0:2])
+  - type: "paragraph"
+    card_group: "lists_basics"
+    value: |
+      To get the number of elements in a list, we can use the `len` function:
+  - type: "codeblock-exec"
+    card_group: "lists_basics"
+    value: |
+      my_list = [6, 2, 9, 4]
+      print(len(my_list))
 
   - type: "paragraph"
-    card_group: "dictionaries_basics"
     value: |
-      ## Exploring Python Dictionaries
-      Dictionaries in Python are like secret maps that lead to hidden treasures. 
-      They hold information in pairs - a key and a value. Just like a real dictionary, 
-      where you look up a word (key) to find its definition (value), Python dictionaries allow you to store and 
-      retrieve data efficiently.
+      That was a lot of information! Don't worry about memorizing all of it. We will practice using lists in the next exercises 
+      and projects. It will soon become second nature to you!
 
-  - type: "hint"
-    card_group: "dictionaries_basics"
-    value: |
-      **Hint:** Dictionaries are created with curly braces `{}` with each item being a key-value pair 
-      separated by a colon. Remember, keys are unique in a dictionary!
-
-  - type: "codeblock-exec"
-    description: "Creating a dictionary and accessing its values"
-    language: "python"
-    value: |
-      my_dict = {"name": "Alice", "age": 30}
-      print(my_dict["name"])  # Outputs 'Alice'
-      print(my_dict["age"])   # Outputs 30
+      Also the more we learn the more you will discover that same concepts are used in different places. For example,
+       the `len` function can be used to get the length of a list, but it can also be used to get the length of a string or 
+       a dictionary. Which is conveniently our next topic.
 
   - type: "kata"
     boilerplate: |
-      shopping_list = []
-      # your code here to add items
-    task: "Add three items to the `shopping_list` list. For example, 'apples', 'bananas', and 'oranges'.\n"
+      #List of mixed types
+      mixed_list = [3, "apple", True, 7.5]
+      # Your code here
+      list_operations = # your code here
+      print(list_operations)
+    task: |
+      Perform the following operations on the `mixed_list`:
+      1. Append the string "banana" to the list.
+      2. Change the first element to the integer 5.
+      3. Remove the boolean `True` from the list.
+      4. Slice the list to include elements from 1st to 3rd (including the 3rd element).
+      Assign the final state of the list to the variable `list_operations`.
     solution: |
-      shopping_list = []
-      shopping_list.append('apples')
-      shopping_list.append('bananas')
-      shopping_list.append('oranges')
+      # Solution
+      mixed_list = [3, "apple", True, 7.5]
+      mixed_list.append("banana")      # Appends "banana"
+      mixed_list[0] = 5                # Changes first element to 5
+      mixed_list.remove(2)          # Removes True [5, "apple", 7.5, "banana"]
+      list_operations = mixed_list[0:3] # Slices the list
     test_code: |
-      from main import shopping_list
       import unittest
-      class TestShoppingList(unittest.TestCase):
-          def test_list_contents(self):
-              self.assertEqual(len(shopping_list), 3, "Ensure you add exactly three items.")
-              self.assertIn('apples', shopping_list, "Make sure 'apples' is in the list.")
-              self.assertIn('bananas', shopping_list, "Ensure 'bananas' is in the list.")
-              self.assertIn('oranges', shopping_list, "Check that 'oranges' are in the list.")
+      class TestListOperations(unittest.TestCase):
+          def test_list_operations(self):
+              self.assertEqual(list_operations, [5, "apple", 7.5], "Ensure you correctly appended, modified, removed, and sliced the list.")
 
-  - type: "quiz"
-    quiz_items:
-      - question: "Which of the following is a valid list in Python?"
-        answers:
-          - value: "[1, 2, 'three', 4]"
-            correct: true
-            explanation: "Python lists can contain different types of elements."
-          - value: "(1, 2, 3)"
-            explanation: "This is a tuple, not a list."
-          - value: "{1: 'one', 2: 'two'}"
-            explanation: "This is a dictionary, not a list."
-      - question: "How do you access the value associated with the key 'color' in a dictionary `my_dict`?"
-        answers:
-          - value: "my_dict['color']"
-            correct: true
-            explanation: "This is the correct syntax for accessing dictionary values."
-          - value: "my_dict[0]"
-            explanation: "Dictionaries are accessed by keys, not numeric indices."
-          - value: "my_dict.color"
-            explanation: "This syntax is not used for accessing dictionary elements in Python."
+  - type: "paragraph"
+    card_group: "dictionaries_basics"
+    value: |
+      # Dictionaries
+
+      Dictionaries are used to store data in key-value pairs. Each key is unique and is used to access its corresponding value.
+      Dictionaries are created using curly braces `{}` and their elements are accessed using keys.
+      For example, the following dictionary contains 2 elements of string type:
+      ```
+      my_dict = {"name": "Alice", "age": 30}
+      ```
+
+      To access an element of a dictionary, we use the key of that element in square brackets:
+  - type: "codeblock-exec"
+    card_group: "dictionaries_basics"
+    value: |
+      my_dict = {"name": "Alice", "age": 30}
+      print(my_dict["name"])  
+      print(my_dict["age"])
+  - type: "paragraph"
+    card_group: "dictionaries_basics"
+    value: |
+      Dictionaries are mutable and can be changed after they are created. We can add new elements to a dictionary using the `update` method:
+  - type: "codeblock-exec"
+    card_group: "dictionaries_basics"
+    value: |
+      my_dict = {"name": "Alice", "age": 30}
+      my_dict.update({"city": "London"})
+      print(my_dict)
+  - type: "paragraph"
+    card_group: "dictionaries_basics"
+    value: |
+      We can also change the value of an existing element in a dictionary by assigning a new value to it:
+  - type: "codeblock-exec"
+    card_group: "dictionaries_basics"
+    value: |
+      my_dict = {"name": "Alice", "age": 30}
+      my_dict["age"] = 31
+      print(my_dict)
+  - type: "paragraph"
+    card_group: "dictionaries_basics"
+    value: |
+      To remove elements from a dictionary we use the `pop` method:
+  - type: "codeblock-exec"
+    card_group: "dictionaries_basics"
+    value: |
+      my_dict = {"name": "Alice", "age": 30}
+      my_dict.pop("age")
+      print(my_dict)
+  - type: "paragraph"
+    card_group: "dictionaries_basics"
+    value: |
+      To get a list of all keys in a dictionary, we can use the `keys` method:
+  - type: "codeblock-exec"
+    card_group: "dictionaries_basics"
+    value: |
+      my_dict = {"name": "Alice", "age": 30}
+      print(my_dict.keys())
+
+  - type: "paragraph"
+    value: |
+      # Lists and dictionaries summary 
+
+      Lists and dictionaries are two of the most important data structures in Python.
+      They are used to store data in a structured way and are the building blocks of more complex data structures.
+      Lists are used to store data in an ordered way, while dictionaries are used to store data in key-value pairs.
+
+      Lists are great for storing data that is ordered and needs to be accessed by index.
+      Dictionaries are great for storing data that is unordered and needs to be accessed by key.
+
+  - type: "paragraph"
+    value: |
+      # Sets 
+
+      Sets are used to store data in an unordered way. They are created using curly braces `{}` 
+      and their elements are accessed using values.
+
+      The main difference between sets and lists is that sets don't allow duplicate elements. We can use it 
+      to store a collection of unique elements.
+
+
+      For example, the following set contains 4 elements of integer type:
+      ```
+      my_set = {6, 2, 9, 4}
+      ```
+      Sets are mutable and can be changed after they are created. We can add new elements to a set using the `add` method:
+  - type: "codeblock-exec"
+    card_group: "sets_basics"
+    value: |
+      my_set = {6, 2, 9, 4}
+      my_set.add(7)
+      print(my_set)
+  - type: "paragraph"
+    card_group: "sets_basics"
+    value: |
+      We can also remove elements from a set using the `remove` method:
+  - type: "codeblock-exec"
+    card_group: "sets_basics"
+    value: |
+      my_set = {6, 2, 9, 4}
+      my_set.remove(2)
+      print(my_set)
+  - type: "paragraph"
+    card_group: "sets_basics"
+    value: |
+      For getting the number of elements in a set, we can use the `len` function as with lists and dictionaries.
+
+  - type: "paragraph"
+    value: |
+      # Tuples
+
+      Tuples are used to store data in an ordered way. They are created using round brackets `()` 
+      and their elements are accessed using indexes.
+
+      The main difference between tuples and lists is that tuples are immutable. Once a tuple is created, 
+      its elements cannot be changed. We can use it to store data that should not be changed after it is created.
+
+      For example, the following tuple contains 4 elements of integer type:
+      ```
+      my_tuple = (6, 2, 9, 4)
+      ```
+      Tuples are indexed starting from 0. To access an element of a tuple, we use the index of that element in square brackets:
+  - type: "codeblock-exec"
+    card_group: "tuples_basics"
+    value: |
+      my_tuple = (6, 2, 9, 4)
+      print(my_tuple[0])  
+      print(my_tuple[2])
+  - type: "paragraph"
+    card_group: "tuples_basics"
+    value: |
+      Tuples are immutable and cannot be changed after they are created. We cannot add new elements to a tuple or remove elements from it.
+      We also cannot change the value of an existing element in a tuple.
+
+  - type: "paragraph"
+    value: |
+      # When to use each collection?
+
+      Now that we know about the different types of collections in Python, let's talk about when to use each of them.
+
+      * Lists are great for simple use cases of storing large amounts of data in an ordered way. 
+      * Dictionaries are great for storing data in key-value pairs. This can be used to create a quick reference table.
+      For example, in the library system, we can use a dictionary to store the book with title as key and author as value.
+      * Sets are great for storing unique elements. 
+      * Tuples are great for storing data that should not be changed after it is created.
+
+  - type: "kata"
+    boilerplate: |
+      # Initial dictionary with person's details
+      person_dict = {"name": "John", "age": 28, "profession": "Engineer"}
+      dictionary_operations = # your code here
+    task: |
+      Perform the following operations on the `person_dict`:
+      1. Add a new key-value pair: `"city": "New York"`.
+      2. Change the `age` to 29.
+      3. Remove the `profession` key from the dictionary.
+      4. Create a list of all the keys in the dictionary.
+      Assign the final dictionary and the list of keys to the variable `dictionary_operations` as a tuple (final_dict, keys_list).
+    solution: |
+      # Solution
+      person_dict = {"name": "John", "age": 28, "profession": "Engineer"}
+      person_dict.update({"city": "New York"})   # Adds new key-value pair
+      person_dict["age"] = 29                    # Updates age
+      person_dict.pop("profession")              # Removes profession key
+      keys_list = list(person_dict.keys())       # Creates a list of keys
+      dictionary_operations = (person_dict, keys_list)
+    test_code: |
+      import unittest
+      class TestDictionaryOperations(unittest.TestCase):
+          def test_dictionary_operations(self):
+              expected_dict = {"name": "John", "age": 29, "city": "New York"}
+              expected_keys = ["name", "age", "city"]
+              self.assertEqual(dictionary_operations[0], expected_dict, "Check if the dictionary has been updated correctly.")
+              self.assertEqual(dictionary_operations[1], expected_keys, "Ensure that the list of keys is correct.")

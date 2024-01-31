@@ -1,0 +1,184 @@
+node_string_id: "prog_langs_python_types_and_data_structures_built_in_boolean"
+name: "What is True?"
+description: "Boolean type and logical operators"
+software_dependencies:
+  - name: python
+    version: 3.11.4
+content:
+  - type: "paragraph"
+    value: |
+      # Learning Objectives
+
+      In this lesson, we will dive into the boolean type and learn how to use it in Python.
+      We will talk about boolean logic and how to use it to make decisions in our programs.
+      This will help you to get more control over the flow of your program and make it more flexible.
+
+  - type: "paragraph"
+    card_group: "boolean_basics"
+    value: |
+      # The Power of Booleans
+
+      In Python, Booleans represent one of two values: `True` or `False`. 
+      Imagine them as the binary decision-makers at the heart of your code's logic. 
+      They help in making choices, controlling flow, and evaluating conditions.
+      When you're asking your code to make decisions, Booleans are your go-to tool.
+
+  - type: "hint"
+    card_group: "boolean_basics"
+    value: |
+      **Hint:** Booleans are often the result of comparisons or conditions. 
+      For example, `5 > 3` evaluates to `True` because 5 is indeed greater than 3.
+      But you can also assign a Boolean value to a variable directly, like `is_raining = True`.
+
+  - type: "codeblock-exec"
+    description: "Understanding Boolean expressions"
+    language: "python"
+    value: |
+      print(10 > 9)   # Outputs True
+      operation = 9 > 10
+      print(operation)  # Outputs False
+
+  - type: "paragraph"
+    card_group: "boolean_basics"
+    value: |
+      # Boolean Operators and Logic
+
+      Boolean logic is the foundation of decision-making in Python and other programming languages.
+      It's a way of combining Booleans to create more complex conditions.
+      Python supports three Boolean operators: `and`, `or`, and `not`.
+
+      Let's explore them in more detail.
+
+      ** 'and' operator
+
+      The `and` operator returns `True` if both operands are `True`, otherwise it returns `False`.
+      The logic table for the `and` operator is as follows:
+      | Operand 1 | Operand 2 | Result |
+      | --------- | --------- | ------ |
+      | True      | True      | True   |
+      | True      | False     | False  |
+      | False     | True      | False  |
+      | False     | False     | False  |
+
+      ** 'or' operator
+
+      The `or` operator returns `True` if at least one of the operands is `True`, otherwise it returns `False`.
+      The logic table for the `or` operator is as follows:
+      | Operand 1 | Operand 2 | Result |
+      | --------- | --------- | ------ |
+      | True      | True      | True   |
+      | True      | False     | True   |
+      | False     | True      | True   |
+      | False     | False     | False  |
+
+      ** 'not' operator
+
+      The `not` operator returns `True` if the operand is `False`, otherwise it returns `False`.
+      The logic table for the `not` operator is as follows:
+      | Operand | Result |
+      | ------- | ------ |
+      | True    | False  |
+      | False   | True   |
+
+      In Python you can use them directly with boolean objects or with the results of boolean expressions.
+
+  - type: "codeblock-exec"
+    card_group: "boolean_basics"
+    value: |
+      print(True and False) 
+      print(True or False)
+      is_raining = True
+      is_cold = False
+      is_raining_and_cold = is_raining and is_cold
+      print("Is it raining? ", is_raining)
+      print("Is it cold? ", is_cold)
+      print("Is it raining and cold? ", is_raining_and_cold)
+
+  - type: "paragraph"
+    card_group: "combinig"
+    value: |
+      ## Combining Boolean Operators
+
+      You can combine Boolean operators to create more complex conditions. There is a precedence order for the operators,
+      which is as follows: `not`, `and`, `or`. This means that `not` is evaluated first, then `and`, and finally `or`.
+      You can use parentheses to change the order of evaluation.
+
+  - type: "codeblock-exec"
+    card_group: "combinig"
+    value: |
+      complex_condition = (True or False) and not False
+      print(complex_condition)
+
+  - type: "quiz"
+    card_group: "combinig"
+    quiz_items:
+      - question: "What value does the `complex_condition` variable have?"
+        answers:
+          - value: "True"
+            correct: true
+            explanation: |
+              True of False is evaluated first, which results in True. 
+              Then not False is evaluated, which results in True. 
+              Finally, True and True is evaluated, which results in True.
+          - value: "False"
+            explanation: |
+              True of False is evaluated first, which results in True. 
+              Then not False is evaluated, which results in True. 
+              Finally, True and True is evaluated, which results in True.
+
+  - type: "paragraph"
+    card_group: "none_basics"
+    value: |
+      ## None: The Absence of a Value
+      In Python, `None` is a special type representing the absence of a value. 
+      It's like an empty box or a placeholder saying “nothing to see here.” 
+      This type is particularly useful when you need to indicate that a variable exists, 
+      but it doesn't have a value yet.
+
+  - type: "hint"
+    card_group: "none_basics"
+    value: |
+      **Hint:** Use `None` to initialize variables or to indicate a special condition in your code. 
+      It's different from `False`, `0`, or an empty string `""`, all of which are valid values.
+
+  - type: "codeblock-exec"
+    description: "Using None in Python"
+    language: "python"
+    value: |
+      my_variable = None
+      if my_variable is None:
+          print("No value yet!")
+      else:
+          print("There's something here.")
+
+  - type: "quiz"
+    quiz_items:
+      - question: "What is the output of the expression `True and False`?"
+        answers:
+          - value: "True"
+            explanation: "The `and` operator requires both operands to be True. Since one operand is False, the expression evaluates to False."
+          - value: "False"
+            explanation: "The `and` operator returns True only if both operands are True. Here, one operand is False, so the result is False."
+            correct: true
+          - value: "None"
+            explanation: "The result of a boolean operation is not `None`, but a boolean value. In this case, it's False."
+
+      - question: "Which operator is evaluated first in the expression `(True or False) and not False`?"
+        answers:
+          - value: "`or`"
+            explanation: "While `or` is present in the expression, the `not` operator has the highest precedence and is evaluated first."
+          - value: "`and`"
+            explanation: "The `and` operator has a lower precedence compared to the `not` operator."
+          - value: "`not`"
+            explanation: "In Python, the `not` operator has the highest precedence. So it is evaluated before `and` and `or`."
+            correct: true
+
+      - question: "What does the `None` type represent in Python?"
+        answers:
+          - value: "False"
+            explanation: "`None` is different from `False`. `None` represents the absence of a value, whereas `False` is a boolean value indicating negation."
+          - value: "0"
+            explanation: "Although `0` is a falsy value, it's not the same as `None`. `None` signifies the absence of a value."
+          - value: "Absence of a value"
+            explanation: "`None` is a special type in Python used to denote the absence of a value, similar to 'null' in other programming languages."
+            correct: true

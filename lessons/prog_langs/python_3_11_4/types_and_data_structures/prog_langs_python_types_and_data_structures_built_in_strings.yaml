@@ -1,0 +1,285 @@
+node_string_id: "prog_langs_python_types_and_data_structures_built_in_strings"
+name: "Strings"
+description: "Working with text in Python"
+software_dependencies:
+  - name: python
+    version: 3.11.4
+content:
+  - type: "paragraph"
+    value: |
+      # Learning Objectives
+
+      In this lesson, we will learn about how to work with text in Python. There are many ways
+      you can transform, print and manipulate text in Python. We will learn about the most common
+      ways to do it and also talk about how string type is different from other types in Python.
+
+  - type: "paragraph"
+    card_group: strings_basics
+    value: |
+      # Strings
+
+      Strings are the way we handle text in Python, and they are incredibly versatile. 
+      In its essence a string is a sequence of characters. It can be as short as a single letter,
+      or as long as an entire book.
+
+  - type: "paragraph"
+    card_group: creating_strings
+    value: |
+      # Creating Strings
+
+      Strings can be created by enclosing characters inside single quotes (`'`) or double quotes (`"`).
+      The only difference between the two is that strings enclosed in double quotes can contain single quotes
+      inside them, and strings enclosed in single quotes can contain double quotes inside them.
+
+  - type: "codeblock-exec"
+    card_group: creating_strings
+    value: |
+      single_quote_with_double_quotes = 'This is a string with "double quotes" inside it.'
+      double_quote_with_single_quotes = "This is a string with 'single quotes' inside it."
+      print(single_quote_with_double_quotes)
+      print(double_quote_with_single_quotes)
+  - type: "paragraph"
+    card_group: creating_strings
+    value: |
+      So the outer quotes are used for Python to know where the string starts and ends, and the inner quotes
+      are just characters inside the string. You can also use triple quotes (`'''` or `"""`) to create strings
+      that span multiple lines.
+  - type: "codeblock-exec"
+    card_group: creating_strings
+    value: |
+      multi_line_string = """This is a string
+      that spans two lines."""
+
+      print(multi_line_string)
+  - type: "paragraph"
+    card_group: escaping_characters
+    value: |
+      # Escaping characters 
+
+      Python doesn't work with string as it is. Just before when we used different type of quotes to create
+      strings, we saw that we can't use the same type of quotes inside the string. This is because Python
+      will think that the string ends at the first quote it sees. To avoid this, we can use the backslash
+      character (`\`) to escape the quote character. This tells Python that the quote character is part of
+      the string and not the end of it.
+  - type: "codeblock-exec"
+    card_group: escaping_characters
+    value: |
+      single_quote_with_single_quotes = 'This is a string with \'single quotes\' inside it.'
+      double_quote_with_double_quotes = "This is a string with \"double quotes\" inside it."
+      print(single_quote_with_single_quotes)
+      print(double_quote_with_double_quotes)
+  - type: "paragraph"
+    card_group: escaping_characters
+    value: |
+      The backslash character can also be used to escape other characters like newlines (`\n`), tabs (`\t`),
+      and even other backslashes (`\\`). This special characters allow us to control how the string is displayed
+      when we print it.
+  - type: "codeblock-exec"
+    card_group: escaping_characters
+    value: |
+      print("This is a string with a newline\ninside it.")
+      print("This is a string with a tab\tinside it.")
+      print("This is a string with a backslash\\inside it.")
+  - type: "paragraph"
+    card_group: escaping_characters
+    value: |
+      Notice how the newline character (`\n`) and the tab character (`\t`) are displayed when we print the string.
+      The backslash allows us to specify either a special character or a quote character inside the string.
+
+  - type: "kata"
+    boilerplate: |
+      ## Create a string using double quotes that contains double quotes inside it
+      string_with_double_quotes = # your code here
+      print(string_with_double_quotes)
+    task: |
+      Create a string `string_with_double_quotes` that is defined with double quotes and also contains double quotes inside it. You will need to use escaping to achieve this.
+    solution: |
+      # Solution
+      string_with_double_quotes = "This is a string with \"double quotes\" inside it."
+    test_code: |
+      import unittest
+      from main import string_with_double_quotes
+      class TestStringWithDoubleQuotes(unittest.TestCase):
+          def test_string_with_double_quotes(self):
+              self.assertIn("\"", string_with_double_quotes)
+
+  - type: "paragraph"
+    card_group: string_properties
+    value: |
+      # String properties 
+
+      Strings have a couple of properties that make them different from other types in Python. They 
+      allow us to have a better control over how we work with text in Python.
+
+  - type: "paragraph"
+    card_group: sequences
+    value: |
+      ## Strings are sequences
+
+      This means that you can access individual characters in a string by using their index.
+      The index is the position of the character in the string. The first character in a string
+      has index 0, the second character has index 1, and so on.
+      ```
+      | P | y | t | h | o | n |
+      |---|---|---|---|---|---|
+      | 0 | 1 | 2 | 3 | 4 | 5 |
+      ```
+
+      So when we say we want to access the character at index 2, we are referring to the character `t`.
+
+      Because strings are sequences, Python has an amazing syntax for accessing parts of a string.
+      We use square brackes after the string '[ ]' to treat the string as a sequence and access
+      individual characters in it. 
+
+      ** Accessing a single character in a string **
+      We can do this by specifying the index of the character we want to access inside the square brackets.
+  - type: "codeblock-exec"
+    card_group: sequences
+    value: |
+      sample_string = "Python 3 was released in 2008"
+      python_version = sample_string[7]
+      print(python_version)
+
+  - type: "paragraph"
+    card_group: sequences
+    value: |
+      ** Accessing a range of characters in a string **
+      Imagine you want to access a range of characters in a string. For example, you want to access
+      the word 'released' in the string 'Python 3 was released in 2008'. You can do this by specifying
+      the start and end index of the range you want to access inside the square brackets, separated by a colon.
+      This is called string **slicing**.
+
+  - type: "hint"
+    card_group: sequences
+    value: |
+      The end index is not included in the range. So, if you want to access characters from index 2 to 5,
+      you will need to specify the range as `sample_string[2:6]`.
+  - type: "codeblock-exec"
+    card_group: sequences
+    value: |
+      sample_string = "Python 3 was released in 2008"
+      released_word = sample_string[13:21]
+      print(released_word)
+      print("The last index which was not included is a space ", sample_string[21])
+
+  - type: "paragraph"
+    card_group: sequences
+    value: |
+      ## Strings are immutable
+
+      This means that once created a string object cannot be changed. When you perform any manipulation
+      on a string, you are actually creating a new string object. For example, when we use string slicing
+      we are actually creating a new string object.
+
+  - type: "paragraph"
+    card_group: operations
+    value: |
+      # String Operations
+
+      Now that we know how to create and access strings, let's take a look at some common operations
+      we can perform on strings.
+
+      ** Concatenation **
+      Concatenation is the process of combining two strings together and creating 
+      a new string object. We can do this using the `+` operator.
+  - type: "codeblock-exec"
+    card_group: operations
+    value: |
+      first_name = "John"
+      last_name = "Doe"
+      full_name = first_name + " " + last_name
+      print(full_name)
+  - type: "paragraph"
+    card_group: operations
+    value: |
+      ** Repetition **
+      We can repeat a string multiple times using the `*` operator.
+  - type: "codeblock-exec"
+    card_group: operations
+    value: |
+      print("Buy an elephant! " * 9)
+  - type: "paragraph"
+    card_group: operations
+    value: |
+      ** Membership **
+      We can check if a string is a part of another string using the `in` operator.
+  - type: "codeblock-exec"
+    card_group: operations
+    value: |
+      print("Python" in "Python 3 was released in 2008")
+  - type: "paragraph"
+    card_group: operations
+    value: |
+      ** Length **
+      We can find the length of a string using the `len()` function.
+  - type: "codeblock-exec"
+    card_group: operations
+    value: |
+      print(len("Python 3 was released in 2008"))
+
+  - type: "paragraph"
+    card_group: operations
+    value: |
+      # Formatting and printing
+
+      Most of the time we want to dynamically change the contents of a string and print it. For example, 
+      we might want to print a string that contains the name of the user. We can do this using string
+      formatting.
+
+      Before we just passed multiple objects to the `print()` function and it printed them one after the other.
+      But we can work smarter and use string formatting to print a string that contains the values of the objects.
+
+      ** Using the `format()` method **
+      We can use the `format()` method on a string to replace the curly braces `{}` in the string with the values
+      of the objects passed to the `format()` method.
+  - type: "codeblock-exec"
+    card_group: operations
+    value: |
+      first_name = "John"
+      last_name = "Doe"
+      full_name = "{} {}".format(first_name, last_name)
+      print(full_name)
+  - type: "paragraph"
+    card_group: operations
+    value: |
+      ** Using f-strings **
+      We can also use f-strings to format a string. f-strings are a special type of string that allow us to
+      embed expressions inside the string. We can do this by prefixing the string with the letter `f`.
+  - type: "codeblock-exec"
+    card_group: operations
+    value: |
+      first_name = "John"
+      last_name = "Doe"
+      full_name = f"{first_name} {last_name}"
+      print(full_name)
+  - type: "paragraph"
+    card_group: operations
+    value: |
+      This is a very powerful feature of Python and allows us to create strings that are dynamic and change
+      based on the values of the objects we work with.
+  - type: "kata"
+    boilerplate: |
+      # Create an ASCII art using f-string and string multiplication
+      art = # your code here
+    task: |
+      Create a simple ASCII art in one line using an f-string and the multiplication of a string. 
+      Your task is to create a small pyramid shape exactly like the one below and save it in a single 
+      variable called `art`. 
+      It would look like this:
+      ```
+      *
+      ***
+      *****
+      ```
+      You will need to use special character like `\n` to define a new line, and the `*` operator to
+      multiply a string and also use either the format method or f-strings to combine all strings together.
+
+    solution: |
+      # Solution
+      art = f"{'*' * 1}\n{'*' * 3}\n{'*' * 5}"
+    test_code: |
+      import unittest
+      class TestAsciiArt(unittest.TestCase):
+          def test_ascii_art(self):
+              expected_art = "*\n***\n*****"
+              self.assertEqual(art, expected_art, "Ensure your ASCII art creates a pyramid shape with three levels like in the example.")
