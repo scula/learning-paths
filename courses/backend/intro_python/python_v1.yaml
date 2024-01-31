@@ -88,7 +88,7 @@ sprints:
         collections:
           - node_string_id: "prog_langs_python_types_and_data_structures_built_in_boolean"
             group: "Structures"
-            lesson_sha: "8a7e0c7"
+            lesson_sha: "03a5027"
             file_path: "lessons/prog_langs/python_3_11_4/types_and_data_structures/prog_langs_python_types_and_data_structures_built_in_boolean.yaml"
           - node_string_id: "prog_langs_python_types_and_data_structures_built_in_strings"
             file_path: "lessons/prog_langs/python_3_11_4/types_and_data_structures/prog_langs_python_types_and_data_structures_built_in_strings.yaml"
