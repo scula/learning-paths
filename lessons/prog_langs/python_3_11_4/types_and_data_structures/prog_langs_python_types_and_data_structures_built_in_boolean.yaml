@@ -49,7 +49,7 @@ content:
 
       Let's explore them in more detail.
 
-      ** 'and' operator
+      **'and' operator**
 
       The `and` operator returns `True` if both operands are `True`, otherwise it returns `False`.
       The logic table for the `and` operator is as follows:
@@ -60,7 +60,7 @@ content:
       | False     | True      | False  |
       | False     | False     | False  |
 
-      ** 'or' operator
+      **'or' operator**
 
       The `or` operator returns `True` if at least one of the operands is `True`, otherwise it returns `False`.
       The logic table for the `or` operator is as follows:
