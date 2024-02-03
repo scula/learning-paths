@@ -177,13 +177,13 @@ sprints:
         collections:
           - node_string_id: "prog_langs_python_projects_hangman_game"
             file_path: "lessons/prog_langs/python_3_11_4/projects/prog_langs_python_projects_hangman_game.yaml"
-            lesson_sha: "c5c6c11"
+            lesson_sha: "f3e25d2"
             group: "Projects"
           # - node_string_id: "prog_langs.python_3_11_4.projects.resource_management_system"
           #   group: "Projects"
           - node_string_id: "prog_langs_python_projects_weather_prediction"
             file_path: "lessons/prog_langs/python_3_11_4/projects/prog_langs_python_projects_weather_prediction.yaml"
-            lesson_sha: "a1f38b7"
+            lesson_sha: "f3e25d2"
             group: "Projects"
   - name: "Python: Data and OS Interaction"
     sprint_items:
