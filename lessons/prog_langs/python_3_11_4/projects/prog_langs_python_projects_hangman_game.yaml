@@ -5,7 +5,7 @@ type: "project"
 project:
   gcs_url: gs://scula-codelabs/codelabs_intro_python_projects_sprint1_hangman-f1f00a1.tar.gz
   codelab_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-intro-python:0.20
-  codelab_guard_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-guard-intro-python:0.17
+  codelab_guard_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-guard-intro-python:0.18
 software_dependencies:
   - name: python
     version: 3.11.4
