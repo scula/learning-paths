@@ -177,7 +177,7 @@ sprints:
         collections:
           - node_string_id: "prog_langs_python_projects_hangman_game"
             file_path: "lessons/prog_langs/python_3_11_4/projects/prog_langs_python_projects_hangman_game.yaml"
-            lesson_sha: "f3e25d2"
+            lesson_sha: "fc995a2"
             group: "Projects"
           # - node_string_id: "prog_langs.python_3_11_4.projects.resource_management_system"
           #   group: "Projects"
