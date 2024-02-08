@@ -84,7 +84,7 @@ content:
       **Type Conversion** 
 
       You can convert between different numeric types using functions like 
-      `int()`, `float()`, and `complex()`. We briefly explored artithmetic and comparison operations in the previous lesson. 
+      `int()`, `float()`, and `complex()`. We briefly explored arithmetic and comparison operations in the previous lesson. 
       Now, let's take a look at type conversion.
 
       Type conversion is the process of converting one data type to another. For example, you can convert

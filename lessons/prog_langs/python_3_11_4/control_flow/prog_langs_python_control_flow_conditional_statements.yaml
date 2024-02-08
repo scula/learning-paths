@@ -184,9 +184,12 @@ content:
     value: |
       ## Operator Precedence
       When combining conditions, it's important to remember that `not` has the highest precedence, followed by `and`, and finally `or`.
-      For example, `not True or False and True` is evaluated as `False or False and True` which is `False or True` which is `True`.
-      If you want to change the order of evaluation, you can use parentheses. For example, `(not True or False) and True` is evaluated as
-      `(False or False) and True` which is `False and True` which is `False`.
+      For example, `not True or False and True` is evaluated as `False or False and True` which is `False or False` which is `False`.
+      If you want to change the order of evaluation, you can use parentheses. For example, `False or not True and False or True`
+      is evaluated as `False or False and False or True` which is `False or False or True` which is `True`. But if we add
+      parenetheses `False or not (True and False or True)` it will be evaluated as `False or not (False or True)` 
+      which is `False or not True` which is `False`.
+
   - type: "codeblock-exec"
     card_group: "precendence"
     value: |

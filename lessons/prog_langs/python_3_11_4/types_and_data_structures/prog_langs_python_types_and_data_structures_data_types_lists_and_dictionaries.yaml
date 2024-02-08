@@ -197,6 +197,16 @@ content:
     value: |
       my_dict = {"name": "Alice", "age": 30}
       print(my_dict.keys())
+  - type: "paragraph"
+    card_group: "dictionaries_basics"
+    value: |
+      The operation above will print the list of keys as a `dict_keys` object. To convert it to a list, we can use the `list` function:
+  - type: "codeblock-exec"
+    card_group: "dictionaries_basics"
+    value: |
+      my_dict = {"name": "Alice", "age": 30}
+      keys_list = list(my_dict.keys())
+      print(keys_list)
 
   - type: "paragraph"
     value: |
