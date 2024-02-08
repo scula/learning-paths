@@ -191,6 +191,8 @@ sprints:
         collections:
           - node_string_id: "prog_langs_python_control_flow_loops_additional_control"
             group: "Control Flow"
+            lesson_sha: "a98de3a"
+            file_path: "lessons/prog_langs/python_3_11_4/control_flow/prog_langs_python_control_flow_loops_additional_control.yaml"
           - node_string_id: "prog_langs_python_control_flow_exceptions"
             group: "Control Flow"
           - node_string_id: "prog_langs_python_packages_general"
