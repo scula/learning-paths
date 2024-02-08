@@ -1,0 +1,348 @@
+node_string_id: "prog_langs_python_control_flow_loops_additional_control"
+name: "Loops: Level II"
+description: "Advanced control over loops"
+software_dependencies:
+  - name: python
+    version: 3.11.4
+content:
+  - type: "paragraph"
+    value: |
+      # Learning Objectives
+
+      We already know how to use loops to repeat a certain action multiple times. 
+      In this lesson, we will learn how to control the flow of the loop and how to exit the loop early if needed. 
+      We will also learn a few tricks about iteration in Python in general. This will allow you to write
+      clean and efficient code.
+
+  - type: "paragraph"
+    card_group: "loop_primitive"
+    value: |
+      # Primitive Loop Control
+
+      In Python we have two primitive loop commands: 
+
+      **for loop**
+
+      For loops are used to iterate over a sequence (a list, a tuple, a dictionary, a set, or a string).
+      It's useful when you want to perform some action for each item in the sequence.
+  - type: "codeblock-exec"
+    card_group: "loop_primitive"
+    value: |
+      berries = ['strawberry', 'blueberry', 'raspberry']
+      for berry in berries:
+          print(f"Enjoying a {berry}")
+  - type: "paragraph"
+    card_group: "loop_primitive"
+    value: |
+      **while loop**
+
+      While loops are used to execute a block of code repeatedly as long as a condition is true.
+      It's useful when you don't know how many times you want to repeat an action. 
+
+      For example, you can
+      use a while loop to find the first item matching your request in a list, like in the code below
+      where we search for the first negative temperature in a list of weather data.
+  - type: "codeblock-exec"
+    card_group: "loop_primitive"
+    value: |
+      weather_data = [5, 9, 7, -3, 4, 1, 4, 5]
+      index = 0
+      while weather_data[index] >= 0:
+          index += 1
+      print(f"The first negative temperature is {weather_data[index]}")
+
+  - type: "paragraph"
+    card_group: "primitive_task"
+    value: |
+      ## Reversing a list 
+
+      Let's practice using loops. We have a list of characters and we want to reverse the order of the elements in the list.
+      For example, if we have `['a', 'b', 'c', 'd', 'e']`, we want to get `['e', 'd', 'c', 'b', 'a']`.
+
+      In Python there are ways to do this using built-in functions, but we want to practice using loops.
+      Don't use any built-in functions for reversing the list. Use a `for` or `while` loop to reverse the order 
+      of elements in the `characters` list by using the index of the elements.
+
+  - type: "kata"
+    card_group: "primitive_task"
+    boilerplate: |
+      characters = ['a', 'b', 'c', 'd', 'e']
+      reversed_characters = []
+      # your code here
+      print(reversed_characters)
+    task: "Use a `for` or `while` loop to reverse the order of elements in the `characters` list.\n"
+    solution: |
+      characters = ['a', 'b', 'c', 'd', 'e']
+      reversed_characters = []
+      # Alternatively, using a while loop
+      index = len(characters) - 1
+      while index >= 0:
+          reversed_characters.append(characters[index])
+          index -= 1
+    test_code: |
+      from main import characters, reversed_characters
+      import unittest
+      class TestReverseOrder(unittest.TestCase):
+          def test_reverse_order(self):
+              self.assertEqual(reversed_characters, list(reversed(characters)), "Ensure that the characters are reversed correctly.")
+
+  - type: "paragraph"
+    card_group: "break"
+    value: |
+      # Controlling the loop 
+
+      Sometimes the logic inside the loop requires you to exit the loop early or skip the current iteration.
+      There are a lot of scenarios where you might want to do this. For example, when looping through a list of 
+      order items, you might want to omit the items that are out of stock. There are two keywords in Python that
+      allow you to control the flow of the loop: `break` and `continue`.
+
+      💔 **break**
+
+      The `break` keyword is used to exit the loop early. It's useful when you want to stop the loop when a certain
+      condition is met. It's similar to using a `while` loop with a condition that changes to `False` when you want to
+      exit the loop. 
+
+      For example, we can use the `break` keyword in the following example when we encounter an anomaly (let's say 
+      a value of different type than expected) in a list of data. We will use `isinstance` function to check if the
+      item is of the integer type and if not, we will print a message and exit the loop.
+
+  - type: "codeblock-exec"
+    card_group: "break"
+    value: |
+      data = [1, 2, 3, 4, 'anomaly', 6, 7, 8]
+      for item in data:
+          if not isinstance(item, int):
+              print(f"Anomaly detected: {item}")
+              break
+          print(f"Processing item: {item}")
+  - type: "paragraph"
+    card_group: "break"
+    value: |
+      ▶️ **continue**
+
+      The `continue` keyword is used to skip the current iteration and go to the next one. It's useful when you want
+      to skip an item in a list that doesn't meet certain criteria.
+
+      For example, we can use the `continue` keyword in the following example when we encounter an item that is out of
+      stock in a list of order items. We will use the `in` operator to check if the item is in the `in_stock` list and if
+      not, we will print a message and skip the current iteration.
+
+  - type: "codeblock-exec"
+    card_group: "break"
+    value: |
+      in_stock = ['apple', 'banana', 'orange', 'pear']
+      order = ['apple', 'banana', 'kiwi', 'orange', 'pear']
+      for item in order:
+          if item not in in_stock:
+              print(f"Out of stock: {item}")
+              continue
+          print(f"Processing item: {item}")
+
+  - type: "paragraph"
+    card_group: "filter_task"
+    value: |
+      ## Filtering messages
+
+      Let's practice using the `break` and `continue` keywords. We have a list of messages and we want to filter out
+      messages longer than 5 characters and stop the loop when we encounter the word 'Stop'.
+
+  - type: "kata"
+    card_group: "filter_task"
+    boilerplate: |
+      messages = ["Hello", "43", "Sooooo looong", "Word", "Good morning", "Stop", "Goodbye", "Hi"]
+      filtered_messages = []
+      # your code here
+      print(filtered_messages)
+    task: "Use `continue` to skip messages longer than 5 characters and `break` to stop the loop when you encounter the word 'Stop'.\n"
+    solution: |
+      messages = ["Hello", "Good morning", "Stop", "Goodbye", "Hi"]
+      filtered_messages = []
+      for message in messages:
+          if len(message) > 5:
+              continue
+          if message == "Stop":
+              break
+          filtered_messages.append(message)
+      print(filtered_messages)
+    test_code: |
+      from main import messages, filtered_messages
+      import unittest
+      class TestMessageFiltering(unittest.TestCase):
+          def test_message_filtering(self):
+              filter_control = []
+              for message in messages:
+                  if len(message) > 5:
+                      continue
+                  if message == "Stop":
+                      break
+                  filter_control.append(message)
+              self.assertEqual(filtered_messages, filter_control, "Ensure that messages with 'Good' are skipped and loop stops at 'Stop'.")
+
+  - type: "paragraph"
+    value: |
+      # Iterable objects
+
+      We mentioned the verb 'iterate' a few times already. It's a fundamental concept in programming.
+      In a nutshell, to iterate means to go through each item in a collection. You can imagine it as 
+      collecting matches from a matchbox one by one. Objects that can be iterated over are called
+      **iterables**.
+
+      **Iterables**
+
+      An iterable is an object that can be iterated over. This means that you can go through each item
+      in the collection one by one. Lists, tuples, dictionaries, and sets are all examples of iterables.
+      For example, in the following code snippet, we are iterating over a list of chocolates:
+      ```
+      chocolates = ['dark', 'milk', 'white']
+      for chocolate in chocolates:
+          print(f"Tasting {chocolate} chocolate")
+      ```
+
+  - type: "paragraph"
+    card_group: "iterable_operations"
+    value: |
+      # Operations on iterables
+
+      There are a few operations that you can perform on iterables. They behave differently depending on the type of the iterable.
+
+      **`len()`**
+
+      The `len()` function returns the number of items in an iterable. We can use it on lists, tuples, dictionaries, and sets.
+  - type: "codeblock-exec"
+    card_group: "iterable_operations"
+    value: |
+      frogs = ['Amazon milk frog', 'Red-eyed tree frog', 'Poison dart frog']
+      print(len(frogs))
+
+  - type: "paragraph"
+    card_group: "iterable_operations"
+    value: |
+      **`in`**
+
+      The `in` operator checks if an item is in the iterable. We can use it on lists, tuples, dictionaries, and sets.
+      We can achieve the same result by using the loop and the `break` keyword, but the `in` operator is more concise and
+      easier to read.
+      On lists, tuples and sets, the `in` operator checks if the item is in the collection. On dictionaries, it checks if
+      the item is in the keys of the dictionary.
+  - type: "codeblock-exec"
+    card_group: "iterable_operations"
+    value: |
+      frogs = ['Amazon milk frog', 'Red-eyed tree frog', 'Poison dart frog']
+      print('Red-eyed tree frog' in frogs) # checking the exact value in the list
+
+      unique_planets = {'Earth', 'Mars', 'Venus', 'Jupiter', 'Mars'} # Mars is repeated but set will contain only unique elements
+      print('Mars' in unique_planets)
+      print('Pluto' in unique_planets)
+
+      data_bucket = (1, "counter", 8749)
+      print("counter" in data_bucket) # checking the exact value in the tuple
+
+      store = {'apple': 5, 'banana': 3, 'orange': 7}
+      print('apple' in store) # checking the keys in the dictionary
+      print(5 in store) # this will return False because 5 is not a key in the dictionary
+
+  - type: "paragraph"
+    card_group: "iterable_operations"
+    value: |
+      **range()**
+
+      The `range()` function is used to generate a sequence of numbers. It's useful when you want to iterate over a list 
+      by using the index of the elements. We just need to provide the number of elements in the sequence and the `range()`
+      function will generate a sequence of numbers from 0 to the number of elements minus 1.
+  - type: "codeblock-exec"
+    card_group: "iterable_operations"
+    value: |
+      generated_numbers = range(5)
+      print(list(generated_numbers))
+  - type: "paragraph"
+    card_group: "iterable_operations"
+    value: |
+      And to loop through the array using the `range()` function, we can use the following code:
+  - type: "codeblock-exec"
+    card_group: "iterable_operations"
+    value: |
+      chocolates = ['dark', 'milk', 'white']
+      for index in range(len(chocolates)):
+          print(f"Tasting {chocolates[index]} chocolate under {index} index")
+  - type: "paragraph"
+    card_group: "iterable_operations"
+    value: |
+      Compare it to the snippet above `for chocolate in chocolates:`. Now we are using the index of the elements to
+      access them. We also passing the number of elements in the sequence to the `range()` function.
+
+  - type: "paragraph"
+    card_group: "task_operations"
+    value: |
+      ## Calculate the order summary 
+
+      We have a list of items that we want to purchase and a dictionary with the prices of the items. We want to calculate
+      the total sum of the order. Use the `range()` function to iterate over the `order_list`. Check if each item exists in
+      the `item_prices` dictionary. If it does, add the price of that item to `total_sum`, assuming the purchase of one unit
+      of each item.
+
+  - type: "kata"
+    card_group: "task_operations"
+    boilerplate: |
+      order_list = ["apple", "banana", "orange", "kiwi"]
+      item_prices = {"apple": 1.5, "banana": 0.8, "orange": 1.0, "kiwi": 2.0, "melon": 3.5}
+      total_sum = 0
+      # your code here
+      print(total_sum)
+    task: "Use the `range()` function to iterate over `order_list`. Check if each item exists in the `item_prices` dictionary. If it does, add the price of that item to `total_sum`, assuming the purchase of one unit of each item.\n"
+    solution: |
+      order_list = ["apple", "banana", "orange", "kiwi"]
+      item_prices = {"apple": 1.5, "banana": 0.8, "orange": 1.0, "kiwi": 2.0, "melon": 3.5}
+      total_sum = 0
+      for i in range(len(order_list)):
+          item = order_list[i]
+          if item in item_prices:
+              total_sum += item_prices[item]
+      print(total_sum)
+    test_code: |
+      from main import order_list, item_prices, total_sum
+      import unittest
+
+      class TestTotalOrderSum(unittest.TestCase):
+          def test_total_order_sum(self):
+              control_total_sum = 0
+              for i in range(len(order_list)):
+                  item = order_list[i]
+                  if item in item_prices:
+                      control_total_sum += item_prices[item]
+              self.assertEqual(total_sum, control_total_sum, "Ensure that the total sum is calculated correctly based on the item prices.")
+
+  - type: "paragraph"
+    card_group: "nested_loops"
+    value: |
+      # Nested loops 
+
+      Sometimes you need to iterate over a collection of collections. For example, you might want to iterate over a list of lists
+      or perform each action for each item in a list of lists. This is where nested loops come in handy.
+
+      For example, let's we have a preflight checklist for a rocket launch. We have a list of checklists for each stage of the
+      launch. We want to iterate over each checklist and print the stage and the checklist item.
+
+  - type: "codeblock-exec"
+    card_group: "nested_loops"
+    value: |
+      parts = ["Cone", "Booster", "Payload", "Fuel tank", "Engine"]
+      checks = ["installed", "connected", "tested"]
+
+      for check_ind in range(len(checks)):
+          for part in parts:
+              print(f"Performing {check_ind+1} stage check for {part}: {checks[check_ind]}")
+
+  - type: "paragraph"
+    card_group: "nested_loops"
+    value: |
+      In the example above, we are using the `range()` function to iterate over the `checks` list because 
+      we want to print the number of the stage. We are also using the `for` loop to iterate over the `parts` list
+      and print the stage and the checklist item.
+
+  - type: "paragraph"
+    value: |
+      # Summary
+
+      In this lesson, we learned how to control the flow of the loop using the `break` and `continue` keywords. We also learned
+      about iterable objects and how to use the `range()` function to iterate over a list using the index of the elements. We also
+      learned how to use nested loops to iterate over a collection of collections.

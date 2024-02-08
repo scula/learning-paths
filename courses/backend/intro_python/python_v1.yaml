@@ -96,14 +96,14 @@ sprints:
             group: "Structures"
           - node_string_id: "prog_langs_python_types_and_data_structures_built_in_numbers"
             file_path: "lessons/prog_langs/python_3_11_4/types_and_data_structures/prog_langs_python_types_and_data_structures_built_in_numbers.yaml"
-            lesson_sha: "b129692"
+            lesson_sha: "0f5a6de"
             group: "Structures"
 
       - type: parallel
         collections:
           - node_string_id: "prog_langs_python_types_and_data_structures_data_types_lists_and_dictionaries"
             group: "Structures"
-            lesson_sha: "b129692"
+            lesson_sha: "0f5a6de"
             file_path: "lessons/prog_langs/python_3_11_4/types_and_data_structures/prog_langs_python_types_and_data_structures_data_types_lists_and_dictionaries.yaml"
           - node_string_id: "prog_langs_python_functions"
             file_path: "lessons/prog_langs/python_3_11_4/functions/prog_langs_python_functions.yaml"
@@ -138,7 +138,7 @@ sprints:
         collections:
           - node_string_id: "prog_langs_python_control_flow_conditional_statements"
             file_path: "lessons/prog_langs/python_3_11_4/control_flow/prog_langs_python_control_flow_conditional_statements.yaml"
-            lesson_sha: "5aab515"
+            lesson_sha: "0f5a6de"
             group: "Control Flow"
           - node_string_id: "prog_langs_python_control_flow_loops"
             file_path: "lessons/prog_langs/python_3_11_4/control_flow/prog_langs_python_control_flow_loops.yaml"
@@ -187,39 +187,14 @@ sprints:
             group: "Projects"
   - name: "Python: Data and OS Interaction"
     sprint_items:
-      - type: "single"
-        collections:
-          - node_string_id: "helper.py.sprint_two"
-            group: "Sprints"
-      - type: "single"
-        collections:
-          - node_string_id: "story.zombie_survival.day_seven"
-            group: "Story"
       - type: "parallel"
         collections:
-          - node_string_id: "productivity_tools.github.usage"
-            group: "Github"
-          - node_string_id: "productivity_tools.github.ssh_keys"
-            group: "Github"
+          - node_string_id: "prog_langs_python_control_flow_loops_additional_control"
+            group: "Control Flow"
+          - node_string_id: "prog_langs_python_control_flow_exceptions"
+            group: "Control Flow"
           - node_string_id: "prog_langs_python_packages_general"
             group: "General"
-      - type: "parallel"
-        collections:
-          - node_string_id: "productivity_tools.vscode_1_79.usage"
-            group: "Productivity tools"
-          - node_string_id: "git_2_41_0.usage"
-            group: "Productivity tools"
-      - type: "parallel"
-        collections:
-          - node_string_id: "prog_langs.python_3_11_4.control_flow.loops.additional_control"
-            group: "Control Flow"
-          - node_string_id: "prog_langs.python_3_11_4.control_flow.exceptions"
-            group: "Control Flow"
-          - node_string_id: "prog_langs.python_3_11_4.packages.general"
-            group: "General"
-            complementary:
-              - node_string_id: "prog_langs.python_3_11_4.packages.venv_pip"
-                group: "General"
       - type: "single"
         collections:
           - node_string_id: "prog_langs.python_3_11_4.oop.classes_objects"
