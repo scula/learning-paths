@@ -218,6 +218,9 @@ content:
     boilerplate: |
       def divide_numbers(a, b):
           pass
+          
+      print(divide_numbers(10, 2))
+      print(divide_numbers(10, 0))
     task: |
       Write a function that takes two numbers as input and returns the result of dividing the first number by the second number.
       The function should handle the `ZeroDivisionError` exception and return `None` if the second number is zero.
