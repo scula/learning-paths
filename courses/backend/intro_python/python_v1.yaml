@@ -194,6 +194,8 @@ sprints:
             lesson_sha: "a98de3a"
             file_path: "lessons/prog_langs/python_3_11_4/control_flow/prog_langs_python_control_flow_loops_additional_control.yaml"
           - node_string_id: "prog_langs_python_control_flow_exceptions"
+            lesson_sha: "2b0da05"
+            file_path: "lessons/prog_langs/python_3_11_4/control_flow/prog_langs_python_control_flow_exceptions.yaml"
             group: "Control Flow"
           - node_string_id: "prog_langs_python_packages_general"
             group: "General"
