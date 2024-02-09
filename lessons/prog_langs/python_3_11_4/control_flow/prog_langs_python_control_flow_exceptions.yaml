@@ -1,0 +1,238 @@
+node_string_id: "prog_langs_python_control_flow_exceptions"
+name: "Exceptions"
+description: "When things go wrong"
+software_dependencies:
+  - name: python
+    version: 3.11.4
+content:
+  - type: "paragraph"
+    value: |
+      # Learning Objectives
+
+      As in life, if things can go wrong, they will. In this lesson, we will learn how to handle errors and exceptions in Python.
+      This is a crucial skill because it allows you to write more robust code that can handle unexpected situations.
+
+  - type: "paragraph"
+    card_group: "exceptions"
+    value: |
+      # What are exceptions?
+
+      An exception is an event that occurs during the execution of a program that disrupts the normal flow of instructions.
+      When an error occurs, Python generates an exception that can be handled, which prevents the program from crashing.
+      Exceptions can be caused by a variety of reasons, such as invalid input, file not found, or division by zero.
+
+      We've already seen some exceptions in action. For example, if you try to divide a number by zero, Python will 
+      raise a `ZeroDivisionError`.
+
+      Raising an exception in Python means stopping the normal flow of the program and jumping to the nearest exception handler.
+      If an exception is not handled, the program will crash and display an error message, for example, try to execute 
+      the following code:
+
+  - type: "codeblock-exec"
+    card_group: "exceptions"
+    value: |
+      result = 1/0
+  - type: "paragraph"
+    card_group: "exceptions"
+    value: |
+      You will see a `ZeroDivisionError` message with a traceback that shows where the error occurred. 
+      A traceback is a list of the functions that were called at the point where the error occurred. It helps you to
+      understand what went wrong and where.
+
+
+      So the mechanism of raising exceptions is simple because it happens without any intervention from the programmer.
+      If something is wrong, Python will raise an exception and stop the program. But what if we want to handle the exception
+      and continue the program? That's where exception handling comes into play.
+
+  - type: "paragraph"
+    card_group: "handling"
+    value: |
+      # Handling exceptions
+
+      Python provides a way to handle exceptions using the `try` and `except` blocks. The `try` block is used to enclose the code
+      that might raise an exception. The `except` block is used to handle the exception if it occurs. Here's an example:
+  - type: "codeblock-exec"
+    card_group: "handling"
+    value: |
+      file_to_read="non_existent_file.txt"
+      try:
+          with open(file_to_read, "r") as file:
+              print(file.read())
+          print("The file was read.")
+      except FileNotFoundError:
+          print("The file does not exist.")
+
+      print("The program continues and the file was not read.")
+  - type: "paragraph"
+    card_group: "handling"
+    value: |
+      In the example above, we try to open a file that does not exist. This will automatically raise 
+      a `FileNotFoundError` exception. 
+
+      After that the program will jump to the `except` block and execute the code inside it which will print
+      "The file does not exist." and then continue with the rest of the program. The code below the line 
+      where the exception was raised will not be executed (in this case the `print("The file was read.")` line).
+
+      Let's see it again with a different exception which we will be able to fix:
+
+  - type: "codeblock-exec"
+    card_group: "handling"
+    value: |
+      print("Usual flow of the program")
+      try:
+          import mathh
+          print("If the import was successful, this line will be executed.")
+          print(math.pi)
+      except ImportError:
+          print("The module does not exist.")
+          print("But we can continue with the program.")
+      print("We reach this line in both cases.")
+      print("The program continues.")
+
+  - type: "paragraph"
+    card_group: "types_exceptions"
+    value: |
+      # Types of exceptions
+
+      You've probably noticed that we used the `FileNotFoundError` and `ImportError` exceptions in the examples above.
+      Exceptions as everything in Python are objects. Each exception has a name and a type. The name is a string that
+      describes the error and the type is the class of the exception.
+
+      We will talk about classes and objects in the next lessons. For now, let's just say that exceptions can be different
+      and specific to the type of error that occurred. For example, if you try to access a non-existent key in a dictionary,
+      Python will raise a `KeyError` exception. If you try to convert a string to an integer and the string is not a valid
+      number, Python will raise a `ValueError` exception and so on.
+
+      In the except block, you can specify the type of exception that you want to handle. If you don't specify the type,
+      the except block will handle any exception. This is not recommended because it can hide errors that you didn't expect.
+      For example:
+  - type: "codeblock-exec"
+    card_group: "types_exceptions"
+    value: |
+      try:
+          result = 1/0
+      except:
+          print("An error occurred but we don't know what it is.")
+      print("The program continues.")
+  - type: "paragraph"
+    card_group: "types_exceptions"
+    value: |
+      In the example above, we don't know what the error is. It could be a `ZeroDivisionError` or something else. 
+      It is better to specify the type of exception that you want to handle. This way you can handle different exceptions
+      in different ways. For example, you can handle a `FileNotFoundError` by printing a message to the user and a `ZeroDivisionError`
+      by asking the user to input a different number.
+
+      You can also handle multiple exceptions by specifying multiple `except` blocks. For example:
+  - type: "codeblock-exec"
+    card_group: "types_exceptions"
+    value: |
+      user = {
+              "name": "John"
+          }
+      key = "age"
+      divider = 0
+      try:
+          result = 1 / divider
+          print(user[key])
+      except ZeroDivisionError:
+          print("You cannot divide by zero.")
+      except KeyError:
+          print(f"The key {key} does not exist in dictionary {user}.")
+      print("The program continues.")
+  - type: "paragraph"
+    card_group: "types_exceptions"
+    value: |
+      In the example above, we handle two different exceptions. If the divider is zero, we print a message to the user.
+      If the key does not exist in the dictionary, we print a different message. In both cases, the program continues
+      after the `except` block.
+
+      Try to fix the code above and try to run it with different values for `key` and `divider`. What happens if you
+      change the order of the `except` blocks?
+
+  - type: "quiz"
+    quiz_items:
+      - question: "If I know the scenario where an exception can occur, should I handle it?"
+        answers:
+          - value: "Yes, always"
+            correct: true
+            explanation: "It is a good practice to handle exceptions that you know can occur. This way you can prevent the program from crashing and provide a better user experience."
+          - value: "No, never"
+            explanation: "You can write code without handling any exceptions but it can be buggy and crash unexpectedly."
+
+  - type: "paragraph"
+    card_group: "finally"
+    value: |
+      # The `finally` block
+
+      The `finally` block is used to execute code after the `try` and `except` blocks, regardless of whether an exception was raised or not.
+      This is useful for cleaning up resources, such as closing files or database connections. For example:
+  - type: "codeblock-exec"
+    card_group: "finally"
+    value: |
+      user = {
+              "name": "John"
+          }
+      try:
+          print(f"User's age is {user['age']}.")
+          print(f"User's name is {user['name']}.")
+      except KeyError:
+          print("No such key in the dictionary.")
+      finally:
+          print("This block will always be executed.")
+      print("The program continues.")
+
+  - type: "paragraph"
+    card_group: "finally"
+    value: |
+      In the example above, we try to access the `age` key in the `user` dictionary. If the key does not exist, 
+      a `KeyError` exception will be raised and the program will jump to the `except` block. After that, the `finally` block
+      will be executed and the program will continue.
+
+      If the key exists, the program will execute the `print` statements and then the `finally` block. The `finally` block
+      is always executed, regardless of whether an exception was raised or not.
+
+      The `finally` block is optional. You can use it if you need to execute some code after the `try` and `except` blocks.
+
+  - type: "paragraph"
+    card_group: "kata"
+    value: |
+      # Task: handling exceptions 
+
+      In this task, you will write a function that takes two numbers as input and returns the result of dividing the first number by the second number.
+      The function should handle the `ZeroDivisionError` exception and return `None` if the second number is zero.
+
+      Here's the function signature:
+      ```python
+      def divide_numbers(a, b):
+          pass
+      ```
+      For example:
+      ```python
+      result = divide_numbers(10, 2)
+      print(result) # 5.0
+      result = divide_numbers(10, 0)
+      print(result) # None
+      ```
+      Don't forget to handle the exception and return `None` if the second number is zero.
+  - type: "kata"
+    boilerplate: |
+      def divide_numbers(a, b):
+          pass
+    task: |
+      Write a function that takes two numbers as input and returns the result of dividing the first number by the second number.
+      The function should handle the `ZeroDivisionError` exception and return `None` if the second number is zero.
+    solution: |
+      def divide_numbers(a, b):
+          try:
+              return a / b
+          except ZeroDivisionError:
+              return None
+    test_code: |
+      from main import divide_numbers
+      import unittest
+      class TestDivision(unittest.TestCase):
+          def test_divide_by_zero(self):
+              self.assertIsNone(divide_numbers(10, 0), "Ensure that the function returns None when dividing by zero.")
+          def test_divide_numbers(self):
+              self.assertEqual(divide_numbers(10, 2), 5.0, "Ensure that the function returns the correct result.")
+              self.assertEqual(divide_numbers(10, 5), 2.0, "Ensure that the function returns the correct result.")
