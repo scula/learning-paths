@@ -78,12 +78,11 @@ content:
     card_group: escaping_characters
     value: |
       print("This is a string with a newline\ninside it.")
-      print("This is a string with a tab\tinside it.")
       print("This is a string with a backslash\\inside it.")
   - type: "paragraph"
     card_group: escaping_characters
     value: |
-      Notice how the newline character (`\n`) and the tab character (`\t`) are displayed when we print the string.
+      Notice how the newline character (`\n`) is displayed when we print the string.
       The backslash allows us to specify either a special character or a quote character inside the string.
 
   - type: "kata"
@@ -266,11 +265,10 @@ content:
       based on the values of the objects we work with.
   - type: "kata"
     boilerplate: |
-      # Create an ASCII art using f-string and string multiplication
       art = # your code here
       print(art)
     task: |
-      Create a simple ASCII art in one line using an f-string and the multiplication of a string. 
+      Create a simple ASCII art in one line using the multiplication of a string. 
       Your task is to create a small pyramid shape exactly like the one below and save it in a single 
       variable called `art`. 
       It would look like this:
@@ -282,6 +280,8 @@ content:
       You will need to use special character like `\n` to define a new line, and the `*` operator to
       multiply a string and also use either the format method or f-strings to combine all strings together.
 
+      Make sure to assign the final result to the variable `art`.
+
     solution: |
       # Solution
       art = f"{'*' * 1}\n{'*' * 3}\n{'*' * 5}"
@@ -290,5 +290,8 @@ content:
       import unittest
       class TestAsciiArt(unittest.TestCase):
           def test_ascii_art(self):
-              expected_art = "*\n***\n*****"
-              self.assertEqual(art, expected_art, "Ensure your ASCII art creates a pyramid shape with three levels like in the example.")
+              lines = art.split("\n")
+              self.assertEqual(len(lines), 3, "Ensure your ASCII art has three lines.")
+              self.assertEqual(lines[0], "*", "Ensure first line has one star.")
+              self.assertEqual(lines[1], "***", "Ensure second line has three stars.")
+              self.assertEqual(lines[2], "*****", "Ensure third line has five stars.")

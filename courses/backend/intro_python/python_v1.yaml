@@ -194,18 +194,13 @@ sprints:
             lesson_sha: "a98de3a"
             file_path: "lessons/prog_langs/python_3_11_4/control_flow/prog_langs_python_control_flow_loops_additional_control.yaml"
           - node_string_id: "prog_langs_python_control_flow_exceptions"
-            lesson_sha: "2b0da05"
+            lesson_sha: "4b7ba6b"
             file_path: "lessons/prog_langs/python_3_11_4/control_flow/prog_langs_python_control_flow_exceptions.yaml"
             group: "Control Flow"
-          - node_string_id: "prog_langs_python_packages_general"
-            group: "General"
       - type: "single"
         collections:
-          - node_string_id: "prog_langs.python_3_11_4.oop.classes_objects"
+          - node_string_id: "prog_langs_python_oop"
             group: "Object Oriented Programming"
-            complementary:
-              - node_string_id: "prog_langs.python_3_11_4.oop.methods_properties"
-                group: "Object Oriented Programming"
       - type: "parallel"
         collections:
           - node_string_id: "os.directories_and_files"

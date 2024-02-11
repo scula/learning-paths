@@ -24,7 +24,7 @@ content:
 
       For example, we want to write a program that calculates the area of a rectangle. We can write the
       code to calculate the area once, but what if we want to calculate the area of multiple rectangles?
-      Let's it without functions first:
+      Let's implement it without functions first:
   - type: "codeblock-exec"
     card_group: "functions"
     value: |
@@ -131,8 +131,48 @@ content:
       throw it away, or even give it to someone else. The same goes for parameters. You can use them
       in your function however you want.
 
+      ```
+      ## We use def keyword to define a function
+      def calc_sum(a, b): # a and b are parameters available only inside the function
+          c = a + b # all variables declared inside the function are available only inside the function
+          return c
+
+      ## We call the function by its name and pass the arguments
+      num1 = 5
+      num2 = 3
+      calc_sum(num1, num2) # inside the brackets we pass our variables as arguments to the function 
+      ```
+
+      We can think of function definition as a contract. It tells us what the function expects to receive
+      and what it will do with it. Once the function is called, it will execute the code inside the function
+      body with the values that are passed to it. After the function is executed, it will return a value that
+      can be used in place of the function call.
   - type: "codeblock-exec"
     card_group: "arguments"
+    language: "python"
+    value: |
+      def distance(speed, time):
+          return speed * time
+
+      bike_speed = 30 # km/h
+      car_speed = 60 # km/h
+
+      race_time = 2 # hours
+
+      bike_result = distance(bike_speed, race_time)
+      car_result = distance(car_speed, race_time)
+
+      print("The bike traveled ", bike_result, " km")
+      print("The car traveled ", car_result, " km")
+
+  - type: "paragraph"
+    card_group: "multiple"
+    value: |
+      ## Multiple Parameters
+      Functions can have from zero to many parameters. You can use as many as you need.
+      For example:
+  - type: "codeblock-exec"
+    card_group: "multiple"
     description: "Here's how you can use multiple parameters."
     language: "python"
     value: |

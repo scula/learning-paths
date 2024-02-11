@@ -1,0 +1,120 @@
+node_string_id: "prog_langs_python_oop"
+name: "OOP in Python"
+description: "Paradigm of object-oriented programming"
+software_dependencies:
+  - name: python
+    version: 3.11.4
+content:
+  - type: "paragraph"
+    card_group: "intro"
+    value: |
+      # Learning Objectives
+
+      In this lesson, we will learn about the object-oriented programming paradigm in Python.
+      We will learn how to create classes and objects, and how to use inheritance and polymorphism.
+      This is a very important concept in programming and is widely used in many programming languages.
+
+  - type: "paragraph"
+    value: |
+      # Programming paradigms
+
+      Up until now, we have been writing code in a procedural way. This means that we write code that
+      executes line by line. It's quite simple and easy to understand, but it has its limitations.
+
+      For example, what if we want to reuse some code? Or reuse it with some modifications?
+
+      That's where different programming paradigms come into play. One of the most popular paradigms is
+      object-oriented programming (OOP). It allows us to write code in a way that is more modular and
+      reusable. It's a way of thinking about programming that is based on the concept of objects.
+
+  - type: "paragraph"
+    card_group: "oop"
+    value: |
+      # Object Oriented Programming
+
+      Object-oriented programming is a programming paradigm that is based on the concept of objects.
+      An object is a self-contained entity that consists of both data and procedures to manipulate the data.
+      Objects are instances of classes, which are templates for creating objects.
+
+      One of the main ideas behind OOP is to model real-world entities as objects with can hold their own data 
+      and have their own behavior. For example, we can model complex systems like bookstore and books 
+      as objects which can interact with each other. One of the greatest advantages of OOP is that it enforces
+      modularity and rules for data manipulation.
+
+      Let's expand on the example of a bookstore and start without classes and OOP. We can have a list of books
+      and a list of bookstores. We want to have the following functionality:
+      - Store some books in a bookstore
+      - Check if book is in the particular bookstore
+      - Sell a book from the bookstore
+      - Add a new book to the bookstore
+      - Books should have a title, author, and price
+      - Bookstores should have a name and a list of books
+
+      That's how we can do it without OOP:
+  - type: "codeblock-exec"
+    card_group: "oop"
+    description: "This codeblock demonstrates the implementation of a bookstore without OOP."
+    language: "python"
+    value: |
+      books = [
+          {"title": "The Catcher in the Rye", "author": "J.D. Salinger", "price": 10},
+          {"title": "To Kill a Mockingbird", "author": "Harper Lee", "price": 15},
+          {"title": "1984", "author": "George Orwell", "price": 12},
+      ]
+
+      bookstore_old_english = {
+          "name": "Old English Bookstore",
+          "books": books
+      }
+
+      bookstore_new_haven = {
+          "name": "New Haven Bookstore",
+          "books": []
+      }
+
+      def add_book(bookstore, book):
+          bookstore["books"].append(book)
+
+      def sell_book(bookstore, title):
+          for book in bookstore["books"]:
+              if book["title"] == title:
+                  bookstore["books"].remove(book)
+                  return book
+          return None
+
+      def is_book_in_store(bookstore, title):
+          for book in bookstore["books"]:
+              if book["title"] == title:
+                  return True
+          return False
+
+      add_book(bookstore_old_english, {"title": "The Great Gatsby", "author": "F. Scott Fitzgerald", "price": 20})
+      print(is_book_in_store(bookstore_old_english, "The Great Gatsby"))
+      print(sell_book(bookstore_old_english, "The Great Gatsby"))
+      add_book(bookstore_new_haven, {"title": "The Great Gatsby", "author": "F. Scott Fitzgerald", "price": 20})
+      print(is_book_in_store(bookstore_new_haven, "The Great Gatsby"))
+
+  - type: "paragraph"
+    card_group: "oop"
+    value: |
+      In the code above, we have a list of books and two dictionaries representing bookstores. We also have
+      functions to add books to a bookstore, sell books from a bookstore, and check if a book is in a bookstore.
+
+      There are a few problems with this approach:
+      - There is a lot of manual work to keep track of the books in the bookstores
+      - The books and bookstores have a structure which is not enforced: it means that we can add a book without
+        a title, author, or price, and we can add a bookstore without a name. 
+      - Even if we add this check in functions, there is no guarantee that new functions created later will
+        respect the structure of the books and bookstores.
+      - We can't easily reuse the code for another bookstore or another list of books. What if we want to have another type
+      of books, for example e-books or journals? We'll have to create a new list and new functions just for them. 
+
+      Let's see how we can solve these problems using OOP.
+
+  - type: "paragraph"
+    card_group: "oop_solution"
+    value: |
+      # Revisiting the Bookstore example with OOP
+
+      Now let's create the solution for the same problem using OOP. We will slowly build the solution step by step 
+      explaining the concepts of classes, objects, and inheritance.

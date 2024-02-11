@@ -115,29 +115,26 @@ content:
     boilerplate: |
       #List of mixed types
       mixed_list = [3, "apple", True, 7.5]
-      # Your code here
-      list_operations = # your code here
-      print(list_operations)
+      # Your code here with mixed_list modified
+      print(mixed_list)
     task: |
       Perform the following operations on the `mixed_list`:
       1. Append the string "banana" to the list.
       2. Change the first element to the integer 5.
       3. Remove the boolean `True` from the list.
-      4. Slice the list to include elements from 1st to 3rd (including the 3rd element).
-      Assign the final state of the list to the variable `list_operations`.
     solution: |
       # Solution
       mixed_list = [3, "apple", True, 7.5]
       mixed_list.append("banana")      # Appends "banana"
       mixed_list[0] = 5                # Changes first element to 5
-      mixed_list.remove(2)          # Removes True [5, "apple", 7.5, "banana"]
-      list_operations = mixed_list[0:3] # Slices the list
+      mixed_list.remove(True)          # Removes True
+      print(mixed_list)
     test_code: |
-      from main import list_operations
+      from main import mixed_list
       import unittest
       class TestListOperations(unittest.TestCase):
           def test_list_operations(self):
-              self.assertEqual(list_operations, [5, "apple", 7.5], "Ensure you correctly appended, modified, removed, and sliced the list.")
+              self.assertEqual(mixed_list, [5, 'apple', 7.5, 'banana'], "Ensure you've correctly modified the list.")
 
   - type: "paragraph"
     card_group: "dictionaries_basics"
@@ -297,32 +294,28 @@ content:
 
   - type: "kata"
     boilerplate: |
-      # Initial dictionary with person's details
       person_dict = {"name": "John", "age": 28, "profession": "Engineer"}
-      # your code here with dictionary_operations as the final variable
-      print(dictionary_operations)
+      # your code here with person_dict modified
+      print(person_dict)
     task: |
       Perform the following operations on the `person_dict`:
       1. Add a new key-value pair: `"city": "New York"`.
       2. Change the `age` to 29.
       3. Remove the `profession` key from the dictionary.
-      4. Create a list of all the keys in the dictionary.
-      Assign the final dictionary and the list of keys to the variable `dictionary_operations` as a tuple (final_dict, keys_list).
+
+      Print the modified dictionary.
     solution: |
       # Solution
       person_dict = {"name": "John", "age": 28, "profession": "Engineer"}
       person_dict.update({"city": "New York"})   # Adds new key-value pair
       person_dict["age"] = 29                    # Updates age
       person_dict.pop("profession")              # Removes profession key
-      keys_list = list(person_dict.keys())       # Creates a list of keys
-      dictionary_operations = (person_dict, keys_list)
+      print(person_dict)
     test_code: |
-      from main import dictionary_operations
+      from main import person_dict
 
       import unittest
       class TestDictionaryOperations(unittest.TestCase):
           def test_dictionary_operations(self):
-              expected_dict = {"name": "John", "age": 29, "city": "New York"}
-              expected_keys = ["name", "age", "city"]
-              self.assertEqual(dictionary_operations[0], expected_dict, "Check if the dictionary has been updated correctly.")
-              self.assertEqual(dictionary_operations[1], expected_keys, "Ensure that the list of keys is correct.")
+              expected_dict = {'name': 'John', 'age': 29, 'city': 'New York'}
+              self.assertEqual(person_dict, expected_dict, "Check if the dictionary has been updated correctly.")

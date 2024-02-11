@@ -127,16 +127,17 @@ content:
     description: "Demonstrating the issue with float precision."
     value: |
       print(0.1 + 0.2 == 0.3)
-  - type: "quiz"
+  - type: "paragraph"
     card_group: float_operations
-    quiz_items:
-      - question: "What will be the result of the operation above?"
-        answers:
-          - value: "True"
-            explanation: "In fact 0.1 + 0.2 in computers gets evaluated to 0.30000000000000004. Which is not equal to 0.3."
-          - value: "False"
-            correct: true
-            explanation: "In fact 0.1 + 0.2 in computers gets evaluated to 0.30000000000000004. Which is not equal to 0.3."
+    value: |
+      The result of the expression above is `False`. Why does it happen? The reason is that the result of the
+      expression `0.1 + 0.2` is not exactly `0.3`. It is `0.30000000000000004` which is the closest approximation
+      of `0.3` that can be represented as a float.
+  - type: "codeblock-exec"
+    card_group: float_operations
+    description: "Demonstrating the issue with float precision."
+    value: |
+      print(0.1 + 0.2)
   - type: "paragraph"
     card_group: float_operations
     value: |
@@ -153,6 +154,8 @@ content:
     value: |
       The `math.isclose()` function returns `True` if the two numbers are close enough. It is a good practice to use it
       when comparing floats. We will talk about modules and math module in particular in the next lessons.
+
+      If you want to learn more about this function, you can read this article: [math.isclose()](https://docs.python.org/3/library/math.html#math.isclose)
 
   - type: "kata"
     boilerplate: |
