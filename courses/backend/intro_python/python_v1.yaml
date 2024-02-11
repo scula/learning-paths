@@ -92,22 +92,22 @@ sprints:
             file_path: "lessons/prog_langs/python_3_11_4/types_and_data_structures/prog_langs_python_types_and_data_structures_built_in_boolean.yaml"
           - node_string_id: "prog_langs_python_types_and_data_structures_built_in_strings"
             file_path: "lessons/prog_langs/python_3_11_4/types_and_data_structures/prog_langs_python_types_and_data_structures_built_in_strings.yaml"
-            lesson_sha: "b129692"
+            lesson_sha: "5c5649b"
             group: "Structures"
           - node_string_id: "prog_langs_python_types_and_data_structures_built_in_numbers"
             file_path: "lessons/prog_langs/python_3_11_4/types_and_data_structures/prog_langs_python_types_and_data_structures_built_in_numbers.yaml"
-            lesson_sha: "0f5a6de"
+            lesson_sha: "5c5649b"
             group: "Structures"
 
       - type: parallel
         collections:
           - node_string_id: "prog_langs_python_types_and_data_structures_data_types_lists_and_dictionaries"
             group: "Structures"
-            lesson_sha: "0f5a6de"
+            lesson_sha: "5c5649b"
             file_path: "lessons/prog_langs/python_3_11_4/types_and_data_structures/prog_langs_python_types_and_data_structures_data_types_lists_and_dictionaries.yaml"
           - node_string_id: "prog_langs_python_functions"
             file_path: "lessons/prog_langs/python_3_11_4/functions/prog_langs_python_functions.yaml"
-            lesson_sha: "047f370"
+            lesson_sha: "5c5649b"
             group: "Functions"
             complementary:
               - node_string_id: "prog_langs.python_3_11_4.functions.lambda"
