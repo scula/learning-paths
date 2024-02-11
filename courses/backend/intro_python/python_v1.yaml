@@ -92,7 +92,7 @@ sprints:
             file_path: "lessons/prog_langs/python_3_11_4/types_and_data_structures/prog_langs_python_types_and_data_structures_built_in_boolean.yaml"
           - node_string_id: "prog_langs_python_types_and_data_structures_built_in_strings"
             file_path: "lessons/prog_langs/python_3_11_4/types_and_data_structures/prog_langs_python_types_and_data_structures_built_in_strings.yaml"
-            lesson_sha: "5c5649b"
+            lesson_sha: "1bbe839"
             group: "Structures"
           - node_string_id: "prog_langs_python_types_and_data_structures_built_in_numbers"
             file_path: "lessons/prog_langs/python_3_11_4/types_and_data_structures/prog_langs_python_types_and_data_structures_built_in_numbers.yaml"
