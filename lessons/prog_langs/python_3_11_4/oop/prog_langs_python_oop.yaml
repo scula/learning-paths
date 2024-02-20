@@ -118,3 +118,174 @@ content:
 
       Now let's create the solution for the same problem using OOP. We will slowly build the solution step by step 
       explaining the concepts of classes, objects, and inheritance.
+
+  - type: "paragraph"
+    card_group: "classes"
+    value: |
+      # Classes 
+
+      Let's start with the data. In our non-OOP solution, we used dictionaries to represent books and bookstores.
+      We just decided that book for example would look like this:
+      ```
+      {"title": "The Catcher in the Rye", "author": "J.D. Salinger", "price": 10}
+      ```
+      It's a dictionary with three keys: title, author, and price. The problem here is that we can't really enforce
+      that a book will have these and only these keys. If other programmers work with our code, they can easily
+      forget about these keys or add some new ones.
+
+      That's where classes come into play. A class is a blueprint for creating objects with a certain structure.
+      Class is not an object yet, it's just a template or a mold for creating objects. Imagine creating pouring liquid
+      metal into a mold to create a metal object. The mold itself doesn't do anything, but it's used to create things 
+      that can or in our case objects. 
+
+      Let's create a class for a book. We will use the `class` keyword followed by the name of the class.
+      Inside the class, we will define the structure of the book. We will use a special method called `__init__`
+      to define the structure of the book. This method is called a constructor and is used to initialize the object.
+      It's called automatically when we create a new object.
+      ```
+      class Book:
+          def __init__(self, title, author, price):
+              self.title = title
+              self.author = author
+              self.price = price
+      ```
+
+      This is a class definition. It's a blueprint for creating objects of our own type. We can create a new object
+      of this type by calling the class as if it was a function. We can pass the title, author, and price as arguments
+      to the class, and the `__init__` method will be called automatically to initialize the object. 
+
+      Let's see it in action:
+  - type: "codeblock-exec"
+    card_group: "classes"
+    value: |
+      class Book:
+          def __init__(self, title, author, price):
+              self.title = title
+              self.author = author
+              self.price = price
+      book1 = Book("The Catcher in the Rye", "J.D. Salinger", 10)
+      book2 = Book("To Kill a Mockingbird", "Harper Lee", 15)
+      book3 = Book("1984", "George Orwell", 12)
+
+      print(book1.title)
+      print(book2.author)
+
+      print(type(book1))
+      print(type(book3))
+  - type: "paragraph"
+    card_group: "classes"
+    value: |
+      In the code above, we created a class `Book` with a constructor that takes three arguments: title, author, and price.
+      We created three objects of this class and printed their attributes. We also printed the type of those objects 
+      to show that they are indeed objects of our own type.
+
+  - type: "paragraph"
+    card_group: "attributes_self"
+    value: |
+      # Constructor, attributes, and self object
+
+      Let's take a closer look at the `__init__` method and the `self` object. The `__init__` method is a special method
+      that is called automatically when we create a new object. It's used to initialize the object with some data.
+      The first argument of this method is always `self`. It's a reference to the object itself. When we create a new
+      object, Python automatically passes a reference to the object as the first argument to the `__init__` method.
+
+      Imagine you have a blueprint to assemble a car. The blueprint is the class, and the car is the object. When you
+      assemble a car, you need to know which car you are assembling right now. The `self` object is used to refer to the
+      object itself. It's used to access the attributes and methods of the object being created.
+
+      In the `__init__` method, we use the `self` object to define the attributes of the object. We use the dot notation
+      to access the attributes of the object. We can use the values passed as arguments to the `__init__` method to
+      initialize the attributes of the object or we can created them with some default values or computed values.
+
+      ```
+      class Book:
+          def __init__(self, title, author, price):
+              self.title = title
+              self.author = author
+              self.price = price
+              self.price_with_tax = price * 1.1
+              self.is_best_seller = False
+      ```
+      For example, we can modify our `Book` class to include the price with tax and a flag indicating if the book is a best seller.
+      It's handy because we can't know if the book is a best seller when we create it. When someday we decide that the book is a best seller,
+      we can just set the `is_best_seller` attribute to `True`.
+  - type: "codeblock-exec"
+    card_group: "attributes_self"
+    value: |
+      class Book:
+          def __init__(self, title, author, price):
+              self.title = title
+              self.author = author
+              self.price = price
+              self.price_with_tax = price * 1.1
+              self.is_best_seller = False
+      book = Book("The Catcher in the Rye", "J.D. Salinger", 10)
+      print(book.price_with_tax)
+      print(book.is_best_seller)
+      print("Some time has passed...")
+      book.is_best_seller = True
+      print(book.is_best_seller)
+  - type: "paragraph"
+    card_group: "attributes_self"
+    value: |
+      Note in the example above that once we created our `book` object, we can access its attributes using the dot notation.
+      We can modify and read them. All attributes are specific to the object, so we can have different values for different objects.
+      Remember that the class is just a blueprint for creating objects. When we create an object, we create a new object 
+      which has its own life.
+
+  - type: "kata"
+    card_group: "task_classes"
+    task: |
+      # Task: Creating a class for a bookstore
+
+      Now it's your turn to create a class for a bookstore. The class should be based on the dictionary we used in the
+      non-OOP solution.
+      ```
+      {"name": "Old English Bookstore", "books": books}
+      ```
+      The class should have a constructor that takes the name of the bookstore and a list of books as arguments.
+      After defining the class, create an object of this class and print its attributes.
+    boilerplate: |
+      class Book:
+          def __init__(self, title, author, price):
+              self.title = title
+              self.author = author
+              self.price = price
+      books = [
+          Book("The Catcher in the Rye", "J.D. Salinger", 10),
+          Book("To Kill a Mockingbird", "Harper Lee", 15),
+          Book("1984", "George Orwell", 12),
+      ]
+
+      # your code for Bookstore class here
+
+      # create an object of the Bookstore class here
+
+      # print the attributes of the bookstore object here
+    solution: |
+      # Solution
+      class Book:
+        def __init__(self, title, author, price):
+            self.title = title
+            self.author = author
+            self.price = price
+      books = [
+          Book("The Catcher in the Rye", "J.D. Salinger", 10),
+          Book("To Kill a Mockingbird", "Harper Lee", 15),
+          Book("1984", "George Orwell", 12),
+      ]
+      class Bookstore:
+          def __init__(self, name, books):
+              self.name = name
+              self.books = books
+      bookstore = Bookstore("Old English Bookstore", books)
+      print(bookstore.name)
+      print(bookstore.books)
+    test_code: |
+      from main import Bookstore
+      import unittest
+      class TestClass(unittest.TestCase):
+          def test_class(self):
+              bookstore = Bookstore("Old English Bookstore", [])
+              self.assertEqual(bookstore.name, "Old English Bookstore")
+              self.assertEqual(bookstore.books, [])

@@ -201,6 +201,8 @@ sprints:
         collections:
           - node_string_id: "prog_langs_python_oop"
             group: "Object Oriented Programming"
+            file_path: "lessons/prog_langs/python_3_11_4/oop/prog_langs_python_oop.yaml"
+            lesson_sha: ""
       - type: "parallel"
         collections:
           - node_string_id: "os.directories_and_files"
