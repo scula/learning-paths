@@ -1,0 +1,220 @@
+node_string_id: "prog_langs_python_oop_methods_properties"
+name: "OOP: Level II"
+description: "Methods, properties and 3 pillars of OOP"
+software_dependencies:
+  - name: python
+    version: 3.11.4
+content:
+  - type: "paragraph"
+    value: |
+      # Learning Objectives
+
+      In this lesson we will dive deeper into the Object Oriented Programming (OOP) paradigm. 
+      We will learn about 3 main principles of OOP: inheritance, encapsulation and polymorphism.
+      And we will also learn about methods and properties in Python. This will strengthen your 
+      understanding of OOP and help you write better code.
+
+  - type: "paragraph"
+    card_group: "intro"
+    value: |
+      # Methods and Properties
+
+      In Python, methods and properties are used to define the behavior of a class. 
+      Methods are functions that are defined inside a class and properties are variables 
+      that are defined inside a class. Remember that class is just a template and even though 
+      methods and properties are defined inside a class, they are not part of the class itself.
+      They are part of the objects that are created from the class. Let's take a look at
+      how to define methods and properties in Python.
+
+  - type: "codeblock-exec"
+    card_group: "intro"
+    value: |
+      class Dog:
+          def __init__(self, name, age):
+              self.name = name
+              self.age = age
+
+          def bark(self):
+              print(f"{self.name} is barking")
+
+      dog1 = Dog("Buddy", 3)
+      dog1.bark()
+      dog2 = Dog("Max", 5)
+      dog2.bark()
+
+  - type: "paragraph"
+    card_group: "intro"
+    value: |
+      In the above example, we have defined a class `Dog` with two methods `__init__` and `bark`. 
+      The `__init__` method is a special method that is called when an object is created from the class. 
+      It is also called the constructor method. The `bark` method is a regular method that takes no 
+      arguments and prints the name of the dog that is barking. We have created two objects `dog1` and 
+      `dog2` from the `Dog` class and called the `bark` method on both of them.
+
+      As you can see even though we use the same method `bark` to make both dogs bark, the output is
+      different because the `name` property of both dogs is different.
+
+  - type: "quiz"
+    quiz_items:
+      - question: "Why do we use methods and properties in a class?"
+        answers:
+          - value: "To define the behavior of the class"
+            correct: true
+          - value: "To encapsulate part of the program logic"
+            correct: true
+          - value: "It's the only way to define methods"
+            correct: false
+          - value: "Because otherwise class will not work"
+            correct: false
+
+  - type: "paragraph"
+    card_group: "pillars"
+    value: |
+      # 3 Pillars of OOP
+
+      Object Oriented Programming (OOP) is based on 3 main principles: inheritance, encapsulation and polymorphism.
+      These principles help us write better code by making it more organized, reusable and easier to maintain.
+
+      **Inheritance**
+
+      Inheritance is a mechanism in which one class acquires the properties and behavior of another class.
+      It is used to create a new class that is based on an existing class. The new class is called the
+      derived class and the existing class is called the base class. The derived class inherits the properties
+      and behavior of the base class. This helps us write less code and makes our code more organized and reusable.
+
+  - type: "codeblock-exec"
+    card_group: "pillars"
+    value: |
+      class Animal:
+          def __init__(self, name):
+              self.name = name
+
+          def speak(self):
+              print(f"{self.name} is speaking")
+
+      class Dog(Animal):
+          def bark(self):
+              print(f"{self.name} is barking")
+
+      dog = Dog("Buddy")
+      dog.speak()
+      dog.bark()
+
+  - type: "paragraph"
+    card_group: "pillars"
+    value: |
+      In the above example, we have defined two classes `Animal` and `Dog`. The `Dog` class is derived from the `Animal` class.
+      The `Animal` class has a method `speak` and the `Dog` class has a method `bark`. We have created an object `dog` from the `Dog` class
+      and called the `speak` and `bark` methods on it. As you can see, the `Dog` class has inherited the `speak` method from the `Animal` class.
+
+      **Encapsulation**
+
+      Encapsulation is a mechanism in which the data and methods of a class are hidden from the outside world. 
+      It is used to protect the data and methods of a class from being accessed by unauthorized code. 
+      This helps us write more secure and maintainable code.
+
+  - type: "codeblock-exec"
+    card_group: "pillars"
+    value: |
+      class BankAccount:
+          def __init__(self, balance):
+              self.__balance = balance
+
+          def deposit(self, amount):
+              self.__balance += amount
+
+          def withdraw(self, amount):
+              self.__balance -= amount
+
+          def get_balance(self):
+              return self.__balance
+
+      account = BankAccount(1000)
+      account.deposit(500)
+      account.withdraw(200)
+      print(account.get_balance())
+
+  - type: "paragraph"
+    card_group: "pillars"
+    value: |
+      In the above example, we have defined a class `BankAccount` with a private property `__balance`. 
+      The `__balance` property is private and can only be accessed from inside the class. We have defined 
+      methods `deposit`, `withdraw` and `get_balance` to deposit, withdraw and get the balance of the account. 
+      These methods are the only way to access the `__balance` property. This helps us protect the `__balance` 
+      property from being accessed by unauthorized code.
+
+      **Polymorphism**
+
+      Polymorphism is a mechanism in which one method can have different forms. It is used to write more 
+      flexible and reusable code. Polymorphism allows us to use the same method with different types of 
+      objects. This helps us write less code and makes our code more flexible and reusable.
+
+  - type: "codeblock-exec"
+    card_group: "pillars"
+    value: |
+      class Animal:
+          def speak(self):
+              print("Animal is speaking")
+
+      class Dog(Animal):
+          def speak(self):
+              print("Dog is barking")
+
+      class Cat(Animal):
+          def speak(self):
+              print("Cat is meowing")
+
+      def make_speak(animal):
+          animal.speak()
+
+      animal = Animal()
+      dog = Dog()
+      cat = Cat()
+
+      make_speak(animal)
+      make_speak(dog)
+      make_speak(cat)
+
+  - type: "paragraph"
+    card_group: "pillars"
+    value: |
+      In the above example, we have defined three classes `Animal`, `Dog` and `Cat`. The `Dog` and `Cat` classes 
+      have a method `speak` that overrides the `speak` method of the `Animal` class. We have defined a function 
+      `make_speak` that takes an object of the `Animal` class and calls the `speak` method on it. We have created 
+      objects `animal`, `dog` and `cat` from the `Animal`, `Dog` and `Cat` classes and passed them to the `make_speak` 
+      function. As you can see, the `speak` method of the `Animal` class has different forms when called with different 
+      types of objects.
+
+  - type: "quiz"
+    card_group: "pillars"
+    quiz_items:
+      - question: "What is the purpose of inheritance in OOP?"
+        answers:
+          - value: "To create a new class that is based on an existing class"
+            correct: true
+          - value: "To hide the data and methods of a class from the outside world"
+            correct: false
+          - value: "To write more flexible and reusable code"
+            correct: false
+          - value: "To protect the data and methods of a class from being accessed by unauthorized code"
+            correct: false
+      - question: "What is the purpose of encapsulation in OOP?"
+        answers:
+          - value: "To create a new class that is based on an existing class"
+            correct: false
+          - value: "To write more flexible and reusable code"
+            correct: false
+          - value: "To hide the data and methods of a class from the outside world"
+            correct: true
+          - value: "To protect the data and methods of a class from being accessed by unauthorized code"
+            correct: false
+      - question: "What is the purpose of polymorphism in OOP?"
+        answers:
+          - value: "To create a new class that is based on an existing class"
+            correct: false
+          - value: "To write more flexible and reusable code"
+            correct: true
+          - value: "To hide the data and methods of a class from the outside world"
+            correct: false
+          - value: "To protect the data and methods of a class from being accessed by unauthorized code"
+            correct: false

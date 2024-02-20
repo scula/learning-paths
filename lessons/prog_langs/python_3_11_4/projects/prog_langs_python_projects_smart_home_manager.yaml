@@ -1,0 +1,53 @@
+node_string_id: "prog_langs_python_projects_smart_home_manager"
+name: "Smart Home Manager"
+description: "A smart home manager emulator"
+type: "project"
+project:
+  gcs_url: gs://scula-codelabs/codelabs_intro_python_projects_sprint2_smarthome-a143794.tar.gz
+  codelab_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-intro-python:0.20
+  codelab_guard_image: europe-docker.pkg.dev/amazemind/amazemind-services/codelab-guard-intro-python:0.22
+software_dependencies:
+  - name: python
+    version: 3.11.4
+content:
+  - type: "paragraph"
+    value: |
+      # Smart Home Controller
+
+      ## Description
+
+      This project involves the development of a Smart Home Controller application. The application will allow users to control various smart devices in their home, such as lights, thermostats, and security systems, through a user-friendly interface. The application will be designed using Object-Oriented Programming principles to ensure modularity, scalability, and maintainability.
+
+      ## Technical Requirements
+
+      General requirements:
+
+      - The application should be developed in Python 3, utilizing OOP principles.
+      - External libraries may be used for handling device communication or user interface elements.
+      - The application should provide a command-line interface and optionally a graphical user interface.
+
+      System requirements:
+
+      - The application should use classes and objects to represent different smart devices.
+      - Device classes should have methods for common actions like turning on/off, adjusting settings, etc.
+      - The application should include a central controller class that manages interactions between different devices.
+      - Use of inheritance, encapsulation, and polymorphism should be demonstrated where appropriate.
+
+      User Interface requirements:
+
+      - The application should start with an interactive menu to choose different smart home devices to control.
+      - Users should be able to perform actions like turning devices on/off, adjusting settings, and viewing device status.
+      - The application should provide clear feedback on the results of user actions and any errors.
+
+      Integration requirements:
+
+      - The application should be able to interface with simulated smart devices (if actual devices are not available).
+      - If external libraries are used for device communication, their integration should be seamless and well-documented.
+
+      ## Game requirements:
+
+      - The application should start with a welcome message and a brief explanation of its features.
+      - Users should be guided through the process of selecting and interacting with different smart devices.
+      - The application should handle invalid inputs gracefully and guide the user back to valid options.
+      - Upon successful completion of an action, the application should display a confirmation message.
+      - In case of errors or failures in device communication, the application should inform the user with an appropriate message.

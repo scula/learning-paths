@@ -205,12 +205,8 @@ sprints:
             lesson_sha: "92e4369"
       - type: "parallel"
         collections:
-          - node_string_id: "os.directories_and_files"
-            group: "OS"
-          - node_string_id: "prog_langs.python_3_11_4.files_directories.files_directories"
-            group: "OS"
-          - node_string_id: "prog_langs.python_3_11_4.file_formats.csv"
-            group: "OS"
+          - node_string_id: "prog_langs_python_oop_methods_properties"
+            group: "Object Oriented Programming"
       - type: "selection"
         collections:
           - node_string_id: "prog_langs.python_3_11_4.projects.file_manager"
