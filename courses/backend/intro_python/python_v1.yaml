@@ -214,4 +214,4 @@ sprints:
           - node_string_id: "prog_langs.python_3_11_4.projects.smart_home_manager"
             group: "Projects"
             file_path: "lessons/prog_langs/python_3_11_4/projects/prog_langs_python_projects_smart_home_manager.yaml"
-            lesson_sha: "05cb9ec"
+            lesson_sha: "c61d2a0"
