@@ -185,7 +185,7 @@ sprints:
             file_path: "lessons/prog_langs/python_3_11_4/projects/prog_langs_python_projects_weather_prediction.yaml"
             lesson_sha: "9648c9c"
             group: "Projects"
-  - name: "Python: Data and OS Interaction"
+  - name: "Python: Object Oriented Programming"
     sprint_items:
       - type: "parallel"
         collections:
